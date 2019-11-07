@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>
-      Taiwan Hikes: free hiking tours with the local people in Taiwan
+      Taiwan Hikes: Free hikes with the locals in Taiwan
     </title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya:500,800|Open+Sans&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <head class="header">
@@ -15,11 +21,7 @@
         <div class="header-box__banner">
           <div class="header-box__banner--logo">
             <!-- small logo is for screen on the top-->
-            <img
-              src="/img/logo-s.jpg"
-              alt="Taiwan Hikes logo small"
-              class="logo"
-            />
+            <img src="/img/logo-s.jpg" alt="Taiwan Hikes logo" class="logo" />
             <!-- when users scroll down, the header will be fixed 
               with the large logo on the top-->
             <img src="/img/logo.jpg" alt="Taiwan Hikes logo" class="logo-big" />
@@ -71,7 +73,7 @@
     </head>
 
     <body>
-      <div class="home-container">
+      <main class="home-container">
         <div class="home-7Reasons">
           <h2 class="home-7Reasons__title">
             7 Reasons You Should Hike in Taiwan
@@ -165,7 +167,7 @@
             </button>
           </div>
         </div>
-      </div>
+      </main>
     </body>
 
     <footer class="footer">
@@ -174,7 +176,7 @@
           <img src="#" alt="Mountains" class="footer__subscribe--img" />
           <div class="footer__subscribe--box subscribe">
             <h3 class="subscribe__title">Receive update!</h3>
-            <input type="email" class="subscribe__email" />
+            <input type="email" class="subscribe__email" inputmode="email" />
             <button class="subscribe__btn">Subscribe!</button>
             <p class="subscribe__text">By signing up, you agree...</p>
           </div>

@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #fcfcfc;
+  font-weight: 400;
+  //line-height: 1.6;
+}
+
+.main,
+.footer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+// ::selection {
+//   background: $color-teal;
+//   color: $color-white;
+// }
