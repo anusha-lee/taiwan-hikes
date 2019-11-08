@@ -15,64 +15,98 @@
     />
   </head>
   <body>
-    <head class="header">
-      <div class="header-box">
-        <h1>Taiwan Hikes</h1>
-        <div class="header-box__banner">
-          <div class="header-box__banner--logo">
-            <!-- small logo is for screen on the top-->
-            <img src="/img/logo-s.jpg" alt="Taiwan Hikes logo" class="logo" />
-            <!-- when users scroll down, the header will be fixed 
-              with the large logo on the top-->
-            <img src="/img/logo.jpg" alt="Taiwan Hikes logo" class="logo-big" />
-          </div>
-
-          <nav class="header-box__banner--menu">
-            <div class="header-box__banner--top-menu top-menu">
-              <div class="top-menu__startHere">
-                Start here
-                <ul class="header-box__banner--startHere-articles startHere">
-                  <li class="startHere--list">
-                    7 Reasons Why You Should Hike in Taiwan
-                  </li>
-                  <li class="startHere--list">
-                    12 Things You Need to Know Before You Hike in Taiwan
-                  </li>
-                  <li class="startHere--list">
-                    5 Mistakes You to Avoid When Hiking in Taiwan
-                  </li>
-                  <li class="startHere--list">
-                    4 Ways to Enjoy Your Hike in Taiwan
-                  </li>
-                </ul>
-              </div>
-              <div class="top-menu__hamburger hamburger">
-                <input type="checkbox" class="hamburger__toggle" />
-                <span class="hamburger__line"></span>
-                <span class="hamburger__line"></span>
-                <span class="hamburger__line"></span>
-                <ul class="hamburger__list">
-                  <li class="hamburger__list--item">
-                    <a href="#about">Creator</a>
-                  </li>
-                  <li class="hamburger__list--item">
-                    <a href="#skills">Sponsors</a>
-                  </li>
-                  <li class="hamburger__list--item">
-                    <a href="#projects">Partners</a>
-                  </li>
-                  <li class="hamburger__list--item">
-                    <a href="blog.html">Disclaimer</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </head>
-
     <body>
+      <header class="header">
+        <div class="header__background-img-box">
+          <picture>
+            <source
+              media="(min-width:1200px)"
+              srcset="/img/header-background-xl.jpg"
+              sizes="100vw"
+            />
+            <source
+              media="(min-width:900px)"
+              srcset="/img/header-background-m.jpg"
+              sizes="100vw"
+            />
+            <source
+              media="(min-width:600px)"
+              srcset="/img/header-background-sm.jpg"
+              sizes="100vw"
+            />
+            <img
+              src="/img/header-background-large.jpg"
+              alt="Mountain background"
+              class="header__background-img-box--img"
+            />
+          </picture>
+          <!-- <img
+            src="/img/header-background-large.jpg"
+            alt="Mountain background"
+            class="header__background-img-box--img"
+          /> -->
+          <h1 class="header__background-img-box--title">Taiwan Hikes</h1>
+        </div>
+
+        <div class="header-box">
+          <div class="header-box__banner">
+            <div class="header-box__banner--logo">
+              <!-- small logo is for screen on the top-->
+              <img src="/img/logo-s.jpg" alt="Taiwan Hikes logo" class="logo" />
+              <!-- when users scroll down, the header will be fixed 
+                with the large logo on the top-->
+              <img
+                src="/img/logo.jpg"
+                alt="Taiwan Hikes logo"
+                class="logo-big"
+              />
+            </div>
+
+            <nav class="header-box__banner--menu">
+              <div class="header-box__banner--top-menu top-menu">
+                <div class="top-menu__startHere">
+                  Start here
+                  <ul class="header-box__banner--startHere-articles startHere">
+                    <li class="startHere--list">
+                      7 Reasons Why You Should Hike in Taiwan
+                    </li>
+                    <li class="startHere--list">
+                      12 Things You Need to Know Before You Hike in Taiwan
+                    </li>
+                    <li class="startHere--list">
+                      5 Mistakes You to Avoid When Hiking in Taiwan
+                    </li>
+                    <li class="startHere--list">
+                      4 Ways to Enjoy Your Hike in Taiwan
+                    </li>
+                  </ul>
+                </div>
+                <div class="top-menu__hamburger hamburger">
+                  <input type="checkbox" class="hamburger__toggle" />
+                  <span class="hamburger__line"></span>
+                  <span class="hamburger__line"></span>
+                  <span class="hamburger__line"></span>
+                  <ul class="hamburger__list">
+                    <li class="hamburger__list--item">
+                      <a href="#about">Creator</a>
+                    </li>
+                    <li class="hamburger__list--item">
+                      <a href="#skills">Sponsors</a>
+                    </li>
+                    <li class="hamburger__list--item">
+                      <a href="#projects">Partners</a>
+                    </li>
+                    <li class="hamburger__list--item">
+                      <a href="blog.html">Disclaimer</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+
       <main class="home-container">
         <div class="home-7Reasons">
           <h2 class="home-7Reasons__title">

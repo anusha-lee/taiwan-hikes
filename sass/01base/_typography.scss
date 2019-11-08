@@ -13,3 +13,29 @@ Texts: font-family: 'Open Sans', sans-serif;
 
 // Colors
 $color-white: #fcfcfc;
+$color-base-blue: #097392;
+$color-blue-grey: #83b4b3;
+$color-tan: #fff0ce;
+$color-orangered: #d55534;
+$color-deep-blue-grey: #383838;
+
+// Fonts
+$font-title: "Alegreya", serif;
+$font-text: "Open Sans", sans-serif;
+
+body {
+  font-family: $font-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-title;
+}
+
+p {
+  //font-family:
+}

@@ -1,0 +1,28 @@
+.header {
+  background-color: burlywood;
+  width: 100vw;
+  //height: auto;
+}
+
+.header__background-img-box {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--img {
+    border: 2px solid pink;
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  & h1 {
+    font-size: 5rem;
+    mix-blend-mode: overlay;
+  }
+}

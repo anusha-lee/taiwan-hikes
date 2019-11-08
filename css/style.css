@@ -11,7 +11,26 @@ html {
 body {
   box-sizing: border-box;
   background-color: #fcfcfc;
-  font-weight: 400; }
+  font-weight: 400;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100vh minmax(60rem, auto) minmax(min-content, auto); }
+
+header {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2; }
+
+main {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  border: 2px solid salmon;
+  z-index: 10; }
+
+footer {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  border: 2px solid yellow;
+  z-index: 11; }
 
 .main,
 .footer {
@@ -39,5 +58,37 @@ Fonts:
 Titles: font-family: 'Alegreya', serif;
 Texts: font-family: 'Open Sans', sans-serif;
 ***********************************/
+body {
+  font-family: "Open Sans", sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Alegreya", serif; }
+
+.header {
+  background-color: burlywood;
+  width: 100vw; }
+
+.header__background-img-box {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .header__background-img-box--img {
+    border: 2px solid pink;
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; }
+  .header__background-img-box h1 {
+    font-size: 5rem;
+    mix-blend-mode: overlay; }
 
 /*# sourceMappingURL=style.css.map */
