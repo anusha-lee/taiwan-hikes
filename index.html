@@ -18,28 +18,6 @@
     <body>
       <header class="header">
         <div class="header__background-img-box">
-          <picture>
-            <source
-              media="(min-width:1200px)"
-              srcset="/img/header-background-xl.jpg"
-              sizes="100vw"
-            />
-            <source
-              media="(min-width:900px)"
-              srcset="/img/header-background-m.jpg"
-              sizes="100vw"
-            />
-            <source
-              media="(min-width:600px)"
-              srcset="/img/header-background-sm.jpg"
-              sizes="100vw"
-            />
-            <img
-              src="/img/header-background-large.jpg"
-              alt="Mountain background"
-              class="header__background-img-box--img"
-            />
-          </picture>
           <!-- <img
             src="/img/header-background-large.jpg"
             alt="Mountain background"
@@ -50,9 +28,13 @@
 
         <div class="header-box">
           <div class="header-box__banner">
-            <div class="header-box__banner--logo">
+            <div class="header-box__banner--logo logo">
               <!-- small logo is for screen on the top-->
-              <img src="/img/logo-s.jpg" alt="Taiwan Hikes logo" class="logo" />
+              <img
+                src="/img/logo-s.jpg"
+                alt="Taiwan Hikes logo"
+                class="logo-sm"
+              />
               <!-- when users scroll down, the header will be fixed 
                 with the large logo on the top-->
               <img
@@ -62,45 +44,57 @@
               />
             </div>
 
-            <nav class="header-box__banner--menu">
-              <div class="header-box__banner--top-menu top-menu">
-                <div class="top-menu__startHere">
-                  Start here
-                  <ul class="header-box__banner--startHere-articles startHere">
-                    <li class="startHere--list">
-                      7 Reasons Why You Should Hike in Taiwan
-                    </li>
-                    <li class="startHere--list">
-                      12 Things You Need to Know Before You Hike in Taiwan
-                    </li>
-                    <li class="startHere--list">
-                      5 Mistakes You to Avoid When Hiking in Taiwan
-                    </li>
-                    <li class="startHere--list">
-                      4 Ways to Enjoy Your Hike in Taiwan
-                    </li>
-                  </ul>
-                </div>
-                <div class="top-menu__hamburger hamburger">
-                  <input type="checkbox" class="hamburger__toggle" />
-                  <span class="hamburger__line"></span>
-                  <span class="hamburger__line"></span>
-                  <span class="hamburger__line"></span>
-                  <ul class="hamburger__list">
-                    <li class="hamburger__list--item">
-                      <a href="#about">Creator</a>
-                    </li>
-                    <li class="hamburger__list--item">
-                      <a href="#skills">Sponsors</a>
-                    </li>
-                    <li class="hamburger__list--item">
-                      <a href="#projects">Partners</a>
-                    </li>
-                    <li class="hamburger__list--item">
-                      <a href="blog.html">Disclaimer</a>
-                    </li>
-                  </ul>
-                </div>
+            <nav class="header-box__banner--menu menu">
+              <div class="menu__startHere">
+                Start here
+                <ul c>
+                  <li class="menu__startHere--list">
+                    7 Reasons Why You Should Hike in Taiwan
+                  </li>
+                  <li class="menu__startHere--list">
+                    12 Things You Need to Know Before You Hike in Taiwan
+                  </li>
+                  <li class="menu__startHere--list">
+                    5 Mistakes You to Avoid When Hiking in Taiwan
+                  </li>
+                  <li class="menu__startHere--list">
+                    4 Ways to Enjoy Your Hike in Taiwan
+                  </li>
+                </ul>
+              </div>
+              <div class="menu__hamburger">
+                <input type="checkbox" class="menu__hamburger--toggle" />
+                <span class="menu__hamburger--line line-short"></span>
+                <span class="menu__hamburger--line line-long"></span>
+                <span class="menu__hamburger--line line-short"></span>
+                <ul class="menu__hamburger--list">
+                  <li class="menu__hamburger--list-item">
+                    About
+                    <ul class="menu__hamburger--list__about dropdown">
+                      <li class="menu__hamburger--list__about--item">
+                        <a href="#">Creator</a>
+                      </li>
+                      <li class="menu__hamburger--list__about--item">
+                        <a href="#">Sponsors</a>
+                      </li>
+                      <li class="menu__hamburger--list__about--item">
+                        <a href="#">Partners</a>
+                      </li>
+                      <li class="menu__hamburger--list__about--item">
+                        <a href="#">Disclaimer</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu__hamburger--list-item">
+                    <a href="#skills">Trips</a>
+                  </li>
+                  <li class="menu__hamburger--list-item">
+                    <a href="#projects">Blog</a>
+                  </li>
+                  <li class="menu__hamburger--list-item">
+                    <a href="blog.html">Resources</a>
+                  </li>
+                </ul>
               </div>
             </nav>
           </div>

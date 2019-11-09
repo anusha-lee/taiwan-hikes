@@ -14,7 +14,7 @@ body {
   font-weight: 400;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100vh minmax(60rem, auto) minmax(min-content, auto); }
+  grid-template-rows: 60vh minimax(60rem, auto) minimax(min-content, auto); }
 
 header {
   grid-column: 1 / 2;
@@ -23,14 +23,12 @@ header {
 main {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  border: 2px solid salmon;
-  z-index: 10; }
+  border: 2px solid salmon; }
 
 footer {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
-  border: 2px solid yellow;
-  z-index: 11; }
+  border: 2px solid yellow; }
 
 .main,
 .footer {
@@ -70,25 +68,124 @@ h6 {
   font-family: "Alegreya", serif; }
 
 .header {
-  background-color: burlywood;
-  width: 100vw; }
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(15%, auto) minmax(auto, 80%); }
 
 .header__background-img-box {
-  width: 100%;
-  height: 500px;
+  background-image: url("../img/header-background-large.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin: 0;
+  width: 100vw;
+  height: 70vh;
+  grid-column: 1 / 2;
+  grid-row: 1/ 3;
   display: flex;
   align-items: center;
   justify-content: center; }
   .header__background-img-box--img {
-    border: 2px solid pink;
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat; }
-  .header__background-img-box h1 {
-    font-size: 5rem;
-    mix-blend-mode: overlay; }
+    height: auto; }
+  .header__background-img-box--title {
+    font-size: 6rem;
+    mix-blend-mode: overlay;
+    transform: scale(0.7, 1.7);
+    text-shadow: 0.1rem 0.1rem 0.1rem #fcfcfc; }
+
+.logo-big {
+  display: none; }
+
+.header-box {
+  width: 100%;
+  background-color: rgba(252, 252, 252, 0.7);
+  z-index: 10;
+  grid-column: 1 / 2;
+  grid-row: 1/ 2;
+  justify-content: space-between; }
+  .header-box__banner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(20%, 30%) minmax(50%, 70%);
+    grid-template-rows: 1fr; }
+    .header-box__banner--logo {
+      border: 2px solid red; }
+    .header-box__banner--menu {
+      border: 2px solid greenyellow; }
+
+.menu {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr; }
+  .menu__startHere {
+    grid-column: 1 / 2;
+    grid-row: 1/ 2; }
+  .menu__hamburger {
+    grid-column: 2 / 3;
+    grid-row: 1/ 2;
+    width: 4.5rem;
+    height: 4.5rem;
+    position: relative;
+    right: 0.3rem;
+    top: 0.5rem; }
+    .menu__hamburger--toggle {
+      display: block;
+      margin: 0;
+      width: 4.5rem;
+      height: 4.5rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      opacity: 0;
+      cursor: pointer;
+      z-index: 20; }
+    .menu__hamburger--line {
+      display: block;
+      margin-bottom: 0.5rem;
+      width: 3rem;
+      height: 0.4rem;
+      position: relative;
+      top: 0.5rem;
+      background-color: #383838;
+      transform-origin: 4px 0;
+      transition: all 0.3s ease-in-out;
+      border-radius: 3px; }
+    .menu__hamburger--line:first-child {
+      transform-origin: 0% 0%; }
+    .menu__hamburger--line:nth-child(2) {
+      transform-origin: 0 100%;
+      transform-origin: 0 100%; }
+    .menu__hamburger--toggle:checked ~ .menu__hamburger--line {
+      opacity: 1;
+      transform: rotate(45deg) translate(-1px, -1px); }
+    .menu__hamburger--toggle:checked ~ .menu__hamburger--line:nth-last-child(3) {
+      opacity: 0;
+      transform: rotate(0deg) translate(0.2, 0.2); }
+    .menu__hamburger--toggle:checked ~ .menu__hamburger--line:nth-last-child(2) {
+      opacity: 1;
+      transform: rotate(-45deg) translate(-1px, -1px); }
+    .menu__hamburger--list {
+      padding: 0;
+      width: 50vw;
+      height: auto;
+      border: 2px solid blueviolet;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      .menu__hamburger--list-item a {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        padding: 1rem;
+        text-align: left;
+        border: 2px solid orange; }
 
 /*# sourceMappingURL=style.css.map */

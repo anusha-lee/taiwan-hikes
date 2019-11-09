@@ -18,7 +18,7 @@ body {
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100vh minmax(60rem, auto) minmax(min-content, auto);
+  grid-template-rows: 60vh minimax(60rem, auto) minimax(min-content, auto);
 }
 
 header {
@@ -30,14 +30,12 @@ main {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   border: 2px solid salmon;
-  z-index: 10;
 }
 
 footer {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
   border: 2px solid yellow;
-  z-index: 11;
 }
 
 .main,
