@@ -1,0 +1,51 @@
+/*******************************************
+****** Breakpoints ******
+tab: 600px;
+sm-desktop: 900px;
+normal-desktop: 1200px;
+xl-desktop: 1500px;
+
+how to apply:
+@include responsive(tab-port) {
+    background-color: pink;
+  }
+
+
+  @include responsive(tab) {
+        
+  }
+  @include responsive(sm-desktop) {
+        
+  }
+  @include responsive(normal-desktop) {
+    
+  }
+  @include responsive(xl-desktop) {
+    
+    
+  }
+
+******************************************/
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == tab {
+    @media only screen and (min-width: 600px) {
+      @content;
+    }
+  }
+  @if $breakpoint == sm-desktop {
+    @media only screen and (min-width: 900px) {
+      @content;
+    }
+  }
+  @if $breakpoint == normal-desktop {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+  @if $breakpoint == xl-desktop {
+    @media only screen and (min-width: 1500px) {
+      @content;
+    }
+  }
+}

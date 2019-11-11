@@ -1,0 +1,41 @@
+footer {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  width: 100%;
+  height: 50vh;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, minmax(min-content, auto));
+
+  &__subscribe {
+    width: 100%;
+    height: auto;
+
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    &--img {
+      width: 100vw;
+      height: 70vh;
+      background-image: url("../img/footer-img.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__socialMedia {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  &__copyright {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+}

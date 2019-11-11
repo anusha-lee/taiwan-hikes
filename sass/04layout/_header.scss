@@ -8,6 +8,10 @@
   grid-template-rows: repeat(2, 1fr);
 }
 
+// @media only screen and (min-width: $bp-sm) {
+//   border: 2px solid blue;
+// }
+
 .header__background-img-box {
   // background-image: linear-gradient(
   //     to bottom,
@@ -32,6 +36,21 @@
   align-items: center;
   justify-content: center;
 
+  @include responsive(tab) {
+    background-position: center;
+    height: 90vh;
+  }
+  @include responsive(sm-desktop) {
+    height: 100vh;
+    background-position: bottom;
+  }
+  // @include responsive(normal-desktop) {
+  //   background-position: bottom; //65% 50%;
+  //   height: 110vh;
+  // }
+  // @include responsive(normal-desktop) {
+  // }
+
   &--img {
     position: absolute;
     top: 0;
@@ -46,19 +65,41 @@
     transform: scale(0.8, 2);
     text-shadow: 0.1rem 0.1rem 0.1rem $color-base-blue;
     color: rgba($color-white, 0.9);
+
+    @include responsive(tab) {
+      transform: scale(1, 2);
+    }
+    @include responsive(normal-desktop) {
+      transform: scale(1.2, 2.2);
+    }
+    @include responsive(xl-desktop) {
+      transform: scale(1.3, 2.5);
+    }
   }
 }
 
 .logo {
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 2.5rem;
+  transition: display 0.3s ease-in-out;
 
   &-sm {
-    width: 5rem;
+    width: 4rem;
     height: auto;
+
+    @include responsive(tab) {
+      display: none;
+    }
+    @include responsive(sm-desktop) {
+    }
   }
 
   &-big {
     display: none;
+
+    @include responsive(tab) {
+      display: block;
+      height: 4.5rem;
+    }
   }
 }
 
@@ -79,8 +120,9 @@
 
   &__banner {
     width: 100%;
+    height: min-content;
     display: grid;
-    grid-template-columns: minmax(20%, 40%) minmax(40%, 60%);
+    grid-template-columns: 1fr minmax(16rem, 24rem); //minmax(20%, 40%) minmax(40%, 60%);
     grid-template-rows: 1fr;
 
     // &--logo {
@@ -95,9 +137,14 @@
 
 .menu {
   display: grid;
-  grid-template-columns: 72% 28%;
+  grid-template-columns: 80% 120px;
   grid-template-rows: 1fr;
 
+  // @include responsive(tab) {
+  //   grid-template-columns: 82% 18%;
+  // }
+
+  //minmax(70%, 80%) minmax(20, 30%); //
   &__startHere {
     grid-column: 1 / 2;
     grid-row: 1/ 2;
@@ -106,8 +153,20 @@
     align-items: center;
     justify-content: flex-end;
 
+    padding-right: 2rem;
+
     font-size: $font-size-sm;
     font-family: $font-title;
+
+    @include responsive(tab) {
+      padding-right: 3rem;
+    }
+    @include responsive(sm-desktop) {
+      padding-right: 4rem;
+    }
+    @include responsive(xl-desktop) {
+      padding-right: 5.5rem;
+    }
   }
 
   /*******************************************************
@@ -131,14 +190,19 @@
     position: fixed;
     // position: relative;
 
-    right: 4%;
-    top: 2.3%;
+    right: 3%;
+    top: 1.3rem;
+
+    @include responsive(tab) {
+      right: 2.6%;
+      top: 1.5rem;
+    }
 
     &--toggle {
       display: block;
       margin: 0;
-      width: 4.5rem;
-      height: 4.5rem;
+      width: 4rem;
+      height: 4rem;
       position: absolute;
       top: 0;
       right: 0;
@@ -149,12 +213,12 @@
 
     &--line {
       display: block;
-      margin-bottom: 0.5rem;
-      width: 3rem;
+      margin-bottom: 0.4rem;
+      width: 2.5rem;
       height: 0.4rem;
       position: relative;
-      top: 0.5rem;
-      background-color: $color-deep-blue-grey;
+      top: 0.7rem;
+      background-color: $color-white; //$color-deep-blue-grey;
       transform-origin: 4px 0;
       transition: all 0.3s ease-in-out;
       border-radius: 3px;
@@ -189,8 +253,8 @@
       font-family: $font-title;
       margin-top: -0.7rem;
       padding: 0.5rem;
-      width: 100vw;
-      height: 100vh;
+      width: 110vw;
+      height: 110vh;
 
       background: rgba($color-base-blue, 0.9);
       position: absolute;
@@ -215,12 +279,15 @@
         }
         & a:hover {
           background-color: $color-blue-grey;
+          // text-shadow: $color-deep-blue-grey;
         }
       }
     }
 
     &--toggle:checked ~ &--list {
       opacity: 1;
+      margin-right: -2rem;
+      margin-top: -3rem;
     }
   }
 }

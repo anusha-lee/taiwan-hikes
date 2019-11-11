@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css?family=Alegreya:500,800|Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
   </head>
   <body>
     <body>
@@ -40,7 +44,7 @@
               <img
                 src="/img/logo.jpg"
                 alt="Taiwan Hikes logo"
-                class="logo-big"
+                class="logo-big slideInLeft"
               />
             </div>
 
@@ -55,6 +59,9 @@
                 <span class="menu__hamburger--line line-long"></span>
                 <span class="menu__hamburger--line line-short"></span>
                 <ul class="menu__hamburger--list">
+                  <li class="menu__hamburger--list-item">
+                    <a href="index.html">Home</a>
+                  </li>
                   <li class="menu__hamburger--list-item">
                     <a href="#">About</a>
                     <!-- Add a nested layer later -->
@@ -173,9 +180,13 @@
     </body>
 
     <footer class="footer">
-      <div class="footer-container">
+      <div class="footer">
         <div class="footer__subscribe">
-          <img src="#" alt="Mountains" class="footer__subscribe--img" />
+          <div class="footer__subscribe--img">
+            <!-- <img src="img/footer-img.JPG" alt="Mountains" /> -->
+          </div>
+
+          <!-- <div class="footer__subscribe--img"></div> -->
           <div class="footer__subscribe--box subscribe">
             <h3 class="subscribe__title">Receive update!</h3>
             <input type="email" class="subscribe__email" inputmode="email" />

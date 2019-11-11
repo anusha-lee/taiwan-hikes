@@ -27,8 +27,7 @@ main {
 
 footer {
   grid-column: 1 / 2;
-  grid-row: 3 / 4;
-  border: 2px solid yellow; }
+  grid-row: 3 / 4; }
 
 .main,
 .footer {
@@ -38,11 +37,19 @@ footer {
 li {
   list-style: none; }
 
-a {
+a:link {
+  color: #383838;
   text-decoration: none; }
+
+a:visited {
+  color: #d55534; }
 
 .container {
   margin: 0 auto; }
+
+::selection {
+  background-color: #d55534;
+  color: #fff0ce; }
 
 /***********************************
 Colors:
@@ -67,6 +74,64 @@ h5,
 h6 {
   font-family: "Alegreya", serif; }
 
+/*******************************************
+****** Breakpoints ******
+tab: 600px;
+sm-desktop: 900px;
+normal-desktop: 1200px;
+xl-desktop: 1500px;
+
+how to apply:
+@include responsive(tab-port) {
+    background-color: pink;
+  }
+
+
+  @include responsive(tab) {
+        
+  }
+  @include responsive(sm-desktop) {
+        
+  }
+  @include responsive(normal-desktop) {
+    
+  }
+  @include responsive(xl-desktop) {
+    
+    
+  }
+
+******************************************/
+footer {
+  margin: 0 auto;
+  width: 100%;
+  height: auto; }
+
+.footer {
+  width: 100%;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, minmax(min-content, auto)); }
+  .footer__subscribe {
+    width: 100%;
+    height: auto;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2; }
+    .footer__subscribe--img {
+      width: 100vw;
+      height: 70vh;
+      background-image: url("../img/footer-img.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+  .footer__socialMedia {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3; }
+  .footer__copyright {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4; }
+
 .header {
   margin: 0 auto;
   width: 100%;
@@ -89,6 +154,14 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (min-width: 600px) {
+    .header__background-img-box {
+      background-position: center;
+      height: 90vh; } }
+  @media only screen and (min-width: 900px) {
+    .header__background-img-box {
+      height: 100vh;
+      background-position: bottom; } }
   .header__background-img-box--img {
     position: absolute;
     top: 0;
@@ -101,14 +174,31 @@ h6 {
     transform: scale(0.8, 2);
     text-shadow: 0.1rem 0.1rem 0.1rem #097392;
     color: rgba(252, 252, 252, 0.9); }
+    @media only screen and (min-width: 600px) {
+      .header__background-img-box--title {
+        transform: scale(1, 2); } }
+    @media only screen and (min-width: 1200px) {
+      .header__background-img-box--title {
+        transform: scale(1.2, 2.2); } }
+    @media only screen and (min-width: 1500px) {
+      .header__background-img-box--title {
+        transform: scale(1.3, 2.5); } }
 
 .logo {
-  padding: 1rem; }
+  padding: 1rem 1rem 1rem 2.5rem;
+  transition: display 0.3s ease-in-out; }
   .logo-sm {
-    width: 5rem;
+    width: 4rem;
     height: auto; }
+    @media only screen and (min-width: 600px) {
+      .logo-sm {
+        display: none; } }
   .logo-big {
     display: none; }
+    @media only screen and (min-width: 600px) {
+      .logo-big {
+        display: block;
+        height: 4.5rem; } }
 
 .header-box {
   width: 100%;
@@ -119,13 +209,14 @@ h6 {
   justify-content: space-between; }
   .header-box__banner {
     width: 100%;
+    height: min-content;
     display: grid;
-    grid-template-columns: minmax(20%, 40%) minmax(40%, 60%);
+    grid-template-columns: 1fr minmax(16rem, 24rem);
     grid-template-rows: 1fr; }
 
 .menu {
   display: grid;
-  grid-template-columns: 72% 28%;
+  grid-template-columns: 80% 120px;
   grid-template-rows: 1fr;
   /*******************************************************
   ************* Hamburger menu and nested drop-down menus
@@ -136,21 +227,35 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding-right: 2rem;
     font-size: 2.4rem;
     font-family: "Alegreya", serif; }
+    @media only screen and (min-width: 600px) {
+      .menu__startHere {
+        padding-right: 3rem; } }
+    @media only screen and (min-width: 900px) {
+      .menu__startHere {
+        padding-right: 4rem; } }
+    @media only screen and (min-width: 1500px) {
+      .menu__startHere {
+        padding-right: 5.5rem; } }
   .menu__hamburger {
     grid-column: 2 / 3;
     grid-row: 1/ 2;
     width: 4rem;
     height: 4rem;
     position: fixed;
-    right: 4%;
-    top: 2.3%; }
+    right: 3%;
+    top: 1.3rem; }
+    @media only screen and (min-width: 600px) {
+      .menu__hamburger {
+        right: 2.6%;
+        top: 1.5rem; } }
     .menu__hamburger--toggle {
       display: block;
       margin: 0;
-      width: 4.5rem;
-      height: 4.5rem;
+      width: 4rem;
+      height: 4rem;
       position: absolute;
       top: 0;
       right: 0;
@@ -159,12 +264,12 @@ h6 {
       z-index: 20; }
     .menu__hamburger--line {
       display: block;
-      margin-bottom: 0.5rem;
-      width: 3rem;
+      margin-bottom: 0.4rem;
+      width: 2.5rem;
       height: 0.4rem;
       position: relative;
-      top: 0.5rem;
-      background-color: #383838;
+      top: 0.7rem;
+      background-color: #fcfcfc;
       transform-origin: 4px 0;
       transition: all 0.3s ease-in-out;
       border-radius: 3px; }
@@ -187,8 +292,8 @@ h6 {
       font-family: "Alegreya", serif;
       margin-top: -0.7rem;
       padding: 0.5rem;
-      width: 100vw;
-      height: 100vh;
+      width: 110vw;
+      height: 110vh;
       background: rgba(9, 115, 146, 0.9);
       position: absolute;
       top: 0;
@@ -209,6 +314,8 @@ h6 {
         .menu__hamburger--list-item a:hover {
           background-color: #83b4b3; }
     .menu__hamburger--toggle:checked ~ .menu__hamburger--list {
-      opacity: 1; }
+      opacity: 1;
+      margin-right: -2rem;
+      margin-top: -3rem; }
 
 /*# sourceMappingURL=style.css.map */

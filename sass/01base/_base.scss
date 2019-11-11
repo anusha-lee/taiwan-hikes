@@ -35,7 +35,6 @@ main {
 footer {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
-  border: 2px solid yellow;
 }
 
 .main,
@@ -48,15 +47,19 @@ li {
   list-style: none;
 }
 
-a {
+a:link {
+  color: #383838; // $color-deep-blue-grey
   text-decoration: none;
+}
+a:visited {
+  color: #d55534;
 }
 
 .container {
   margin: 0 auto;
 }
 
-// ::selection {
-//   background: $color-teal;
-//   color: $color-white;
-// }
+::selection {
+  background-color: #d55534; // $color-orangered
+  color: #fff0ce; // $color-white
+}
