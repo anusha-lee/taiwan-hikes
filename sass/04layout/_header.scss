@@ -4,22 +4,28 @@
   height: auto;
 
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: minmax(15%, auto) minmax(auto, 80%);
+  grid-template-columns: minmax(auto, 60%) minmax(auto, 40%); //70% 30%;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .header__background-img-box {
-  background-image: url("../img/header-background-large.jpg");
+  // background-image: linear-gradient(
+  //     to bottom,
+  //     $color-white,
+  //     rgba($color-white, 0.1)
+  //   ),
+  //   url("../img/header-background2.jpg");
+  background-image: url("../img/header-background3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 65% 25%;
   position: relative;
 
   margin: 0;
   width: 100vw;
   height: 70vh;
 
-  grid-column: 1 / 2;
+  grid-column: 1 / 3;
   grid-row: 1/ 3;
 
   display: flex;
@@ -35,18 +41,22 @@
   }
 
   &--title {
-    font-size: 6rem;
+    font-size: $font-size-xl;
     mix-blend-mode: overlay;
-    // background: linear-gradient(to bottom, $color-deep-blue-grey, $color-white);
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
-    transform: scale(0.7, 1.7);
-    //-webkit-text-stroke: 0.1rem $color-base-blue;
-    text-shadow: 0.1rem 0.1rem 0.1rem $color-white;
+    transform: scale(0.8, 2);
+    text-shadow: 0.1rem 0.1rem 0.1rem $color-base-blue;
+    color: rgba($color-white, 0.9);
   }
 }
 
 .logo {
+  padding: 1rem;
+
+  &-sm {
+    width: 5rem;
+    height: auto;
+  }
+
   &-big {
     display: none;
   }
@@ -54,40 +64,55 @@
 
 .header-box {
   width: 100%;
-  background-color: rgba($color-white, 0.7);
+  height: min-content;
+
+  // Linear gradient background is used for scrolling down
+  // background: linear-gradient(
+  //   to bottom,
+  //   rgba($color-white, 1),
+  //   rgba($color-white, 0)
+  // );
   z-index: 10;
-  grid-column: 1 / 2;
+  grid-column: 1 / 3;
   grid-row: 1/ 2;
   justify-content: space-between;
 
   &__banner {
     width: 100%;
     display: grid;
-    grid-template-columns: minmax(20%, 30%) minmax(50%, 70%);
+    grid-template-columns: minmax(20%, 40%) minmax(40%, 60%);
     grid-template-rows: 1fr;
 
-    &--logo {
-      border: 2px solid red;
-    }
+    // &--logo {
+    //   border: 2px solid red;
+    // }
 
-    &--menu {
-      border: 2px solid greenyellow;
-    }
+    // &--menu {
+    //   border: 2px solid greenyellow;
+    // }
   }
 }
 
 .menu {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 72% 28%;
   grid-template-rows: 1fr;
 
   &__startHere {
     grid-column: 1 / 2;
     grid-row: 1/ 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    font-size: $font-size-sm;
+    font-family: $font-title;
   }
 
-  // Hamburger and nested drop-down menus
-
+  /*******************************************************
+  ************* Hamburger menu and nested drop-down menus
+  ********************************************************/
   // .line-long {
   //   width: 3rem;
   //   left: 1rem;
@@ -101,12 +126,13 @@
     grid-column: 2 / 3;
     grid-row: 1/ 2;
 
-    width: 4.5rem;
-    height: 4.5rem;
-    // position: fixed;
-    position: relative;
-    right: 0.3rem;
-    top: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    // position: relative;
+
+    right: 4%;
+    top: 2.3%;
 
     &--toggle {
       display: block;
@@ -159,28 +185,42 @@
     }
 
     &--list {
-      padding: 0;
-      width: 50vw;
-      height: auto;
-      border: 2px solid blueviolet;
-      //   background: yellow;
+      font-size: $font-size-sm;
+      font-family: $font-title;
+      margin-top: -0.7rem;
+      padding: 0.5rem;
+      width: 100vw;
+      height: 100vh;
 
+      background: rgba($color-base-blue, 0.9);
       position: absolute;
       top: 0;
-      left: 0;
-      //   opacity: 0;
-      //   transition: all 0.5s ease-in-out;
+      right: 0;
+      opacity: 0; // change back to 0 later
+      transition: all 0.5s ease-in-out;
 
       &-item {
+        margin: 2rem auto;
+        padding: 2rem;
+
         & a {
+          display: inline-block;
           width: 100%;
           height: 100%;
-          display: inline-block;
-          padding: 1rem;
-          text-align: left;
-          border: 2px solid orange;
+          padding: 2rem 1rem;
+          color: $color-white;
+
+          text-align: center;
+          transition: all 0.3s ease-in-out;
+        }
+        & a:hover {
+          background-color: $color-blue-grey;
         }
       }
+    }
+
+    &--toggle:checked ~ &--list {
+      opacity: 1;
     }
   }
 }
