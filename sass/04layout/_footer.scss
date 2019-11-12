@@ -6,7 +6,7 @@ footer {
 
 .footer {
   width: 100%;
-  height: 50vh;
+  height: auto;
 
   display: grid;
   grid-template-columns: 1fr;
@@ -20,22 +20,54 @@ footer {
     grid-row: 1 / 2;
 
     &--img {
-      width: 100vw;
+      width: 100%;
       height: 70vh;
       background-image: url("../img/footer-img.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
     }
+
+    &--box {
+      width: 100%;
+      height: 20vh;
+      background-color: $color-blue-grey;
+    }
   }
 
   &__socialMedia {
+    width: 100%;
+    height: 20vh;
+    background-color: $color-base-blue;
+
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+
+    &--box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & a {
+        display: inline-block;
+        padding: 1rem;
+      }
+    }
   }
 
   &__copyright {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
+  }
+}
+
+.subscribe {
+  &__title {
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: $font-title;
+    font-size: $font-size-m;
+    text-align: center;
+    mix-blend-mode: overlay;
   }
 }
