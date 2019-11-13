@@ -11,23 +11,7 @@ html {
 body {
   box-sizing: border-box;
   background-color: #fcfcfc;
-  font-weight: 400;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 60vh minimax(60rem, auto) minimax(min-content, auto); }
-
-header {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2; }
-
-main {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-  border: 2px solid salmon; }
-
-footer {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4; }
+  font-weight: 400; }
 
 .main,
 .footer {
@@ -104,12 +88,10 @@ how to apply:
 ******************************************/
 footer {
   margin: 0 auto;
-  width: 100%;
-  height: auto; }
+  width: 100%; }
 
 .footer {
   width: 100%;
-  height: auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, minmax(min-content, auto)); }
@@ -127,14 +109,25 @@ footer {
       background-position: center; }
     .footer__subscribe--box {
       width: 100%;
-      height: 20vh;
       background-color: #83b4b3; }
   .footer__socialMedia {
     width: 100%;
     height: 20vh;
     background-color: #097392;
     grid-column: 1 / 2;
-    grid-row: 2 / 3; }
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .footer__socialMedia h4 {
+      margin: 0 auto;
+      padding: 1rem;
+      font-family: "Alegreya", serif;
+      font-size: 2.4rem;
+      text-align: center;
+      color: #fcfcfc;
+      text-shadow: 0.1rem 0.1rem 0.1rem #383838; }
     .footer__socialMedia--box {
       display: flex;
       align-items: center;
@@ -150,16 +143,26 @@ footer {
     font-size: 1.2rem;
     text-align: center; }
 
+::placeholder {
+  color: #097392;
+  font-size: 1.2rem; }
+
 .subscribeInput {
+  margin: 0 auto;
+  padding: 2rem 1rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, minmax(max-content, auto)); }
+  grid-template-rows: repeat(2, auto); }
   .subscribeInput__form {
+    margin: 0 auto;
+    padding: 1rem 0 2rem;
+    width: 90%;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     display: grid;
-    grid-column: 3fr 1fr;
-    grid-row: 8rem 15rem;
+    grid-template-columns: minmax(min-content, 82%) minmax(10%, 14rem);
+    grid-template-rows: auto minmax(4vh, 6vh);
+    justify-content: space-between;
     grid-gap: 0.5rem; }
     .subscribeInput__form--label {
       margin: 0 auto;
@@ -173,17 +176,30 @@ footer {
       grid-row: 1 / 2; }
     .subscribeInput__form--email {
       width: 100%;
-      height: 2rem;
+      height: 4rem;
+      border: none;
       grid-column: 1 / 2;
       grid-row: 2 / 3; }
     .subscribeInput__form--submit {
-      width: 3rem;
-      height: 2rem;
-      background-color: #de785e;
+      width: 100%;
+      height: 4rem;
+      color: #fcfcfc;
+      font-size: 1.2rem;
+      font-family: "Alegreya", serif;
+      border-radius: 20px;
+      background: #d55534;
       border: none;
+      cursor: pointer;
       grid-column: 2 / 3;
       grid-row: 2 / 3; }
-  .subscribeInput__text {
+  .subscribeInput__agree {
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: inline-block;
+    width: 90%;
+    height: auto;
+    color: #383838;
+    font-size: 1.2rem;
     grid-column: 1 / 2;
     grid-row: 2 / 3; }
 
