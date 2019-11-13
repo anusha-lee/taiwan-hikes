@@ -183,11 +183,18 @@
       <div class="footer">
         <div class="footer__subscribe">
           <div class="footer__subscribe--img"></div>
-          <div class="footer__subscribe--box subscribe">
-            <h3 class="subscribe__title">Receive update!</h3>
-            <input type="email" class="subscribe__email" inputmode="email" />
-            <button class="subscribe__btn">Subscribe!</button>
-            <p class="subscribe__text">By signing up, you agree...</p>
+          <div class="footer__subscribe--box subscribeInput">
+            <form action="#" method="post" class="subscribeInput__form">
+                <label class="subscribeInput__form--label">Receive update!</label>
+                <input
+                  type="email"
+                  class="subscribeInput__form--email"
+                  inputmode="email"
+                  placeholder="Your email"
+                />
+                <input type="submit" class="subscribeInput__submit" placeholder="Subscribe!"" />
+            </form>             
+            <p class="subscribeInput__text">By signing up, you agree to the <a href="#" target="_blank">Terms of Services</a></a></p>
           </div>
         </div>
 
@@ -215,11 +222,7 @@
         <div class="footer__copyright">
           &#9400;2019 Taiwan Hikes. All Rights Reserved.
           <div>
-            Icons made by
-            <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
-              >Freepik</a
-            >
-            from
+            Icons from
             <a href="https://www.flaticon.com/" title="Flaticon"
               >www.flaticon.com</a
             >
