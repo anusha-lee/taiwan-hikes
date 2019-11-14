@@ -192,6 +192,7 @@
 
     right: 3%;
     top: 1.3rem;
+    transition: all 0.5s ease-in-out;
 
     @include responsive(tab) {
       right: 2.6%;
@@ -260,8 +261,9 @@
       position: absolute;
       top: 0;
       right: 0;
-      opacity: 0; // change back to 0 later
-      transition: all 0.5s ease-in-out;
+      //opacity: 0; // change back to 0 later
+      display: none;
+      transition: all 0.5s ease-in-out; // not working. fix it later
 
       &-item {
         margin: 2rem auto;
@@ -275,7 +277,7 @@
           color: $color-white;
 
           text-align: center;
-          transition: all 0.3s ease-in-out;
+          transition: all 0.5s ease-in-out;
         }
         & a:hover {
           background-color: $color-blue-grey;
@@ -285,7 +287,8 @@
     }
 
     &--toggle:checked ~ &--list {
-      opacity: 1;
+      //opacity: 1;
+      display: block;
       margin-right: -2rem;
       margin-top: -3rem;
     }
