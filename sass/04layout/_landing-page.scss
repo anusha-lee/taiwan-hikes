@@ -1,0 +1,35 @@
+.home-7Reasons {
+  margin: 0 auto;
+
+  width: 100%;
+  height: auto;
+  //background-color: coral;
+}
+
+.sevenReasons {
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  width: 90%;
+  border: 2px solid snow;
+  text-align: center;
+
+  @include flex-center;
+  flex-direction: column;
+
+  &__intro {
+    padding: 1.5rem 0.5rem;
+    font-size: $font-size-sm;
+  }
+  &__title {
+    display: inline-block;
+    padding: 1.5rem 0.5rem;
+    font-size: $font-size-m;
+  }
+  &__text {
+    padding: 1.5rem 0.5rem;
+    font-size: $font-size-xs;
+  }
+  &__btn {
+    padding: 1.5rem 0.5rem;
+  }
+}

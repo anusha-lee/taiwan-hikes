@@ -36,20 +36,18 @@ footer {
 
   &__socialMedia {
     width: 100%;
-    height: 20vh;
+    min-height: 22vh;
     background-color: $color-base-blue;
 
     grid-column: 1 / 2;
     grid-row: 2 / 3;
 
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
     & h4 {
       margin: 0 auto;
-      padding: 1rem;
+      padding: 3rem 1rem 1rem;
       font-family: $font-title;
       font-size: $font-size-sm;
       text-align: center;
@@ -58,16 +56,18 @@ footer {
     }
 
     &--box {
+      padding: 0rem 0 3rem;
       display: flex;
       align-items: center;
       justify-content: center;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
 
       & a {
         display: inline-block;
         padding: 1rem;
-        transition: all 0.3s ease-in-out;
-
-        & a:hover {
+        &:hover {
+          -webkit-transform: translateY(-0.5rem);
           transform: translateY(-0.5rem);
         }
       }
@@ -116,14 +116,14 @@ footer {
   grid-template-rows: repeat(2, auto); //repeat(2, minmax(max-content, auto));
   &__form {
     margin: 0 auto;
-    padding: 1rem 0 2rem;
+    padding: 1rem 0;
     width: 90%;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 
     display: grid;
     grid-template-columns: minmax(min-content, 82%) minmax(10%, 14rem); //4fr 1fr;
-    grid-template-rows: auto minmax(4vh, 6vh);
+    grid-template-rows: auto minmax(3vh, 6vh);
     justify-content: space-between;
     grid-gap: 0.5rem;
 
@@ -151,7 +151,7 @@ footer {
       grid-row: 2 / 3;
     }
     & input[type="email"]:focus {
-      border: 0.22rem solid $color-base-blue;
+      border: 0.2rem solid $color-base-blue;
     }
     & input[type="submit"] {
       width: 100%;
@@ -170,10 +170,12 @@ footer {
     }
 
     & input[type="submit"]:hover {
-      transform: scalse(1.1);
-
       background: complement($color-orangered);
+      transform: translateY(-0.2rem);
+      box-shadow: 0.2rem 0.1rem 0.2rem $color-deep-blue-grey;
+      font-size: 1.5rem;
     }
+
     // & input[type="submit"]:active {
     // }
     // & input[type="submit"]:visited {
@@ -181,7 +183,7 @@ footer {
   }
   &__agree {
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 0 0 1.5rem;
     display: inline-block;
     width: 90%;
     height: auto;
