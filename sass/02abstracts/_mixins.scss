@@ -55,3 +55,21 @@ how to apply:
   align-items: center;
   justify-content: center;
 }
+
+@mixin btn-hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0.4rem 0.4rem 0.6rem lighten($color-deep-blue-grey, 10%);
+}
+
+@mixin btn-active {
+  transform: translateY(-0.2rem);
+  box-shadow: 0.2rem 0.2rem 0.3rem darken($color-deep-blue-grey, 10%);
+}
+
+// @mixin link-hover {
+
+// }
+
+// @mixin link-active {
+
+// }

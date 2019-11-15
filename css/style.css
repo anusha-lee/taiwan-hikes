@@ -22,11 +22,7 @@ li {
   list-style: none; }
 
 a:link {
-  color: #383838;
   text-decoration: none; }
-
-a:visited {
-  color: #d55534; }
 
 .container {
   margin: 0 auto; }
@@ -433,16 +429,40 @@ footer {
   justify-content: center;
   flex-direction: column; }
   .sevenReasons__intro {
-    padding: 1.5rem 0.5rem;
-    font-size: 2.6rem; }
+    padding: 3rem 0.5rem;
+    font-size: 2.6rem;
+    font-family: "Alegreya", serif;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    line-height: 1.4; }
   .sevenReasons__title {
     display: inline-block;
     padding: 1.5rem 0.5rem;
-    font-size: 3.8rem; }
+    font-size: 3.8rem;
+    color: #097392;
+    line-height: 1.2; }
   .sevenReasons__text {
     padding: 1.5rem 0.5rem;
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    line-height: 2; }
   .sevenReasons__btn {
     padding: 1.5rem 0.5rem; }
+    .sevenReasons__btn--explore {
+      display: block;
+      width: 16rem;
+      height: 4rem;
+      background-color: #d55534;
+      color: #fcfcfc;
+      border-radius: 20px;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0.2rem 0.2rem 0.4rem #858585; }
+    .sevenReasons__btn--explore:hover {
+      transform: translateY(-0.5rem);
+      box-shadow: 0.4rem 0.4rem 0.6rem #525252;
+      background-color: #d96749; }
+    .sevenReasons__btn--explore:active {
+      transform: translateY(-0.2rem);
+      box-shadow: 0.2rem 0.2rem 0.3rem #1f1f1f;
+      background-color: #c64929; }
 
 /*# sourceMappingURL=style.css.map */

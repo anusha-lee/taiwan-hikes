@@ -17,19 +17,47 @@
   flex-direction: column;
 
   &__intro {
-    padding: 1.5rem 0.5rem;
+    padding: 3rem 0.5rem;
     font-size: $font-size-sm;
+    font-family: $font-title;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    line-height: 1.4;
   }
   &__title {
     display: inline-block;
     padding: 1.5rem 0.5rem;
     font-size: $font-size-m;
+    color: $color-base-blue;
+    line-height: 1.2;
+    //text-shadow: 0.1rem 0.1rem 0.1rem lighten($color-deep-blue-grey, 40%);
   }
   &__text {
     padding: 1.5rem 0.5rem;
     font-size: $font-size-xs;
+    line-height: 2;
   }
   &__btn {
     padding: 1.5rem 0.5rem;
+
+    &--explore {
+      display: block;
+      width: 16rem;
+      height: 4rem;
+      background-color: $color-orangered;
+      color: $color-white;
+      border-radius: 20px;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0.2rem 0.2rem 0.4rem lighten($color-deep-blue-grey, 30%);
+    }
+
+    &--explore:hover {
+      @include btn-hover;
+      background-color: lighten($color-orangered, 5%);
+    }
+    &--explore:active {
+      @include btn-active;
+      background-color: darken($color-orangered, 5%);
+    }
   }
 }
