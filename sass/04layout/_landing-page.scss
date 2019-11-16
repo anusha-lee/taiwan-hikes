@@ -3,11 +3,10 @@
 
   width: 100%;
   height: auto;
-  //background-color: coral;
 }
 
 .sevenReasons {
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: 3rem 1rem;
   width: 90%;
   border: 2px solid snow;
@@ -16,8 +15,21 @@
   @include flex-center;
   flex-direction: column;
 
+  @include responsive(tab) {
+    width: 80%;
+  }
+  @include responsive(sm-desktop) {
+    width: 70%;
+  }
+  @include responsive(normal-desktop) {
+    width: 60%;
+  }
+  @include responsive(xl-desktop) {
+    width: 50%;
+  }
+
   &__intro {
-    padding: 3rem 0.5rem;
+    padding: 3rem 1.5rem;
     font-size: $font-size-sm;
     font-family: $font-title;
     animation-duration: 3s;
@@ -26,14 +38,14 @@
   }
   &__title {
     display: inline-block;
-    padding: 1.5rem 0.5rem;
+    padding: 1.5rem;
     font-size: $font-size-m;
     color: $color-base-blue;
     line-height: 1.2;
-    //text-shadow: 0.1rem 0.1rem 0.1rem lighten($color-deep-blue-grey, 40%);
   }
   &__text {
-    padding: 1.5rem 0.5rem;
+    display: inline-block;
+    padding: 1.5rem;
     font-size: $font-size-xs;
     line-height: 2;
   }
@@ -41,11 +53,17 @@
     padding: 1.5rem 0.5rem;
 
     &--explore {
-      display: block;
+      //display: block;
+      @include flex-center;
       width: 16rem;
       height: 4rem;
-      background-color: $color-orangered;
+      background: linear-gradient(
+        $color-base-blue,
+        lighten($color-deep-blue-grey, 10%)
+      );
       color: $color-white;
+      font-size: $font-size-s;
+      font-family: $font-title;
       border-radius: 20px;
       transition: all 0.3s ease-in-out;
       box-shadow: 0.2rem 0.2rem 0.4rem lighten($color-deep-blue-grey, 30%);

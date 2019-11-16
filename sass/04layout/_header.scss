@@ -2,23 +2,14 @@
   margin: 0 auto;
   width: 100%;
   height: auto;
+  box-shadow: 0 0.4rem 1rem lighten($color-deep-blue-grey, 30%);
 
   display: grid;
   grid-template-columns: minmax(auto, 60%) minmax(auto, 40%); //70% 30%;
   grid-template-rows: repeat(2, 1fr);
 }
 
-// @media only screen and (min-width: $bp-sm) {
-//   border: 2px solid blue;
-// }
-
 .header__background-img-box {
-  // background-image: linear-gradient(
-  //     to bottom,
-  //     $color-white,
-  //     rgba($color-white, 0.1)
-  //   ),
-  //   url("../img/header-background2.jpg");
   background-image: url("../img/header-background3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -33,6 +24,7 @@
   grid-row: 1/ 3;
 
   @include flex-center;
+  flex-direction: column;
 
   @include responsive(tab) {
     background-position: center;
@@ -58,6 +50,7 @@
   }
 
   &--title {
+    margin-top: -2.2rem;
     font-size: $font-size-xl;
     mix-blend-mode: overlay;
     transform: scale(0.8, 2);
@@ -69,10 +62,40 @@
     }
     @include responsive(normal-desktop) {
       transform: scale(1.2, 2.2);
+      font-size: $font-size-xxl;
     }
     @include responsive(xl-desktop) {
       transform: scale(1.3, 2.5);
     }
+  }
+
+  &--title2 {
+    margin-top: -2.4rem;
+    display: inline-block;
+    width: 90%;
+    font-size: $font-size-s;
+    text-align: center;
+    background: linear-gradient($color-base-blue, lighten($color-black, 78%));
+    // background: linear-gradient($color-base-blue, $color-deep-blue-grey);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    //mix-blend-mode: overlay;
+    transform: scale(0.8, 1.4);
+    //text-shadow: 0.1rem 0.1rem 0.1rem $color-base-blue;
+    // color: $color-base-blue;
+
+    @include responsive(tab) {
+      font-size: $font-size-sm;
+    }
+    @include responsive(normal-desktop) {
+      font-size: $font-size-m;
+      background: linear-gradient($color-base-blue, lighten($color-black, 60%));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    // @include responsive(xl-desktop) {
+    //   transform: scale(1.3, 2.5);
+    // }
   }
 }
 

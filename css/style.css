@@ -54,6 +54,11 @@ h5,
 h6 {
   font-family: "Alegreya", serif; }
 
+.gradient-text {
+  background: linear-gradient(#fff0ce, #08607a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
 /*******************************************
 ****** Breakpoints ******
 tab: 600px;
@@ -77,8 +82,7 @@ how to apply:
     
   }
   @include responsive(xl-desktop) {
-    
-    
+        
   }
 
 ******************************************/
@@ -125,6 +129,7 @@ footer {
       color: #fcfcfc;
       text-shadow: 0.1rem 0.1rem 0.1rem #383838; }
     .footer__socialMedia--box {
+      min-height: min-content;
       padding: 0rem 0 3rem;
       display: flex;
       align-items: center;
@@ -162,20 +167,42 @@ footer {
 .subscribeInput {
   margin: 0 auto;
   padding: 2rem 1rem;
+  width: 100%;
+  min-height: 30vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto); }
+  @media only screen and (min-width: 600px) {
+    .subscribeInput {
+      width: 80%;
+      height: 40vh; } }
+  @media only screen and (min-width: 900px) {
+    .subscribeInput {
+      width: 70%;
+      height: 45vh; } }
+  @media only screen and (min-width: 1200px) {
+    .subscribeInput {
+      width: 60%; } }
+  @media only screen and (min-width: 1500px) {
+    .subscribeInput {
+      width: 50%; } }
   .subscribeInput__form {
     margin: 0 auto;
     padding: 1rem 0;
     width: 90%;
+    height: auto;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     display: grid;
     grid-template-columns: minmax(min-content, 82%) minmax(10%, 14rem);
-    grid-template-rows: auto minmax(3vh, 6vh);
+    grid-template-rows: auto repeat(2, minmax(6vh, 10vh));
     justify-content: space-between;
-    grid-gap: 0.5rem; }
+    grid-gap: 0.5rem;
+    justify-items: center;
+    align-items: center; }
+    @media only screen and (min-width: 600px) {
+      .subscribeInput__form {
+        grid-template-rows: auto minmax(4vh, 6vh); } }
     .subscribeInput__form--label {
       margin: 0 auto;
       padding: 1rem;
@@ -186,6 +213,10 @@ footer {
       text-shadow: 0.1rem 0.1rem 0.1rem #fcfcfc;
       grid-column: 1 / 3;
       grid-row: 1 / 2; }
+      @media only screen and (min-width: 600px) {
+        .subscribeInput__form--label {
+          grid-column: 1 / 3;
+          grid-row: 1 / 2; } }
     .subscribeInput__form input[type="email"] {
       width: 100%;
       height: 4rem;
@@ -193,28 +224,39 @@ footer {
       border-radius: 5px;
       border: none;
       transition: all 0.5s ease-in-out;
-      grid-column: 1 / 2;
+      grid-column: 1 / 3;
       grid-row: 2 / 3; }
+      @media only screen and (min-width: 600px) {
+        .subscribeInput__form input[type="email"] {
+          grid-column: 1 / 2;
+          grid-row: 2 / 3; } }
     .subscribeInput__form input[type="email"]:focus {
       border: 0.2rem solid #097392; }
     .subscribeInput__form input[type="submit"] {
-      width: 100%;
+      width: 16rem;
       height: 4rem;
       color: #fcfcfc;
-      font-size: 1.4rem;
+      font-size: 2rem;
       font-family: "Alegreya", serif;
       border-radius: 20px;
-      background: #d55534;
+      background: linear-gradient(#d55534, #333333);
+      box-shadow: 0.2rem 0.2rem 0.4rem #858585;
       border: none;
       cursor: pointer;
-      grid-column: 2 / 3;
-      grid-row: 2 / 3;
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
       transition: all 0.5s ease-in-out; }
+      @media only screen and (min-width: 600px) {
+        .subscribeInput__form input[type="submit"] {
+          width: 90%;
+          grid-column: 2 / 3;
+          grid-row: 2 / 3; } }
     .subscribeInput__form input[type="submit"]:hover {
-      background: #34b4d5;
+      transform: translateY(-0.5rem);
+      box-shadow: 0.4rem 0.4rem 0.6rem #525252; }
+    .subscribeInput__form input[type="submit"]:active {
       transform: translateY(-0.2rem);
-      box-shadow: 0.2rem 0.1rem 0.2rem #383838;
-      font-size: 1.5rem; }
+      box-shadow: 0.2rem 0.2rem 0.3rem #1f1f1f; }
   .subscribeInput__agree {
     margin: 0 auto;
     padding: 0 0 1.5rem;
@@ -230,6 +272,7 @@ footer {
   margin: 0 auto;
   width: 100%;
   height: auto;
+  box-shadow: 0 0.4rem 1rem #858585;
   display: grid;
   grid-template-columns: minmax(auto, 60%) minmax(auto, 40%);
   grid-template-rows: repeat(2, 1fr); }
@@ -247,7 +290,8 @@ footer {
   grid-row: 1/ 3;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column; }
   @media only screen and (min-width: 600px) {
     .header__background-img-box {
       background-position: center;
@@ -263,6 +307,7 @@ footer {
     width: 100%;
     height: auto; }
   .header__background-img-box--title {
+    margin-top: -2.2rem;
     font-size: 6.2rem;
     mix-blend-mode: overlay;
     transform: scale(0.8, 2);
@@ -273,10 +318,30 @@ footer {
         transform: scale(1, 1.6); } }
     @media only screen and (min-width: 1200px) {
       .header__background-img-box--title {
-        transform: scale(1.2, 2.2); } }
+        transform: scale(1.2, 2.2);
+        font-size: 7.2rem; } }
     @media only screen and (min-width: 1500px) {
       .header__background-img-box--title {
         transform: scale(1.3, 2.5); } }
+  .header__background-img-box--title2 {
+    margin-top: -2.4rem;
+    display: inline-block;
+    width: 90%;
+    font-size: 2rem;
+    text-align: center;
+    background: linear-gradient(#097392, #c7c7c7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(0.8, 1.4); }
+    @media only screen and (min-width: 600px) {
+      .header__background-img-box--title2 {
+        font-size: 2.6rem; } }
+    @media only screen and (min-width: 1200px) {
+      .header__background-img-box--title2 {
+        font-size: 3.8rem;
+        background: linear-gradient(#097392, #999999);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; } }
 
 .logo {
   padding: 1rem 1rem 1rem 2.5rem;
@@ -419,7 +484,7 @@ footer {
   height: auto; }
 
 .sevenReasons {
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: 3rem 1rem;
   width: 90%;
   border: 2px solid snow;
@@ -428,8 +493,20 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column; }
+  @media only screen and (min-width: 600px) {
+    .sevenReasons {
+      width: 80%; } }
+  @media only screen and (min-width: 900px) {
+    .sevenReasons {
+      width: 70%; } }
+  @media only screen and (min-width: 1200px) {
+    .sevenReasons {
+      width: 60%; } }
+  @media only screen and (min-width: 1500px) {
+    .sevenReasons {
+      width: 50%; } }
   .sevenReasons__intro {
-    padding: 3rem 0.5rem;
+    padding: 3rem 1.5rem;
     font-size: 2.6rem;
     font-family: "Alegreya", serif;
     animation-duration: 3s;
@@ -437,22 +514,27 @@ footer {
     line-height: 1.4; }
   .sevenReasons__title {
     display: inline-block;
-    padding: 1.5rem 0.5rem;
+    padding: 1.5rem;
     font-size: 3.8rem;
     color: #097392;
     line-height: 1.2; }
   .sevenReasons__text {
-    padding: 1.5rem 0.5rem;
+    display: inline-block;
+    padding: 1.5rem;
     font-size: 1.4rem;
     line-height: 2; }
   .sevenReasons__btn {
     padding: 1.5rem 0.5rem; }
     .sevenReasons__btn--explore {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 16rem;
       height: 4rem;
-      background-color: #d55534;
+      background: linear-gradient(#097392, #525252);
       color: #fcfcfc;
+      font-size: 2rem;
+      font-family: "Alegreya", serif;
       border-radius: 20px;
       transition: all 0.3s ease-in-out;
       box-shadow: 0.2rem 0.2rem 0.4rem #858585; }

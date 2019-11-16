@@ -21,8 +21,7 @@ how to apply:
     
   }
   @include responsive(xl-desktop) {
-    
-    
+        
   }
 
 ******************************************/
@@ -56,6 +55,7 @@ how to apply:
   justify-content: center;
 }
 
+// button hover effects
 @mixin btn-hover {
   transform: translateY(-0.5rem);
   box-shadow: 0.4rem 0.4rem 0.6rem lighten($color-deep-blue-grey, 10%);
@@ -66,10 +66,15 @@ how to apply:
   box-shadow: 0.2rem 0.2rem 0.3rem darken($color-deep-blue-grey, 10%);
 }
 
+// links, a tags hover effects
 // @mixin link-hover {
-
+//   color: ;
 // }
 
 // @mixin link-active {
+
+// }
+
+// @mixin link-visited {
 
 // }
