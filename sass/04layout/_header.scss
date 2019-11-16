@@ -1,12 +1,16 @@
-.header {
+header {
   margin: 0 auto;
   width: 100%;
   height: auto;
   box-shadow: 0 0.4rem 1rem lighten($color-deep-blue-grey, 30%);
+}
 
+.header {
+  margin: 0 auto;
   display: grid;
   grid-template-columns: minmax(auto, 60%) minmax(auto, 40%); //70% 30%;
   grid-template-rows: repeat(2, 1fr);
+  justify-content: space-around;
 }
 
 .header__background-img-box {
@@ -17,7 +21,7 @@
   position: relative;
 
   margin: 0;
-  width: 100vw;
+  width: 100%;
   height: 70vh;
 
   grid-column: 1 / 3;
@@ -87,7 +91,11 @@
     @include responsive(tab) {
       font-size: $font-size-sm;
     }
+    @include responsive(sm-desktop) {
+      margin-top: -1.8rem;
+    }
     @include responsive(normal-desktop) {
+      margin-top: -1rem;
       font-size: $font-size-m;
       background: linear-gradient($color-base-blue, lighten($color-black, 60%));
       -webkit-background-clip: text;
@@ -100,7 +108,7 @@
 }
 
 .logo {
-  padding: 1rem 1rem 1rem 2.5rem;
+  padding: 1rem 1rem 1rem 1.5rem;
   transition: display 0.3s ease-in-out;
 
   &-sm {
@@ -118,13 +126,16 @@
     display: none;
 
     @include responsive(tab) {
+      margin-left: -1rem;
       display: block;
       height: 4.5rem;
+      padding-left: 0;
     }
   }
 }
 
 .header-box {
+  margin: 0 auto;
   width: 100%;
   height: min-content;
 
@@ -139,11 +150,15 @@
   grid-row: 1/ 2;
   justify-content: space-between;
 
+  @include responsive(tab) {
+    width: 95%;
+  }
+
   &__banner {
     width: 100%;
     height: min-content;
     display: grid;
-    grid-template-columns: 1fr minmax(16rem, 24rem); //minmax(20%, 40%) minmax(40%, 60%);
+    grid-template-columns: 1fr minmax(16rem, 22rem); //minmax(20%, 40%) minmax(40%, 60%);
     grid-template-rows: 1fr;
 
     // &--logo {
@@ -158,35 +173,32 @@
 
 .menu {
   display: grid;
-  grid-template-columns: 80% 120px;
+  grid-template-columns: minmax(70%, 80%) 120px;
   grid-template-rows: 1fr;
 
-  // @include responsive(tab) {
-  //   grid-template-columns: 82% 18%;
-  // }
-
-  //minmax(70%, 80%) minmax(20, 30%); //
   &__startHere {
+    color: $color-white;
     grid-column: 1 / 2;
     grid-row: 1/ 2;
 
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-    padding-right: 2rem;
+    @include flex-center;
 
     font-size: $font-size-sm;
     font-family: $font-title;
 
-    @include responsive(tab) {
-      padding-right: 3rem;
-    }
-    @include responsive(sm-desktop) {
-      padding-right: 4rem;
-    }
-    @include responsive(xl-desktop) {
-      padding-right: 5.5rem;
+    // hover effect
+    background-image: linear-gradient(
+      to bottom,
+      transparent 75%,
+      $color-base-blue
+    );
+    background-size: 0% 80%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease-in-out;
+
+    &:hover {
+      background-size: 100% 80%;
+      transform: translateY(-0.2rem);
     }
   }
 

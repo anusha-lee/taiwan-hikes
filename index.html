@@ -24,70 +24,72 @@
   </head>
   <body>
     <body>
-      <header class="header">
-        <div class="header__background-img-box">
-          <!-- <img
-            src="/img/header-background-large.jpg"
-            alt="Mountain background"
-            class="header__background-img-box--img"
-          /> -->
-          <h1 class="header__background-img-box--title">Taiwan Hikes</h1>
-          <h2 class="header__background-img-box--title2">
-            Enjoy free hikes with the locals
-          </h2>
-        </div>
-
-        <div class="header-box">
-          <div class="header-box__banner">
-            <div class="header-box__banner--logo logo">
-              <!-- small logo is for screen on the top-->
-              <img
-                src="/img/logo-s.jpg"
-                alt="Taiwan Hikes logo"
-                class="logo-sm"
-              />
-              <!-- when users scroll down, the header will be fixed 
-                with the large logo on the top-->
-              <img
-                src="/img/logo.jpg"
-                alt="Taiwan Hikes logo"
-                class="logo-big slideInLeft"
-              />
-            </div>
-
-            <nav class="header-box__banner--menu menu">
-              <div class="menu__startHere">
-                <a href="#">Start here</a>
-                <!-- Make a page for Start here with the links of the articles -->
+      <header">
+        <div class="header">
+            <div class="header__background-img-box">
+                <!-- <img
+                  src="/img/header-background-large.jpg"
+                  alt="Mountain background"
+                  class="header__background-img-box--img"
+                /> -->
+                <h1 class="header__background-img-box--title">Taiwan Hikes</h1>
+                <h2 class="header__background-img-box--title2">
+                  Enjoy free hikes with the locals
+                </h2>
               </div>
-              <div class="menu__hamburger">
-                <input type="checkbox" class="menu__hamburger--toggle" />
-                <span class="menu__hamburger--line line-short"></span>
-                <span class="menu__hamburger--line line-long"></span>
-                <span class="menu__hamburger--line line-short"></span>
-                <ul class="menu__hamburger--list">
-                  <li class="menu__hamburger--list-item">
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li class="menu__hamburger--list-item">
-                    <a href="#">About</a>
-                    <!-- Add a nested layer later -->
-                  </li>
-                  <li class="menu__hamburger--list-item">
-                    <a href="#skills">Trips</a>
-                  </li>
-                  <li class="menu__hamburger--list-item">
-                    <a href="#projects">Blog</a>
-                  </li>
-                  <li class="menu__hamburger--list-item">
-                    <a href="blog.html">Resources</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </header>
+
+              <div class="header-box">
+                  <div class="header-box__banner">
+                    <div class="header-box__banner--logo logo">
+                      <!-- small logo is for screen on the top-->
+                      <img
+                        src="/img/logo-s.jpg"
+                        alt="Taiwan Hikes logo"
+                        class="logo-sm"
+                      />
+                      <!-- when users scroll down, the header will be fixed 
+                        with the large logo on the top-->
+                      <img
+                        src="/img/logo.jpg"
+                        alt="Taiwan Hikes logo"
+                        class="logo-big slideInLeft"
+                      />
+                    </div>
+        
+                    <nav class="header-box__banner--menu menu">
+                      <div class="menu__startHere">
+                        <a href="#">Start here</a>
+                        <!-- Make a page for Start here with the links of the articles -->
+                      </div>
+                      <div class="menu__hamburger">
+                        <input type="checkbox" class="menu__hamburger--toggle" />
+                        <span class="menu__hamburger--line line-short"></span>
+                        <span class="menu__hamburger--line line-long"></span>
+                        <span class="menu__hamburger--line line-short"></span>
+                        <ul class="menu__hamburger--list">
+                          <li class="menu__hamburger--list-item">
+                            <a href="index.html">Home</a>
+                          </li>
+                          <li class="menu__hamburger--list-item">
+                            <a href="#">About</a>
+                            <!-- Add a nested layer later -->
+                          </li>
+                          <li class="menu__hamburger--list-item">
+                            <a href="#skills">Trips</a>
+                          </li>
+                          <li class="menu__hamburger--list-item">
+                            <a href="#projects">Blog</a>
+                          </li>
+                          <li class="menu__hamburger--list-item">
+                            <a href="blog.html">Resources</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+        </div>                
+      </header">
 
       <main class="home-container">
         <div class="home-7Reasons">
@@ -118,77 +120,90 @@
         </div>
 
         <div class="home-freeHikes">
-          <div class="home-freeHikes__trips">
-            <h2 class="home-freeHikes__trips--title">Latest Free Hikes</h2>
-            <div class="home-freeHikes__trips--hikes">
-              <div class="hikes">Hike 1</div>
-              <div class="hikes">Hike 2</div>
-              <div class="hikes">Hike 3</div>
-              <div class="hikes">Hike 4</div>
-            </div>
-          </div>
-          <div class="home-freeHikes__btn btn">
-            <button type="button" class="btn-explore" id="freeHikes-btn">
-              Explore
-            </button>
-          </div>
+          <div class="freeHikes">
+              <div class="freeHikes__trips">
+                  <h2 class="freeHikes__trips--title">Latest Free Hikes</h2>
+                  <div class="freeHikes__trips--hikes">
+                    <div class="hikes">Hike 1</div>
+                    <div class="hikes">Hike 2</div>
+                    <div class="hikes">Hike 3</div>
+                    <div class="hikes">Hike 4</div>
+                  </div>
+              </div>
+              
+              <div class="freeHikes__btn sevenReasons__btn">
+                  <a href="#" class="freeHikes__btn--explore sevenReasons__btn--explore">
+                    Explore
+                  </a>
+              </div>
+          </div>          
         </div>
 
         <!-- reference: https://codepen.io/jamy/pen/gbdWGJ?editors=1010 -->
-        <div class="home-testimonials">
-          <h2 class="home-testimonials__title">Testimonial</h2>
-          <div class="home-testimonials__box">
-            <div class="home-testimonials__box--cell cell">
-              <img src="" alt="" class="cell__avatar" />
-              <q class="cell__quote"
-                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aliquam nostrum quo iusto magni, adipisci volupta.</q
-              >
-              <span class="cell__author">Emma S.</span>
-            </div>
-
-            <div class="home-testimonials__box--cell cell">
-              <img src="" alt="" class="cell__avatar" />
-              <q class="cell__quote"
-                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aliquam nostrum quo iusto magni, adipisci volupta.</q
-              >
-              <span class="cell__author">Eric H.</span>
-            </div>
+        <div class="home__testimonials">
+          <div class="testimonials">
+              <h2 class="testimonials__title">Testimonial</h2>
+              <div class="testimonials__box">
+                <div class="testimonials__box--cell cell">
+                  <img src="#" alt="" class="cell__avatar" />
+                  <q class="cell__quote"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquam nostrum quo iusto magni, adipisci volupta.</q
+                  >
+                  <span class="cell__author">Emma S.</span>
+                </div>
+    
+                <div class="testimonials__box--cell cell">
+                  <img src="" alt="" class="cell__avatar" />
+                  <q class="cell__quote"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquam nostrum quo iusto magni, adipisci volupta.</q
+                  >
+                  <span class="cell__author">Eric H.</span>
+                </div>
+              </div>
           </div>
+          
         </div>
 
         <div class="home__sponsors">
-          <h2 class="home__sponsors--title">
-            Taiwan Hikes proudly works with our sponsors
-          </h2>
-          <div class="home__sponsors--box sponsors">
-            <div class="sponsor">
-              <div class="sponsor__name">Company 1</div>
-              <img src="#" alt="Company 1" class="sponsor__img" />
-            </div>
-            <div class="sponsor">
-              <div class="sponsor__name">Company 2</div>
-              <img src="#" alt="Company 2" class="sponsor__img" />
-            </div>
-            <div class="sponsor">
-              <div class="sponsor__name">Company 3</div>
-              <img src="#" alt="Company 3" class="sponsor__img" />
-            </div>
-          </div>
-          <div class="home__sponsors--join">
-            <h3 class="home__sponsors--join-title">
-              Interested in working with us?
-            </h3>
-            <div class="home__sponsors--join-text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Voluptate in laudantium corporis nulla perspiciatis nemo,
-              aspernatur
-            </div>
-            <button class="home__sponsors--join-btn sponsor-btn btn">
-              Contact us
-            </button>
-          </div>
+          <div class="sponsors">
+              <h2 class="sponsors--title">
+                  Taiwan Hikes proudly works with our sponsors
+                </h2>
+                <div class="sponsors--box">
+                  <div class="sponsor">
+                    <div class="sponsor__name">Company 1</div>
+                    <img src="#" alt="Company 1" class="sponsor__img" />
+                  </div>
+                  <div class="sponsor">
+                    <div class="sponsor__name">Company 2</div>
+                    <img src="#" alt="Company 2" class="sponsor__img" />
+                  </div>
+                  <div class="sponsor">
+                    <div class="sponsor__name">Company 3</div>
+                    <img src="#" alt="Company 3" class="sponsor__img" />
+                  </div>
+                </div>
+                <div class="sponsors--join">
+                  <h3 class="home__sponsors--join-title">
+                    Interested in working with us?
+                  </h3>
+                  <div class="sponsors--join-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptate in laudantium corporis nulla perspiciatis nemo,
+                    aspernatur
+                  </div>
+                  <!-- <button class="sponsors--join-btn sponsor-btn btn">
+                    Contact us
+                  </button> -->
+                  <div class="sponsors__btn sevenReasons__btn">
+                      <a href="#" class="sponsors__btn--explore sevenReasons__btn--explore">
+                        Contact us
+                      </a>
+                  </div>
+                </div>
+          </div>          
         </div>
       </main>
     </body>

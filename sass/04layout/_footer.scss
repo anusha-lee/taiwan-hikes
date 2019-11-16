@@ -235,5 +235,13 @@ footer {
     font-size: $font-size-xs;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+
+    & a {
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
