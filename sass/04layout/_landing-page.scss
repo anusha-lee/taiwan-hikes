@@ -104,13 +104,46 @@
   margin: 0 auto;
   width: 100%;
   height: 70vh; // change to auto later;
+  background-image: url(/img/header-background-large.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .freeHikes {
   margin: 0 auto;
   padding: 3rem 1rem;
-  width: 90%;
-  background-color: peachpuff;
+  max-width: 35rem;
+  background-color: lighten($color-tan, 5%);
+
+  @include responsive(tab) {
+  }
+  @include responsive(sm-desktop) {
+  }
+  @include responsive(normal-desktop) {
+  }
+  @include responsive(xl-desktop) {
+  }
+
+  @include flex-center;
+  flex-direction: column;
+
+  &__trips {
+    width: 100%;
+    height: 40vh;
+
+    &--title {
+      font-size: $font-size-m;
+    }
+  }
+
+  &__btn {
+    &--explore {
+      background: linear-gradient(
+        $color-orangered,
+        lighten($color-deep-blue-grey, 10%)
+      );
+    }
+  }
 }
 
 // testimonials section
