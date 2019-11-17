@@ -575,31 +575,41 @@ header {
   margin: 0 auto;
   width: 100%;
   height: 70vh;
+  padding: 1rem;
   background-image: url(/img/header-background-large.JPG);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .freeHikes {
   margin: 0 auto;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   max-width: 35rem;
-  background-color: #fff8e8;
+  background-color: rgba(252, 252, 252, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column; }
   .freeHikes__trips {
     width: 100%;
-    height: 40vh; }
+    min-height: 20vh; }
     .freeHikes__trips--title {
-      font-size: 3.8rem; }
+      font-size: 3.8rem;
+      color: #097392;
+      line-height: 1.2; }
   .freeHikes__btn--explore {
     background: linear-gradient(#d55534, #525252); }
 
 .home__testimonials {
   margin: 0 auto;
   width: 100%;
-  height: 50vh; }
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .testimonials {
   margin: 0 auto;
@@ -610,7 +620,10 @@ header {
 .home__sponsors {
   margin: 0 auto;
   width: 100%;
-  height: 50vh; }
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .sponsors {
   margin: 0 auto;
