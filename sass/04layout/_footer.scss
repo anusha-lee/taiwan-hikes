@@ -100,6 +100,19 @@ footer {
     grid-row: 3 / 4;
     font-size: $font-size-xs;
     text-align: center;
+
+    & div a {
+      transition: all 0.3s ease-in-out;
+
+      &:hover,
+      &:active {
+        @include link-hover-active;
+      }
+
+      &:visited {
+        @include link-visited;
+      }
+    }
   }
 }
 
@@ -239,8 +252,13 @@ footer {
     & a {
       transition: all 0.3s ease-in-out;
 
-      &:hover {
-        text-decoration: underline;
+      &:hover,
+      &:active {
+        @include link-hover-active;
+      }
+
+      &:visited {
+        @include link-visited;
       }
     }
   }

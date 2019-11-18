@@ -67,14 +67,12 @@ how to apply:
 }
 
 // links, a tags hover effects
-// @mixin link-hover {
-//   color: ;
-// }
+@mixin link-hover-active {
+  color: $color-base-blue;
+  font-weight: 600;
+  text-decoration: underline;
+}
 
-// @mixin link-active {
-
-// }
-
-// @mixin link-visited {
-
-// }
+@mixin link-visited {
+  color: $color-orangered;
+}
