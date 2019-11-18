@@ -248,9 +248,9 @@
 }
 
 .slider__nav {
-  margin: 2rem 1rem;
-  width: 1.2rem;
-  height: 1.2rem;
+  margin: 2rem 2.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
   z-index: 10;
   outline: 0.5rem solid $color-base-blue;
   outline-offset: -0.5rem;
@@ -262,6 +262,12 @@
   appearance: none;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+
+  @include responsive(tab) {
+    margin: 2rem 1.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
 }
 
 .slider__nav:checked {

@@ -5,6 +5,7 @@ footer {
 
 .footer {
   width: 100%;
+  height: auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, minmax(min-content, auto));
@@ -113,6 +114,11 @@ footer {
         @include link-visited;
       }
     }
+  }
+
+  &__legal {
+    margin: 0 auto;
+    width: 90%;
   }
 }
 
@@ -258,6 +264,31 @@ footer {
       }
 
       &:visited {
+        @include link-visited;
+      }
+    }
+  }
+}
+
+// footer legal
+.legal {
+  &__box {
+    @include flex-center;
+
+    &--item {
+      display: inline-block;
+      padding: 1rem 1rem 3rem 1rem;
+
+      & a {
+        font-size: 12px;
+        color: lighten($color-black, 80%);
+        transition: all 0.3s ease-in-out;
+      }
+      & a:hover,
+      & a:active {
+        @include link-hover-active;
+      }
+      & a:visited {
         @include link-visited;
       }
     }
