@@ -39,9 +39,7 @@
     display: inline-block;
     padding: 1.5rem;
     font-size: $font-size-m;
-    color: $color-base-blue;
     line-height: 1.2;
-    transition: all 0.3s ease-in-out;
 
     @include responsive(sm-desktop) {
       font-size: $font-size-large;
@@ -50,8 +48,20 @@
       font-size: $font-size-xl;
     }
 
-    &:hover {
+    & a {
+      color: $color-base-blue;
+      line-height: 1.2;
+      transition: all 0.3s ease-in-out;
+    }
+
+    & a:hover,
+    & a:active {
       text-decoration: underline;
+      color: lighten($color-deep-blue-grey, 10%);
+    }
+
+    & a:visited {
+      color: $color-orangered;
     }
   }
   &__text {
