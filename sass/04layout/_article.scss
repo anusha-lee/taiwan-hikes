@@ -1,1 +1,30 @@
 // layout for articles, blog posts
+
+.basic {
+  width: 100%;
+  height: 10vh;
+  border: 2px solid palegreen;
+  font-size: $font-size-xs;
+}
+
+.article {
+  &__intro,
+  &__content {
+    font-size: $font-size-s;
+    line-height: 2;
+  }
+
+  &__title {
+    font-size: $font-size-m;
+    line-height: 1.4;
+    display: inline-block;
+    margin: 1rem auto;
+  }
+
+  &__img-slider {
+    margin: 0;
+    width: 100%;
+    height: 30vh;
+    background-color: paleturquoise;
+  }
+}

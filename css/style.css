@@ -89,6 +89,26 @@ how to apply:
   }
 
 ******************************************/
+.basic {
+  width: 100%;
+  height: 10vh;
+  border: 2px solid palegreen;
+  font-size: 1.4rem; }
+
+.article__intro, .article__content {
+  font-size: 2rem;
+  line-height: 2; }
+.article__title {
+  font-size: 3.8rem;
+  line-height: 1.4;
+  display: inline-block;
+  margin: 1rem auto; }
+.article__img-slider {
+  margin: 0;
+  width: 100%;
+  height: 30vh;
+  background-color: paleturquoise; }
+
 footer {
   margin: 0 auto;
   width: 100%; }
@@ -786,6 +806,27 @@ header {
   padding: 3rem 1rem;
   width: 90%;
   background-color: khaki; }
+
+.seven-container {
+  margin: 0 auto;
+  width: 100%;
+  height: auto; }
+
+.seven {
+  margin: 1rem auto;
+  width: 90%; }
+  @media only screen and (min-width: 600px) {
+    .seven {
+      width: 70%; } }
+  @media only screen and (min-width: 900px) {
+    .seven {
+      width: 60%; } }
+  @media only screen and (min-width: 1200px) {
+    .seven {
+      width: 50%; } }
+  @media only screen and (min-width: 1500px) {
+    .seven {
+      width: 40%; } }
 
 @-webkit-keyframes check {
   50% {
