@@ -448,9 +448,15 @@ header {
     background-size: 0% 80%;
     background-repeat: no-repeat;
     transition: background-size 0.3s ease-in-out; }
+    .menu__startHere {
+      color: #097392;
+      line-height: 1.2;
+      transition: all 0.3s ease-in-out; }
     .menu__startHere:hover {
-      background-size: 100% 80%;
+      background-size: 95% 80%;
       transform: translateY(-0.2rem); }
+    .menu__startHere:visited {
+      color: #d55534; }
   .menu__hamburger {
     grid-column: 2 / 3;
     grid-row: 1/ 2;

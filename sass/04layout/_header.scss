@@ -178,9 +178,17 @@ header {
     background-repeat: no-repeat;
     transition: background-size 0.3s ease-in-out;
 
+    & {
+      color: $color-base-blue;
+      line-height: 1.2;
+      transition: all 0.3s ease-in-out;
+    }
     &:hover {
-      background-size: 100% 80%;
+      background-size: 95% 80%;
       transform: translateY(-0.2rem);
+    }
+    &:visited {
+      color: $color-orangered;
     }
   }
 
