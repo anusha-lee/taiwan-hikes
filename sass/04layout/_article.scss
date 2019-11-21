@@ -1,13 +1,33 @@
 // layout for articles, blog posts
-
-.basic {
-  width: 100%;
-  height: 10vh;
-  border: 2px solid palegreen;
-  font-size: $font-size-xs;
-}
-
 .article {
+  margin: 0 auto;
+  width: 90%;
+  padding: 1rem;
+
+  @include responsive(tab) {
+    width: 80%;
+  }
+  @include responsive(sm-desktop) {
+    width: 70%;
+  }
+  @include responsive(normal-desktop) {
+    width: 60%;
+  }
+  @include responsive(xl-desktop) {
+    width: 50%;
+  }
+
+  /**********************
+  style this part later
+  ***********************/
+  &__basic {
+    width: 100%;
+    height: auto;
+    padding: 2rem 0;
+    border: 2px solid peru;
+    font-size: $font-size-xs;
+  }
+
   &__intro,
   &__content {
     font-size: $font-size-s;
@@ -21,7 +41,7 @@
     margin: 1rem auto;
   }
 
-  &__img-slider {
+  &__img {
     margin: 0;
     width: 100%;
     height: 30vh;
