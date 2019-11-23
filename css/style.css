@@ -112,9 +112,8 @@ how to apply:
     width: 100%;
     height: auto;
     padding: 2rem 0;
-    border: 2px solid peru;
     font-size: 1.4rem; }
-  .article__intro, .article__content {
+  .article__intro, .article__content, .article__photo-credits {
     font-size: 2rem;
     line-height: 2; }
   .article__title {
@@ -122,11 +121,38 @@ how to apply:
     line-height: 1.4;
     display: inline-block;
     margin: 1rem auto; }
-  .article__img {
-    margin: 0;
-    width: 100%;
-    height: 30vh;
-    background-color: paleturquoise; }
+
+.main-carousel {
+  margin: 2rem 0 6rem;
+  background: #83b4b3; }
+
+.carousel-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0; }
+
+.carousel-cell img {
+  width: auto;
+  height: 30rem;
+  margin-right: 1rem;
+  counter-increment: carousel-cell;
+  border-radius: 0.5rem; }
+  @media only screen and (min-width: 600px) {
+    .carousel-cell img {
+      height: 35rem; } }
+  @media only screen and (min-width: 900px) {
+    .carousel-cell img {
+      height: 40rem; } }
+  @media only screen and (min-width: 1200px) {
+    .carousel-cell img {
+      height: 45rem; } }
+
+.carousel-cell::before {
+  display: block;
+  content: counter(carousel-cell);
+  line-height: 30rem;
+  color: transparent; }
 
 footer {
   margin: 0 auto;

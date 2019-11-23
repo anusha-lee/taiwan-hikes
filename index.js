@@ -8,3 +8,10 @@ window.addEventListener("scroll", () => {
     navFixed.classList.remove("fixedNav");
   }
 });
+
+// Initialize Flickity with vanilla JavaScript
+var elem = document.querySelector(".main-carousel");
+var flkty = new Flickity(elem, {
+  cellAlign: "left",
+  contain: true
+});
