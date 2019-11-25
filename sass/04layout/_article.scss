@@ -24,12 +24,13 @@
     width: 100%;
     margin: 5rem auto 0;
     padding-top: 1rem;
-    font-size: $font-size-large;
+    font-size: $font-size-m;
     color: $color-base-blue;
     text-align: center;
 
-    // @include responsive(tab) {
-    // }
+    @include responsive(tab) {
+      font-size: $font-size-large;
+    }
     @include responsive(sm-desktop) {
       font-size: $font-size-xl;
     }
@@ -61,15 +62,40 @@
 
   &__intro,
   &__content {
-    font-size: $font-size-s;
+    padding: 1.2rem 0;
+    font-size: $font-size-xs;
     line-height: 2;
+
+    @include responsive(tab) {
+      font-size: $font-size-s;
+      padding: .4rem 0;
+    }
+  }
+
+  &__intro--content a,
+  &__content a {
+    color: $color-base-blue;
+    transition: all 0.3s ease-in-out;
+    &:hover,
+    &:active {
+      // color: $color-white;
+      // background-color: $color-blue-grey;
+      text-decoration: underline;
+    }
+    &:visited {
+      color: $color-orangered;
+    }
   }
 
   &__title {
-    font-size: $font-size-m;
+    font-size: $font-size-sm;
     line-height: 1.4;
     display: inline-block;
     margin: 1rem auto;
+
+    @include responsive(tab) {
+      font-size: $font-size-m;
+    }
   }
 
   // &__img {
@@ -102,11 +128,6 @@
   @include responsive(sm-desktop) {
     height: 40rem;
   }
-  @include responsive(normal-desktop) {
-    height: 45rem;
-  }
-  @include responsive(xl-desktop) {
-  }
 }
 .carousel-cell::before {
   display: block;
@@ -126,19 +147,10 @@ figcaption {
   width: 60%;
   height: max-content;
   @include flex-center;
-  transition: all 0.3s ease-in-out;
-
-  &--explore:hover {
-    @include btn-hover;
-    background-color: lighten($color-orangered, 5%);
-  }
-  &--explore:active {
-    @include btn-active;
-    background-color: darken($color-orangered, 5%);
-  }
-  &--explore:visited {
-    color: $color-tan;
-  }
-
-
+  
+  /*********************************************************
+  Find Trips button ueses the same style as the one on landing page
+  **********************************************************/
 }
+
+

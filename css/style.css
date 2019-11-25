@@ -96,7 +96,7 @@ how to apply:
   /**********************
   style this part later
   ***********************/ }
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 580px) {
     .article {
       width: 80%; } }
   @media only screen and (min-width: 900px) {
@@ -112,9 +112,12 @@ how to apply:
     width: 100%;
     margin: 5rem auto 0;
     padding-top: 1rem;
-    font-size: 5rem;
+    font-size: 3.8rem;
     color: #097392;
     text-align: center; }
+    @media only screen and (min-width: 580px) {
+      .article__H2title {
+        font-size: 5rem; } }
     @media only screen and (min-width: 900px) {
       .article__H2title {
         font-size: 6.2rem; } }
@@ -135,13 +138,28 @@ how to apply:
         font-size: 1.4rem;
         text-align: center; }
   .article__intro, .article__content {
-    font-size: 2rem;
+    padding: 1.2rem 0;
+    font-size: 1.4rem;
     line-height: 2; }
+    @media only screen and (min-width: 580px) {
+      .article__intro, .article__content {
+        font-size: 2rem;
+        padding: .4rem 0; } }
+  .article__intro--content a, .article__content a {
+    color: #097392;
+    transition: all 0.3s ease-in-out; }
+    .article__intro--content a:hover, .article__intro--content a:active, .article__content a:hover, .article__content a:active {
+      text-decoration: underline; }
+    .article__intro--content a:visited, .article__content a:visited {
+      color: #d55534; }
   .article__title {
-    font-size: 3.8rem;
+    font-size: 2.6rem;
     line-height: 1.4;
     display: inline-block;
     margin: 1rem auto; }
+    @media only screen and (min-width: 580px) {
+      .article__title {
+        font-size: 3.8rem; } }
 
 .main-carousel {
   margin: 2rem 0 6rem;
@@ -159,15 +177,12 @@ how to apply:
   margin-right: 1rem;
   counter-increment: carousel-cell;
   border-radius: 0.5rem; }
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 580px) {
     .carousel-cell img {
       height: 35rem; } }
   @media only screen and (min-width: 900px) {
     .carousel-cell img {
       height: 40rem; } }
-  @media only screen and (min-width: 1200px) {
-    .carousel-cell img {
-      height: 45rem; } }
 
 .carousel-cell::before {
   display: block;
@@ -187,17 +202,9 @@ figcaption {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease-in-out; }
-  .article__btn--explore:hover {
-    transform: translateY(-0.5rem);
-    box-shadow: 0.4rem 0.4rem 0.6rem #525252;
-    background-color: #d96749; }
-  .article__btn--explore:active {
-    transform: translateY(-0.2rem);
-    box-shadow: 0.2rem 0.2rem 0.3rem #1f1f1f;
-    background-color: #c64929; }
-  .article__btn--explore:visited {
-    color: #fff0ce; }
+  /*********************************************************
+  Find Trips button ueses the same style as the one on landing page
+  **********************************************************/ }
 
 footer {
   margin: 0 auto;
@@ -297,7 +304,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto); }
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 580px) {
     .subscribeInput {
       width: 80%;
       height: 40vh; } }
@@ -325,7 +332,7 @@ footer {
     grid-gap: 0.5rem;
     justify-items: center;
     align-items: center; }
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 580px) {
       .subscribeInput__form {
         grid-template-rows: auto minmax(4vh, 6vh); } }
     .subscribeInput__form--label {
@@ -338,7 +345,7 @@ footer {
       text-shadow: 0.1rem 0.1rem 0.1rem #fcfcfc;
       grid-column: 1 / 3;
       grid-row: 1 / 2; }
-      @media only screen and (min-width: 600px) {
+      @media only screen and (min-width: 580px) {
         .subscribeInput__form--label {
           grid-column: 1 / 3;
           grid-row: 1 / 2; } }
@@ -351,7 +358,7 @@ footer {
       transition: all 0.5s ease-in-out;
       grid-column: 1 / 3;
       grid-row: 2 / 3; }
-      @media only screen and (min-width: 600px) {
+      @media only screen and (min-width: 580px) {
         .subscribeInput__form input[type="email"] {
           grid-column: 1 / 2;
           grid-row: 2 / 3; } }
@@ -371,7 +378,7 @@ footer {
       grid-column: 1 / 3;
       grid-row: 3 / 4;
       transition: all 0.5s ease-in-out; }
-      @media only screen and (min-width: 600px) {
+      @media only screen and (min-width: 580px) {
         .subscribeInput__form input[type="submit"] {
           width: 90%;
           grid-column: 2 / 3;
@@ -447,7 +454,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column; }
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 580px) {
     .header__background-img-box {
       background-position: center;
       height: 90vh; } }
@@ -468,7 +475,7 @@ header {
     transform: scale(0.8, 1.8);
     text-shadow: 0.1rem 0.1rem 0.1rem #097392;
     color: rgba(252, 252, 252, 0.9); }
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 580px) {
       .header__background-img-box--title {
         transform: scale(1, 1.6); } }
     @media only screen and (min-width: 1200px) {
@@ -488,7 +495,7 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(0.8, 1.4); }
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 580px) {
       .header__background-img-box--title2 {
         font-size: 2.6rem; } }
     @media only screen and (min-width: 900px) {
@@ -508,12 +515,12 @@ header {
   .logo-sm {
     width: 4rem;
     height: auto; }
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 580px) {
       .logo-sm {
         display: none; } }
   .logo-big {
     display: none; }
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 580px) {
       .logo-big {
         margin-left: -1rem;
         display: block;
@@ -528,7 +535,7 @@ header {
   grid-column: 1 / 3;
   grid-row: 1/ 2;
   justify-content: space-between; }
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 580px) {
     .header-box {
       width: 95%; } }
   .header-box__banner {
@@ -576,7 +583,7 @@ header {
     right: 3%;
     top: 1.3rem;
     transition: all 0.5s ease-in-out; }
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 580px) {
       .menu__hamburger {
         right: 2.6%;
         top: 1.5rem; } }
@@ -671,7 +678,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column; }
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 580px) {
     .sevenReasons {
       width: 80%; } }
   @media only screen and (min-width: 900px) {
@@ -760,7 +767,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column; }
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 580px) {
     .freeHikes {
       max-height: 60rem;
       max-width: 45rem;
@@ -800,7 +807,7 @@ header {
   flex-flow: row nowrap;
   align-items: flex-end;
   justify-content: center; }
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 580px) {
     .testimonials {
       width: 80%; } }
   @media only screen and (min-width: 900px) {
@@ -866,7 +873,7 @@ header {
   appearance: none;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 580px) {
     .slider__nav {
       margin: 2rem 1.5rem;
       width: 1.2rem;
