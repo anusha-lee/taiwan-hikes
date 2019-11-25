@@ -20,11 +20,43 @@
   /**********************
   style this part later
   ***********************/
+  &__H2title {
+    width: 100%;
+    margin: 5rem auto 0;
+    padding-top: 1rem;
+    font-size: $font-size-large;
+    color: $color-base-blue;
+    text-align: center;
+
+    // @include responsive(tab) {
+    // }
+    @include responsive(sm-desktop) {
+      font-size: $font-size-xl;
+    }
+    // @include responsive(normal-desktop) {
+    // }
+    // @include responsive(xl-desktop) {
+    // }
+  }
+
   &__basic {
     width: 100%;
     height: auto;
     padding: 2rem 0;
     font-size: $font-size-xs;
+
+    &--author {
+      height: auto;
+      margin: 0 auto;
+      padding: 1rem 1rem 2rem 1rem;
+      @include flex-center;
+
+      & span {
+        font-style: italic;
+        font-size: $font-size-xs;
+        text-align: center;
+      }
+    }
   }
 
   &__intro,

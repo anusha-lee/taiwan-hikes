@@ -108,11 +108,32 @@ how to apply:
   @media only screen and (min-width: 1500px) {
     .article {
       width: 50%; } }
+  .article__H2title {
+    width: 100%;
+    margin: 5rem auto 0;
+    padding-top: 1rem;
+    font-size: 5rem;
+    color: #097392;
+    text-align: center; }
+    @media only screen and (min-width: 900px) {
+      .article__H2title {
+        font-size: 6.2rem; } }
   .article__basic {
     width: 100%;
     height: auto;
     padding: 2rem 0;
     font-size: 1.4rem; }
+    .article__basic--author {
+      height: auto;
+      margin: 0 auto;
+      padding: 1rem 1rem 2rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .article__basic--author span {
+        font-style: italic;
+        font-size: 1.4rem;
+        text-align: center; }
   .article__intro, .article__content {
     font-size: 2rem;
     line-height: 2; }
