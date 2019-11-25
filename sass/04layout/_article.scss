@@ -28,8 +28,7 @@
   }
 
   &__intro,
-  &__content,
-  &__photo-credits {
+  &__content {
     font-size: $font-size-s;
     line-height: 2;
   }
@@ -82,4 +81,9 @@
   content: counter(carousel-cell);
   line-height: 30rem;
   color: transparent;
+}
+
+figcaption {
+  font-size: $font-size-xs;
+  color: $color-deep-blue-grey;
 }

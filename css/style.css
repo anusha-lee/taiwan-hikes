@@ -113,7 +113,7 @@ how to apply:
     height: auto;
     padding: 2rem 0;
     font-size: 1.4rem; }
-  .article__intro, .article__content, .article__photo-credits {
+  .article__intro, .article__content {
     font-size: 2rem;
     line-height: 2; }
   .article__title {
@@ -153,6 +153,10 @@ how to apply:
   content: counter(carousel-cell);
   line-height: 30rem;
   color: transparent; }
+
+figcaption {
+  font-size: 1.4rem;
+  color: #383838; }
 
 footer {
   margin: 0 auto;
