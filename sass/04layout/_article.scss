@@ -117,5 +117,28 @@
 
 figcaption {
   font-size: $font-size-xs;
-  color: $color-deep-blue-grey;
+  color: $color-base-blue; //$color-deep-blue-grey;
+}
+
+.article__btn {
+  margin: 0 auto;
+  padding: 2rem 0 12rem;
+  width: 60%;
+  height: max-content;
+  @include flex-center;
+  transition: all 0.3s ease-in-out;
+
+  &--explore:hover {
+    @include btn-hover;
+    background-color: lighten($color-orangered, 5%);
+  }
+  &--explore:active {
+    @include btn-active;
+    background-color: darken($color-orangered, 5%);
+  }
+  &--explore:visited {
+    color: $color-tan;
+  }
+
+
 }

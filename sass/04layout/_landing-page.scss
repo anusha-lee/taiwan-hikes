@@ -91,7 +91,7 @@
       font-family: $font-title;
       border-radius: 20px;
       transition: all 0.3s ease-in-out;
-      text-shadow: 0.1rem 0.1rem 0.1rem $color-white;
+      //text-shadow: 0.1rem 0.1rem 0.1rem $color-white;
       box-shadow: 0.2rem 0.2rem 0.4rem lighten($color-deep-blue-grey, 30%);
     }
 
@@ -103,9 +103,9 @@
       @include btn-active;
       background-color: darken($color-orangered, 5%);
     }
-    // &--explore:visited {
-
-    // }
+    &--explore:visited {
+      color: $color-tan;
+    }
   }
 }
 
@@ -224,7 +224,7 @@
 .cell {
   width: 100vh;
   height: auto;
-  padding: 1rem;
+  padding: 2rem;
   margin-bottom: 2rem;
 
   display: flex;
@@ -234,11 +234,11 @@
   justify-content: center;
 
   &__avatar {
-    width: 15%;
+    width: 25%;
     max-width: 15rem;
     padding: 2rem 0;
     text-align: center;
-    //border-radius: 50%;
+    border-radius: 50%;
   }
 
   &__quote {

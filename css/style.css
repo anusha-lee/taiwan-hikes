@@ -177,7 +177,27 @@ how to apply:
 
 figcaption {
   font-size: 1.4rem;
-  color: #383838; }
+  color: #097392; }
+
+.article__btn {
+  margin: 0 auto;
+  padding: 2rem 0 12rem;
+  width: 60%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out; }
+  .article__btn--explore:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0.4rem 0.4rem 0.6rem #525252;
+    background-color: #d96749; }
+  .article__btn--explore:active {
+    transform: translateY(-0.2rem);
+    box-shadow: 0.2rem 0.2rem 0.3rem #1f1f1f;
+    background-color: #c64929; }
+  .article__btn--explore:visited {
+    color: #fff0ce; }
 
 footer {
   margin: 0 auto;
@@ -705,7 +725,6 @@ header {
       font-family: "Alegreya", serif;
       border-radius: 20px;
       transition: all 0.3s ease-in-out;
-      text-shadow: 0.1rem 0.1rem 0.1rem #fcfcfc;
       box-shadow: 0.2rem 0.2rem 0.4rem #858585; }
     .sevenReasons__btn--explore:hover {
       transform: translateY(-0.5rem);
@@ -715,6 +734,8 @@ header {
       transform: translateY(-0.2rem);
       box-shadow: 0.2rem 0.2rem 0.3rem #1f1f1f;
       background-color: #c64929; }
+    .sevenReasons__btn--explore:visited {
+      color: #fff0ce; }
 
 .home-freeHikes {
   margin: 0 auto;
@@ -805,7 +826,7 @@ header {
 .cell {
   width: 100vh;
   height: auto;
-  padding: 1rem;
+  padding: 2rem;
   margin-bottom: 2rem;
   display: flex;
   flex: 1;
@@ -813,10 +834,11 @@ header {
   align-items: center;
   justify-content: center; }
   .cell__avatar {
-    width: 15%;
+    width: 25%;
     max-width: 15rem;
     padding: 2rem 0;
-    text-align: center; }
+    text-align: center;
+    border-radius: 50%; }
   .cell__quote {
     display: inline-block;
     text-align: center;
