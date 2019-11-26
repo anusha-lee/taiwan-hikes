@@ -319,7 +319,8 @@ header {
 
 // fixed navigation after scrolling down
 .fixedNav {
-  margin-top: 0;
+  margin: 0 auto;
+  padding-left: 3.5rem;
   width: 100%;
   height: 6.5rem;
   position: fixed;
