@@ -89,6 +89,15 @@ how to apply:
   }
 
 ******************************************/
+.progress {
+  width: 100%;
+  height: 0.8rem;
+  background: #097392; }
+  .progress__bar {
+    height: 0.8rem;
+    background: #fff0ce;
+    width: 0%; }
+
 .article {
   margin: 0 auto;
   width: 90%;
@@ -627,6 +636,7 @@ header {
       font-size: 2.6rem;
       font-family: "Alegreya", serif;
       margin-top: -0.7rem;
+      margin-right: -10rem;
       padding: 0.5rem;
       width: 110vw;
       height: 110vh;

@@ -8,3 +8,17 @@ window.addEventListener("scroll", () => {
     navFixed.classList.remove("fixedNav");
   }
 });
+
+// Page scroll indicator
+// window.onscroll = function() {
+//   function scrollIndicator() {
+//     const scroll =
+//       document.body.scrollTop || document.documentElement.scrollTop;
+//     const height =
+//       document.documentElement.scrollHeight -
+//       document.documentElement.clientHeight;
+//     let afterScroll = (scroll / height) * 100;
+//     document.querySelector(".progress__bar").getElementsByClassName.width =
+//       afterScroll + "%";
+//   }
+// };

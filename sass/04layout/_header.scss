@@ -38,12 +38,6 @@ header {
     height: 100vh;
     background-position: bottom;
   }
-  // @include responsive(normal-desktop) {
-  //   background-position: bottom; //65% 50%;
-  //   height: 110vh;
-  // }
-  // @include responsive(normal-desktop) {
-  // }
 
   &--img {
     position: absolute;
@@ -275,6 +269,7 @@ header {
       font-size: $font-size-sm;
       font-family: $font-title;
       margin-top: -0.7rem;
+      margin-right: -10rem;
       padding: 0.5rem;
       width: 110vw;
       height: 110vh;
