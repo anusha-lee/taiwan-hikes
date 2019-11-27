@@ -723,6 +723,7 @@ header {
       color: #d55534; }
   .sevenReasons__text {
     display: inline-block;
+    text-overflow: ellipsis;
     padding: 1.5rem;
     font-size: 1.4rem;
     line-height: 2; }
@@ -921,6 +922,57 @@ header {
   margin: 0 auto;
   width: 100%;
   height: auto; }
+
+/***********************************************
+Start Here and Blog Home page layout
+************************************************/
+.start-here {
+  margin: 0 auto;
+  width: 100%; }
+
+.here__container {
+  margin: 0 auto;
+  width: 90%; }
+  @media only screen and (min-width: 580px) {
+    .here__container {
+      width: 70%; } }
+  @media only screen and (min-width: 900px) {
+    .here__container {
+      width: 60%; } }
+  @media only screen and (min-width: 1200px) {
+    .here__container {
+      width: 50%; } }
+
+.here {
+  margin: 2rem auto 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .here__title {
+    padding: 1rem;
+    font-size: 2.6rem;
+    color: #097392;
+    text-align: center; }
+    @media only screen and (min-width: 580px) {
+      .here__title {
+        font-size: 3.8rem; } }
+  .here__text {
+    padding: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.6; }
+    @media only screen and (min-width: 580px) {
+      .here__text {
+        font-size: 2rem; } }
+  .here__img {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .here__img img {
+      width: 60%;
+      box-shadow: 1rem 1rem 1rem #9e9e9e; }
 
 @-webkit-keyframes check {
   50% {

@@ -66,6 +66,7 @@
   }
   &__text {
     display: inline-block;
+    text-overflow: ellipsis;
     padding: 1.5rem;
     font-size: $font-size-xs;
     line-height: 2;
