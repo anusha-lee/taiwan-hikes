@@ -53,12 +53,6 @@ Start Here and Blog Home page layout
     @include responsive(tab) {
       font-size: $font-size-s;
     }
-    @include responsive(sm-desktop) {
-    }
-    @include responsive(normal-desktop) {
-    }
-    @include responsive(xl-desktop) {
-    }
   }
 
   &__img {
@@ -66,8 +60,14 @@ Start Here and Blog Home page layout
     @include flex-center;
 
     & img {
-      width: 60%;
+      width: 40%;
       box-shadow: 1rem 1rem 1rem lighten($color-deep-blue-grey, 40%);
+      @include responsive(tab) {
+        width: 50%;
+      }
+      @include responsive(sm-desktop) {
+        width: 60%;
+      }
     }
   }
 }
