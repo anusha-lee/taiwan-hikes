@@ -98,6 +98,28 @@ how to apply:
     background: #fff0ce;
     width: 0%; }
 
+.scroll-up {
+  display: none;
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  bottom: 10%;
+  right: 7%;
+  background: radial-gradient(#83b4b3 15%, #097392 85%);
+  cursor: pointer;
+  z-index: 300; }
+  .scroll-up__arrow {
+    position: absolute;
+    top: 10%;
+    left: 9%;
+    font-size: 2.5rem;
+    color: #fcfcfc;
+    text-shadow: 0.1rem 0.1rem 0.2rem #383838;
+    transition: all 0.2s ease-in-out; }
+    .scroll-up__arrow:hover {
+      transform: translateY(-0.2rem); }
+
 .article {
   margin: 0 auto;
   width: 90%;
@@ -971,8 +993,14 @@ Start Here and Blog Home page layout
     align-items: center;
     justify-content: center; }
     .here__img img {
-      width: 60%;
+      width: 40%;
       box-shadow: 1rem 1rem 1rem #9e9e9e; }
+      @media only screen and (min-width: 580px) {
+        .here__img img {
+          width: 50%; } }
+      @media only screen and (min-width: 900px) {
+        .here__img img {
+          width: 60%; } }
 
 @-webkit-keyframes check {
   50% {

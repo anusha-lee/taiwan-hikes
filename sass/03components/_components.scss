@@ -1,0 +1,40 @@
+.progress {
+  width: 100%;
+  height: 0.8rem;
+  background: $color-base-blue;
+
+  &__bar {
+    height: 0.8rem;
+    background: $color-tan;
+    width: 0%;
+  }
+}
+
+// Scroll up button
+.scroll-up {
+  display: none;
+  // display: block;
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  bottom: 10%;
+  right: 7%;
+  background: radial-gradient($color-blue-grey 15%, $color-base-blue 85%);
+  cursor: pointer;
+  z-index: 300;
+
+  &__arrow {
+    position: absolute;
+    top: 10%;
+    left: 9%;
+    font-size: 2.5rem;
+    color: $color-white;
+    text-shadow: 0.1rem 0.1rem 0.2rem $color-deep-blue-grey;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-0.2rem);
+    }
+  }
+}
