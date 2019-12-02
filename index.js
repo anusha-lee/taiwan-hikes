@@ -32,9 +32,8 @@ window.addEventListener("scroll", function showScroll() {
 });
 
 const scrollToTopBtn = document.querySelector(".scroll-up");
-const container = document.querySelector(".head-box");
-console.log(container);
-click.addEventListener("click", function() {
+const container = document.querySelector(".header");
+scrollToTopBtn.addEventListener("click", function() {
   container.scrollIntoView({
     behavior: "smooth",
     block: "start"
