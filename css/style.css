@@ -175,7 +175,7 @@ how to apply:
     @media only screen and (min-width: 580px) {
       .article__intro, .article__content {
         font-size: 2rem;
-        padding: .4rem 0; } }
+        padding: 0.4rem 0; } }
   .article__intro--content a, .article__content a {
     color: #097392;
     transition: all 0.3s ease-in-out; }
@@ -234,7 +234,7 @@ figcaption {
   align-items: center;
   justify-content: center;
   /*********************************************************
-  Find Trips button ueses the same style as the one on landing page
+  Find Trips button users the same style as the one on landing page
   **********************************************************/ }
 
 footer {
@@ -314,7 +314,7 @@ footer {
     .footer__copyright div a {
       transition: all 0.3s ease-in-out; }
       .footer__copyright div a:hover, .footer__copyright div a:active {
-        color: #097392;
+        color: #83b4b3;
         font-weight: 600;
         text-decoration: underline; }
       .footer__copyright div a:visited {
@@ -433,7 +433,7 @@ footer {
     .subscribeInput__agree a {
       transition: all 0.3s ease-in-out; }
       .subscribeInput__agree a:hover, .subscribeInput__agree a:active {
-        color: #097392;
+        color: #83b4b3;
         font-weight: 600;
         text-decoration: underline; }
       .subscribeInput__agree a:visited {
@@ -451,7 +451,7 @@ footer {
       color: #cccccc;
       transition: all 0.3s ease-in-out; }
     .legal__box--item a:hover, .legal__box--item a:active {
-      color: #097392;
+      color: #83b4b3;
       font-weight: 600;
       text-decoration: underline; }
     .legal__box--item a:visited {
@@ -979,6 +979,16 @@ Start Here and Blog Home page layout
     @media only screen and (min-width: 580px) {
       .here__title {
         font-size: 3.8rem; } }
+    .here__title a {
+      color: #097392;
+      line-height: 1.2;
+      transition: all 0.3s ease-in-out; }
+      .here__title a:hover, .here__title a:active {
+        color: #83b4b3;
+        font-weight: 600;
+        text-decoration: underline; }
+      .here__title a:visited {
+        color: #d55534; }
   .here__text {
     padding: 1rem;
     font-size: 1.4rem;

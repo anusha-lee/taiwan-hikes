@@ -68,7 +68,7 @@
 
     @include responsive(tab) {
       font-size: $font-size-s;
-      padding: .4rem 0;
+      padding: 0.4rem 0;
     }
   }
 
@@ -147,10 +147,8 @@ figcaption {
   width: 60%;
   height: max-content;
   @include flex-center;
-  
+
   /*********************************************************
-  Find Trips button ueses the same style as the one on landing page
+  Find Trips button users the same style as the one on landing page
   **********************************************************/
 }
-
-

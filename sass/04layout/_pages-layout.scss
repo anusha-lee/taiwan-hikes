@@ -40,9 +40,30 @@ Start Here and Blog Home page layout
     font-size: $font-size-sm;
     color: $color-base-blue;
     text-align: center;
+
     @include responsive(tab) {
       font-size: $font-size-m;
     }
+    & a {
+      color: $color-base-blue;
+      line-height: 1.2;
+      transition: all 0.3s ease-in-out;
+
+      &:hover,
+      &:active {
+        @include link-hover-active;
+      }
+      &:visited {
+        @include link-visited;
+      }
+    }
+    // & a:hover,
+    // & a:active {
+    //   @include link-hover-active;
+    // }
+    // & a:visited {
+    //   @include link-visited;
+    // }
   }
 
   &__text {
