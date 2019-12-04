@@ -14,7 +14,7 @@ Start Here and Blog Home page layout
 }
 
 .here__container {
-  margin: 0 auto;
+  margin: 5rem auto 0;
   width: 90%;
 
   @include responsive(tab) {
