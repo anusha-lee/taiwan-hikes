@@ -92,3 +92,57 @@ Start Here and Blog Home page layout
     }
   }
 }
+
+/***********************************************
+Guided Hikes page layout
+************************************************/
+.guided-hikes__note {
+  & span {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  margin: 2rem auto;
+  width: 80%;
+  font-size: $font-size-xs;
+  line-height: 1.8;
+}
+
+.difficulity {
+  margin: -2rem auto 3rem;
+  width: 80%;
+  height: 30rem;
+  @include flex-center;
+    flex-direction: column;
+
+  &__title {
+    font-size: $font-size-sm;
+    color: $color-base-blue;
+  }
+  &__color {
+    
+    &--item {
+      width: 10rem;
+      height: 1.8rem;
+      margin: 2rem;
+      border-radius: 10px;
+      color: $color-deep-blue-grey;
+      font-weight: 700;
+      box-shadow: .2rem .2rem .5rem lighten($color-deep-blue-grey, 40%);
+      @include flex-center;
+    }
+
+  }
+}
+.green {
+  background-color: $color-green;
+  
+  
+}
+.yellow {
+  background-color: $color-yellow;
+}
+.red {
+  background-color: $color-red;
+  color: $color-white;
+}
