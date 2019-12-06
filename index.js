@@ -53,3 +53,39 @@ scrollToTopBtn.addEventListener("click", function() {
 //       afterScroll + "%";
 //   }
 // };
+
+// Free guided trips
+/************************************ 
+let url = "https://api.myjson.com/bins/yt8bl";
+let newHTML2 = document.getElementById("oneDayFree");
+
+fetch(url)
+  .then(res3 => res3.json())
+  .then(arr => {
+    let eleKey = Object.keys(arr);
+    let eleVal = Object.values(arr);
+    let elePair = Object.entries(arr);
+
+    if (eleVal.length >= 1) {
+      for (let val of eleVal) {
+        // Create and append the li's to the ul or divs to the parent div
+        newHTML2.innerHTML += `
+                <div class="singleTrip">
+                    <h3 class="singleTrip__title">活動Event:${val.Event}</h3>
+                    <div class="singleTrip__box">
+                        <div class="singleTrip__box--date"><strong>日期Date:</strong> ${val.Date}</div>
+                        <div class="singleTrip__box--meetup-time"><strong>集合時間Meetup Time:</strong> ${val.Meetup_Time}</div>
+                        <div class="singleTrip__box--meetup-point"><strong>集合地點Meetup Point:</strong> ${val.Meetup_Point}</div>
+                        <div class="singleTrip__box--transport"><strong>交通Transportation:</strong> ${val.Transportation}</div>
+                        <div class="singleTrip__box--distance"><strong>里程Distance:</strong> ${val.Distance}</div>
+                        <div class="singleTrip__box--difficulty-level"><strong>難度Difficulty Level:</strong> ${val.Difficulty_Level}</div>
+                        <div class="singleTrip__box--club"><a href="#"><strong>社團Hiking Club:</strong> <a href="#">${val.Hiking_Club}</a></div>
+                        <div class="singleTrip__box--guide"><strong>領隊Guide:</strong> ${val.Guide}</div>
+                        <div class="singleTrip__box--about-Trail"><strong>路線簡介About the trail: <br></strong> ${val.About_the_trail}</div>
+                    </div>
+            `;
+      }
+    }
+  })
+  .catch(err => console.error("Something went wrong!", err));
+***************/

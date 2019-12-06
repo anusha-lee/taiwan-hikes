@@ -113,14 +113,13 @@ Guided Hikes page layout
   width: 80%;
   height: 30rem;
   @include flex-center;
-    flex-direction: column;
+  flex-direction: column;
 
   &__title {
     font-size: $font-size-sm;
     color: $color-base-blue;
   }
   &__color {
-    
     &--item {
       width: 10rem;
       height: 1.8rem;
@@ -128,17 +127,14 @@ Guided Hikes page layout
       border-radius: 10px;
       color: $color-deep-blue-grey;
       font-weight: 700;
-      letter-spacing: .2rem;
-      box-shadow: .2rem .2rem .5rem lighten($color-deep-blue-grey, 40%);
+      letter-spacing: 0.2rem;
+      box-shadow: 0.2rem 0.2rem 0.5rem lighten($color-deep-blue-grey, 40%);
       @include flex-center;
     }
-
   }
 }
 .green {
   background-color: $color-green;
-  
-  
 }
 .yellow {
   background-color: $color-yellow;
@@ -155,27 +151,20 @@ Guided Hikes page layout
   border: 2px solid red;
   &__title {
     font-size: $font-size-sm;
-
   }
   &__hikes {
     width: 75%;
-    height: 50vh;
+    height: auto;
     border: 2px solid green;
   }
 }
 
-
-
-
-
-
-
 // Buttons
 .load-more__btn {
   background: linear-gradient(
-        $color-base-blue,
-        lighten($color-deep-blue-grey, 10%)
-      );
+    $color-base-blue,
+    lighten($color-deep-blue-grey, 10%)
+  );
 }
 .custom-made__btn {
   margin-top: -10rem;
