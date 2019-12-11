@@ -67,11 +67,12 @@ fetch(url)
   //   res.ok ? console.log("Success!") : console.log("Something wrong.");
   // })
   .then(arr => {
+    console.log(arr);
     let eleKey = Object.keys(arr);
     let eleVal = Object.values(arr);
     let elePair = Object.entries(arr);
 
-    console.log(eleVal);
+    //console.log(eleVal);
 
     if (eleVal.length >= 1) {
       for (let val of eleVal) {

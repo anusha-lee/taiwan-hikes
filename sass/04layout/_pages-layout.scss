@@ -96,6 +96,21 @@ Start Here and Blog Home page layout
 /***********************************************
 Guided Hikes page layout
 ************************************************/
+
+.guided-hikes {
+  // class start-here same as class trips-width, width: 100%;
+
+  border: 2px solid sienna;
+  @include responsive(tab) {
+  }
+  @include responsive(sm-desktop) {
+  }
+  @include responsive(normal-desktop) {
+  }
+  @include responsive(xl-desktop) {
+  }
+}
+
 .guided-hikes__note {
   & span {
     text-transform: uppercase;
@@ -108,7 +123,7 @@ Guided Hikes page layout
   line-height: 1.8;
 }
 
-.difficulity {
+.difficulty {
   margin: -12rem auto 3rem;
   width: 80%;
   height: 30rem;
@@ -144,18 +159,39 @@ Guided Hikes page layout
   color: $color-white;
 }
 
-// trips container
+// trips layout
+
 .trips {
-  width: 90%;
+  width: 100%;
   height: auto;
-  border: 2px solid red;
+  padding: 1rem;
+
+  border: 1px solid sandybrown;
+
   &__title {
     font-size: $font-size-sm;
   }
   &__hikes {
-    width: 75%;
-    height: auto;
-    border: 2px solid green;
+    width: 30rem;
+    height: 40rem;
+    padding: 1rem;
+  }
+}
+
+.singleTrip {
+  height: 25rem; // change the height later
+  background-color: $color-tan;
+  padding: 1rem;
+  color: $color-deep-blue-grey;
+  overflow: scroll;
+  line-height: 1.6;
+
+  &__title {
+    font-size: $font-size-s;
+  }
+  &__box {
+    font-size: $font-size-xs;
+    border: 2px solid palevioletred;
   }
 }
 

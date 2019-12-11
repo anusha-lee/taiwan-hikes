@@ -1011,6 +1011,9 @@ Start Here and Blog Home page layout
 /***********************************************
 Guided Hikes page layout
 ************************************************/
+.guided-hikes {
+  border: 2px solid sienna; }
+
 .guided-hikes__note {
   margin: 2rem auto;
   width: 80%;
@@ -1021,7 +1024,7 @@ Guided Hikes page layout
     font-weight: 600;
     text-decoration: underline; }
 
-.difficulity {
+.difficulty {
   margin: -12rem auto 3rem;
   width: 80%;
   height: 30rem;
@@ -1029,10 +1032,10 @@ Guided Hikes page layout
   align-items: center;
   justify-content: center;
   flex-direction: column; }
-  .difficulity__title {
+  .difficulty__title {
     font-size: 2.6rem;
     color: #097392; }
-  .difficulity__color--item {
+  .difficulty__color--item {
     width: 10rem;
     height: 1.8rem;
     margin: 2rem;
@@ -1056,15 +1059,29 @@ Guided Hikes page layout
   color: #fcfcfc; }
 
 .trips {
-  width: 90%;
+  width: 100%;
   height: auto;
-  border: 2px solid red; }
+  padding: 1rem;
+  border: 1px solid sandybrown; }
   .trips__title {
     font-size: 2.6rem; }
   .trips__hikes {
-    width: 75%;
-    height: auto;
-    border: 2px solid green; }
+    width: 30rem;
+    height: 40rem;
+    padding: 1rem; }
+
+.singleTrip {
+  height: 25rem;
+  background-color: #fff0ce;
+  padding: 1rem;
+  color: #383838;
+  overflow: scroll;
+  line-height: 1.6; }
+  .singleTrip__title {
+    font-size: 2rem; }
+  .singleTrip__box {
+    font-size: 1.4rem;
+    border: 2px solid palevioletred; }
 
 .load-more__btn {
   background: linear-gradient(#097392, #525252); }
