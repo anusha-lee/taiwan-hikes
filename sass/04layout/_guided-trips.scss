@@ -1,0 +1,142 @@
+.guided-hikes {
+  margin: 2rem auto;
+  width: 100%;
+
+  border: 2px solid sienna;
+  @include responsive(tab) {
+    width: 80%;
+  }
+  @include responsive(sm-desktop) {
+    width: 70%;
+  }
+  @include responsive(normal-desktop) {
+    width: 60%;
+  }
+  @include responsive(xl-desktop) {
+    width: 50%;
+  }
+}
+
+.sharethis-inline-share-buttons {
+  margin: 0 auto;
+  @include responsive(tab) {
+    width: 80%;
+  }
+  @include responsive(sm-desktop) {
+    width: 70%;
+  }
+  @include responsive(normal-desktop) {
+    width: 60%;
+  }
+  @include responsive(xl-desktop) {
+    width: 50%;
+  }
+}
+
+.guided-hikes__note {
+  & span {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  margin: 2rem auto;
+  width: 80%;
+  font-size: $font-size-xs;
+  line-height: 1.8;
+
+  @include responsive(tab) {
+    font-size: $font-size-s;
+  }
+}
+
+.difficulty {
+  margin: -5rem auto 3rem;
+  width: 80%;
+  height: auto;
+  @include flex-center;
+  flex-direction: column;
+
+  &__title {
+    font-size: $font-size-sm;
+    color: $color-base-blue;
+  }
+  &__color {
+    &--item {
+      width: 10rem;
+      height: 1.8rem;
+      margin: 2rem;
+      border-radius: 10px;
+      color: $color-deep-blue-grey;
+      font-weight: 700;
+      letter-spacing: 0.2rem;
+      box-shadow: 0.2rem 0.2rem 0.5rem lighten($color-deep-blue-grey, 40%);
+      @include flex-center;
+    }
+  }
+}
+.green {
+  background-color: $color-green;
+}
+.yellow {
+  background-color: $color-yellow;
+}
+.red {
+  background-color: $color-red;
+  color: $color-white;
+}
+
+// Guided trips layout
+
+.trips {
+  margin: 2rem auto;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+
+  @include responsive(tab) {
+    width: 80%;
+    border: 1px solid sandybrown;
+  }
+  @include responsive(sm-desktop) {
+    // width: 70%;
+    border: 1px solid green;
+  }
+  @include responsive(normal-desktop) {
+    // width: 60%;
+    border: 1px solid blueviolet;
+  }
+  @include responsive(xl-desktop) {
+    //width: 50%;
+  }
+
+  &__title {
+    font-size: $font-size-sm;
+    text-align: center;
+  }
+  &__hikes {
+    width: 30rem;
+    height: 40rem;
+    padding: 1rem;
+  }
+}
+
+.singleTrip {
+  min-width: 80%;
+  max-width: 90%;
+  height: 25rem; // change the height later
+  background-color: $color-tan;
+  padding: 1rem;
+  color: $color-deep-blue-grey;
+  overflow: scroll;
+  line-height: 1.6;
+
+  // use flexbox or grid to style this part
+
+  &__title {
+    font-size: $font-size-s;
+  }
+  &__box {
+    font-size: $font-size-xs;
+    border: 2px solid palevioletred;
+  }
+}

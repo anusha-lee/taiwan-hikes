@@ -75,39 +75,6 @@
       font-size: $font-size-s;
     }
   }
-  &__btn {
-    padding: 1.5rem 0.5rem;
-
-    &--explore {
-      //display: block;
-      @include flex-center;
-      width: 16rem;
-      height: 4rem;
-      background: linear-gradient(
-        $color-base-blue,
-        lighten($color-deep-blue-grey, 10%)
-      );
-      color: $color-white;
-      font-size: $font-size-s;
-      font-family: $font-title;
-      border-radius: 20px;
-      transition: all 0.3s ease-in-out;
-      //text-shadow: 0.1rem 0.1rem 0.1rem $color-white;
-      box-shadow: 0.2rem 0.2rem 0.4rem lighten($color-deep-blue-grey, 30%);
-    }
-
-    &--explore:hover {
-      @include btn-hover;
-      background-color: lighten($color-orangered, 5%);
-    }
-    &--explore:active {
-      @include btn-active;
-      background-color: darken($color-orangered, 5%);
-    }
-    &--explore:visited {
-      color: $color-tan;
-    }
-  }
 }
 
 // Hiking trip section
@@ -161,15 +128,6 @@
       font-size: $font-size-m;
       color: $color-base-blue;
       line-height: 1.2;
-    }
-  }
-
-  &__btn {
-    &--explore {
-      background: linear-gradient(
-        $color-orangered,
-        lighten($color-deep-blue-grey, 10%)
-      );
     }
   }
 }

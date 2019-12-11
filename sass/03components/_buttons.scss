@@ -1,0 +1,86 @@
+// Scroll up button
+.scroll-up {
+  display: none;
+  // display: block;
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  bottom: 10%;
+  right: 7%;
+  background: radial-gradient($color-blue-grey 15%, $color-base-blue 85%);
+  cursor: pointer;
+  z-index: 300;
+
+  &__arrow {
+    position: absolute;
+    top: 10%;
+    left: 9%;
+    font-size: 2.5rem;
+    color: $color-white;
+    text-shadow: 0.1rem 0.1rem 0.2rem $color-deep-blue-grey;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-0.2rem);
+    }
+  }
+}
+
+// Landing Page 7 Reasons Explore button
+.sevenReasons__btn {
+  padding: 1.5rem 0.5rem;
+
+  &--explore {
+    //display: block;
+    @include flex-center;
+    width: 16rem;
+    height: 4rem;
+    background: linear-gradient(
+      $color-base-blue,
+      lighten($color-deep-blue-grey, 10%)
+    );
+    color: $color-white;
+    font-size: $font-size-s;
+    font-family: $font-title;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    //text-shadow: 0.1rem 0.1rem 0.1rem $color-white;
+    box-shadow: 0.2rem 0.2rem 0.4rem lighten($color-deep-blue-grey, 30%);
+  }
+
+  &--explore:hover {
+    @include btn-hover;
+    background-color: lighten($color-orangered, 5%);
+  }
+  &--explore:active {
+    @include btn-active;
+    background-color: darken($color-orangered, 5%);
+  }
+  &--explore:visited {
+    color: $color-tan;
+  }
+}
+
+// Landing Page Latest Hikes button
+.freeHikes__btn {
+  &--explore {
+    background: linear-gradient(
+      $color-orangered,
+      lighten($color-deep-blue-grey, 10%)
+    );
+  }
+}
+
+// Guided-trips Buttons
+.load-more__btn {
+  background: linear-gradient(
+    $color-base-blue,
+    lighten($color-deep-blue-grey, 10%)
+  );
+}
+.custom-made__btn {
+  margin-top: -10rem;
+  width: 28rem;
+  text-align: center;
+}
