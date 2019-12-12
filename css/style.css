@@ -493,8 +493,7 @@ footer {
 
 .guided-hikes {
   margin: 2rem auto;
-  width: 100%;
-  border: 2px solid sienna; }
+  width: 100%; }
   @media only screen and (min-width: 580px) {
     .guided-hikes {
       width: 80%; } }

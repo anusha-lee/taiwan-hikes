@@ -57,7 +57,7 @@ scrollToTopBtn.addEventListener("click", function() {
 // Free guided trips
 // Old url: "https://api.myjson.com/bins/yt8bl"
 // 2019/12/7 latest updated guide trips: https://api.myjson.com/bins/193ug0
-
+/*
 let url = "https://api.myjson.com/bins/193ug0";
 let newHTML = document.getElementById("oneDayFree");
 
@@ -99,40 +99,49 @@ fetch(url)
 
 // Make another function to extract the difficulty level and assign the associated colors
 
-/*
-let url = "https://api.myjson.com/bins/yt8bl";
-let newHTML2 = document.getElementById("oneDayFree");
-
-fetch(url)
-  .then(res3 => res3.json())
-  .then(arr => {
-    let eleKey = Object.keys(arr);
-    let eleVal = Object.values(arr);
-    let elePair = Object.entries(arr);
-
-    console.log(eleVal);
-
-    if (eleVal.length >= 1) {
-      for (let val of eleVal) {
-        // Create and append the li's to the ul or divs to the parent div
-
-        newHTML2.innerHTML += `
-                <div class="singleTrip">
-                    <h3 class="singleTrip__title">活動Event:${val.Event}</h3>
-                    <div class="singleTrip__box">
-                        <div class="singleTrip__box--date"><strong>日期Date:</strong> ${val.Date}</div>
-                        <div class="singleTrip__box--meetup-time"><strong>集合時間Meetup Time:</strong> ${val.Meetup_Time}</div>
-                        <div class="singleTrip__box--meetup-point"><strong>集合地點Meetup Point:</strong> ${val.Meetup_Point}</div>
-                        <div class="singleTrip__box--transport"><strong>交通Transportation:</strong> ${val.Transportation}</div>
-                        <div class="singleTrip__box--distance"><strong>里程Distance:</strong> ${val.Distance}</div>
-                        <div class="singleTrip__box--difficulty-level"><strong>難度Difficulty Level:</strong> ${val.Difficulty_Level}</div>
-                        <div class="singleTrip__box--club"><a href="#"><strong>社團Hiking Club:</strong> <a href="#">${val.Hiking_Club}</a></div>
-                        <div class="singleTrip__box--guide"><strong>領隊Guide:</strong> ${val.Guide}</div>
-                        <div class="singleTrip__box--about-Trail"><strong>路線簡介About the trail: <br></strong> ${val.About_the_trail}</div>
-                    </div>
-            `;
-      }
-    }
-  })
-  .catch(err => console.error("Something went wrong!", err));
 */
+
+const url = "https://api.myjson.com/bins/193ug0";
+const container = document.querySelector("#trip-container");
+
+function main() {
+  getData();
+  setDataToSite();
+}
+
+async function getData() {
+  const result = await fetch(url);
+  const data = await result.json();
+  return data.trips;
+}
+
+async function setDataToSite() {
+  const data = await getData();
+  data.forEach(tripDetails => {
+    const tripContainer = createAndAppendTripContainer();
+    const arrayOfTripDetails = Object.entries(tripDetails);
+    arrayOfTripDetails.forEach(item =>
+      createItemAndAppendToTripContainer(item, tripContainer)
+    );
+  });
+}
+
+function createAndAppendTripContainer() {
+  const tripContainer = document.createElement("div");
+  tripContainer.className = "box";
+  container.appendChild(tripContainer);
+  return tripContainer;
+}
+
+function createItemAndAppendToTripContainer(item, tripContainer) {
+  const title = document.createElement("h3");
+  const details = document.createElement("p");
+  title.className = "title";
+  details.className = "details";
+  title.textContent = item[0];
+  details.textContent = item[1];
+  tripContainer.appendChild(title);
+  tripContainer.appendChild(details);
+}
+
+main();
