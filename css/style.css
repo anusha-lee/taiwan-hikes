@@ -577,7 +577,7 @@ footer {
   @media only screen and (min-width: 580px) {
     .trips {
       width: 80%;
-      border: 1px solid sandybrown; } }
+      border: 1px solid brown; } }
   @media only screen and (min-width: 900px) {
     .trips {
       border: 1px solid green; } }
@@ -592,20 +592,27 @@ footer {
     height: 40rem;
     padding: 1rem; }
 
-.singleTrip {
+#trip-container {
+  margin: 1rem auto;
+  width: 100%;
+  border: 2px solid blue; }
+
+.box {
+  margin: 2rem auto;
   min-width: 80%;
   max-width: 90%;
   height: 25rem;
-  background-color: #fff0ce;
   padding: 1rem;
   color: #383838;
   overflow: scroll;
-  line-height: 1.6; }
-  .singleTrip__title {
-    font-size: 2rem; }
-  .singleTrip__box {
-    font-size: 1.4rem;
-    border: 2px solid palevioletred; }
+  line-height: 1.6;
+  border: 2px solid #fff0ce; }
+
+.title {
+  font-size: 1.4rem; }
+
+.details {
+  font-size: 1.4rem; }
 
 header {
   margin: 0 auto;

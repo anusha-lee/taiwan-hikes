@@ -102,7 +102,7 @@ fetch(url)
 */
 
 const url = "https://api.myjson.com/bins/193ug0";
-const container = document.querySelector("#trip-container");
+const container2 = document.querySelector("#trip-container");
 
 function main() {
   getData();
@@ -129,7 +129,7 @@ async function setDataToSite() {
 function createAndAppendTripContainer() {
   const tripContainer = document.createElement("div");
   tripContainer.className = "box";
-  container.appendChild(tripContainer);
+  container2.appendChild(tripContainer);
   return tripContainer;
 }
 

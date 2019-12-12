@@ -94,7 +94,7 @@
 
   @include responsive(tab) {
     width: 80%;
-    border: 1px solid sandybrown;
+    border: 1px solid brown;
   }
   @include responsive(sm-desktop) {
     // width: 70%;
@@ -119,23 +119,33 @@
   }
 }
 
-.singleTrip {
+#trip-container {
+  margin: 1rem auto;
+  width: 100%;
+  // @include flex-center;
+  // flex-direction: column;
+  // flex-wrap: wrap;
+  border: 2px solid blue;
+}
+
+.box {
+  margin: 2rem auto;
   min-width: 80%;
   max-width: 90%;
   height: 25rem; // change the height later
-  background-color: $color-tan;
+  //background-color: $color-tan;
   padding: 1rem;
   color: $color-deep-blue-grey;
   overflow: scroll;
   line-height: 1.6;
+  border: 2px solid $color-tan;
 
   // use flexbox or grid to style this part
-
-  &__title {
-    font-size: $font-size-s;
-  }
-  &__box {
-    font-size: $font-size-xs;
-    border: 2px solid palevioletred;
-  }
+}
+.title {
+  font-size: $font-size-xs;
+  //background-color: darken($color-tan, 5%);
+}
+.details {
+  font-size: $font-size-xs;
 }
