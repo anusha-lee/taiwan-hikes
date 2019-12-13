@@ -85,36 +85,34 @@
 }
 
 // Guided trips layout
-
 .trips {
   margin: 2rem auto;
   width: 100%;
-  height: auto;
+  height: max-content;
   padding: 1rem;
 
   @include responsive(tab) {
-    width: 80%;
-    border: 1px solid brown;
+    width: 90%;
   }
   @include responsive(sm-desktop) {
-    // width: 70%;
-    border: 1px solid green;
+    width: 85%;
   }
   @include responsive(normal-desktop) {
-    // width: 60%;
-    border: 1px solid blueviolet;
+    width: 80%;
   }
   @include responsive(xl-desktop) {
-    //width: 50%;
+    width: 65%;
   }
 
   &__title {
     font-size: $font-size-sm;
     text-align: center;
   }
+
+  //.trip__hikes is the parent of #trip-container
   &__hikes {
-    width: 30rem;
-    height: 40rem;
+    width: 100%;
+    height: max-content;
     padding: 1rem;
   }
 }
@@ -122,30 +120,47 @@
 #trip-container {
   margin: 1rem auto;
   width: 100%;
-  // @include flex-center;
-  // flex-direction: column;
-  // flex-wrap: wrap;
-  border: 2px solid blue;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .box {
   margin: 2rem auto;
-  min-width: 80%;
-  max-width: 90%;
-  height: 25rem; // change the height later
+  min-width: 26rem;
+  max-width: 34rem;
+  height: 30rem;
   //background-color: $color-tan;
-  padding: 1rem;
+  padding: 2rem;
   color: $color-deep-blue-grey;
   overflow: scroll;
   line-height: 1.6;
   border: 2px solid $color-tan;
 
-  // use flexbox or grid to style this part
+  @include responsive(tab) {
+    max-width: 32rem;
+    height: 34rem;
+  }
+  @include responsive(sm-desktop) {
+    max-width: 30rem;
+  }
+  @include responsive(normal-desktop) {
+    //max-width: 29rem;
+    height: 36rem;
+  }
+  @include responsive(xl-desktop) {
+    max-width: 31rem;
+  }
 }
 .title {
   font-size: $font-size-xs;
   //background-color: darken($color-tan, 5%);
+  @include responsive(sm-desktop) {
+    font-size: $font-size-s;
+  }
 }
 .details {
   font-size: $font-size-xs;
+  @include responsive(sm-desktop) {
+    font-size: $font-size-s;
+  }
 }

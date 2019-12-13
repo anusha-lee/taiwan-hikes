@@ -64,7 +64,7 @@ a:visited {
 
 /*******************************************
 ****** Breakpoints ******
-tab: 600px;
+tab: 580px;
 sm-desktop: 900px;
 normal-desktop: 1200px;
 xl-desktop: 1500px;
@@ -572,47 +572,69 @@ footer {
 .trips {
   margin: 2rem auto;
   width: 100%;
-  height: auto;
+  height: max-content;
   padding: 1rem; }
   @media only screen and (min-width: 580px) {
     .trips {
-      width: 80%;
-      border: 1px solid brown; } }
+      width: 90%; } }
   @media only screen and (min-width: 900px) {
     .trips {
-      border: 1px solid green; } }
+      width: 85%; } }
   @media only screen and (min-width: 1200px) {
     .trips {
-      border: 1px solid blueviolet; } }
+      width: 80%; } }
+  @media only screen and (min-width: 1500px) {
+    .trips {
+      width: 65%; } }
   .trips__title {
     font-size: 2.6rem;
     text-align: center; }
   .trips__hikes {
-    width: 30rem;
-    height: 40rem;
+    width: 100%;
+    height: max-content;
     padding: 1rem; }
 
 #trip-container {
   margin: 1rem auto;
   width: 100%;
-  border: 2px solid blue; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .box {
   margin: 2rem auto;
-  min-width: 80%;
-  max-width: 90%;
-  height: 25rem;
-  padding: 1rem;
+  min-width: 26rem;
+  max-width: 34rem;
+  height: 30rem;
+  padding: 2rem;
   color: #383838;
   overflow: scroll;
   line-height: 1.6;
   border: 2px solid #fff0ce; }
+  @media only screen and (min-width: 580px) {
+    .box {
+      max-width: 32rem;
+      height: 34rem; } }
+  @media only screen and (min-width: 900px) {
+    .box {
+      max-width: 30rem; } }
+  @media only screen and (min-width: 1200px) {
+    .box {
+      height: 36rem; } }
+  @media only screen and (min-width: 1500px) {
+    .box {
+      max-width: 31rem; } }
 
 .title {
   font-size: 1.4rem; }
+  @media only screen and (min-width: 900px) {
+    .title {
+      font-size: 2rem; } }
 
 .details {
   font-size: 1.4rem; }
+  @media only screen and (min-width: 900px) {
+    .details {
+      font-size: 2rem; } }
 
 header {
   margin: 0 auto;
