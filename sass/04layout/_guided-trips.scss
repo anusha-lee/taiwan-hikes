@@ -50,26 +50,48 @@
 
 .difficulty {
   margin: -5rem auto 3rem;
+  padding: 3rem 0;
   width: 80%;
   height: auto;
   @include flex-center;
   flex-direction: column;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.5rem 2rem lighten($color-deep-blue-grey, 40%);
 
   &__title {
     font-size: $font-size-sm;
     color: $color-base-blue;
   }
+  &__explain {
+    margin: 1rem auto;
+    display: inline-block;
+    width: 50%;
+    font-size: $font-size-xs;
+    color: $color-deep-blue-grey;
+    text-align: center;
+  }
   &__color {
+    @include responsive(tab) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
     &--item {
-      width: 10rem;
-      height: 1.8rem;
-      margin: 2rem;
+      min-width: 10rem;
+      max-width: 12rem;
+      min-height: 1.8rem;
+      max-height: 2.2rem;
+      margin: 2rem 1rem;
       border-radius: 10px;
       color: $color-deep-blue-grey;
       font-weight: 700;
       letter-spacing: 0.2rem;
-      box-shadow: 0.2rem 0.2rem 0.5rem lighten($color-deep-blue-grey, 40%);
+      box-shadow: 0.1rem 0.1rem 0.3rem lighten($color-deep-blue-grey, 60%);
       @include flex-center;
+
+      // @include responsive(tab) {
+      //   min-width: 12rem;
+      //   height: 2.2rem;
+      // }
     }
   }
 }
@@ -117,14 +139,14 @@
   }
 }
 
-#trip-container {
+#oneDayFree {
   margin: 1rem auto;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
-.box {
+.singleTrip {
   margin: 2rem auto;
   min-width: 26rem;
   max-width: 34rem;
@@ -133,12 +155,12 @@
   padding: 2rem;
   color: $color-deep-blue-grey;
   overflow: scroll;
-  line-height: 1.6;
-  border: 2px solid $color-tan;
+  line-height: 1.4;
+  box-shadow: 0.2rem 0.2rem 0.5rem lighten($color-deep-blue-grey, 60%);
 
   @include responsive(tab) {
     max-width: 32rem;
-    height: 34rem;
+    height: 36rem;
   }
   @include responsive(sm-desktop) {
     max-width: 30rem;
@@ -150,17 +172,17 @@
   @include responsive(xl-desktop) {
     max-width: 31rem;
   }
-}
-.title {
-  font-size: $font-size-xs;
-  //background-color: darken($color-tan, 5%);
-  @include responsive(sm-desktop) {
-    font-size: $font-size-s;
+
+  &__title {
+    font-size: $font-size-xs;
+    //background-color: darken($color-tan, 5%);
+    @include responsive(sm-desktop) {
+      font-size: $font-size-s;
+    }
   }
-}
-.details {
-  font-size: $font-size-xs;
-  @include responsive(sm-desktop) {
-    font-size: $font-size-s;
+  &__box {
+    padding: 1rem;
+    background-color: $color-tan;
+    font-size: $font-size-xs;
   }
 }

@@ -537,24 +537,40 @@ footer {
 
 .difficulty {
   margin: -5rem auto 3rem;
+  padding: 3rem 0;
   width: 80%;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.5rem 2rem #9e9e9e; }
   .difficulty__title {
     font-size: 2.6rem;
     color: #097392; }
+  .difficulty__explain {
+    margin: 1rem auto;
+    display: inline-block;
+    width: 50%;
+    font-size: 1.4rem;
+    color: #383838;
+    text-align: center; }
+  @media only screen and (min-width: 580px) {
+    .difficulty__color {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); } }
   .difficulty__color--item {
-    width: 10rem;
-    height: 1.8rem;
-    margin: 2rem;
+    min-width: 10rem;
+    max-width: 12rem;
+    min-height: 1.8rem;
+    max-height: 2.2rem;
+    margin: 2rem 1rem;
     border-radius: 10px;
     color: #383838;
     font-weight: 700;
     letter-spacing: 0.2rem;
-    box-shadow: 0.2rem 0.2rem 0.5rem #9e9e9e;
+    box-shadow: 0.1rem 0.1rem 0.3rem #d1d1d1;
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -594,13 +610,13 @@ footer {
     height: max-content;
     padding: 1rem; }
 
-#trip-container {
+#oneDayFree {
   margin: 1rem auto;
   width: 100%;
   display: flex;
   flex-wrap: wrap; }
 
-.box {
+.singleTrip {
   margin: 2rem auto;
   min-width: 26rem;
   max-width: 34rem;
@@ -608,33 +624,30 @@ footer {
   padding: 2rem;
   color: #383838;
   overflow: scroll;
-  line-height: 1.6;
-  border: 2px solid #fff0ce; }
+  line-height: 1.4;
+  box-shadow: 0.2rem 0.2rem 0.5rem #d1d1d1; }
   @media only screen and (min-width: 580px) {
-    .box {
+    .singleTrip {
       max-width: 32rem;
-      height: 34rem; } }
+      height: 36rem; } }
   @media only screen and (min-width: 900px) {
-    .box {
+    .singleTrip {
       max-width: 30rem; } }
   @media only screen and (min-width: 1200px) {
-    .box {
+    .singleTrip {
       height: 36rem; } }
   @media only screen and (min-width: 1500px) {
-    .box {
+    .singleTrip {
       max-width: 31rem; } }
-
-.title {
-  font-size: 1.4rem; }
-  @media only screen and (min-width: 900px) {
-    .title {
-      font-size: 2rem; } }
-
-.details {
-  font-size: 1.4rem; }
-  @media only screen and (min-width: 900px) {
-    .details {
-      font-size: 2rem; } }
+  .singleTrip__title {
+    font-size: 1.4rem; }
+    @media only screen and (min-width: 900px) {
+      .singleTrip__title {
+        font-size: 2rem; } }
+  .singleTrip__box {
+    padding: 1rem;
+    background-color: #fff0ce;
+    font-size: 1.4rem; }
 
 header {
   margin: 0 auto;

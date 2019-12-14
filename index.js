@@ -54,53 +54,7 @@ scrollToTopBtn.addEventListener("click", function() {
 //   }
 // };
 
-// Free guided trips
-// Old url: "https://api.myjson.com/bins/yt8bl"
-// 2019/12/7 latest updated guide trips: https://api.myjson.com/bins/193ug0
-/*
-let url = "https://api.myjson.com/bins/193ug0";
-let newHTML = document.getElementById("oneDayFree");
-
-fetch(url)
-  .then(res => res.json())
-  // .then(res => {
-  //   res.ok ? console.log("Success!") : console.log("Something wrong.");
-  // })
-  .then(arr => {
-    console.log(arr);
-    let eleKey = Object.keys(arr);
-    let eleVal = Object.values(arr);
-    let elePair = Object.entries(arr);
-
-    //console.log(eleVal);
-
-    if (eleVal.length >= 1) {
-      for (let val of eleVal) {
-        // Create and append the li's to the ul or divs to the parent div
-        newHTML.innerHTML += `
-                <div class="singleTrip">
-                    <h3 class="singleTrip__title">活動Event: ${val.活動Event}</h3>
-                    <div class="singleTrip__box">
-                        <div class="trips__hikes--oneDayFree"><strong>日期Date: </strong>${val.Date}</div>
-                        <div class="trips__hikes--oneDayFree"><strong>集合時間Meetup Time: </strong>${val.Meetup_Time}</div>
-                        <div class="trips__hikes--oneDayFree"><strong>集合地點Meetup Point: </strong>${val.Meetup_Point}</div>                        
-                        <div class="trips__hikes--oneDayFree"><strong>交通Transportation: </strong>${val.Transportation}</div>
-                        <div class="trips__hikes--oneDayFree"><strong>難度Difficulty Level: </strong>${val.Difficulty_Level}</div>
-                        <div class="trips__hikes--oneDayFree"><strong>里程Distance: </strong>${val.Distance}</div>
-                        <div class="trips__hikes--oneDayFree"><a href="#"><strong>社團Hiking Club: </strong><a href="#">${val.Hiking_Club}</a></div>
-                        <div class="trips__hikes--oneDayFree"><strong>領隊Guide: </strong>${val.Guide}</div>
-                        <div class="trips__hikes--oneDayFree"><strong>路線簡介About the trail: <br></strong>${val.About_the_trail}</div>
-                    </div>
-            `;
-      }
-    }
-  })
-  .catch(err => console.error("Something went wrong!", err));
-
-// Make another function to extract the difficulty level and assign the associated colors
-
-*/
-
+/* 
 const url = "https://api.myjson.com/bins/193ug0";
 const container2 = document.querySelector("#trip-container");
 
@@ -145,3 +99,43 @@ function createItemAndAppendToTripContainer(item, tripContainer) {
 }
 
 main();
+*/
+
+//let url = "https://api.myjson.com/bins/193ug0";
+
+let url = "https://api.myjson.com/bins/ruxz4";
+let newHTML = document.getElementById("oneDayFree");
+
+fetch(url)
+  .then(res => res.json())
+  .then(arr => {
+    let eleKey = Object.keys(arr);
+    let eleVal = Object.values(arr);
+    let elePair = Object.entries(arr);
+    console.log("test", eleVal);
+
+    if (eleVal.length >= 1) {
+      for (let val of eleVal) {
+        // Create and append the li's to the ul or divs to the parent div
+        newHTML.innerHTML += `
+                <div class="singleTrip">
+                    <h3 class="singleTrip__title">Event: <br>${val.Event}</h3>
+                    <div class="singleTrip__box">
+                        <div class="singleTrip__box--oneDayFree"><span class="color-rating"></span></div>
+                        <div class="singleTrip__box--oneDayFree"><strong>Date: </strong>${val.Date}</div>
+                        <div class="singleTrip__box--oneDayFree"><strong>Meetup Time: </strong>${val.Meetup_Time}</div>
+                        <div class="singleTrip__box--oneDayFree"><strong>Meetup Point: </strong>${val.Meetup_Point}</div>             
+                        <div class="singleTrip__box--oneDayFree"><strong>Transportation: </strong>${val.Transportation}</div>
+                        <div class="singleTrip__box--oneDayFree"><strong>Difficulty Level: </strong>${val.Difficulty_Level}</div>
+                        <div class="singleTrip__box--oneDayFree"><strong>Distance: </strong>${val.Distance}</div>
+                        <div class="singleTrip__box--oneDayFree"><strong>Hiking Club: </strong>${val.Hiking_Club}</a></div>
+                        <div class="singleTrip__box--oneDayFree"><strong>Guide: </strong>${val.Guide}</div>
+                        <div class="singleTrip__box--oneDayFree"><strong>About the trail: <br></strong>${val.About_the_trail}</div>
+                    </div>
+            `;
+      }
+    }
+  })
+  .catch(err => console.error("Something went wrong!", err));
+
+// assign challenging level colors
