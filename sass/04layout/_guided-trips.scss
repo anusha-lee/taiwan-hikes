@@ -174,15 +174,37 @@
   }
 
   &__title {
+    padding: 1rem;
+    display: inline-block;
     font-size: $font-size-xs;
-    //background-color: darken($color-tan, 5%);
+    height: auto;
+    background-color: lighten($color-tan, 5%);
     @include responsive(sm-desktop) {
       font-size: $font-size-s;
     }
   }
   &__box {
     padding: 1rem;
-    background-color: $color-tan;
     font-size: $font-size-xs;
   }
+}
+
+// difficulty rating
+.rating-green {
+  background-color: $color-green;
+  width: 5rem;
+  height: 0.8rem;
+  border-radius: 5px;
+}
+.rating-yellow {
+  background-color: $color-yellow;
+  width: 5rem;
+  height: 0.8rem;
+  border-radius: 5px;
+}
+.rating-red {
+  background-color: $color-red;
+  width: 5rem;
+  height: 0.8rem;
+  border-radius: 5px;
 }

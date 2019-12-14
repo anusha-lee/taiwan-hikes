@@ -112,7 +112,6 @@ fetch(url)
     let eleKey = Object.keys(arr);
     let eleVal = Object.values(arr);
     let elePair = Object.entries(arr);
-    console.log("test", eleVal);
 
     if (eleVal.length >= 1) {
       for (let val of eleVal) {
@@ -133,9 +132,29 @@ fetch(url)
                         <div class="singleTrip__box--oneDayFree"><strong>About the trail: <br></strong>${val.About_the_trail}</div>
                     </div>
             `;
+
+        // assign challenging level colors
+        function addDifficultyColor() {
+          let checkDifficultyColor = val.Difficulty_Level;
+          let addColor = document.createElement("div");
+          // let colorBox = document.querySelector(".singleTrip");
+          newHTML.appendChild(addColor);
+
+          for (let val of eleVal) {
+            if (checkDifficultyColor === "A") {
+              addColor.className = "rating-green";
+            } else if (
+              checkDifficultyColor === "A+" ||
+              checkDifficultyColor === "B"
+            ) {
+              addColor.className = "rating-yellow";
+            } else {
+              addColor.className = "rating-red";
+            }
+          }
+        }
+        addDifficultyColor();
       }
     }
   })
   .catch(err => console.error("Something went wrong!", err));
-
-// assign challenging level colors

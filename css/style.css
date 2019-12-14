@@ -640,14 +640,35 @@ footer {
     .singleTrip {
       max-width: 31rem; } }
   .singleTrip__title {
-    font-size: 1.4rem; }
+    padding: 1rem;
+    display: inline-block;
+    font-size: 1.4rem;
+    height: auto;
+    background-color: #fff8e8; }
     @media only screen and (min-width: 900px) {
       .singleTrip__title {
         font-size: 2rem; } }
   .singleTrip__box {
     padding: 1rem;
-    background-color: #fff0ce;
     font-size: 1.4rem; }
+
+.rating-green {
+  background-color: #9ACD32;
+  width: 5rem;
+  height: 0.8rem;
+  border-radius: 5px; }
+
+.rating-yellow {
+  background-color: #FFD700;
+  width: 5rem;
+  height: 0.8rem;
+  border-radius: 5px; }
+
+.rating-red {
+  background-color: #FF0000;
+  width: 5rem;
+  height: 0.8rem;
+  border-radius: 5px; }
 
 header {
   margin: 0 auto;
