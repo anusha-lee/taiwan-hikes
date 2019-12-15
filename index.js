@@ -117,15 +117,15 @@ fetch(url)
       for (let val of eleVal) {
         // Create and append the li's to the ul or divs to the parent div
         newHTML.innerHTML += `
-                <div class="singleTrip">
+                <div class="singleTrip">                    
                     <h3 class="singleTrip__title">Event: <br>${val.Event}</h3>
                     <div class="singleTrip__box">
+                        <div class="singleTrip__box--oneDayFree singleTrip__color"><strong>Difficulty Level: </strong>${val.Difficulty_Level}</div>
                         <div class="singleTrip__box--oneDayFree"><span class="color-rating"></span></div>
                         <div class="singleTrip__box--oneDayFree"><strong>Date: </strong>${val.Date}</div>
                         <div class="singleTrip__box--oneDayFree"><strong>Meetup Time: </strong>${val.Meetup_Time}</div>
                         <div class="singleTrip__box--oneDayFree"><strong>Meetup Point: </strong>${val.Meetup_Point}</div>             
-                        <div class="singleTrip__box--oneDayFree"><strong>Transportation: </strong>${val.Transportation}</div>
-                        <div class="singleTrip__box--oneDayFree"><strong>Difficulty Level: </strong>${val.Difficulty_Level}</div>
+                        <div class="singleTrip__box--oneDayFree"><strong>Transportation: </strong>${val.Transportation}</div>                        
                         <div class="singleTrip__box--oneDayFree"><strong>Distance: </strong>${val.Distance}</div>
                         <div class="singleTrip__box--oneDayFree"><strong>Hiking Club: </strong>${val.Hiking_Club}</a></div>
                         <div class="singleTrip__box--oneDayFree"><strong>Guide: </strong>${val.Guide}</div>
@@ -136,24 +136,34 @@ fetch(url)
         // assign challenging level colors
         function addDifficultyColor() {
           let checkDifficultyColor = val.Difficulty_Level;
-          let addColor = document.createElement("div");
-          // let colorBox = document.querySelector(".singleTrip");
+          let addColor = document.createElement("span");
+          //let colorBox = document.querySelector(".singleTrip__box");
           newHTML.appendChild(addColor);
+          //colorBox.appendChild(addColor);
 
           for (let val of eleVal) {
             if (checkDifficultyColor === "A") {
-              addColor.className = "rating-green";
+              addColor.classList.add("color", "rating-green");
             } else if (
               checkDifficultyColor === "A+" ||
               checkDifficultyColor === "B"
             ) {
-              addColor.className = "rating-yellow";
+              addColor.classList.add("color", "rating-yellow");
             } else {
-              addColor.className = "rating-red";
+              addColor.classList.add("color", "red");
             }
           }
         }
         addDifficultyColor();
+
+        //Sort the trips by dates
+        function sortTripsByDates() {
+          let dateStringToNum = Date.parse(val.Date);
+          let dateArr = eleVal.map(date => Date.parse(date.Date));
+
+          console.log(typeof dateArr);
+        }
+        sortTripsByDates();
       }
     }
   })

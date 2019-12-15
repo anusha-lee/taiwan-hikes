@@ -127,8 +127,16 @@
   }
 
   &__title {
+    margin-top: 5rem;
     font-size: $font-size-sm;
     text-align: center;
+  }
+  // date and difficulty sorting buttons
+  &__sorting {
+    margin: 1rem auto;
+    padding: 0rem;
+    @include flex-center;
+    transition: all 0.3s ease-in-out;
   }
 
   //.trip__hikes is the parent of #trip-container
@@ -174,6 +182,7 @@
   }
 
   &__title {
+    width: 100%;
     padding: 1rem;
     display: inline-block;
     font-size: $font-size-xs;
@@ -189,7 +198,7 @@
   }
 }
 
-// difficulty rating
+// difficulty rating explanation
 .rating-green {
   background-color: $color-green;
   width: 5rem;
