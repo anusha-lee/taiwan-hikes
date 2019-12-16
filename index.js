@@ -141,7 +141,7 @@ fetch(url)
           newHTML.appendChild(addColor);
           //colorBox.appendChild(addColor);
 
-          for (let val of eleVal) {
+          for (let color of eleVal) {
             if (checkDifficultyColor === "A") {
               addColor.classList.add("color", "rating-green");
             } else if (
@@ -156,15 +156,38 @@ fetch(url)
         }
         addDifficultyColor();
 
-        //Sort the trips by dates
+        //
         function sortTripsByDates() {
-          let dateStringToNum = Date.parse(val.Date);
-          let dateArr = eleVal.map(date => Date.parse(date.Date));
-
-          console.log(typeof dateArr);
+          return fetch(url)
+            .then(res => res.json())
+            .then(arr => {
+              let dateStringToNum = Date.parse(val.Date);
+              let dateArr = eleVal.map(date => Date.parse(date.Date));
+              //console.log(eleVal);
+              console.log(dateStringToNum);
+            })
+            .catch(err => console.error("Something went wrong!", err));
         }
         sortTripsByDates();
       }
     }
   })
   .catch(err => console.error("Something went wrong!", err));
+
+/*********************************
+ *  Click the buttons (sorted by date, or sorted by difficulty)
+ * to sort the trips by dates or by difficulty rating
+ * ************************************/
+// function sortTripsByDates() {
+//   return fetch(url)
+//     .then(res => res.json())
+//     .then(arr => {
+//       let eleVal = Object.values(arr);
+//       let dateStringToNum = Date.parse(val.Date);
+//       let dateArr = eleVal.map(date => Date.parse(date.Date));
+
+//       console.log(eleVal);
+//     })
+//     .catch(err => console.error("Something went wrong!", err));
+// }
+// sortTripsByDates();
