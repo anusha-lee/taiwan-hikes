@@ -202,13 +202,17 @@ header {
     grid-column: 2 / 3;
     grid-row: 1/ 2;
 
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     position: relative;
 
-    right: 3%;
+    right: 0;
     top: 1.3rem;
-    transition: all 0.5s ease-in-out;
+   //transition: all 0.5s ease-in-out;
+   
+
+    border: 2px solid pink;
+    z-index: 2000; // might need to delete later
 
     @include responsive(tab) {
       right: 2.6%;
@@ -226,6 +230,7 @@ header {
       opacity: 0;
       cursor: pointer;
       z-index: 20;
+      
     }
 
     &--line {
@@ -235,6 +240,7 @@ header {
       height: 0.4rem;
       position: relative;
       top: 0.7rem;
+      left: 1rem;
       background-color: $color-deep-blue-grey;
       transform-origin: 4px 0;
       transition: all 0.3s ease-in-out;
@@ -253,34 +259,34 @@ header {
     &--toggle:checked ~ &--line {
       opacity: 1;
       transform: rotate(45deg) translate(-1px, -1px);
+      background-color: $color-white;
+      z-index: 30;
     }
 
     &--toggle:checked ~ &--line:nth-last-child(3) {
       opacity: 0;
-      transform: rotate(0deg) translate(0.2, 0.2);
+      transform: rotate(0deg) translate(0, 0);
     }
 
     &--toggle:checked ~ &--line:nth-last-child(2) {
       opacity: 1;
-      transform: rotate(-45deg) translate(-1px, -1px);
+      transform: rotate(-45deg) translate(0, 0);
+      z-index: 31;
     }
 
     &--list {
-      font-size: $font-size-sm;
+      font-size: $font-size-sm;//
       font-family: $font-title;
-      margin-top: -0.7rem;
-      margin-right: -10rem;
-      padding: 0.5rem;
-      width: 110vw;
-      height: 110vh;
+      margin-right: 0;
 
       background: rgba($color-base-blue, 0.9);
+      width: 100%;
       position: absolute;
       top: 0;
       right: 0;
-      //opacity: 0; // change back to 0 later
       display: none;
-      transition: all 0.5s ease-in-out; // not working. fix it later
+      // transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+      // transition: all 0.5s ease-in-out; // not working. fix it later
 
       &-item {
         margin: 2rem auto;
@@ -306,8 +312,24 @@ header {
     &--toggle:checked ~ &--list {
       //opacity: 1;
       display: block;
-      margin-right: -2rem;
+      //margin-right: -2rem;
+      padding-top: 5rem;
+      width: 100vw;
+      height: 100vh;
       margin-top: -3rem;
+      margin-right: -3rem;
+      transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+
+      @include responsive(tab) {
+        margin-right: -5rem;
+      }
+      @include responsive(sm-desktop) {
+          margin-right: -7rem;
+          width: 105vw;
+      }
+      @include responsive(normal-desktop) {
+        
+      }
     }
   }
 }

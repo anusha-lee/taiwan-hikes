@@ -860,12 +860,13 @@ header {
   .menu__hamburger {
     grid-column: 2 / 3;
     grid-row: 1/ 2;
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     position: relative;
-    right: 3%;
+    right: 0;
     top: 1.3rem;
-    transition: all 0.5s ease-in-out; }
+    border: 2px solid pink;
+    z-index: 2000; }
     @media only screen and (min-width: 580px) {
       .menu__hamburger {
         right: 2.6%;
@@ -888,6 +889,7 @@ header {
       height: 0.4rem;
       position: relative;
       top: 0.7rem;
+      left: 1rem;
       background-color: #383838;
       transform-origin: 4px 0;
       transition: all 0.3s ease-in-out;
@@ -899,27 +901,26 @@ header {
       transform-origin: 0 100%; }
     .menu__hamburger--toggle:checked ~ .menu__hamburger--line {
       opacity: 1;
-      transform: rotate(45deg) translate(-1px, -1px); }
+      transform: rotate(45deg) translate(-1px, -1px);
+      background-color: #fcfcfc;
+      z-index: 30; }
     .menu__hamburger--toggle:checked ~ .menu__hamburger--line:nth-last-child(3) {
       opacity: 0;
-      transform: rotate(0deg) translate(0.2, 0.2); }
+      transform: rotate(0deg) translate(0, 0); }
     .menu__hamburger--toggle:checked ~ .menu__hamburger--line:nth-last-child(2) {
       opacity: 1;
-      transform: rotate(-45deg) translate(-1px, -1px); }
+      transform: rotate(-45deg) translate(0, 0);
+      z-index: 31; }
     .menu__hamburger--list {
       font-size: 2.6rem;
       font-family: "Alegreya", serif;
-      margin-top: -0.7rem;
-      margin-right: -10rem;
-      padding: 0.5rem;
-      width: 110vw;
-      height: 110vh;
+      margin-right: 0;
       background: rgba(9, 115, 146, 0.9);
+      width: 100%;
       position: absolute;
       top: 0;
       right: 0;
-      display: none;
-      transition: all 0.5s ease-in-out; }
+      display: none; }
       .menu__hamburger--list-item {
         margin: 2rem auto;
         padding: 2rem; }
@@ -935,8 +936,19 @@ header {
           background-color: #83b4b3; }
     .menu__hamburger--toggle:checked ~ .menu__hamburger--list {
       display: block;
-      margin-right: -2rem;
-      margin-top: -3rem; }
+      padding-top: 5rem;
+      width: 100vw;
+      height: 100vh;
+      margin-top: -3rem;
+      margin-right: -3rem;
+      transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1); }
+      @media only screen and (min-width: 580px) {
+        .menu__hamburger--toggle:checked ~ .menu__hamburger--list {
+          margin-right: -5rem; } }
+      @media only screen and (min-width: 900px) {
+        .menu__hamburger--toggle:checked ~ .menu__hamburger--list {
+          margin-right: -7rem;
+          width: 105vw; } }
 
 .fixedNav {
   margin: 0 auto;
