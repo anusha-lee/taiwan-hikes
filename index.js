@@ -106,73 +106,89 @@ main();
 let url = "https://api.myjson.com/bins/ruxz4";
 let newHTML = document.getElementById("oneDayFree");
 
-fetch(url)
-  .then(res => res.json())
-  .then(arr => {
-    let eleKey = Object.keys(arr);
-    let eleVal = Object.values(arr);
-    let elePair = Object.entries(arr);
+getTripData();
 
-    if (eleVal.length >= 1) {
-      for (let val of eleVal) {
-        // Create and append the li's to the ul or divs to the parent div
-        newHTML.innerHTML += `
-                <div class="singleTrip">                    
-                    <h3 class="singleTrip__title">Event: <br>${val.Event}</h3>
-                    <div class="singleTrip__box">
-                        <div class="singleTrip__box--oneDayFree singleTrip__color"><strong>Difficulty Level: </strong>${val.Difficulty_Level}</div>
-                        <div class="singleTrip__box--oneDayFree"><span class="color-rating"></span></div>
-                        <div class="singleTrip__box--oneDayFree"><strong>Date: </strong>${val.Date}</div>
-                        <div class="singleTrip__box--oneDayFree"><strong>Meetup Time: </strong>${val.Meetup_Time}</div>
-                        <div class="singleTrip__box--oneDayFree"><strong>Meetup Point: </strong>${val.Meetup_Point}</div>             
-                        <div class="singleTrip__box--oneDayFree"><strong>Transportation: </strong>${val.Transportation}</div>                        
-                        <div class="singleTrip__box--oneDayFree"><strong>Distance: </strong>${val.Distance}</div>
-                        <div class="singleTrip__box--oneDayFree"><strong>Hiking Club: </strong>${val.Hiking_Club}</a></div>
-                        <div class="singleTrip__box--oneDayFree"><strong>Guide: </strong>${val.Guide}</div>
-                        <div class="singleTrip__box--oneDayFree"><strong>About the trail: <br></strong>${val.About_the_trail}</div>
-                    </div>
-            `;
+function getTripData() {
+  fetch(url)
+    .then(res => res.json())
+    .then(arr => {
+      let eleKey = Object.keys(arr);
+      let eleVal = Object.values(arr);
+      let elePair = Object.entries(arr);
 
-        // assign challenging level colors
-        function addDifficultyColor() {
-          let checkDifficultyColor = val.Difficulty_Level;
-          let addColor = document.createElement("span");
-          //let colorBox = document.querySelector(".singleTrip__box");
-          newHTML.appendChild(addColor);
-          //colorBox.appendChild(addColor);
-
-          for (let color of eleVal) {
-            if (checkDifficultyColor === "A") {
-              addColor.classList.add("color", "rating-green");
-            } else if (
-              checkDifficultyColor === "A+" ||
-              checkDifficultyColor === "B"
-            ) {
-              addColor.classList.add("color", "rating-yellow");
-            } else {
-              addColor.classList.add("color", "red");
-            }
-          }
+      // Create and append the li's to the ul or div to the parent div
+      if (eleVal.length >= 1) {
+        for (let val of eleVal) {
+          newHTML.innerHTML += `
+                  <div class="singleTrip">                    
+                      <h3 class="singleTrip__title">Event: <br>${val.Event}</h3>
+                      <div class="singleTrip__box">
+                          <div class="singleTrip__box--oneDayFree singleTrip__color"><strong>Difficulty Level: </strong>${val.Difficulty_Level}</div>
+                          <div class="singleTrip__box--oneDayFree"><span class="color-rating"></span></div>
+                          <div class="singleTrip__box--oneDayFree"><strong>Date: </strong>${val.Date}</div>
+                          <div class="singleTrip__box--oneDayFree"><strong>Meetup Time: </strong>${val.Meetup_Time}</div>
+                          <div class="singleTrip__box--oneDayFree"><strong>Meetup Point: </strong>${val.Meetup_Point}</div>             
+                          <div class="singleTrip__box--oneDayFree"><strong>Transportation: </strong>${val.Transportation}</div>                        
+                          <div class="singleTrip__box--oneDayFree"><strong>Distance: </strong>${val.Distance}</div>
+                          <div class="singleTrip__box--oneDayFree"><strong>Hiking Club: </strong>${val.Hiking_Club}</a></div>
+                          <div class="singleTrip__box--oneDayFree"><strong>Guide: </strong>${val.Guide}</div>
+                          <div class="singleTrip__box--oneDayFree"><strong>About the trail: <br></strong>${val.About_the_trail}</div>
+                      </div>
+              `;
         }
-        addDifficultyColor();
-
-        //
-        function sortTripsByDates() {
-          return fetch(url)
-            .then(res => res.json())
-            .then(arr => {
-              let dateStringToNum = Date.parse(val.Date);
-              let dateArr = eleVal.map(date => Date.parse(date.Date));
-              //console.log(eleVal);
-              console.log(dateStringToNum);
-            })
-            .catch(err => console.error("Something went wrong!", err));
-        }
-        sortTripsByDates();
       }
-    }
-  })
-  .catch(err => console.error("Something went wrong!", err));
+    })
+    .catch(err => console.error("Something went wrong!", err));
+}
+
+// assign challenging level colors
+addDifficultyColor();
+
+function addDifficultyColor() {
+  fetch(url)
+    .then(res => res.json())
+    .then(arr => {
+      let eleVal = Object.values(arr);
+
+      for (let color of eleVal) {
+        let checkDifficultyColor = color.Difficulty_Level;
+        let addColor = document.createElement("span");
+        // let colorRating = document.getElementById("color-rating");
+        // colorRating.appendChild(addColor);
+        newHTML.appendChild(addColor);
+
+        if (checkDifficultyColor === "A") {
+          addColor.classList.add("color", "rating-green");
+        } else if (
+          checkDifficultyColor === "A+" ||
+          checkDifficultyColor === "B"
+        ) {
+          addColor.classList.add("color", "rating-yellow");
+        } else {
+          addColor.classList.add("color", "rating-red");
+        }
+      }
+    })
+    .catch(err => console.error("Color rating went wrong!", err));
+}
+
+// Click "Sorted by date" button to sort
+sortTripsByDates();
+
+function sortTripsByDates() {
+  fetch(url)
+    .then(res => res.json())
+    .then(arr => {
+      let eleVal = Object.values(arr);
+      for (let date of eleVal) {
+        let dateStringToNum = Date.parse(date.Date);
+        let dateArr = eleVal.map(date => Date.parse(date.Date));
+        //console.log(eleVal);
+        console.log(dateStringToNum);
+      }
+    })
+    .catch(err => console.error("Date sorting went wrong!", err));
+}
 
 /*********************************
  *  Click the buttons (sorted by date, or sorted by difficulty)
