@@ -208,10 +208,7 @@ header {
 
     right: 0;
     top: 1.3rem;
-   //transition: all 0.5s ease-in-out;
-   
-
-    border: 2px solid pink;
+    //transition: all 0.5s ease-in-out;
     z-index: 2000; // might need to delete later
 
     @include responsive(tab) {
@@ -229,8 +226,7 @@ header {
       right: 0;
       opacity: 0;
       cursor: pointer;
-      z-index: 20;
-      
+      z-index: 33;
     }
 
     &--line {
@@ -258,35 +254,32 @@ header {
 
     &--toggle:checked ~ &--line {
       opacity: 1;
-      transform: rotate(45deg) translate(-1px, -1px);
+      transform: rotate(45deg) translate(0, 0);
       background-color: $color-white;
       z-index: 30;
     }
 
     &--toggle:checked ~ &--line:nth-last-child(3) {
       opacity: 0;
-      transform: rotate(0deg) translate(0, 0);
+      transform: rotate(0deg);
     }
 
     &--toggle:checked ~ &--line:nth-last-child(2) {
       opacity: 1;
-      transform: rotate(-45deg) translate(0, 0);
+      transform: rotate(-45deg);
       z-index: 31;
     }
 
     &--list {
-      font-size: $font-size-sm;//
+      font-size: $font-size-sm; //
       font-family: $font-title;
       margin-right: 0;
-
       background: rgba($color-base-blue, 0.9);
       width: 100%;
       position: absolute;
       top: 0;
       right: 0;
       display: none;
-      // transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-      // transition: all 0.5s ease-in-out; // not working. fix it later
 
       &-item {
         margin: 2rem auto;
@@ -294,6 +287,7 @@ header {
 
         & a {
           display: inline-block;
+          margin: 0 auto;
           width: 100%;
           height: 100%;
           padding: 2rem 1rem;
@@ -318,17 +312,15 @@ header {
       height: 100vh;
       margin-top: -3rem;
       margin-right: -3rem;
-      transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
 
       @include responsive(tab) {
         margin-right: -5rem;
       }
       @include responsive(sm-desktop) {
-          margin-right: -7rem;
-          width: 105vw;
+        margin-right: -7rem;
+        width: 105vw;
       }
       @include responsive(normal-desktop) {
-        
       }
     }
   }
