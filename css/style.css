@@ -94,12 +94,14 @@ how to apply:
   position: fixed;
   width: 3rem;
   height: 3rem;
-  border-radius: 50%;
   bottom: 10%;
   right: 7%;
   background: radial-gradient(#83b4b3 15%, #097392 85%);
   cursor: pointer;
-  z-index: 300; }
+  z-index: 300;
+  transition: all 0.4s ease-in-out; }
+  .scroll-up:hover {
+    border-radius: 50%; }
   .scroll-up__arrow {
     position: absolute;
     top: 10%;
@@ -107,9 +109,10 @@ how to apply:
     font-size: 2.5rem;
     color: #fcfcfc;
     text-shadow: 0.1rem 0.1rem 0.2rem #383838;
-    transition: all 0.2s ease-in-out; }
+    transition: all 0.4s ease-in-out; }
     .scroll-up__arrow:hover {
-      transform: translateY(-0.2rem); }
+      transform: translateY(-0.2rem);
+      border-radius: 50%; }
 
 .sevenReasons__btn {
   padding: 1.5rem 0.5rem; }

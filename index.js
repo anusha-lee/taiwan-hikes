@@ -120,19 +120,35 @@ function getTripData() {
       if (eleVal.length >= 1) {
         for (let val of eleVal) {
           newHTML.innerHTML += `
-                  <div class="singleTrip">                    
+                  <div class="singleTrip">
                       <h3 class="singleTrip__title">Event: <br>${val.Event}</h3>
                       <div class="singleTrip__box">
-                          <div class="singleTrip__box--oneDayFree singleTrip__color"><strong>Difficulty Level: </strong>${val.Difficulty_Level}</div>
+                          <div class="singleTrip__box--oneDayFree singleTrip__color"><strong>Difficulty Level: </strong>${addDifficultyColor()}</div>
                           <div class="singleTrip__box--oneDayFree"><span class="color-rating"></span></div>
-                          <div class="singleTrip__box--oneDayFree"><strong>Date: </strong>${val.Date}</div>
-                          <div class="singleTrip__box--oneDayFree"><strong>Meetup Time: </strong>${val.Meetup_Time}</div>
-                          <div class="singleTrip__box--oneDayFree"><strong>Meetup Point: </strong>${val.Meetup_Point}</div>             
-                          <div class="singleTrip__box--oneDayFree"><strong>Transportation: </strong>${val.Transportation}</div>                        
-                          <div class="singleTrip__box--oneDayFree"><strong>Distance: </strong>${val.Distance}</div>
-                          <div class="singleTrip__box--oneDayFree"><strong>Hiking Club: </strong>${val.Hiking_Club}</a></div>
-                          <div class="singleTrip__box--oneDayFree"><strong>Guide: </strong>${val.Guide}</div>
-                          <div class="singleTrip__box--oneDayFree"><strong>About the trail: <br></strong>${val.About_the_trail}</div>
+                          <div class="singleTrip__box--oneDayFree"><strong>Date: </strong>${
+                            val.Date
+                          }</div>
+                          <div class="singleTrip__box--oneDayFree"><strong>Meetup Time: </strong>${
+                            val.Meetup_Time
+                          }</div>
+                          <div class="singleTrip__box--oneDayFree"><strong>Meetup Point: </strong>${
+                            val.Meetup_Point
+                          }</div>             
+                          <div class="singleTrip__box--oneDayFree"><strong>Transportation: </strong>${
+                            val.Transportation
+                          }</div>                        
+                          <div class="singleTrip__box--oneDayFree"><strong>Distance: </strong>${
+                            val.Distance
+                          }</div>
+                          <div class="singleTrip__box--oneDayFree"><strong>Hiking Club: </strong>${
+                            val.Hiking_Club
+                          }</a></div>
+                          <div class="singleTrip__box--oneDayFree"><strong>Guide: </strong>${
+                            val.Guide
+                          }</div>
+                          <div class="singleTrip__box--oneDayFree"><strong>About the trail: <br></strong>${
+                            val.About_the_trail
+                          }</div>
                       </div>
               `;
         }
@@ -173,6 +189,7 @@ function addDifficultyColor() {
 }
 
 // Click "Sorted by date" button to sort
+/*
 sortTripsByDates();
 
 function sortTripsByDates() {
@@ -189,7 +206,7 @@ function sortTripsByDates() {
     })
     .catch(err => console.error("Date sorting went wrong!", err));
 }
-
+*/
 /*********************************
  *  Click the buttons (sorted by date, or sorted by difficulty)
  * to sort the trips by dates or by difficulty rating
