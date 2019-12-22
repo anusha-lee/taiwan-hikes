@@ -11,9 +11,9 @@
   @include responsive(normal-desktop) {
     width: 60%;
   }
-  @include responsive(xl-desktop) {
-    width: 50%;
-  }
+  // @include responsive(xl-desktop) {
+  //   width: 50%;
+  // }
 }
 
 .sharethis-inline-share-buttons {

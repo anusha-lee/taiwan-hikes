@@ -98,6 +98,27 @@ header {
   }
 }
 
+// Different background images for different pages
+.header__background-img-7Reasons {
+  background-image: url("../img/header-background5.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.header__background-img-guided-tours {
+  background-image: url("../img/header-background2.jpg");
+  background-size: cover;
+  background-position: 55% 35%;
+}
+
+.header__background-img-start-here {
+  background-image: url("../img/header-background6.jpg");
+  background-size: cover;
+  background-position: 90%;
+}
+
+// Logo
+
 .logo {
   padding: 1rem 1rem 1rem 1.5rem;
   transition: display 0.3s ease-in-out;
