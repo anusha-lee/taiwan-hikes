@@ -26,8 +26,6 @@ Start Here and Blog Home page layout
   @include responsive(normal-desktop) {
     width: 55%;
   }
-  @include responsive(xl-desktop) {
-  }
 }
 
 .here {
@@ -92,3 +90,33 @@ Start Here and Blog Home page layout
     }
   }
 }
+
+/***********************************************
+About page layout
+************************************************/
+.about-container__creator {
+  margin: 2rem auto;
+  &--img {
+    & img {
+      border-radius: 50%;
+      width: 15rem;
+    }    
+  }
+  &--intro {
+    text-align: left;
+  }
+}
+
+.about-container__website,
+.about-container__hikingclub {
+  margin: 3rem auto;
+  &--img {
+    & img {
+      width: 60%;
+    }
+  }
+  &--intro {
+    text-align: left;
+  }
+}
+
