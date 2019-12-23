@@ -100,7 +100,7 @@ About page layout
     & img {
       border-radius: 50%;
       width: 15rem;
-    }    
+    }
   }
   &--intro {
     text-align: left;
@@ -120,3 +120,6 @@ About page layout
   }
 }
 
+.about-container__acknowledgement {
+  margin: 1rem auto 6rem;
+}

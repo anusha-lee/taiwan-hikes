@@ -150,8 +150,25 @@
 #oneDayFree {
   margin: 1rem auto;
   width: 100%;
+  max-height: 200rem;
+  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
+  transition: all 0.5s ease-in-out;
+
+  @include responsive(tab) {
+    max-height: 160rem;
+  }
+  @include responsive(sm-desktop) {
+    max-height: 120rem;
+  }
+  @include responsive(normal-desktop) {
+    max-height: 100rem;
+  }
+}
+#oneDayFree.open {
+  max-height: auto;
+  transition: all 0.5s ease-in-out;
 }
 
 .singleTrip {

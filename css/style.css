@@ -144,7 +144,7 @@ how to apply:
 .freeHikes__btn--explore {
   background: linear-gradient(#d55534, #525252); }
 
-.load-more__btn {
+.show-all__btn {
   background: linear-gradient(#097392, #525252); }
 
 .custom-made__btn {
@@ -652,8 +652,24 @@ footer {
 #oneDayFree {
   margin: 1rem auto;
   width: 100%;
+  max-height: 200rem;
+  overflow: hidden;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  transition: all 0.5s ease-in-out; }
+  @media only screen and (min-width: 580px) {
+    #oneDayFree {
+      max-height: 160rem; } }
+  @media only screen and (min-width: 900px) {
+    #oneDayFree {
+      max-height: 120rem; } }
+  @media only screen and (min-width: 1200px) {
+    #oneDayFree {
+      max-height: 100rem; } }
+
+#oneDayFree.open {
+  max-height: auto;
+  transition: all 0.5s ease-in-out; }
 
 .singleTrip {
   margin: 2rem auto;
@@ -1286,6 +1302,9 @@ About page layout
   .about-container__website--intro,
   .about-container__hikingclub--intro {
     text-align: left; }
+
+.about-container__acknowledgement {
+  margin: 1rem auto 6rem; }
 
 @-webkit-keyframes check {
   50% {

@@ -2,7 +2,7 @@
 window.addEventListener("scroll", () => {
   const navFixed = document.querySelector(".header-box");
   const fromTop = window.scrollY;
-  if (fromTop > 500) {
+  if (fromTop > 600) {
     navFixed.classList.add("fixedNav");
   } else {
     navFixed.classList.remove("fixedNav");
@@ -106,6 +106,41 @@ main();
 let url = "https://api.myjson.com/bins/ruxz4";
 let newHTML = document.getElementById("oneDayFree");
 
+// assign challenging level colors
+/*
+addDifficultyColor();
+*/
+function addDifficultyColor() {
+  fetch(url)
+    .then(res => res.json())
+    .then(arr => {
+      let eleVal = Object.values(arr);
+
+      for (let color of eleVal) {
+        let checkDifficultyColor = color.Difficulty_Level;
+        let addColor = document.createElement("span");
+        //let colorRating = document.querySelector(".color-rating");// something wrong with this
+        //let colorRating = document.querySelector(".singleTrip");// something wrong with this
+        //colorRating.appendChild(addColor);
+        //newHTML.appendChild(addColor); // something wrong with this
+        //colorRating.appendChild(addColor);
+        //console.log(colorRating);
+
+        if (checkDifficultyColor === "A") {
+          addColor.classList.add("color", "rating-green");
+        } else if (
+          checkDifficultyColor === "A+" ||
+          checkDifficultyColor === "B"
+        ) {
+          addColor.classList.add("color", "rating-yellow");
+        } else {
+          addColor.classList.add("color", "rating-red");
+        }
+      }
+    })
+    .catch(err => console.error("Color rating went wrong!", err));
+}
+
 getTripData();
 
 function getTripData() {
@@ -123,15 +158,34 @@ function getTripData() {
                   <div class="singleTrip">
                       <h3 class="singleTrip__title">Event: <br>${val.Event}</h3>
                       <div class="singleTrip__box">
-                          <div class="singleTrip__box--oneDayFree singleTrip__color"><strong>Difficulty Level: </strong>${val.Difficulty_Level}</div>
-                          <div class="singleTrip__box--oneDayFree"><strong>Date: </strong>${val.Date}</div>
-                          <div class="singleTrip__box--oneDayFree"><strong>Meetup Time: </strong>${val.Meetup_Time}</div>
-                          <div class="singleTrip__box--oneDayFree"><strong>Meetup Point: </strong>${val.Meetup_Point}</div>             
-                          <div class="singleTrip__box--oneDayFree"><strong>Transportation: </strong>${val.Transportation}</div>                        
-                          <div class="singleTrip__box--oneDayFree"><strong>Distance: </strong>${val.Distance}</div>
-                          <div class="singleTrip__box--oneDayFree"><strong>Hiking Club: </strong>${val.Hiking_Club}</a></div>
-                          <div class="singleTrip__box--oneDayFree"><strong>Guide: </strong>${val.Guide}</div>
-                          <div class="singleTrip__box--oneDayFree"><strong>About the trail: <br></strong>${val.About_the_trail}</div>
+                        <div class="singleTrip__box--oneDayFree color-rating">${addDifficultyColor()}</div>
+                        <div class="singleTrip__box--oneDayFree"><strong>Difficulty Level: </strong>${
+                          val.Difficulty_Level
+                        }</div>
+                        <div class="singleTrip__box--oneDayFree"><strong>Date: </strong>${
+                          val.Date
+                        }</div>
+                        <div class="singleTrip__box--oneDayFree"><strong>Meetup Time: </strong>${
+                          val.Meetup_Time
+                        }</div>
+                        <div class="singleTrip__box--oneDayFree"><strong>Meetup Point: </strong>${
+                          val.Meetup_Point
+                        }</div>             
+                        <div class="singleTrip__box--oneDayFree"><strong>Transportation: </strong>${
+                          val.Transportation
+                        }</div>                        
+                        <div class="singleTrip__box--oneDayFree"><strong>Distance: </strong>${
+                          val.Distance
+                        }</div>
+                        <div class="singleTrip__box--oneDayFree"><strong>Hiking Club: </strong>${
+                          val.Hiking_Club
+                        }</a></div>
+                        <div class="singleTrip__box--oneDayFree"><strong>Guide: </strong>${
+                          val.Guide
+                        }</div>
+                        <div class="singleTrip__box--oneDayFree"><strong>About the trail: <br></strong>${
+                          val.About_the_trail
+                        }</div>
                       </div>
               `;
         }
@@ -140,41 +194,6 @@ function getTripData() {
     .catch(err => console.error("Something went wrong!", err));
 }
 
-// assign challenging level colors
-
-/*
-addDifficultyColor();
-
-function addDifficultyColor() {
-  fetch(url)
-    .then(res => res.json())
-    .then(arr => {
-      let eleVal = Object.values(arr);
-
-      for (let color of eleVal) {
-        let checkDifficultyColor = color.Difficulty_Level;
-        let addColor = document.createElement("span");
-        //let colorRating = document.querySelector(".singleTrip__color");
-        // colorRating.appendChild(addColor);
-        newHTML.appendChild(addColor);
-        //colorRating.appendChild(addColor);
-        //console.log(addColor);
-
-        if (checkDifficultyColor === "A") {
-          addColor.classList.add("color", "rating-green");
-        } else if (
-          checkDifficultyColor === "A+" ||
-          checkDifficultyColor === "B"
-        ) {
-          addColor.classList.add("color", "rating-yellow");
-        } else {
-          addColor.classList.add("color", "rating-red");
-        }
-      }
-    })
-    .catch(err => console.error("Color rating went wrong!", err));
-}
-*/
 // Click "Sorted by date" button to sort
 
 // sortTripsByDates();
@@ -195,22 +214,24 @@ function sortTripsByDates() {
 }
 
 // Create an event listener to sort date
-window.addEventListener("scroll", () => {
-  const navFixed = document.querySelector(".header-box");
-  const fromTop = window.scrollY;
-  if (fromTop > 500) {
-    navFixed.classList.add("fixedNav");
-  } else {
-    navFixed.classList.remove("fixedNav");
-  }
-});
+// window.addEventListener("scroll", () => {
+//   const navFixed = document.querySelector(".header-box");
+//   const fromTop = window.scrollY;
+//   if (fromTop > 500) {
+//     navFixed.classList.add("fixedNav");
+//   } else {
+//     navFixed.classList.remove("fixedNav");
+//   }
+// });
 
+/*
 window.addEventListener("click", () => {
   const sortByDate = document.querySelector(".byDate");
   if (sortByDate) {
     sortTripsByDates();
   }
 });
+*/
 
 /*********************************
  *  Click the buttons (sorted by date, or sorted by difficulty)
@@ -229,3 +250,19 @@ window.addEventListener("click", () => {
 //     .catch(err => console.error("Something went wrong!", err));
 // }
 // sortTripsByDates();
+
+// Show all and Show less buttons
+let oneDayFree = document.getElementById("oneDayFree");
+let showAllBtn = document.querySelector(".show-all__btn");
+
+showAllBtn.onclick = function() {
+  if (oneDayFree.className == "open") {
+    // shrink the box
+    oneDayFree.className == "";
+    showAllBtn.innerHTML = "Show all";
+  } else {
+    // expand the box
+    oneDayFree.className == "open";
+    showAllBtn.innerHTML = "Show less";
+  }
+};
