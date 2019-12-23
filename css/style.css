@@ -632,7 +632,7 @@ footer {
       width: 80%; } }
   @media only screen and (min-width: 1500px) {
     .trips {
-      width: 65%; } }
+      width: 70%; } }
   .trips__title {
     margin-top: 5rem;
     font-size: 2.6rem;
@@ -659,7 +659,7 @@ footer {
   margin: 2rem auto;
   min-width: 26rem;
   max-width: 34rem;
-  height: 30rem;
+  max-height: 34rem;
   padding: 2rem;
   color: #383838;
   overflow: scroll;
@@ -667,17 +667,15 @@ footer {
   box-shadow: 0.2rem 0.2rem 0.5rem #d1d1d1; }
   @media only screen and (min-width: 580px) {
     .singleTrip {
-      max-width: 32rem;
-      height: 36rem; } }
+      min-width: 33rem;
+      max-height: 36rem; } }
   @media only screen and (min-width: 900px) {
     .singleTrip {
-      max-width: 30rem; } }
+      max-width: 34rem; } }
   @media only screen and (min-width: 1200px) {
     .singleTrip {
-      height: 36rem; } }
-  @media only screen and (min-width: 1500px) {
-    .singleTrip {
-      max-width: 31rem; } }
+      max-width: 28rem;
+      height: 38rem; } }
   .singleTrip__title {
     width: 100%;
     padding: 1rem;
