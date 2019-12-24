@@ -258,11 +258,11 @@ let showAllBtn = document.querySelector(".show-all__btn");
 showAllBtn.onclick = function() {
   if (oneDayFree.className == "open") {
     // shrink the box
-    oneDayFree.className == "";
+    oneDayFree.className = "";
     showAllBtn.innerHTML = "Show all";
   } else {
     // expand the box
-    oneDayFree.className == "open";
+    oneDayFree.className = "open";
     showAllBtn.innerHTML = "Show less";
   }
 };

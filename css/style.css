@@ -651,7 +651,7 @@ footer {
 
 #oneDayFree {
   margin: 1rem auto;
-  width: 100%;
+  width: 90%;
   max-height: 200rem;
   overflow: hidden;
   display: flex;
@@ -659,6 +659,7 @@ footer {
   transition: all 0.5s ease-in-out; }
   @media only screen and (min-width: 580px) {
     #oneDayFree {
+      width: 100%;
       max-height: 160rem; } }
   @media only screen and (min-width: 900px) {
     #oneDayFree {
@@ -668,13 +669,13 @@ footer {
       max-height: 100rem; } }
 
 #oneDayFree.open {
-  max-height: auto;
+  max-height: max-content;
   transition: all 0.5s ease-in-out; }
 
 .singleTrip {
   margin: 2rem auto;
-  min-width: 26rem;
-  max-width: 34rem;
+  min-width: 24rem;
+  max-width: 32rem;
   max-height: 34rem;
   padding: 2rem;
   color: #383838;
@@ -683,7 +684,7 @@ footer {
   box-shadow: 0.2rem 0.2rem 0.5rem #d1d1d1; }
   @media only screen and (min-width: 580px) {
     .singleTrip {
-      min-width: 33rem;
+      min-width: 32rem;
       max-height: 36rem; } }
   @media only screen and (min-width: 900px) {
     .singleTrip {
