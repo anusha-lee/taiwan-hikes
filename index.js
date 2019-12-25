@@ -254,12 +254,15 @@ window.addEventListener("click", () => {
 // Show all and Show less buttons
 let oneDayFree = document.getElementById("oneDayFree");
 let showAllBtn = document.querySelector(".show-all__btn");
+let positionAfterShow = window.scrollY;
 
 showAllBtn.onclick = function() {
   if (oneDayFree.className == "open") {
     // shrink the box
     oneDayFree.className = "";
     showAllBtn.innerHTML = "Show all";
+    positionAfterShow = 300;
+    console.log(positionAfterShow);
   } else {
     // expand the box
     oneDayFree.className = "open";

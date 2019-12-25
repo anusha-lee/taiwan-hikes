@@ -141,14 +141,19 @@ how to apply:
   .sevenReasons__btn--explore:visited {
     color: #fff0ce; }
 
-.freeHikes__btn--explore {
-  background: linear-gradient(#d55534, #525252); }
+.freeHikes__btn {
+  padding: 5rem 1rem 2rem; }
+  .freeHikes__btn--explore {
+    background: linear-gradient(#d55534, #525252); }
 
 .show-all__btn {
+  margin: 1rem auto;
+  border: none;
+  font-size: 2rem;
   background: linear-gradient(#097392, #525252); }
 
 .custom-made__btn {
-  margin-top: -10rem;
+  margin-top: 5rem;
   width: 28rem;
   text-align: center; }
 
@@ -652,21 +657,14 @@ footer {
 #oneDayFree {
   margin: 1rem auto;
   width: 90%;
-  max-height: 200rem;
+  max-height: 100rem;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   transition: all 0.5s ease-in-out; }
   @media only screen and (min-width: 580px) {
     #oneDayFree {
-      width: 100%;
-      max-height: 160rem; } }
-  @media only screen and (min-width: 900px) {
-    #oneDayFree {
-      max-height: 120rem; } }
-  @media only screen and (min-width: 1200px) {
-    #oneDayFree {
-      max-height: 100rem; } }
+      width: 100%; } }
 
 #oneDayFree.open {
   max-height: max-content;

@@ -70,6 +70,7 @@
 
 // Landing Page Latest Hikes button
 .freeHikes__btn {
+  padding: 5rem 1rem 2rem;
   &--explore {
     background: linear-gradient(
       $color-orangered,
@@ -80,13 +81,17 @@
 
 // Guided-trips Buttons
 .show-all__btn {
+  margin: 1rem auto;
+  border: none;
+
+  font-size: $font-size-s;
   background: linear-gradient(
     $color-base-blue,
     lighten($color-deep-blue-grey, 10%)
   );
 }
 .custom-made__btn {
-  margin-top: -10rem;
+  margin-top: 5rem;
   width: 28rem;
   text-align: center;
 }
