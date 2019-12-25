@@ -61,6 +61,7 @@
   &__title {
     font-size: $font-size-sm;
     color: $color-base-blue;
+    text-align: center;
   }
   &__explain {
     margin: 1rem auto;
@@ -150,7 +151,7 @@
 #oneDayFree {
   margin: 1rem auto;
   width: 90%;
-  max-height: 100rem;
+  max-height: 110rem;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
@@ -158,6 +159,7 @@
 
   @include responsive(tab) {
     width: 100%;
+    max-height: 70rem;
   }
 }
 // click Show all or Show less
@@ -169,9 +171,8 @@
 .singleTrip {
   margin: 2rem auto;
   min-width: 24rem;
-  max-width: 32rem;
-  max-height: 34rem;
-  //background-color: $color-tan;
+  max-width: 30rem;
+  max-height: 32rem;
   padding: 2rem;
   color: $color-deep-blue-grey;
   overflow: scroll;
@@ -181,7 +182,7 @@
   @include responsive(tab) {
     min-width: 32rem;
     //max-width: 38rem;
-    max-height: 36rem;
+    max-height: 30rem;
   }
   @include responsive(sm-desktop) {
     // min-width: 26rem;
@@ -189,7 +190,7 @@
   }
   @include responsive(normal-desktop) {
     max-width: 28rem;
-    height: 38rem;
+    //height: 38rem;
   }
   // @include responsive(xl-desktop) {
   //   max-width: 30rem;

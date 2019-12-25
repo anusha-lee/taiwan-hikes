@@ -302,15 +302,16 @@ header {
       font-family: $font-title;
       margin-right: 0;
       background: rgba($color-base-blue, 0.9);
-      width: 100%;
+      width: 100vw;
+      height: 100vh;
       position: absolute;
       top: 0;
       right: 0;
       display: none;
 
       &-item {
-        margin: 2rem auto;
-        padding: 2rem;
+        margin: 1rem auto;
+        padding: 1rem;
 
         & a {
           display: inline-block;
@@ -322,8 +323,11 @@ header {
 
           text-align: center;
           transition: all 0.5s ease-in-out;
+          backface-visibility: hidden;
         }
         & a:hover {
+          // width: 105vw;
+          // margin-left: -1rem;
           background-color: $color-blue-grey;
           // text-shadow: $color-deep-blue-grey;
         }
@@ -338,14 +342,16 @@ header {
       width: 100vw;
       height: 100vh;
       margin-top: -3rem;
-      margin-right: -3rem;
+      margin-right: -1rem;
 
       @include responsive(tab) {
-        margin-right: -5rem;
+        //margin-right: 0rem;
+        margin-right: -6rem;
+        width: 106vw;
       }
       @include responsive(sm-desktop) {
-        margin-right: -7rem;
-        width: 105vw;
+        // margin-right: -5rem;
+        // width: 104vw;
       }
       @include responsive(normal-desktop) {
       }
