@@ -107,7 +107,7 @@
 }
 
 .main-carousel {
-  margin: 2rem 0 6rem;
+  margin: 2rem 0 2rem;
   background: $color-blue-grey;
   //height: 60vh;
 }
@@ -129,10 +129,11 @@
     height: 40rem;
   }
 }
-.carousel-cell::before {
+.carousel-cell::before,
+.carousel-cell::after {
   display: block;
   content: counter(carousel-cell);
-  line-height: 30rem;
+  line-height: 1rem;
   color: transparent;
 }
 

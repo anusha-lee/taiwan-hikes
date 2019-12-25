@@ -269,7 +269,7 @@ how to apply:
         font-size: 3.8rem; } }
 
 .main-carousel {
-  margin: 2rem 0 6rem;
+  margin: 2rem 0 2rem;
   background: #83b4b3; }
 
 .carousel-cell {
@@ -288,10 +288,11 @@ how to apply:
     .carousel-cell img {
       height: 40rem; } }
 
-.carousel-cell::before {
+.carousel-cell::before,
+.carousel-cell::after {
   display: block;
   content: counter(carousel-cell);
-  line-height: 30rem;
+  line-height: 1rem;
   color: transparent; }
 
 figcaption {

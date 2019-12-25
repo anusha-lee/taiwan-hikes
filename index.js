@@ -261,8 +261,6 @@ showAllBtn.onclick = function() {
     // shrink the box
     oneDayFree.className = "";
     showAllBtn.innerHTML = "Show all";
-    positionAfterShow = 300;
-    console.log(positionAfterShow);
   } else {
     // expand the box
     oneDayFree.className = "open";
