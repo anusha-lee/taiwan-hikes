@@ -276,17 +276,18 @@ how to apply:
   padding: 5rem 0; }
 
 .carousel-cell img {
+  display: block;
   width: auto;
-  height: 30rem;
+  height: 25rem;
   margin-right: 1rem;
   counter-increment: carousel-cell;
   border-radius: 0.5rem; }
   @media only screen and (min-width: 580px) {
     .carousel-cell img {
-      height: 35rem; } }
+      height: 30rem; } }
   @media only screen and (min-width: 900px) {
     .carousel-cell img {
-      height: 40rem; } }
+      height: 35rem; } }
 
 .carousel-cell::before,
 .carousel-cell::after {
@@ -560,14 +561,18 @@ footer {
   margin: 2rem auto;
   width: 80%;
   font-size: 1.4rem;
-  line-height: 1.8; }
-  .guided-hikes__note span {
+  line-height: 1.5; }
+  .guided-hikes__note--title {
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: underline; }
-  @media only screen and (min-width: 580px) {
-    .guided-hikes__note {
-      font-size: 2rem; } }
+  .guided-hikes__note--list--item {
+    font-size: 1.4rem;
+    font-family: "Open Sans", sans-serif; }
+    .guided-hikes__note--list--item::first-letter {
+      color: #d55534;
+      font-size: 110%;
+      font-weight: 600; }
 
 .difficulty {
   margin: -5rem auto 3rem;

@@ -116,17 +116,18 @@
   padding: 5rem 0;
 }
 .carousel-cell img {
+  display: block;
   width: auto;
-  height: 30rem;
+  height: 25rem;
   margin-right: 1rem;
   counter-increment: carousel-cell;
   border-radius: 0.5rem;
 
   @include responsive(tab) {
-    height: 35rem;
+    height: 30rem;
   }
   @include responsive(sm-desktop) {
-    height: 40rem;
+    height: 35rem;
   }
 }
 .carousel-cell::before,

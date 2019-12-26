@@ -10,10 +10,7 @@
   }
   @include responsive(normal-desktop) {
     width: 60%;
-  }
-  // @include responsive(xl-desktop) {
-  //   width: 50%;
-  // }
+  }  
 }
 
 .sharethis-inline-share-buttons {
@@ -32,19 +29,27 @@
   }
 }
 
-.guided-hikes__note {
-  & span {
+.guided-hikes__note {  
+  margin: 2rem auto;
+  width: 80%;
+  font-size: $font-size-xs;
+  line-height: 1.5;
+
+  &--title {
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: underline;
   }
-  margin: 2rem auto;
-  width: 80%;
-  font-size: $font-size-xs;
-  line-height: 1.8;
-
-  @include responsive(tab) {
-    font-size: $font-size-s;
+  &--list {
+    &--item {
+      font-size: $font-size-xs;
+      font-family: $font-text;
+      &::first-letter {
+        color: $color-orangered;
+        font-size: 110%;
+        font-weight: 600;
+      }
+    }      
   }
 }
 
