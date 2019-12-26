@@ -53,64 +53,6 @@
   }
 }
 
-.difficulty {
-  margin: -5rem auto 3rem;
-  padding: 3rem 0;
-  width: 80%;
-  height: auto;
-  @include flex-center;
-  flex-direction: column;
-  border-radius: 2rem;
-  box-shadow: 0.5rem 0.5rem 2rem lighten($color-deep-blue-grey, 40%);
-
-  &__title {
-    font-size: $font-size-sm;
-    color: $color-base-blue;
-    text-align: center;
-  }
-  &__explain {
-    margin: 1rem auto;
-    display: inline-block;
-    width: 50%;
-    font-size: $font-size-xs;
-    color: $color-deep-blue-grey;
-    text-align: center;
-  }
-  &__color {
-    @include responsive(tab) {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
-    &--item {
-      min-width: 10rem;
-      max-width: 12rem;
-      min-height: 1.8rem;
-      max-height: 2.2rem;
-      margin: 2rem 1rem;
-      border-radius: 10px;
-      color: $color-deep-blue-grey;
-      font-weight: 700;
-      letter-spacing: 0.2rem;
-      box-shadow: 0.1rem 0.1rem 0.3rem lighten($color-deep-blue-grey, 60%);
-      @include flex-center;
-
-      // @include responsive(tab) {
-      //   min-width: 12rem;
-      //   height: 2.2rem;
-      // }
-    }
-  }
-}
-.green {
-  background-color: $color-green;
-}
-.yellow {
-  background-color: $color-yellow;
-}
-.red {
-  background-color: $color-red;
-  color: $color-white;
-}
 
 // Guided trips layout
 .trips {
@@ -142,6 +84,7 @@
     margin: 1rem auto;
     padding: 0rem;
     @include flex-center;
+    flex-direction: column;
     transition: all 0.3s ease-in-out;
   }
 

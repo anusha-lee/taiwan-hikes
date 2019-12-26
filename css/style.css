@@ -141,6 +141,9 @@ how to apply:
   .sevenReasons__btn--explore:visited {
     color: #fff0ce; }
 
+.disclaimer__btn {
+  padding-bottom: 0 !important; }
+
 .freeHikes__btn {
   padding: 5rem 1rem 2rem; }
   .freeHikes__btn--explore {
@@ -158,13 +161,11 @@ how to apply:
   text-align: center; }
 
 .trips__sorting--by-date,
-.trips__sorting--by-difficulty {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 2rem;
-  display: inline-block;
-  width: 14rem;
+.trips__sorting--by-easy,
+.trips__sorting--by-moderate,
+.trips__sorting--by-challenging {
+  margin: 1rem;
+  width: 15rem;
   height: 3rem;
   border: none;
   border-radius: 2rem;
@@ -173,19 +174,39 @@ how to apply:
   transition: all 0.3s ease-in-out;
   cursor: pointer; }
   .trips__sorting--by-date:hover,
-  .trips__sorting--by-difficulty:hover {
+  .trips__sorting--by-easy:hover,
+  .trips__sorting--by-moderate:hover,
+  .trips__sorting--by-challenging:hover {
     transform: translateY(-0.5rem);
     box-shadow: 0.4rem 0.4rem 0.6rem #525252; }
   .trips__sorting--by-date:active,
-  .trips__sorting--by-difficulty:active {
+  .trips__sorting--by-easy:active,
+  .trips__sorting--by-moderate:active,
+  .trips__sorting--by-challenging:active {
     transform: translateY(-0.2rem);
     box-shadow: 0.2rem 0.2rem 0.3rem #1f1f1f; }
 
 .trips__sorting--by-date {
   background: linear-gradient(#fff0ce, #de785e); }
 
-.trips__sorting--by-difficulty {
-  background: linear-gradient(#fff0ce, #0c99c2); }
+.trips__sorting--by-easy {
+  background: linear-gradient(#9ACD32, gray); }
+
+.trips__sorting--by-moderate {
+  background: linear-gradient(#FFD700, gray); }
+
+.trips__sorting--by-challenging {
+  background: linear-gradient(#FF0000, gray); }
+
+.green {
+  background-color: #9ACD32; }
+
+.yellow {
+  background-color: #FFD700; }
+
+.red {
+  background-color: #FF0000;
+  color: #fcfcfc; }
 
 .progress {
   width: 100%;
@@ -574,57 +595,6 @@ footer {
       font-size: 110%;
       font-weight: 600; }
 
-.difficulty {
-  margin: -5rem auto 3rem;
-  padding: 3rem 0;
-  width: 80%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 2rem;
-  box-shadow: 0.5rem 0.5rem 2rem #9e9e9e; }
-  .difficulty__title {
-    font-size: 2.6rem;
-    color: #097392;
-    text-align: center; }
-  .difficulty__explain {
-    margin: 1rem auto;
-    display: inline-block;
-    width: 50%;
-    font-size: 1.4rem;
-    color: #383838;
-    text-align: center; }
-  @media only screen and (min-width: 580px) {
-    .difficulty__color {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); } }
-  .difficulty__color--item {
-    min-width: 10rem;
-    max-width: 12rem;
-    min-height: 1.8rem;
-    max-height: 2.2rem;
-    margin: 2rem 1rem;
-    border-radius: 10px;
-    color: #383838;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-    box-shadow: 0.1rem 0.1rem 0.3rem #d1d1d1;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-
-.green {
-  background-color: #9ACD32; }
-
-.yellow {
-  background-color: #FFD700; }
-
-.red {
-  background-color: #FF0000;
-  color: #fcfcfc; }
-
 .trips {
   margin: 2rem auto;
   width: 100%;
@@ -652,6 +622,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     transition: all 0.3s ease-in-out; }
   .trips__hikes {
     width: 100%;

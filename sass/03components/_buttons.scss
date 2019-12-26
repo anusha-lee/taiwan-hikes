@@ -68,6 +68,11 @@
   }
 }
 
+// Disclaimer button
+.disclaimer__btn {
+  padding-bottom: 0 !important;
+}
+
 // Landing Page Latest Hikes button
 .freeHikes__btn {
   padding: 5rem 1rem 2rem;
@@ -97,11 +102,11 @@
 }
 
 .trips__sorting--by-date,
-.trips__sorting--by-difficulty {
-  @include flex-center;
-  margin: 2rem;
-  display: inline-block;
-  width: 14rem;
+.trips__sorting--by-easy,
+.trips__sorting--by-moderate,
+.trips__sorting--by-challenging { 
+  margin: 1rem;
+  width: 15rem;
   height: 3rem;
 
   border: none;
@@ -124,6 +129,27 @@
   background: linear-gradient($color-tan, lighten($color-orangered, 10%));
 }
 
-.trips__sorting--by-difficulty {
-  background: linear-gradient($color-tan, lighten($color-base-blue, 10%));
+.trips__sorting--by-easy {
+  background: linear-gradient($color-green, lighten($color-black, 50%));
 }
+
+.trips__sorting--by-moderate {
+  background: linear-gradient($color-yellow, lighten($color-black, 50%));
+}
+
+.trips__sorting--by-challenging {
+  background: linear-gradient($color-red, lighten($color-black, 50%));
+}
+
+
+.green {
+  background-color: $color-green;
+}
+.yellow {
+  background-color: $color-yellow;
+}
+.red {
+  background-color: $color-red;
+  color: $color-white;
+}
+
