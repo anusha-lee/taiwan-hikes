@@ -267,3 +267,18 @@ showAllBtn.onclick = function() {
     showAllBtn.innerHTML = "Show less";
   }
 };
+
+// Sorting function
+function GetSortOrder(prop) {
+  return function(a, b) {
+    if (a[prop] > b[prop]) {
+      return 1;
+    } else if (a[prop] < b[prop]) {
+      return -1;
+    }
+    return 0;
+  };
+}
+
+// Make onclick on those difficulty levels and only show those that are clicked
+// For example, if users click difficulty hikes, only those will show up.

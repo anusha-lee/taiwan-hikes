@@ -165,7 +165,7 @@ how to apply:
 .trips__sorting--by-moderate,
 .trips__sorting--by-challenging {
   margin: 1rem;
-  width: 15rem;
+  width: 17rem;
   height: 3rem;
   border: none;
   border-radius: 2rem;
@@ -173,6 +173,23 @@ how to apply:
   font-size: 1.4rem;
   transition: all 0.3s ease-in-out;
   cursor: pointer; }
+  @media only screen and (min-width: 580px) {
+    .trips__sorting--by-date,
+    .trips__sorting--by-easy,
+    .trips__sorting--by-moderate,
+    .trips__sorting--by-challenging {
+      width: 16rem;
+      height: 4rem;
+      border-radius: 0;
+      margin: 1rem 0;
+      padding: 0.5rem; } }
+  @media only screen and (min-width: 900px) {
+    .trips__sorting--by-date,
+    .trips__sorting--by-easy,
+    .trips__sorting--by-moderate,
+    .trips__sorting--by-challenging {
+      width: 17rem;
+      height: 3rem; } }
   .trips__sorting--by-date:hover,
   .trips__sorting--by-easy:hover,
   .trips__sorting--by-moderate:hover,
@@ -617,13 +634,16 @@ footer {
     font-size: 2.6rem;
     text-align: center; }
   .trips__sorting {
-    margin: 1rem auto;
+    margin: 2rem auto 1rem;
     padding: 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     transition: all 0.3s ease-in-out; }
+    @media only screen and (min-width: 580px) {
+      .trips__sorting {
+        flex-direction: row; } }
   .trips__hikes {
     width: 100%;
     height: max-content;

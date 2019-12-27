@@ -10,7 +10,7 @@
   }
   @include responsive(normal-desktop) {
     width: 60%;
-  }  
+  }
 }
 
 .sharethis-inline-share-buttons {
@@ -29,7 +29,7 @@
   }
 }
 
-.guided-hikes__note {  
+.guided-hikes__note {
   margin: 2rem auto;
   width: 80%;
   font-size: $font-size-xs;
@@ -49,10 +49,9 @@
         font-size: 110%;
         font-weight: 600;
       }
-    }      
+    }
   }
 }
-
 
 // Guided trips layout
 .trips {
@@ -81,11 +80,19 @@
   }
   // date and difficulty sorting buttons
   &__sorting {
-    margin: 1rem auto;
+    margin: 2rem auto 1rem;
     padding: 0rem;
     @include flex-center;
     flex-direction: column;
     transition: all 0.3s ease-in-out;
+    @include responsive(tab) {
+      // margin: 0rem auto;
+      flex-direction: row;
+    }
+    @include responsive(sm-desktop) {
+    }
+    @include responsive(normal-desktop) {
+    }
   }
 
   //.trip__hikes is the parent of #trip-container

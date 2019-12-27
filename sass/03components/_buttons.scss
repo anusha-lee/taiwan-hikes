@@ -88,6 +88,9 @@
 .show-all__btn {
   margin: 1rem auto;
   border: none;
+  // position: fixed;
+  // left: 50%;
+  // top: 50%;
 
   font-size: $font-size-s;
   background: linear-gradient(
@@ -104,11 +107,10 @@
 .trips__sorting--by-date,
 .trips__sorting--by-easy,
 .trips__sorting--by-moderate,
-.trips__sorting--by-challenging { 
+.trips__sorting--by-challenging {
   margin: 1rem;
-  width: 15rem;
+  width: 17rem;
   height: 3rem;
-
   border: none;
   border-radius: 2rem;
   //text-align: center;
@@ -116,6 +118,18 @@
   font-size: $font-size-xs;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+
+  @include responsive(tab) {
+    width: 16rem;
+    height: 4rem;
+    border-radius: 0;
+    margin: 1rem 0;
+    padding: 0.5rem;
+  }
+  @include responsive(sm-desktop) {
+    width: 17rem;
+    height: 3rem;
+  }
 
   &:hover {
     @include btn-hover;
@@ -141,7 +155,6 @@
   background: linear-gradient($color-red, lighten($color-black, 50%));
 }
 
-
 .green {
   background-color: $color-green;
 }
@@ -152,4 +165,3 @@
   background-color: $color-red;
   color: $color-white;
 }
-
