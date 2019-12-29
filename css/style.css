@@ -318,7 +318,6 @@ how to apply:
   width: auto;
   height: 25rem;
   margin-right: 1rem;
-  counter-increment: carousel-cell;
   border-radius: 0.5rem; }
   @media only screen and (min-width: 580px) {
     .carousel-cell img {
@@ -330,8 +329,6 @@ how to apply:
 .carousel-cell::before,
 .carousel-cell::after {
   display: block;
-  content: counter(carousel-cell);
-  line-height: 1rem;
   color: transparent; }
 
 figcaption {
@@ -349,6 +346,16 @@ figcaption {
   /*********************************************************
   Find Trips button users the same style as the one on landing page
   **********************************************************/ }
+
+.splide {
+  margin: 2rem 0 2rem;
+  background: #83b4b3; }
+
+figcaption {
+  font-size: 1.4rem;
+  color: #097392;
+  margin-top: 0.5rem;
+  text-align: center; }
 
 footer {
   margin: 0 auto;

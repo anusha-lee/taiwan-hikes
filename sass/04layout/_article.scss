@@ -120,7 +120,6 @@
   width: auto;
   height: 25rem;
   margin-right: 1rem;
-  counter-increment: carousel-cell;
   border-radius: 0.5rem;
 
   @include responsive(tab) {
@@ -133,8 +132,6 @@
 .carousel-cell::before,
 .carousel-cell::after {
   display: block;
-  content: counter(carousel-cell);
-  line-height: 1rem;
   color: transparent;
 }
 
@@ -153,4 +150,33 @@ figcaption {
   /*********************************************************
   Find Trips button users the same style as the one on landing page
   **********************************************************/
+}
+
+// Using Splide carousel https://splidejs.com/getting-started/
+
+.splide {
+  margin: 2rem 0 2rem;
+  background: $color-blue-grey;
+}
+
+// .splide-img {
+//   display: block;
+//   width: auto;
+//   height: 25rem;
+//   margin-right: 1rem;
+//   border-radius: 0.5rem;
+
+//   @include responsive(tab) {
+//     height: 30rem;
+//   }
+//   @include responsive(sm-desktop) {
+//     height: 35rem;
+//   }
+// }
+
+figcaption {
+  font-size: $font-size-xs;
+  color: $color-base-blue; //$color-deep-blue-grey;
+  margin-top: 0.5rem;
+  text-align: center;
 }

@@ -1,0 +1,30 @@
+import { Alignments } from './alignSize';
+export declare type Options = {
+    align: Alignments;
+    containScroll: boolean;
+    containerSelector: string;
+    dragFree: boolean;
+    draggable: boolean;
+    draggableClass: string;
+    draggingClass: string;
+    loop: boolean;
+    selectedClass: string;
+    slidesToScroll: number;
+    speed: number;
+    startIndex: number;
+};
+export declare const defaultOptions: Readonly<{
+    align: string;
+    containScroll: boolean;
+    containerSelector: string;
+    dragFree: boolean;
+    draggable: boolean;
+    draggableClass: string;
+    draggingClass: string;
+    loop: boolean;
+    selectedClass: string;
+    slidesToScroll: number;
+    speed: number;
+    startIndex: number;
+}>;
+export declare type UserOptions = Partial<Options>;
