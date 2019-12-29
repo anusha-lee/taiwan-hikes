@@ -676,16 +676,6 @@ footer {
   overflow: scroll;
   line-height: 1.4;
   box-shadow: 0.2rem 0.2rem 0.5rem #d1d1d1; }
-  @media only screen and (min-width: 580px) {
-    .singleTrip {
-      min-width: 32rem;
-      max-height: 30rem; } }
-  @media only screen and (min-width: 900px) {
-    .singleTrip {
-      max-width: 34rem; } }
-  @media only screen and (min-width: 1200px) {
-    .singleTrip {
-      max-width: 28rem; } }
   .singleTrip__title {
     width: 100%;
     padding: 1rem;

@@ -134,19 +134,19 @@
   line-height: 1.4;
   box-shadow: 0.2rem 0.2rem 0.5rem lighten($color-deep-blue-grey, 60%);
 
-  @include responsive(tab) {
-    min-width: 32rem;
-    //max-width: 38rem;
-    max-height: 30rem;
-  }
-  @include responsive(sm-desktop) {
-    // min-width: 26rem;
-    max-width: 34rem;
-  }
-  @include responsive(normal-desktop) {
-    max-width: 28rem;
-    //height: 38rem;
-  }
+  // @include responsive(tab) {
+  //   min-width: 32rem;
+  //   //max-width: 38rem;
+  //   max-height: 30rem;
+  // }
+  // @include responsive(sm-desktop) {
+  //   // min-width: 26rem;
+  //   max-width: 34rem;
+  // }
+  // @include responsive(normal-desktop) {
+  //   max-width: 28rem;
+  //   //height: 38rem;
+  // }
   // @include responsive(xl-desktop) {
   //   max-width: 30rem;
   // }

@@ -10,18 +10,6 @@ window.addEventListener("scroll", () => {
 });
 
 // scroll up button
-
-// window.addEventListener("scroll", function scrollUp() {
-//   const scrollDown =
-//     document.documentElement.scrollTop + document.body.scrollTop;
-//   const scrollButton = document.querySelector(".scroll-up");
-//   if (scrollDown > 30) {
-//     scrollButton.style.display = "block";
-//   } else {
-//     scrollButton.style.display = "none";
-//   }
-// });
-
 window.addEventListener("scroll", function showScroll() {
   const top = window.scrollY;
   if (top > 100) {
@@ -101,8 +89,7 @@ function createItemAndAppendToTripContainer(item, tripContainer) {
 main();
 */
 
-//let url = "https://api.myjson.com/bins/193ug0";
-
+// Fetch JSON file to Guided Trips page
 let url = "https://api.myjson.com/bins/ruxz4";
 let newHTML = document.getElementById("oneDayFree");
 
