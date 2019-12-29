@@ -27,8 +27,8 @@
     /> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="shortcut icon" href="#" />
-    <!-- <link rel="stylesheet" href="css/splide.min.css" /> -->
-    <link rel="stylesheet" href="css/splide-core.min.css" />
+    <link rel="stylesheet" href="css/splide.min.css" />
+    <!-- <link rel="stylesheet" href="css/splide-core.min.css" /> -->
   </head>
   <body>
     <!-- <div class="progress">
@@ -1042,14 +1042,6 @@
 
     <script src="flickity.pkgd.js"></script>
     <script src="index.js"></script>
-    <!-- <script src="swiper.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-      AOS.refresh();
-    </script> 
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    -->
     <script
       type="text/javascript"
       src="https://platform-api.sharethis.com/js/sharethis.js#property=5ddb647373c71100125a2b96&product=inline-share-buttons"
@@ -1065,19 +1057,23 @@
     ></script>
     <script src="splide.min.js"></script>
     <script>
-      new Splide("#splide", {
-        type: "loop",
-        focus: "center",
-        drag: true,
-        perPage: 3,
-        arrowPath:
-          "m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z",
+      new Splide(".splide", {
+        perPage: 5,
+        cover: true,
         breakpoints: {
-          "640": {
+          "1500": {
+            perPage: 4,
+            gap: "1rem"
+          },
+          "1100": {
+            perPage: 3,
+            gap: "1rem"
+          },
+          "800": {
             perPage: 2,
             gap: "1rem"
           },
-          "480": {
+          "580": {
             perPage: 1,
             gap: "1rem"
           }
