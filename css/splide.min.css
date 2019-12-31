@@ -6,7 +6,8 @@
     transform: rotate(1turn);
   }
 }
-.splide {
+.splide,
+#splide6 {
   position: relative;
   box-sizing: border-box;
 }
