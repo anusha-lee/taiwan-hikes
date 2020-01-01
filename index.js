@@ -28,67 +28,6 @@ scrollToTopBtn.addEventListener("click", function() {
   });
 });
 
-// Page scroll indicator
-// window.onscroll = function() {
-//   function scrollIndicator() {
-//     const scroll =
-//       document.body.scrollTop || document.documentElement.scrollTop;
-//     const height =
-//       document.documentElement.scrollHeight -
-//       document.documentElement.clientHeight;
-//     let afterScroll = (scroll / height) * 100;
-//     document.querySelector(".progress__bar").getElementsByClassName.width =
-//       afterScroll + "%";
-//   }
-// };
-
-/* 
-const url = "https://api.myjson.com/bins/193ug0";
-const container2 = document.querySelector("#trip-container");
-
-function main() {
-  getData();
-  setDataToSite();
-}
-
-async function getData() {
-  const result = await fetch(url);
-  const data = await result.json();
-  return data.trips;
-}
-
-async function setDataToSite() {
-  const data = await getData();
-  data.forEach(tripDetails => {
-    const tripContainer = createAndAppendTripContainer();
-    const arrayOfTripDetails = Object.entries(tripDetails);
-    arrayOfTripDetails.forEach(item =>
-      createItemAndAppendToTripContainer(item, tripContainer)
-    );
-  });
-}
-
-function createAndAppendTripContainer() {
-  const tripContainer = document.createElement("div");
-  tripContainer.className = "box";
-  container2.appendChild(tripContainer);
-  return tripContainer;
-}
-
-function createItemAndAppendToTripContainer(item, tripContainer) {
-  const title = document.createElement("h3");
-  const details = document.createElement("p");
-  title.className = "title";
-  details.className = "details";
-  title.textContent = item[0];
-  details.textContent = item[1];
-  tripContainer.appendChild(title);
-  tripContainer.appendChild(details);
-}
-
-main();
-*/
-
 // Fetch JSON file to Guided Trips page
 let url = "https://api.myjson.com/bins/ruxz4";
 let newHTML = document.getElementById("oneDayFree");
@@ -178,65 +117,61 @@ function getTripData() {
         }
       }
     })
-    .catch(err => console.error("Something went wrong!", err));
+    .catch(err => console.error("Something about DOM went wrong!", err));
 }
 
 // Click "Sorted by date" button to sort
 
-// sortTripsByDates();
+sortTripsByDates();
 
 function sortTripsByDates() {
   fetch(url)
     .then(res => res.json())
-    .then(arr => {
-      let eleVal = Object.values(arr);
-      for (let date of eleVal) {
-        let dateStringToNum = Date.parse(date.Date);
-        //let dateArr = eleVal.map(date => Date.parse(date.Date)).sort();
-        //console.log(dateArr);
-        return eleVal.map(date => Date.parse(date.Date)).sort();
-      }
+    .then(resDate => {
+      // console.log(Date.parse(resDate[0].Date));
+      // console.log(typeof resDate);
+      // let a = Date.parse(resDate[0].Date);
+      // let b = Date.parse(resDate[15].Date);
+      // function getSortedOrder(a, b) {
+      //   if (a > b) {
+      //     return 1;
+      //   } else if (a < b) {
+      //     return -1;
+      //   }
+      //   return 0;
+      // }
+
+      // https://stackoverflow.com/questions/1069666/sorting-object-property-by-values
+      // https://stackoverflow.com/questions/43773092/how-to-sort-objects-by-value
+
+      let eleVal = Object.values(resDate);
+      let dateArr = [];
+      // for (let date of eleVal) {
+      //   dateArr.push()
+      // }
+
+      // let eleVal = Object.values(resDate);
+      // for (let date of eleVal) {
+      //   let dateStringToNum = Date.parse(date.Date);
+
+      //   console.log(dateStringToNum);
+
+      //   function sortedDate() {
+      //     return function getSortedOrder(a, b) {
+      //       if (a > b) {
+      //         return 1;
+      //       } else if (a < b) {
+      //         return -1;
+      //       }
+      //       return 0;
+      //     };
+      //     sortedDate();
+      //     //console.log(sortedDate(dateStringToNum));
+      //   }
+      // }
     })
     .catch(err => console.error("Date sorting went wrong!", err));
 }
-
-// Create an event listener to sort date
-// window.addEventListener("scroll", () => {
-//   const navFixed = document.querySelector(".header-box");
-//   const fromTop = window.scrollY;
-//   if (fromTop > 500) {
-//     navFixed.classList.add("fixedNav");
-//   } else {
-//     navFixed.classList.remove("fixedNav");
-//   }
-// });
-
-/*
-window.addEventListener("click", () => {
-  const sortByDate = document.querySelector(".byDate");
-  if (sortByDate) {
-    sortTripsByDates();
-  }
-});
-*/
-
-/*********************************
- *  Click the buttons (sorted by date, or sorted by difficulty)
- * to sort the trips by dates or by difficulty rating
- * ************************************/
-// function sortTripsByDates() {
-//   return fetch(url)
-//     .then(res => res.json())
-//     .then(arr => {
-//       let eleVal = Object.values(arr);
-//       let dateStringToNum = Date.parse(val.Date);
-//       let dateArr = eleVal.map(date => Date.parse(date.Date));
-
-//       console.log(eleVal);
-//     })
-//     .catch(err => console.error("Something went wrong!", err));
-// }
-// sortTripsByDates();
 
 // Show all and Show less buttons
 let oneDayFree = document.getElementById("oneDayFree");
@@ -255,16 +190,14 @@ showAllBtn.onclick = function() {
   }
 };
 
-// Sorting function
-function GetSortOrder(prop) {
-  return function(a, b) {
-    if (a[prop] > b[prop]) {
-      return 1;
-    } else if (a[prop] < b[prop]) {
-      return -1;
-    }
-    return 0;
-  };
+//Sorting function
+function getSortedOrder(a, b) {
+  if (a > b) {
+    return 1;
+  } else if (a < b) {
+    return -1;
+  }
+  return 0;
 }
 
 // Make onclick on those difficulty levels and only show those that are clicked
