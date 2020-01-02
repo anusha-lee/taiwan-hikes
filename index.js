@@ -128,48 +128,69 @@ function sortTripsByDates() {
   fetch(url)
     .then(res => res.json())
     .then(resDate => {
-      // console.log(Date.parse(resDate[0].Date));
-      // console.log(typeof resDate);
-      // let a = Date.parse(resDate[0].Date);
-      // let b = Date.parse(resDate[15].Date);
-      // function getSortedOrder(a, b) {
-      //   if (a > b) {
-      //     return 1;
-      //   } else if (a < b) {
-      //     return -1;
-      //   }
-      //   return 0;
-      // }
-
       // https://stackoverflow.com/questions/1069666/sorting-object-property-by-values
-      // https://stackoverflow.com/questions/43773092/how-to-sort-objects-by-value
 
       let eleVal = Object.values(resDate);
       let dateArr = [];
-      // for (let date of eleVal) {
-      //   dateArr.push()
-      // }
+      for (let trip of eleVal) {
+        dateArr.push([trip, Date.parse(trip.Date)]);
+        console.log(dateArr);
+        dateArr.sort(function(a, b) {
+          return a[1] - b[1];
+        });
+      }
 
-      // let eleVal = Object.values(resDate);
-      // for (let date of eleVal) {
-      //   let dateStringToNum = Date.parse(date.Date);
-
-      //   console.log(dateStringToNum);
-
-      //   function sortedDate() {
-      //     return function getSortedOrder(a, b) {
-      //       if (a > b) {
-      //         return 1;
-      //       } else if (a < b) {
-      //         return -1;
-      //       }
-      //       return 0;
-      //     };
-      //     sortedDate();
-      //     //console.log(sortedDate(dateStringToNum));
-      //   }
-      // }
+      let sortedEleVal = {};
+      dateArr.forEach(function(item) {
+        return (sortedEleVal[item[0]] = item[1]);
+      });
     })
+    // .then(arr => {
+    //   //let eleKey = Object.keys(arr);
+    //   let eleVal2 = Object.values(arr);
+    //   //let elePair = Object.entries(arr);
+    //   console.log(eleVal2);
+
+    //   // Create and append the li's to the ul or div to the parent div
+    //   if (eleVal2.length >= 1) {
+    //     for (let val of eleVal2) {
+    //       newHTML.innerHTML += `
+    //               <div class="singleTrip">
+    //                   <h3 class="singleTrip__title">Event: <br>${val.Event}</h3>
+    //                   <div class="singleTrip__box">
+    //                     <div class="singleTrip__box--oneDayFree color-rating">${addDifficultyColor()}</div>
+    //                     <div class="singleTrip__box--oneDayFree"><strong>Difficulty Level: </strong>${
+    //                       val.Difficulty_Level
+    //                     }</div>
+    //                     <div class="singleTrip__box--oneDayFree"><strong>Date: </strong>${
+    //                       val.Date
+    //                     }</div>
+    //                     <div class="singleTrip__box--oneDayFree"><strong>Meetup Time: </strong>${
+    //                       val.Meetup_Time
+    //                     }</div>
+    //                     <div class="singleTrip__box--oneDayFree"><strong>Meetup Point: </strong>${
+    //                       val.Meetup_Point
+    //                     }</div>
+    //                     <div class="singleTrip__box--oneDayFree"><strong>Transportation: </strong>${
+    //                       val.Transportation
+    //                     }</div>
+    //                     <div class="singleTrip__box--oneDayFree"><strong>Distance: </strong>${
+    //                       val.Distance
+    //                     }</div>
+    //                     <div class="singleTrip__box--oneDayFree"><strong>Hiking Club: </strong>${
+    //                       val.Hiking_Club
+    //                     }</a></div>
+    //                     <div class="singleTrip__box--oneDayFree"><strong>Guide: </strong>${
+    //                       val.Guide
+    //                     }</div>
+    //                     <div class="singleTrip__box--oneDayFree"><strong>About the trail: <br></strong>${
+    //                       val.About_the_trail
+    //                     }</div>
+    //                   </div>
+    //           `;
+    //     }
+    //   }
+    // })
     .catch(err => console.error("Date sorting went wrong!", err));
 }
 
