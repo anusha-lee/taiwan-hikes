@@ -195,21 +195,21 @@ function sortTripsByDates() {
 }
 
 // Show all and Show less buttons
-let oneDayFree = document.getElementById("oneDayFree");
-let showAllBtn = document.querySelector(".show-all__btn");
-let positionAfterShow = window.scrollY;
+const oneDayFree = document.getElementById("oneDayFree");
+const showAllBtn = document.querySelector(".show-all__btn");
+const positionAfterShow = window.scrollY;
 
-showAllBtn.onclick = function() {
-  if (oneDayFree.className == "open") {
+showAllBtn.addEventListener("click", event => {
+  if (oneDayFree.classList.contains("open")) {
     // shrink the box
-    oneDayFree.className = "";
-    showAllBtn.innerHTML = "Show all";
+    oneDayFree.classList.remove("open");
+    showAllBtn.textContent = "Show All";
   } else {
     // expand the box
-    oneDayFree.className = "open";
-    showAllBtn.innerHTML = "Show less";
+    oneDayFree.classList.add("open");
+    showAllBtn.textContent = "Show Less";
   }
-};
+});
 
 //Sorting function
 function getSortedOrder(a, b) {

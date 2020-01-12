@@ -125,7 +125,7 @@ how to apply:
     height: 4rem;
     background: linear-gradient(#097392, #525252);
     color: #fcfcfc;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: "Alegreya", serif;
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
@@ -152,7 +152,7 @@ how to apply:
 .show-all__btn {
   margin: 1rem auto;
   border: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
   background: linear-gradient(#097392, #525252); }
 
 .custom-made__btn {
@@ -257,15 +257,15 @@ how to apply:
     width: 100%;
     margin: 5rem auto;
     padding-top: 1rem;
-    font-size: 3.8rem;
+    font-size: 3.2rem;
     color: #097392;
     text-align: center; }
     @media only screen and (min-width: 580px) {
       .article__H2title {
-        font-size: 5rem; } }
+        font-size: 4rem; } }
     @media only screen and (min-width: 900px) {
       .article__H2title {
-        font-size: 6.2rem; } }
+        font-size: 6rem; } }
   .article__basic {
     width: 100%;
     height: auto;
@@ -288,7 +288,7 @@ how to apply:
     line-height: 2; }
     @media only screen and (min-width: 580px) {
       .article__intro, .article__content {
-        font-size: 2rem;
+        font-size: 1.8rem;
         padding: 0.4rem 0; } }
   .article__intro--content a, .article__content a {
     color: #097392;
@@ -298,13 +298,13 @@ how to apply:
     .article__intro--content a:visited, .article__content a:visited {
       color: #d55534; }
   .article__title {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     line-height: 1.4;
     display: inline-block;
     margin: 1rem auto; }
     @media only screen and (min-width: 580px) {
       .article__title {
-        font-size: 3.8rem; } }
+        font-size: 3.2rem; } }
 
 .main-carousel {
   margin: 2rem 0 2rem;
@@ -386,7 +386,7 @@ footer {
       margin: 0 auto;
       padding: 3rem 1rem 1rem;
       font-family: "Alegreya", serif;
-      font-size: 2.6rem;
+      font-size: 2.4rem;
       text-align: center;
       color: #fcfcfc;
       text-shadow: 0.1rem 0.1rem 0.1rem #383838; }
@@ -479,7 +479,7 @@ footer {
       margin: 0 auto;
       padding: 1rem;
       font-family: "Alegreya", serif;
-      font-size: 3.8rem;
+      font-size: 3.2rem;
       text-align: center;
       color: #097392;
       text-shadow: 0.1rem 0.1rem 0.1rem #fcfcfc;
@@ -508,7 +508,7 @@ footer {
       width: 16rem;
       height: 4rem;
       color: #fcfcfc;
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-family: "Alegreya", serif;
       border-radius: 20px;
       background: linear-gradient(#d55534, #333333);
@@ -628,7 +628,7 @@ footer {
       width: 70%; } }
   .trips__title {
     margin-top: 5rem;
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     text-align: center; }
   .trips__sorting {
     margin: 2rem auto 1rem;
@@ -644,7 +644,8 @@ footer {
   .trips__hikes {
     width: 100%;
     height: max-content;
-    padding: 1rem; }
+    padding: 1rem;
+    transition: all 0.3s ease-in-out; }
 
 #oneDayFree {
   margin: 1rem auto;
@@ -682,7 +683,7 @@ footer {
     background-color: #fff8e8; }
     @media only screen and (min-width: 900px) {
       .singleTrip__title {
-        font-size: 2rem; } }
+        font-size: 1.8rem; } }
   .singleTrip__box {
     padding: 1rem;
     font-size: 1.4rem; }
@@ -749,7 +750,7 @@ header {
     height: auto; }
   .header__background-img-box--title {
     margin-top: -2.2rem;
-    font-size: 5rem;
+    font-size: 4rem;
     mix-blend-mode: overlay;
     transform: scale(0.8, 1.8);
     text-shadow: 0.1rem 0.1rem 0.1rem #097392;
@@ -768,7 +769,7 @@ header {
     margin-top: -2.4rem;
     display: inline-block;
     width: 90%;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
     background: linear-gradient(#097392, #c7c7c7);
     -webkit-background-clip: text;
@@ -776,14 +777,14 @@ header {
     transform: scale(0.8, 1.4); }
     @media only screen and (min-width: 580px) {
       .header__background-img-box--title2 {
-        font-size: 2.6rem; } }
+        font-size: 2.4rem; } }
     @media only screen and (min-width: 900px) {
       .header__background-img-box--title2 {
         margin-top: -1.8rem; } }
     @media only screen and (min-width: 1200px) {
       .header__background-img-box--title2 {
         margin-top: -1rem;
-        font-size: 3.8rem;
+        font-size: 3.2rem;
         background: linear-gradient(#097392, #999999);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; } }
@@ -858,7 +859,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     font-family: "Alegreya", serif;
     background-image: linear-gradient(to bottom, transparent 75%, #097392);
     background-size: 0% 80%;
@@ -927,7 +928,7 @@ header {
       transform: rotate(-45deg);
       z-index: 31; }
     .menu__hamburger--list {
-      font-size: 2.6rem;
+      font-size: 2.4rem;
       font-family: "Alegreya", serif;
       margin-right: 0;
       background: rgba(9, 115, 146, 0.9);
@@ -1004,14 +1005,14 @@ header {
   .sevenReasons__title {
     display: inline-block;
     padding: 1.5rem;
-    font-size: 3.8rem;
+    font-size: 3.2rem;
     line-height: 1.2; }
     @media only screen and (min-width: 900px) {
       .sevenReasons__title {
-        font-size: 5rem; } }
+        font-size: 4rem; } }
     @media only screen and (min-width: 1200px) {
       .sevenReasons__title {
-        font-size: 6.2rem; } }
+        font-size: 6rem; } }
     .sevenReasons__title a {
       color: #097392;
       line-height: 1.2;
@@ -1029,7 +1030,7 @@ header {
     line-height: 2; }
     @media only screen and (min-width: 900px) {
       .sevenReasons__text {
-        font-size: 2rem; } }
+        font-size: 1.8rem; } }
 
 .home-freeHikes {
   margin: 0 auto;
@@ -1072,7 +1073,7 @@ header {
     width: 100%;
     min-height: 20vh; }
     .freeHikes__trips--title {
-      font-size: 3.8rem;
+      font-size: 3.2rem;
       color: #097392;
       line-height: 1.2; }
 
@@ -1136,11 +1137,11 @@ header {
     width: 85%;
     text-align: center;
     padding: 2rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.6; }
   .cell__author {
     display: block;
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     font-family: "Alegreya", serif;
     color: #097392;
     padding: 2rem 0; }
@@ -1232,12 +1233,12 @@ Start Here and Blog Home page layout
   flex-direction: column; }
   .here__title {
     padding: 1rem;
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     color: #097392;
     text-align: center; }
     @media only screen and (min-width: 580px) {
       .here__title {
-        font-size: 3.8rem; } }
+        font-size: 3.2rem; } }
     .here__title a {
       color: #097392;
       line-height: 1.2;
@@ -1254,7 +1255,7 @@ Start Here and Blog Home page layout
     line-height: 1.6; }
     @media only screen and (min-width: 580px) {
       .here__text {
-        font-size: 2rem; } }
+        font-size: 1.8rem; } }
   .here__img {
     padding: 1rem;
     display: flex;
@@ -1280,16 +1281,25 @@ About page layout
     width: 15rem; }
   .about-container__creator--intro {
     text-align: left; }
+  .about-container__creator h4 {
+    font-size: 1.8rem;
+    display: inline-block;
+    margin: 1rem 0;
+    padding-left: 1rem; }
 
-.about-container__website,
+.about-container__disclaimer,
 .about-container__hikingclub {
   margin: 3rem auto; }
-  .about-container__website--img img,
+  .about-container__disclaimer--img img,
   .about-container__hikingclub--img img {
     width: 60%; }
-  .about-container__website--intro,
+  .about-container__disclaimer--intro,
   .about-container__hikingclub--intro {
     text-align: left; }
+
+.about-container__disclaimer,
+.about-container__disclaimer-text span {
+  color: #d55534; }
 
 .about-container__acknowledgement {
   margin: 1rem auto 6rem; }

@@ -105,9 +105,15 @@ About page layout
   &--intro {
     text-align: left;
   }
+  & h4 {
+    font-size: $font-size-s;
+    display: inline-block;
+    margin: 1rem 0;
+    padding-left: 1rem;
+  }
 }
 
-.about-container__website,
+.about-container__disclaimer,
 .about-container__hikingclub {
   margin: 3rem auto;
   &--img {
@@ -118,6 +124,11 @@ About page layout
   &--intro {
     text-align: left;
   }
+}
+
+.about-container__disclaimer,
+.about-container__disclaimer-text span {
+  color: $color-orangered;
 }
 
 .about-container__acknowledgement {
