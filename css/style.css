@@ -794,6 +794,11 @@ header {
   background-size: cover;
   background-position: bottom; }
 
+.header__background-img-4Methods {
+  background-image: url("../img/header-background8.jpg");
+  background-size: cover;
+  background-position: top; }
+
 .header__background-img-guided-tours {
   background-image: url("../img/header-background2.jpg");
   background-size: cover;
