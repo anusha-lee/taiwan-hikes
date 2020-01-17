@@ -9,6 +9,8 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// Add a keydown event when users press Escape key to close the hamburger menu
+
 // scroll up button
 window.addEventListener("scroll", function showScroll() {
   const top = window.scrollY;
