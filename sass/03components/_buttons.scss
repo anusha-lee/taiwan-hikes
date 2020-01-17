@@ -84,6 +84,13 @@
   }
 }
 
+// Size button on About page
+.size__btn {
+  &:focus {
+    outline: none;
+  }
+}
+
 // Guided-trips Buttons
 .show-all__btn {
   margin: 1rem auto;

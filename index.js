@@ -30,6 +30,20 @@ scrollToTopBtn.addEventListener("click", function() {
   });
 });
 
+// The expand button on About page
+const sizeBtn = document.querySelector(".size__btn");
+const sizeCountries = document.querySelector(".size__countries");
+
+sizeBtn.addEventListener("click", event => {
+  if (sizeCountries.classList.contains("size-is-open")) {
+    sizeCountries.classList.remove("size-is-open");
+    sizeBtn.textContent = "Click to Expand";
+  } else {
+    sizeCountries.classList.add("size-is-open");
+    sizeBtn.textContent = "Close";
+  }
+});
+
 // Fetch JSON file to Guided Trips page
 let url = "https://api.myjson.com/bins/ruxz4";
 let newHTML = document.getElementById("oneDayFree");
@@ -136,7 +150,7 @@ function sortTripsByDates() {
       let dateArr = [];
       for (let trip of eleVal) {
         dateArr.push([trip, Date.parse(trip.Date)]);
-        console.log(dateArr);
+        //console.log(dateArr);
         dateArr.sort(function(a, b) {
           return a[1] - b[1];
         });

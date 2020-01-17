@@ -149,6 +149,9 @@ how to apply:
   .freeHikes__btn--explore {
     background: linear-gradient(#d55534, #525252); }
 
+.size__btn:focus {
+  outline: none; }
+
 .show-all__btn {
   margin: 1rem auto;
   border: none;
@@ -1308,6 +1311,22 @@ About page layout
 
 .about-container__acknowledgement {
   margin: 1rem auto 6rem; }
+
+.sizes__clickToSee {
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .sizes__clickToSee--content {
+    margin: 1rem auto;
+    padding: 2rem;
+    background-color: #fff8e8;
+    display: none;
+    line-height: 2; }
+
+.size-is-open {
+  display: block;
+  transition: all 0.3s ease-in-out; }
 
 @-webkit-keyframes check {
   50% {

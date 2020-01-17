@@ -134,3 +134,24 @@ About page layout
 .about-container__acknowledgement {
   margin: 1rem auto 6rem;
 }
+
+// Sizes of Taiwan compared to other countries
+.sizes {
+  &__clickToSee {
+    margin: 2rem auto;
+    @include flex-center;
+
+    &--content {
+      margin: 1rem auto;
+      padding: 2rem;
+      background-color: lighten($color-tan, 5%);
+      display: none;
+      line-height: 2;
+    }
+  }
+}
+
+.size-is-open {
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
