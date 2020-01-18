@@ -132,11 +132,3 @@ figcaption {
   font-size: $font-size-xs;
   color: $color-base-blue; //$color-deep-blue-grey;
 }
-
-.article__btn {
-  margin: 0 auto;
-  padding: 2rem 0 12rem;
-  width: 60%;
-  height: max-content;
-  @include flex-center;
-}

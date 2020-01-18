@@ -149,8 +149,19 @@ how to apply:
   .freeHikes__btn--explore {
     background: linear-gradient(#d55534, #525252); }
 
-.size__btn:focus {
-  outline: none; }
+.size__btn {
+  padding-top: 0.9rem; }
+  .size__btn:focus {
+    outline: none; }
+
+.article__btn {
+  margin: 0 auto;
+  padding: 2rem 0 12rem;
+  width: 60%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .show-all__btn {
   margin: 1rem auto;
@@ -340,15 +351,6 @@ how to apply:
 figcaption {
   font-size: 1.4rem;
   color: #097392; }
-
-.article__btn {
-  margin: 0 auto;
-  padding: 2rem 0 12rem;
-  width: 60%;
-  height: max-content;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
 
 footer {
   margin: 0 auto;
@@ -752,14 +754,15 @@ header {
     width: 100%;
     height: auto; }
   .header__background-img-box--title {
-    margin-top: -2.2rem;
+    margin-top: 0rem;
     font-size: 4rem;
     mix-blend-mode: overlay;
     transform: scale(0.8, 1.8);
-    text-shadow: 0.1rem 0.1rem 0.1rem #097392;
+    text-shadow: 0.1rem 0.1rem 0.2rem #262626;
     color: rgba(252, 252, 252, 0.9); }
     @media only screen and (min-width: 580px) {
       .header__background-img-box--title {
+        font-size: 6rem;
         transform: scale(1, 1.6); } }
     @media only screen and (min-width: 1200px) {
       .header__background-img-box--title {
@@ -769,28 +772,26 @@ header {
       .header__background-img-box--title {
         transform: scale(1.3, 2.5); } }
   .header__background-img-box--title2 {
-    margin-top: -2.4rem;
+    margin-top: 1.5rem;
     display: inline-block;
     width: 90%;
     font-size: 1.8rem;
     text-align: center;
-    background: linear-gradient(#097392, #c7c7c7);
+    transform: scale(0.8, 1.4);
+    background: linear-gradient(#097392, #999999);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: scale(0.8, 1.4); }
+    -webkit-text-fill-color: transparent; }
     @media only screen and (min-width: 580px) {
       .header__background-img-box--title2 {
         font-size: 2.4rem; } }
     @media only screen and (min-width: 900px) {
       .header__background-img-box--title2 {
-        margin-top: -1.8rem; } }
+        margin-top: 3rem;
+        transform: scale(1, 2); } }
     @media only screen and (min-width: 1200px) {
       .header__background-img-box--title2 {
-        margin-top: -1rem;
-        font-size: 3.2rem;
-        background: linear-gradient(#097392, #999999);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent; } }
+        margin-top: 4rem;
+        font-size: 3.2rem; } }
 
 .header__background-img-7Reasons {
   background-image: url("../img/header-background5.jpg");
@@ -1294,6 +1295,9 @@ About page layout
     display: inline-block;
     margin: 1rem 0;
     padding-left: 1rem; }
+    @media only screen and (min-width: 580px) {
+      .about-container__creator h4 {
+        font-size: 2.4rem; } }
 
 .about-container__disclaimer,
 .about-container__hikingclub {
@@ -1317,16 +1321,23 @@ About page layout
   display: flex;
   align-items: center;
   justify-content: center; }
-  .sizes__clickToSee--content {
-    margin: 1rem auto;
+  .sizes__clickToSee--countries {
+    margin: 2rem auto 4rem;
     padding: 2rem;
-    background-color: #fff8e8;
+    box-shadow: 1rem 1rem 3rem #b8b8b8;
     display: none;
     line-height: 2; }
+    @media only screen and (min-width: 580px) {
+      .sizes__clickToSee--countries {
+        padding: 3rem; } }
+    @media only screen and (min-width: 900px) {
+      .sizes__clickToSee--countries {
+        padding: 4rem; } }
+  .sizes__clickToSee--content b {
+    color: #097392; }
 
 .size-is-open {
-  display: block;
-  transition: all 0.3s ease-in-out; }
+  display: block; }
 
 @-webkit-keyframes check {
   50% {

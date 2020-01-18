@@ -48,14 +48,15 @@ header {
   }
 
   &--title {
-    margin-top: -2.2rem;
+    margin-top: 0rem;
     font-size: $font-size-large;
     mix-blend-mode: overlay;
     transform: scale(0.8, 1.8);
-    text-shadow: 0.1rem 0.1rem 0.1rem $color-base-blue;
+    text-shadow: 0.1rem 0.1rem 0.2rem lighten($color-black, 15%);
     color: rgba($color-white, 0.9);
 
     @include responsive(tab) {
+      font-size: $font-size-xl;
       transform: scale(1, 1.6);
     }
     @include responsive(normal-desktop) {
@@ -68,32 +69,29 @@ header {
   }
 
   &--title2 {
-    margin-top: -2.4rem;
+    margin-top: 1.5rem;
     display: inline-block;
     width: 90%;
     font-size: $font-size-s;
     text-align: center;
-    background: linear-gradient($color-base-blue, lighten($color-black, 78%));
-    // background: linear-gradient($color-base-blue, $color-deep-blue-grey);
+    transform: scale(0.8, 1.4);
+    background: linear-gradient($color-base-blue, lighten($color-black, 60%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    //mix-blend-mode: overlay;
-    transform: scale(0.8, 1.4);
-    //text-shadow: 0.1rem 0.1rem 0.1rem $color-base-blue;
-    // color: $color-base-blue;
 
     @include responsive(tab) {
       font-size: $font-size-sm;
     }
     @include responsive(sm-desktop) {
-      margin-top: -1.8rem;
+      margin-top: 3rem;
+      transform: scale(1, 2);
     }
     @include responsive(normal-desktop) {
-      margin-top: -1rem;
+      margin-top: 4rem;
       font-size: $font-size-m;
-      background: linear-gradient($color-base-blue, lighten($color-black, 60%));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      // background: linear-gradient($color-base-blue, lighten($color-black, 60%));
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
     }
   }
 }

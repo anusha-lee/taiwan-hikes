@@ -110,6 +110,10 @@ About page layout
     display: inline-block;
     margin: 1rem 0;
     padding-left: 1rem;
+
+    @include responsive(tab) {
+      font-size: $font-size-sm;
+    }
   }
 }
 
@@ -141,17 +145,30 @@ About page layout
     margin: 2rem auto;
     @include flex-center;
 
-    &--content {
-      margin: 1rem auto;
+    &--countries {
+      //transition: all 3s ease-in-out;
+      margin: 2rem auto 4rem;
       padding: 2rem;
-      background-color: lighten($color-tan, 5%);
+      box-shadow: 1rem 1rem 3rem lighten($color-deep-blue-grey, 50%);
       display: none;
       line-height: 2;
+
+      @include responsive(tab) {
+        padding: 3rem;
+      }
+      @include responsive(sm-desktop) {
+        padding: 4rem;
+      }
+    }
+
+    &--content {
+      & b {
+        color: $color-base-blue;
+      }
     }
   }
 }
 
 .size-is-open {
   display: block;
-  transition: all 0.3s ease-in-out;
 }

@@ -86,9 +86,18 @@
 
 // Size button on About page
 .size__btn {
+  padding-top: 0.9rem;
   &:focus {
     outline: none;
   }
+}
+
+.article__btn {
+  margin: 0 auto;
+  padding: 2rem 0 12rem;
+  width: 60%;
+  height: max-content;
+  @include flex-center;
 }
 
 // Guided-trips Buttons
