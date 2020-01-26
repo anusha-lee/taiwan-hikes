@@ -143,10 +143,10 @@ About page layout
 .sizes {
   &__clickToSee {
     margin: 2rem auto;
+    // transition: display 3s ease-in-out; not working
     @include flex-center;
 
     &--countries {
-      //transition: all 3s ease-in-out;
       margin: 2rem auto 4rem;
       padding: 2rem;
       box-shadow: 1rem 1rem 3rem lighten($color-deep-blue-grey, 50%);
