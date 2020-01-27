@@ -147,10 +147,10 @@ About page layout
     @include flex-center;
 
     &--countries {
+      display: none;
       margin: 2rem auto 4rem;
       padding: 2rem;
       box-shadow: 1rem 1rem 3rem lighten($color-deep-blue-grey, 50%);
-      display: none;
       line-height: 2;
 
       @include responsive(tab) {

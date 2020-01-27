@@ -233,14 +233,12 @@ header {
     grid-column: 2 / 3;
     grid-row: 1/ 2;
 
-    width: 5rem;
-    height: 5rem;
+    width: 4.5rem;
+    height: 4.5rem;
     position: relative;
-
     right: 0;
     top: 1.3rem;
-    //transition: all 0.5s ease-in-out;
-    z-index: 2000; // might need to delete later
+    //z-index: 2000; // might need to delete later
 
     @include responsive(tab) {
       right: 2.6%;
@@ -253,7 +251,7 @@ header {
       width: 4rem;
       height: 4rem;
       position: absolute;
-      top: 0;
+      top: 2;
       right: 0;
       opacity: 0;
       cursor: pointer;
@@ -266,8 +264,8 @@ header {
       width: 2.5rem;
       height: 0.4rem;
       position: relative;
-      top: 0.7rem;
-      left: 1rem;
+      top: 1rem;
+      left: 0.8rem;
       background-color: $color-deep-blue-grey;
       transform-origin: 4px 0;
       transition: all 0.3s ease-in-out;
@@ -285,7 +283,7 @@ header {
 
     &--toggle:checked ~ &--line {
       opacity: 1;
-      transform: rotate(45deg) translate(0, 0);
+      transform: rotate(45deg) translate(0, -1px);
       background-color: $color-white;
       z-index: 30;
     }
@@ -297,7 +295,7 @@ header {
 
     &--toggle:checked ~ &--line:nth-last-child(2) {
       opacity: 1;
-      transform: rotate(-45deg);
+      transform: rotate(-45deg) translate(0, -1px);
       z-index: 31;
     }
 
@@ -341,7 +339,6 @@ header {
     &--toggle:checked ~ &--list {
       //opacity: 1;
       display: block;
-      //margin-right: -2rem;
       padding-top: 5rem;
       width: 100vw;
       height: 100vh;

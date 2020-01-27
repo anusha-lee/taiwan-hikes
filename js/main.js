@@ -32,45 +32,7 @@ scrollToTopBtn.addEventListener("click", function() {
 
 // Fetch JSON file to Guided Trips page
 let url = "https://api.myjson.com/bins/ruxz4";
-let newHTML = document.getElementById("oneDayFree");
-
-// assign challenging level colors
-/*
-addDifficultyColor();
-*/
-function addDifficultyColor() {
-  fetch(url)
-    .then(res => res.json())
-    .then(arr => {
-      let eleVal = Object.values(arr);
-
-      for (let color of eleVal) {
-        let checkDifficultyColor = color.Difficulty_Level;
-        let addColor = document.createElement("span");
-        //let colorRating = document.querySelector(".color-rating");// something wrong with this
-        //let colorRating = document.querySelector(".singleTrip");// something wrong with this
-        //colorRating.appendChild(addColor);
-        //newHTML.appendChild(addColor); // something wrong with this
-        //colorRating.appendChild(addColor);
-        //console.log(colorRating);
-
-        if (checkDifficultyColor === "A") {
-          addColor.classList.add("color", "rating-green");
-        } else if (
-          checkDifficultyColor === "A+" ||
-          checkDifficultyColor === "B"
-        ) {
-          addColor.classList.add("color", "rating-yellow");
-        } else {
-          addColor.classList.add("color", "rating-red");
-        }
-      }
-    })
-    .catch(err => console.error("Color rating went wrong!", err));
-}
-
-getTripData();
-
+const oneDayFreeTrips = document.querySelector("#oneDayFree");
 function getTripData() {
   fetch(url)
     .then(res => res.json())
@@ -82,7 +44,7 @@ function getTripData() {
       // Create and append the li's to the ul or div to the parent div
       if (eleVal.length >= 1) {
         for (let val of eleVal) {
-          newHTML.innerHTML += `
+          oneDayFreeTrips.innerHTML += `
                   <div class="singleTrip">
                       <h3 class="singleTrip__title">Event: <br>${val.Event}</h3>
                       <div class="singleTrip__box">
@@ -121,9 +83,37 @@ function getTripData() {
     })
     .catch(err => console.error("Something about DOM went wrong!", err));
 }
+getTripData();
+
+//assign challenging level colors
+function addDifficultyColor() {
+  fetch(url)
+    .then(res => res.json())
+    .then(arr => {
+      let eleVal = Object.values(arr);
+
+      for (let color of eleVal) {
+        let checkDifficultyColor = color.Difficulty_Level;
+        let addColor = document.createElement("span");
+
+        if (checkDifficultyColor === "A") {
+          addColor.classList.add("color", "rating-green");
+        } else if (
+          checkDifficultyColor === "A+" ||
+          checkDifficultyColor === "B"
+        ) {
+          addColor.classList.add("color", "rating-yellow");
+        } else {
+          addColor.classList.add("color", "rating-red");
+        }
+      }
+    })
+    .catch(err => console.error("Color rating went wrong!", err));
+}
 
 // Click "Sorted by date" button to sort
 
+/*
 sortTripsByDates();
 
 function sortTripsByDates() {
@@ -148,29 +138,30 @@ function sortTripsByDates() {
     })
     .catch(err => console.error("Date sorting went wrong!", err));
 }
-
+*/
 // Show all and Show less buttons on Guided Trips page
-const oneDayFree = document.querySelector("#oneDayFree");
+// Use the variable of oneDayFreeTrips on line 35
 const showAllBtn = document.querySelector(".show-all__btn");
-const positionAfterShow = window.scrollY;
-
+console.log(oneDayFreeTrips);
+/*
 showAllBtn.addEventListener("click", event => {
-  if (oneDayFree.classList.contains("open")) {
+  if (oneDayFreeTrips.classList.contains("open")) {
     // shrink the box
-    oneDayFree.classList.remove("open");
+    oneDayFreeTrips.classList.remove("open");
     showAllBtn.textContent = "Show All";
   } else {
     // expand the box
-    oneDayFree.classList.add("open");
+    oneDayFreeTrips.classList.add("open");
     showAllBtn.textContent = "Show Less";
   }
 });
-
+*/
 // The expand button on About page: seems to be conflict with the button
 // on guided trips page
+
 const sizeBtn = document.querySelector(".size__btn");
 const sizeCountries = document.querySelector(".size__countries");
-console.log(sizeBtn);
+console.log(sizeCountries);
 
 sizeBtn.addEventListener("click", event => {
   if (sizeCountries.classList.contains("size-is-open")) {

@@ -53,6 +53,10 @@
   }
 }
 
+.disclaimer {
+  @include flex-center;
+}
+
 // Guided trips layout
 .trips {
   margin: 2rem auto;
@@ -86,7 +90,6 @@
     flex-direction: column;
     transition: all 0.3s ease-in-out;
     @include responsive(tab) {
-      // margin: 0rem auto;
       flex-direction: row;
     }
     @include responsive(sm-desktop) {
@@ -187,4 +190,9 @@
   width: 5rem;
   height: 0.8rem;
   border-radius: 5px;
+}
+
+.customized {
+  margin: 1rem auto 5rem;
+  @include flex-center;
 }

@@ -40,19 +40,8 @@
   &--explore {
     //display: block;
     @include flex-center;
-    width: 16rem;
-    height: 4rem;
-    background: linear-gradient(
-      $color-base-blue,
-      lighten($color-deep-blue-grey, 10%)
-    );
-    color: $color-white;
-    font-size: $font-size-s;
-    font-family: $font-title;
-    border-radius: 20px;
-    transition: all 0.3s ease-in-out;
-    //text-shadow: 0.1rem 0.1rem 0.1rem $color-white;
-    box-shadow: 0.2rem 0.2rem 0.4rem lighten($color-deep-blue-grey, 30%);
+    @include btn-style;
+    @include btn-base-color;
   }
 
   &--explore:hover {
@@ -70,25 +59,50 @@
 
 // Disclaimer button
 .disclaimer__btn {
-  padding-bottom: 0 !important;
+  //padding-bottom: 0 !important;
+  @include flex-center;
+  @include btn-style;
+  @include btn-alarm-color;
+
+  &:hover {
+    @include btn-hover;
+    background-color: lighten($color-orangered, 5%);
+  }
+  &:active {
+    @include btn-active;
+    background-color: darken($color-orangered, 5%);
+  }
+  &:visited {
+    color: $color-tan;
+  }
 }
 
 // Landing Page Latest Hikes button
 .freeHikes__btn {
   padding: 5rem 1rem 2rem;
   &--explore {
-    background: linear-gradient(
-      $color-orangered,
-      lighten($color-deep-blue-grey, 10%)
-    );
+    @include btn-base-color;
   }
 }
 
 // Size button on About page
 .size__btn {
+  @include btn-style;
+  @include btn-base-color;
   padding-top: 0.9rem;
   &:focus {
     outline: none;
+  }
+  &:hover {
+    @include btn-hover;
+    background-color: lighten($color-orangered, 5%);
+  }
+  &:active {
+    @include btn-active;
+    background-color: darken($color-orangered, 5%);
+  }
+  &:visited {
+    color: $color-tan;
   }
 }
 
@@ -98,26 +112,61 @@
   width: 60%;
   height: max-content;
   @include flex-center;
+  @include btn-style;
+  @include btn-base-color;
+
+  &:hover {
+    @include btn-hover;
+    background-color: lighten($color-orangered, 5%);
+  }
+  &:active {
+    @include btn-active;
+    background-color: darken($color-orangered, 5%);
+  }
+  &:visited {
+    color: $color-tan;
+  }
 }
 
 // Guided-trips Buttons
 .show-all__btn {
   margin: 1rem auto;
   border: none;
-  // position: fixed;
-  // left: 50%;
-  // top: 50%;
-
   font-size: $font-size-s;
-  background: linear-gradient(
-    $color-base-blue,
-    lighten($color-deep-blue-grey, 10%)
-  );
+  @include flex-center;
+  @include btn-style;
+  @include btn-base-color;
+
+  &:hover {
+    @include btn-hover;
+    background-color: lighten($color-orangered, 5%);
+  }
+  &:active {
+    @include btn-active;
+    background-color: darken($color-orangered, 5%);
+  }
+  &:visited {
+    color: $color-tan;
+  }
 }
-.custom-made__btn {
-  margin-top: 5rem;
-  width: 28rem;
+.customized__btn {
+  width: 32rem;
   text-align: center;
+  @include flex-center;
+  @include btn-style;
+  @include btn-alarm-color;
+
+  &:hover {
+    @include btn-hover;
+    background-color: lighten($color-orangered, 5%);
+  }
+  &:active {
+    @include btn-active;
+    background-color: darken($color-orangered, 5%);
+  }
+  &:visited {
+    color: $color-tan;
+  }
 }
 
 .trips__sorting--by-date,
