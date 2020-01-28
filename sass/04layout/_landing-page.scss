@@ -134,18 +134,32 @@
 
 // testimonials section
 .home__testimonials {
-  margin: 10rem auto;
-
+  margin: 8rem auto 4rem;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  border: 3px solid greenyellow;
+  @include responsive(tab) {
+    height: 90vh;
+  }
+  @include responsive(sm-desktop) {
+    height: 90vh;
+    margin-bottom: 6rem;
+  }
+  // @include responsive(normal-desktop) {
+  //   height: 50%;
+  // }
+  // @include responsive(xl-desktop) {
+  //   height: 40%;
+  // }
 }
 
 .testimonials {
   margin: 0 auto;
   padding: 3rem;
   width: 90%;
-  //min-height: 65vh;
-  height: 80vh;
+  min-height: 90%;
+  //height: 80vh;
+  border: 1px solid brown;
 
   position: relative;
   overflow: hidden;
@@ -185,7 +199,6 @@
   width: 100vh;
   height: auto;
   padding: 2rem;
-  margin-bottom: 2rem;
 
   display: flex;
   flex: 1;
@@ -196,18 +209,29 @@
   &__avatar {
     width: 25%;
     max-width: 15rem;
-    padding: 2rem 0;
+    padding: 1rem 0;
     text-align: center;
     border-radius: 50%;
   }
 
   &__quote {
     display: inline-block;
-    width: 85%;
+    width: 95%;
+    height: auto;
     text-align: center;
-    padding: 2rem;
-    font-size: $font-size-s;
+    padding: 0.5rem 2rem;
+    font-size: $font-size-xs;
     line-height: 1.6;
+    @include responsive(tab) {
+      width: 85%;
+      font-size: $font-size-s;
+    }
+    @include responsive(sm-desktop) {
+      width: 60%;
+    }
+    // @include responsive(normal-desktop) {
+    //   width: 95%;
+    // }
   }
 
   &__author {
@@ -215,16 +239,16 @@
     font-size: $font-size-sm;
     font-family: $font-title;
     color: $color-base-blue;
-    padding: 2rem 0;
+    padding: 1rem 0 2rem;
   }
 }
 
 .slider__nav {
-  margin: -1.5rem 2.5rem;
+  margin: 3.5rem 2.5rem;
   width: 1.5rem;
   height: 1.5rem;
   z-index: 10;
-  outline: 0.5rem solid $color-base-blue;
+  outline: 0.6rem solid $color-base-blue;
   outline-offset: -0.5rem;
   border-radius: 50%;
   box-shadow: 0 0 0 0 $color-base-blue, 0 0 0 0 $color-tan;
@@ -236,7 +260,7 @@
   backface-visibility: hidden;
 
   @include responsive(tab) {
-    margin: 0rem 1.5rem;
+    margin: -5.5rem 1.5rem;
     width: 1.2rem;
     height: 1.2rem;
   }

@@ -1,3 +1,10 @@
+// Fix inconsistency of button focus among different browsers
+document.addEventListener("click", function(event) {
+  if (event.target.matches("button")) {
+    event.target.focus();
+  }
+});
+
 // fixed navigation bar after scrolling down
 window.addEventListener("scroll", () => {
   const navFixed = document.querySelector(".header-box");
