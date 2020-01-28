@@ -1200,22 +1200,13 @@ header {
 .home__testimonials {
   margin: 8rem auto 4rem;
   width: 100%;
-  height: 100vh;
-  border: 3px solid greenyellow; }
-  @media only screen and (min-width: 580px) {
-    .home__testimonials {
-      height: 90vh; } }
-  @media only screen and (min-width: 900px) {
-    .home__testimonials {
-      height: 90vh;
-      margin-bottom: 6rem; } }
+  height: 75vh; }
 
 .testimonials {
   margin: 0 auto;
   padding: 3rem;
   width: 90%;
-  min-height: 90%;
-  border: 1px solid brown;
+  height: 100%;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -1230,16 +1221,16 @@ header {
       width: 65%; } }
   @media only screen and (min-width: 1200px) {
     .testimonials {
-      width: 50%; } }
+      width: 55%; } }
   @media only screen and (min-width: 1500px) {
     .testimonials {
-      width: 40%; } }
+      width: 45%; } }
   .testimonials__box {
     position: absolute;
     top: 0;
     left: 0;
     width: 300%;
-    height: auto;
+    height: 75%;
     background-color: #fff8e8;
     transition: left 0.4s ease-in-out;
     display: flex;
@@ -1265,16 +1256,13 @@ header {
     width: 95%;
     height: auto;
     text-align: center;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem;
     font-size: 1.4rem;
     line-height: 1.6; }
     @media only screen and (min-width: 580px) {
       .cell__quote {
-        width: 85%;
+        width: 90%;
         font-size: 1.8rem; } }
-    @media only screen and (min-width: 900px) {
-      .cell__quote {
-        width: 60%; } }
   .cell__author {
     display: block;
     font-size: 2.4rem;
@@ -1283,7 +1271,7 @@ header {
     padding: 1rem 0 2rem; }
 
 .slider__nav {
-  margin: 3.5rem 2.5rem;
+  margin: 4.5rem 2.5rem;
   width: 1.5rem;
   height: 1.5rem;
   z-index: 10;
@@ -1297,17 +1285,9 @@ header {
   appearance: none;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
-  @media only screen and (min-width: 580px) {
-    .slider__nav {
-      margin: -5.5rem 1.5rem;
-      width: 1.2rem;
-      height: 1.2rem; } }
   @media only screen and (min-width: 900px) {
     .slider__nav {
-      margin: -1.5rem 1.5rem; } }
-  @media only screen and (min-width: 1500px) {
-    .slider__nav {
-      margin: -2.5rem 1.5rem; } }
+      margin: 6.5rem 2.5rem; } }
 
 .slider__nav:checked {
   -webkit-animation: check 0.3s linear forwards;

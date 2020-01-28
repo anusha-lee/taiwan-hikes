@@ -1,6 +1,5 @@
 .home-7Reasons {
   margin: 0 auto;
-
   width: 100%;
   height: auto;
 }
@@ -136,30 +135,14 @@
 .home__testimonials {
   margin: 8rem auto 4rem;
   width: 100%;
-  height: 100vh;
-  border: 3px solid greenyellow;
-  @include responsive(tab) {
-    height: 90vh;
-  }
-  @include responsive(sm-desktop) {
-    height: 90vh;
-    margin-bottom: 6rem;
-  }
-  // @include responsive(normal-desktop) {
-  //   height: 50%;
-  // }
-  // @include responsive(xl-desktop) {
-  //   height: 40%;
-  // }
+  height: 75vh;
 }
 
 .testimonials {
   margin: 0 auto;
   padding: 3rem;
   width: 90%;
-  min-height: 90%;
-  //height: 80vh;
-  border: 1px solid brown;
+  height: 100%;
 
   position: relative;
   overflow: hidden;
@@ -170,15 +153,16 @@
 
   @include responsive(tab) {
     width: 80%;
+    // min-height: 95%;
   }
   @include responsive(sm-desktop) {
     width: 65%;
   }
   @include responsive(normal-desktop) {
-    width: 50%;
+    width: 55%;
   }
   @include responsive(xl-desktop) {
-    width: 40%;
+    width: 45%;
   }
 
   &__box {
@@ -186,7 +170,7 @@
     top: 0;
     left: 0;
     width: 300%;
-    height: auto;
+    height: 75%;
     background-color: lighten($color-tan, 5%);
     transition: left 0.4s ease-in-out;
 
@@ -219,19 +203,13 @@
     width: 95%;
     height: auto;
     text-align: center;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem;
     font-size: $font-size-xs;
     line-height: 1.6;
     @include responsive(tab) {
-      width: 85%;
+      width: 90%;
       font-size: $font-size-s;
     }
-    @include responsive(sm-desktop) {
-      width: 60%;
-    }
-    // @include responsive(normal-desktop) {
-    //   width: 95%;
-    // }
   }
 
   &__author {
@@ -244,7 +222,7 @@
 }
 
 .slider__nav {
-  margin: 3.5rem 2.5rem;
+  margin: 4.5rem 2.5rem;
   width: 1.5rem;
   height: 1.5rem;
   z-index: 10;
@@ -258,17 +236,8 @@
   appearance: none;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-
-  @include responsive(tab) {
-    margin: -5.5rem 1.5rem;
-    width: 1.2rem;
-    height: 1.2rem;
-  }
   @include responsive(sm-desktop) {
-    margin: -1.5rem 1.5rem;
-  }
-  @include responsive(xl-desktop) {
-    margin: -2.5rem 1.5rem;
+    margin: 6.5rem 2.5rem;
   }
 }
 
