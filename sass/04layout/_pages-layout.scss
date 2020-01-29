@@ -104,16 +104,22 @@ About page layout
   }
   &--intro {
     text-align: left;
+    & div {
+      margin: 1.5rem 0;
+    }
   }
   & h4 {
     font-size: $font-size-s;
     display: inline-block;
-    margin: 1rem 0;
+    margin: 1rem 0 0;
     padding-left: 1rem;
 
     @include responsive(tab) {
       font-size: $font-size-sm;
     }
+  }
+  & div {
+    margin: 1.5rem 0;
   }
 }
 
@@ -128,6 +134,9 @@ About page layout
   &--intro {
     text-align: left;
   }
+  & div {
+    margin: 1.5rem 0;
+  }
 }
 
 .about-container__disclaimer,
@@ -135,15 +144,16 @@ About page layout
   color: $color-orangered;
 }
 
-.about-container__acknowledgement {
-  margin: 1rem auto 6rem;
-}
+// .about-container__acknowledgement {
+//   margin: 1rem auto 6rem;
+// }
 
 // Sizes of Taiwan compared to other countries
 .sizes {
   &__clickToSee {
     margin: 2rem auto;
     // transition: display 3s ease-in-out; not working
+    transition: display 0.3s ease-in-out;
     @include flex-center;
 
     &--countries {
@@ -171,4 +181,12 @@ About page layout
 
 .size-is-open {
   display: block;
+}
+
+// About page guided hikes box
+.freeHikes__btn-box {
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+  padding: 2rem 1rem;
+  @include flex-center;
 }

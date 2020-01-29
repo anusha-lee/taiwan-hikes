@@ -165,11 +165,6 @@ how to apply:
   .disclaimer__btn:visited {
     color: #fff0ce; }
 
-.freeHikes__btn {
-  padding: 5rem 1rem 2rem; }
-  .freeHikes__btn--explore {
-    background: linear-gradient(#097392, #525252); }
-
 .size__btn {
   width: 16rem;
   height: 4rem;
@@ -1407,14 +1402,18 @@ About page layout
     width: 15rem; }
   .about-container__creator--intro {
     text-align: left; }
+    .about-container__creator--intro div {
+      margin: 1.5rem 0; }
   .about-container__creator h4 {
     font-size: 1.8rem;
     display: inline-block;
-    margin: 1rem 0;
+    margin: 1rem 0 0;
     padding-left: 1rem; }
     @media only screen and (min-width: 580px) {
       .about-container__creator h4 {
         font-size: 2.4rem; } }
+  .about-container__creator div {
+    margin: 1.5rem 0; }
 
 .about-container__disclaimer,
 .about-container__hikingclub {
@@ -1425,16 +1424,17 @@ About page layout
   .about-container__disclaimer--intro,
   .about-container__hikingclub--intro {
     text-align: left; }
+  .about-container__disclaimer div,
+  .about-container__hikingclub div {
+    margin: 1.5rem 0; }
 
 .about-container__disclaimer,
 .about-container__disclaimer-text span {
   color: #d55534; }
 
-.about-container__acknowledgement {
-  margin: 1rem auto 6rem; }
-
 .sizes__clickToSee {
   margin: 2rem auto;
+  transition: display 0.3s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -1455,6 +1455,14 @@ About page layout
 
 .size-is-open {
   display: block; }
+
+.freeHikes__btn-box {
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 @-webkit-keyframes check {
   50% {

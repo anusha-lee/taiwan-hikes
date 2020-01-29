@@ -77,14 +77,6 @@
   }
 }
 
-// Landing Page Latest Hikes button
-.freeHikes__btn {
-  padding: 5rem 1rem 2rem;
-  &--explore {
-    @include btn-base-color;
-  }
-}
-
 // Size button on About page
 .size__btn {
   @include btn-style;
