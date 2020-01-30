@@ -82,9 +82,6 @@
   @include btn-style;
   @include btn-base-color;
   padding-top: 0.9rem;
-  &:focus {
-    outline: none;
-  }
   &:hover {
     @include btn-hover;
     background-color: lighten($color-orangered, 5%);

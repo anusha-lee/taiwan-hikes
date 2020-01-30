@@ -1,3 +1,7 @@
+*:focus {
+  outline: none;
+}
+
 // Seven Reasons section basic layout
 .seven {
   margin: 0 auto;
@@ -128,11 +132,28 @@ About page layout
   margin: 3rem auto;
   &--img {
     & img {
-      width: 60%;
+      width: 70%;
+    }
+  }
+  &--img-couple {
+    & img {
+      width: 45%;
+      @include responsive(tab) {
+        width: 35%;
+      }      
     }
   }
   &--intro {
     text-align: left;
+  }
+  & h4 {
+    font-size: $font-size-s;
+    display: inline-block;
+    margin: 1rem 0 0;
+    padding-left: 1rem;
+    @include responsive(tab) {
+      font-size: $font-size-sm;
+    }
   }
   & div {
     margin: 1.5rem 0;

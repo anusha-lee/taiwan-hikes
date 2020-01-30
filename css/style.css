@@ -22,7 +22,16 @@ li {
   list-style: none; }
 
 a:link {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #097392; }
+
+a:hover,
+a:active {
+  color: #d55534;
+  font-weight: 500; }
+
+a:visited {
+  color: #383838; }
 
 .container {
   margin: 0 auto; }
@@ -176,8 +185,6 @@ how to apply:
   box-shadow: 0.2rem 0.2rem 0.4rem #858585;
   background: linear-gradient(#097392, #525252);
   padding-top: 0.9rem; }
-  .size__btn:focus {
-    outline: none; }
   .size__btn:hover {
     transform: translateY(-0.5rem);
     box-shadow: 0.4rem 0.4rem 0.6rem #525252;
@@ -1321,6 +1328,9 @@ header {
   width: 90%;
   background-color: khaki; }
 
+*:focus {
+  outline: none; }
+
 .seven {
   margin: 0 auto;
   width: 100%;
@@ -1420,10 +1430,27 @@ About page layout
   margin: 3rem auto; }
   .about-container__disclaimer--img img,
   .about-container__hikingclub--img img {
-    width: 60%; }
+    width: 70%; }
+  .about-container__disclaimer--img-couple img,
+  .about-container__hikingclub--img-couple img {
+    width: 45%; }
+    @media only screen and (min-width: 580px) {
+      .about-container__disclaimer--img-couple img,
+      .about-container__hikingclub--img-couple img {
+        width: 35%; } }
   .about-container__disclaimer--intro,
   .about-container__hikingclub--intro {
     text-align: left; }
+  .about-container__disclaimer h4,
+  .about-container__hikingclub h4 {
+    font-size: 1.8rem;
+    display: inline-block;
+    margin: 1rem 0 0;
+    padding-left: 1rem; }
+    @media only screen and (min-width: 580px) {
+      .about-container__disclaimer h4,
+      .about-container__hikingclub h4 {
+        font-size: 2.4rem; } }
   .about-container__disclaimer div,
   .about-container__hikingclub div {
     margin: 1.5rem 0; }
