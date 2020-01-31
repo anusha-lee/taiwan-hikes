@@ -1491,6 +1491,37 @@ About page layout
   align-items: center;
   justify-content: center; }
 
+.carousel-zell {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 80% 1fr;
+  grid-template-rows: 40vh 3rem;
+  align-items: center;
+  grid-gap: 1rem;
+  height: auto;
+  background-color: #097392; }
+
+.carousel__contents {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.carousel__slide {
+  width: inherit;
+  height: inherit;
+  border: 2px solid pink; }
+
+.carousel__slide > img {
+  display: block; }
+
+.carousel__slide img {
+  width: auto;
+  height: 35vh;
+  object-fit: cover;
+  object-position: center center; }
+
 @-webkit-keyframes check {
   50% {
     outline-color: #333;
