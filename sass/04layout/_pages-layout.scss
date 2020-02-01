@@ -223,8 +223,12 @@ About page layout
   height: auto;
   background-color: $color-base-blue;
 }
+.carousel > *:nth-child(2) {
+  grid-column: 2;
+  align-self: stretch;
+}
 .carousel__contents-container {
-  //overflow: hidden;
+  overflow: hidden;
 }
 .carousel__contents {
   // position: relative;
@@ -233,17 +237,17 @@ About page layout
   @include flex-center;
 }
 .carousel__slide {
-  //position: absolute;
+  position: absolute;
   width: inherit;
   height: inherit;
-  border: 2px solid pink;
+  display: flex;
 }
-// .carousel__slide:nth-child(2) {
-//   left: 440px;
-// }
-// .carousel__slide:nth-child(3) {
-//   left: 880px;
-// }
+.carousel__slide:nth-child(2) {
+  left: 360px;
+}
+.carousel__slide:nth-child(3) {
+  left: 720px;
+}
 
 .carousel__slide > img {
   display: block;
@@ -252,7 +256,7 @@ About page layout
   // width: inherit;
   // height: inherit;
   width: auto;
-  height: 35vh;
+  height: 60%;
   object-fit: cover;
   object-position: center center;
 }
