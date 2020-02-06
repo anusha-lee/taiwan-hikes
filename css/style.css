@@ -1493,14 +1493,22 @@ About page layout
   align-items: center;
   justify-content: center; }
 
+.zell {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 80% 1fr;
+  grid-template-rows: 70vh 3rem;
+  align-items: center;
+  grid-gap: 1rem;
+  background-color: #097392; }
+
 .carousel-zell {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 80% 1fr;
-  grid-template-rows: 40vh 3rem;
+  grid-template-rows: 70vh 3rem;
   align-items: center;
   grid-gap: 1rem;
-  height: auto;
   background-color: #097392; }
 
 .carousel > *:nth-child(2) {
@@ -1508,6 +1516,8 @@ About page layout
   align-self: stretch; }
 
 .carousel__contents-container {
+  grid-column: 2 /3;
+  grid-row: 1 / 2;
   overflow: hidden; }
 
 .carousel__contents {
