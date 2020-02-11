@@ -827,6 +827,18 @@ footer {
   align-items: center;
   justify-content: center; }
 
+#allTrips {
+  margin: 2rem auto;
+  border: 3px solid plum;
+  padding: 1rem; }
+
+.eachTrip {
+  margin: 2rem auto;
+  padding: 1rem;
+  width: 90%;
+  height: 30rem;
+  border: 2px solid salmon; }
+
 header {
   margin: 0 auto;
   width: 100%;

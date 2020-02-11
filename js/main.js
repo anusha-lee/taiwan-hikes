@@ -149,7 +149,7 @@ function sortTripsByDates() {
 // Show all and Show less buttons on Guided Trips page
 // Use the variable of oneDayFreeTrips on line 35
 const showAllBtn = document.querySelector(".show-all__btn");
-console.log(oneDayFreeTrips);
+
 /*
 showAllBtn.addEventListener("click", event => {
   if (oneDayFreeTrips.classList.contains("open")) {
