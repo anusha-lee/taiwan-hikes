@@ -644,10 +644,20 @@ guidedTrips.forEach((trip, index) => {
   let date = Date.parse(trip.date);
   let today = Date.parse(new Date());
 
+  // Try to screen out the outdated trips, need to work on here
+  let futureTrips = [];
+  if (date > today) {
+    futureTrips = futureTrips.concat(trip);
+  }
+  //console.log(futureTrips);
+  console.log(futureTrips.length);
+
+  // Add the up-to-date trips to DOM
+  // If previous futureTrips works, we don't need if (date > today)
   if (date > today) {
     allTrips.innerHTML += `
-      <div class="eachTrip>
-        <h3 class="eachTrip__title>${trip.event}</h3>
+      <div class="eachTrip">
+        <h3 class="eachTrip__title"><strong>Trail: </strong>${trip.event}</h3>
         <div class="eachTrip__box">
         <div class="eachTrip__box--color-rating color-rating">${addDifficultyColor()}</div>
         <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${
@@ -670,7 +680,7 @@ guidedTrips.forEach((trip, index) => {
         }</div>
         <div class="eachTrip__box--hiking-club"><strong>Hiking Club: </strong>${
           trip.hikingClub
-        }</a></div>
+        }</div>
         <div class="eachTrip__box--guide"><strong>Guide: </strong>${
           trip.guide
         }</div>
@@ -678,12 +688,14 @@ guidedTrips.forEach((trip, index) => {
           trip.aboutTrail
         }</div>
       </div>
+      </div>
       `;
     //console.log(trip.event, trip.date);
   }
 
-  //   let difficulty = trip.difficultyLevel
-  //   if (difficulty === "B") {
-  //     console.log(trip)
-  //   }
+  // Need to sort out the trips according to the date
+
+  // Need to sort out the trips according to the difficulity level
+
+  // Try to add colors according to the difficulity level
 });
