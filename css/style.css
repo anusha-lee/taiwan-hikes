@@ -762,24 +762,22 @@ footer {
     padding: 1rem;
     transition: all 0.3s ease-in-out; }
 
-#oneDayFree {
+#allTrips {
   margin: 1rem auto;
   width: 90%;
-  max-height: 110rem;
-  overflow: hidden;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   transition: all 0.5s ease-in-out; }
   @media only screen and (min-width: 580px) {
-    #oneDayFree {
-      width: 100%;
-      max-height: 70rem; } }
+    #allTrips {
+      width: 100%; } }
 
-#oneDayFree.open {
+#allTrips.open {
   max-height: max-content;
   transition: all 0.5s ease-in-out; }
 
-.singleTrip {
+.eachTrip {
   margin: 2rem auto;
   min-width: 24rem;
   max-width: 30rem;
@@ -789,17 +787,20 @@ footer {
   overflow: scroll;
   line-height: 1.4;
   box-shadow: 0.2rem 0.2rem 0.5rem #d1d1d1; }
-  .singleTrip__title {
+  .eachTrip__title {
     width: 100%;
+    min-height: 33%;
     padding: 1rem;
     display: inline-block;
     font-size: 1.4rem;
-    height: auto;
-    background-color: #fff8e8; }
+    background-color: #fff8e8;
+    display: flex;
+    align-items: center;
+    box-shadow: 0.2rem 0.2rem 1rem #ffe09b; }
     @media only screen and (min-width: 900px) {
-      .singleTrip__title {
+      .eachTrip__title {
         font-size: 1.8rem; } }
-  .singleTrip__box {
+  .eachTrip__box {
     padding: 1rem;
     font-size: 1.4rem; }
 
@@ -826,18 +827,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center; }
-
-#allTrips {
-  margin: 2rem auto;
-  border: 3px solid plum;
-  padding: 1rem; }
-
-.eachTrip {
-  margin: 2rem auto;
-  padding: 1rem;
-  width: 90%;
-  height: 30rem;
-  border: 2px solid salmon; }
 
 header {
   margin: 0 auto;

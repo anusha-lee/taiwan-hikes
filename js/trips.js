@@ -53,7 +53,7 @@ let guidedTrips = [
     difficultyLevel: "A",
     distance: "12K",
     hikingClub: "新北市嘟嘟健行登山協會Dudu",
-    cost: "Free",
+    cost: "free",
     guide: "侯志賓 Hou Zhibin 0989759936",
     aboutTrail:
       "Xijujianshan, also known as Xiaojujianshan and Hunting Fox Tip, is 704 meters above sea level, and is located near the 106B highway at the junction of Shijie and Pinglin. With viewing platform. Pinglin's Ottercatcher Peak and Shigongyuwei Mountain are famous for their good prospects, and the hiking trails are short and can easily reach the summit. Welcome to the Pin Route."
@@ -74,7 +74,7 @@ let guidedTrips = [
       "Fanzikeng Mountain is also known as Sanxikeng Mountain, with a small open space on the top of the mountain, 476 meters above sea level, and a cornerstone of the Land Survey Bureau's map."
   },
   {
-    event: "遠望坑山 灣坑頭山 Wang Wangkeng Mountain Wan Kengtou Mountain",
+    event: "遠望坑山 灣坑頭山 Wang Wangkeng Mountain, Wan Kengtou Mountain",
     date: "2020/03/01",
     meetupTime: "07:00",
     meetupPoint: "South Gate 3 of Taipei Train Station",
@@ -88,7 +88,7 @@ let guidedTrips = [
       "Yuanwangkeng Mountain: H287m Third Class Triangular Point # 103, Wankengtou Mountain: H616m Second Class Triangular Point #1181, Xiao Bai Yue #091. Wankengtou Mountain is located on the Taoyuan Valley Trail in Tou Town, Yilan County The Caoling Line is a magnificent mountain at the northern end of the Snow Mountain Range. It looks like a giant eagle spreading its wings."
   },
   {
-    event: "玉桂嶺司公髻尾山O行 Yong Guiling Si Gongyuwei Mountain Loop",
+    event: "玉桂嶺司公髻尾山O行 Yuguiling, SiGongyuwei Mountain Loop",
     date: "2020/03/08",
     meetupTime: "08:30",
     meetupPoint: "玉桂嶺一號橋 Yuguiling Bridge One",
@@ -126,6 +126,7 @@ let guidedTrips = [
     difficultyLevel: "A",
     distance: "9K",
     hikingClub: "新北市嘟嘟健行登山協會Dudu",
+    cost: "free",
     guide: "長宏 Changhong 0919986436",
     aboutTrail:
       "Liaoyujian, 704 meters above sea level, is located near the 106B highway at the junction of Shijie and Pinglin. It has a hiking trail, a viewing platform on the top of the mountain, and cultural relics."
@@ -421,10 +422,10 @@ let guidedTrips = [
     difficultyLevel: "A",
     distance: "9K",
     hikingClub: "台北市新興登山會XinXin",
-    cost: "Free",
+    cost: "free",
     guide: "林清祥 Lin Qingxiang",
     aboutTrail:
-      "April Snow Trail, Tzu Chi Hill, Tzu Chi Tea Garden Lean Point, Sanyi Mountain, Shikeng Liaobu Road, Mao Xiang Tan Fang (Xiang Maoyu) Visit and Lunch, Pick Tan Tan Road, Santong Ridge, Da Hangwei Mountain, May Snow Trail (Tonghua Trail), Free Forest Trail. If time You can also visit the millennial camphor tree in Rifford Palace by the way."
+      "April Snow Trail, Tzu Chi Hill, Tzu Chi Tea Garden Lean Point, Sanyi Mountain, Shikeng Liaobu Road, Mao Xiang Tan Fang (Xiang Maoyu) Visit and Lunch, Pick Tan Tan Road, Santong Ridge, Da Hangwei Mountain, May Snow Trail (Tonghua Trail), free Forest Trail. If time You can also visit the millennial camphor tree in Rifford Palace by the way."
   },
   {
     event:
@@ -436,7 +437,7 @@ let guidedTrips = [
     difficultyLevel: "A",
     distance: "10K",
     hikingClub: "台北市新興登山會XinXin",
-    cost: "Free",
+    cost: "free",
     guide: "簡才智 Jian Caizhi",
     aboutTrail:
       "From Shuangxikou → Outside the Old Road → Tamran Suspension Bridge → Shijie West Street → Shijie Elementary School → Wutuxi Trail → Jufu Palace → Approximately 1 hour and 20 minutes to Sanyang Cave → Jufu Miya, this trip is a public hiking route"
@@ -451,7 +452,7 @@ let guidedTrips = [
     difficultyLevel: "A",
     distance: "9K",
     hikingClub: "台北市新興登山會XinXin",
-    cost: "Free",
+    cost: "free",
     guide: "謝長宏 Xie Changhong",
     aboutTrail:
       "Xizhi Dajian Mountain has an elevation of 460 meters and has a good view of Taipei. Basin, 101, Guanyin Mountain and Keelung River Azalea blooms along Qinjin Road"
@@ -496,7 +497,7 @@ let guidedTrips = [
     difficultyLevel: "A",
     distance: "9K",
     hikingClub: "台北市新興登山會XinXin",
-    cost: "Free",
+    cost: "free",
     guide: "張光榮 Zhang Guangrong",
     aboutTrail:
       "North line of Pinghu Forest Recreation Area, Neiping Linshan, continued left south line around the lake The trail returns to its origin."
@@ -511,7 +512,7 @@ let guidedTrips = [
     difficultyLevel: "A",
     distance: "9K",
     hikingClub: "台北市新興登山會XinXin",
-    cost: "",
+    cost: "free",
     guide: "林清祥 Lin Qingxiang",
     aboutTrail:
       "Miners working from Jingzhi or Pingxi from Xizhi, or residents between the two places Time and convenience, save the distance from Jingtong to Pingxi (stone bottom), and walk out of Panshiling again A passage from Sankeng to Pingxi, formerly known as the Ancient Road at Shidi, is now called Panshiling Mountain trail."
@@ -526,7 +527,7 @@ let guidedTrips = [
     difficultyLevel: "A",
     distance: "9K",
     hikingClub: "台北市新興登山會XinXin",
-    cost: "",
+    cost: "free",
     guide: "劉盛雄 Liu Shengxiong",
     aboutTrail:
       "Caidaolun Mountain, Simao Mountain Lianling is located in Xindian Guishan, except for the top four peaks In addition to the cornerstone, there is also a detection instrument of the Water Resources Department plus solar anels. The ridgeline has a good view, and you can admire the famous mountains nearby."
@@ -555,7 +556,7 @@ let guidedTrips = [
     difficultyLevel: "A",
     distance: "7.5K",
     hikingClub: "台北市新興登山會XinXin",
-    cost: "",
+    cost: "free",
     guide: "簡才智 Jian Caizhi",
     aboutTrail:
       "Depart from Tianmu Ring Road → Banling Trail → Zhongshan North Road Qidan Mountain Entrance → Ford Palace Lunch → Take the Tianmu Ring Road to take the bus."
@@ -570,7 +571,7 @@ let guidedTrips = [
     difficultyLevel: "A",
     distance: "8K",
     hikingClub: "台北市新興登山會XinXin",
-    cost: "",
+    cost: "free",
     guide: "王朝勝 Wang Chaosheng",
     aboutTrail:
       "From the cold water pit waist around the pine forest grassland, Penny Mountain, Neilong."
@@ -600,7 +601,7 @@ let guidedTrips = [
     difficultyLevel: "A",
     distance: "9K",
     hikingClub: "台北市新興登山會XinXin",
-    cost: "Free",
+    cost: "free",
     guide: "潘清欽 Pan Qingqin",
     aboutTrail:
       "Get off at Geding Stop. It is also the Keelung Mountain hiking pass ... The spire trail descends from the stone steps. Zhenqiao, Jinguashi secret realm, Moru Lane, Golden Museum, Geopark, Golden Shrine, Golden Museum Museum. Rainbow Street Ladder. Qitang Old Street. Prisoner of War Park. Times Hill. Slope Cableway. Silent Hill. Waterfall Top. Golden Falls. Thirteen-story ruins of the coastal road. Yin Yanghai."
@@ -616,7 +617,7 @@ let guidedTrips = [
     difficultyLevel: "A",
     distance: "9K",
     hikingClub: "台北市新興登山會XinXin",
-    cost: "Free",
+    cost: "free",
     guide: "林清祥 Lin Qingxiang",
     aboutTrail:
       "Panshan trolley ropeway--According to residents, in the early days they were used by mountain pickers. Go down the mountain, and then use iron cattle to transport materials, so there is this path"
@@ -631,62 +632,119 @@ let guidedTrips = [
     difficultyLevel: "C",
     distance: "9K",
     hikingClub: "台北市新興登山會XinXin",
-    cost: "Free",
+    cost: "free",
     guide: "劉盛雄 Liu Shengxiong",
     aboutTrail:
       "Nanya Station → Southeast Peak of Nanzi Mountain → Banpingxi → Sword Dragon Edge → Riding the Dragon → 381 Peak → Bottom right of the fork road → Water pipeline → Chimney edge → Quanjitang"
+  },
+  {
+    event:
+      "新北投櫻花隧道~出北投社三層崎公園花海 New Beitou Sakura Tunnel ~ Ikebana Park",
+    date: "2020/02/23",
+    meetupTime: "09:00",
+    meetupPoint: "新北投捷運站 Xinbeitou MRT Station",
+    transportation: "MRT",
+    difficultyLevel: "A",
+    distance: "10K",
+    hikingClub: "台灣山野樂活協會LOHAS",
+    cost: "free",
+    guide: "莊博堯 Chuang Boyao 0920-426230",
+    aboutTrail:
+      "Baigong Mountain Trail, Yongchun Yongxi Trail, Xiaqingyu Trail, Guizikeng Trail. Flower viewing locations: Cherry Blossom Tunnel, Misaki Park"
+  },
+  {
+    event: "漫步在櫻花林 Sanzhi walking through the cherry blossom forest",
+    date: "2020/02/29",
+    meetupTime: "09:00",
+    meetupPoint: "",
+    transportation:
+      "Bus: 1.搭乘大眾交通： 860、861、862、863公車（捷運淡水站➔佛朗明哥) 或 2.搭乘大眾交通： 882公車（捷運紅樹林站➔佛朗明哥） 1) Take public transportation: Bus 860, 861, 862, 863 (MRT Tamsui Station flamingo) or 2) Take public transportation: 882 bus (MRT Mangrove Station Franminco)",
+    difficultyLevel: "B",
+    distance: "20K",
+    hikingClub: "台灣山野樂活協會LOHAS",
+    cost: "free",
+    guide: "張惠萍 Zhang Huiping",
+    aboutTrail:
+      "Since 1982, Sanzhi has successively planted sakura trees along the roads. Up to now, there are as many as 16,000 plants with a total length of nearly 70 kilometers. Every February or March, Sanzhi not only has flowers on the mountain tops, but also on both sides of Qingshan Road, Shiba Park Villa, Xinghua Elementary School, and all the main roads; most of them are Taiwan's native mountain cherry blossoms ( Also known as Hana Sakura), others are Yoshino cherry and Yae cherry, red, pink, white ... various varieties of cherry blossoms are in bloom."
+  },
+  {
+    event:
+      "白尖縱走-白匏湖出四分尾大尖山 Baijian Long Distance: Lake Báipáo to Mt. Sìfēnwěi Mt. Dàjiān",
+    date: "2020/03/07",
+    meetupTime: "07:30",
+    meetupPoint:
+      "捷運南港展覽館站6號出口, Exit 6 Taipei Nangang Exhibition Center MRT Station",
+    transportation: "MRT",
+    difficultyLevel: "B",
+    distance: "17K",
+    hikingClub: "台灣山野樂活協會LOHAS",
+    cost: "free",
+    guide: "潘建宇 Pan Jianyu 0936232953",
+    aboutTrail:
+      "Baijian walks vertically, which means that after starting from Xiaonangangshan, passing through the old camp, Baiying Lake, Baiyun Temple, Shifenfen Mountain, Guangming Temple, Guangmingli Baojia Road, Shanglukulun Mountain, Nine-story Pingshan, Qufenwei Mountain, Dashan After Jianshan (Xiaobaiyue), walk to Xizhi Railway Station. Baijian walks along the way. There are seven mountain bases and quiet lakes to visit, and you can also learn about the historical traces of the past Guangming Temple and Lulu incident. Welcome all mountain friends, in the early spring season when the mountain cherry blossoms are blooming, face some cool breeze, let's take a walk on the mountain together !!"
+  },
+  {
+    event: "東勢格越嶺古道 Dongshi Geyueling Old Trail",
+    date: "2020/03/22",
+    meetupTime: "09:00",
+    meetupPoint: "平溪國中 Pinxi Junior High School",
+    transportation:
+      "795公車（捷運木柵站→平溪國中站） Take Bus 795 at Mucha MRT Station and get off at Pinxi Junior High School",
+    difficultyLevel: "A",
+    distance: "10K",
+    hikingClub: "台灣山野樂活協會LOHAS",
+    cost: "free",
+    guide: "蕭媚娜 Xiao Meina",
+    aboutTrail:
+      "The Dongshige Yueling Trail is an ancient trail that was mainly used by residents living in Pingxi and Dongshige in the past, with a total length of 3.4 kilometers. We enter from the trail entrance opposite the Pingxi Middle School, and slowly rise along the Guaukeng Creek to connect to the old carriageway. This walkway is renovated from the old carriageway. This walkway is gentle and paved with old platforms Debris on the driveway, walk about half an hour to reach the old mine of Jianyuan Coal Mine. Abandoned pits, arch bridges, the site of the mining office and stone temples are still left nearby. The mountain trails are relatively rugged and slippery, but with the help of steel nails and cables, it is not difficult to pass. The trees are dense and full of ancient atmosphere along the way."
   }
 ];
 
 const allTrips = document.querySelector("#allTrips");
+const homepageTripBox = document.querySelector("#homepageTripBox");
+let today = Date.parse(new Date());
+
+// Show titles and dates of 3 trips on homepage
+/*
+let homepageTrips = guidedTrips;
+homepageTrips.forEach(trip => {
+  let date = Date.parse(trip.date);
+  if (date > today) {
+    homepageTrips.slice(0, 3);
+    console.log(homepageTrips);
+  }
+  homepageTripBox.innerHtml += `
+      <div class="homepageTrip">
+        <h3 class="homepageTrip__title"><strong>Trail: </strong>${trip.event}</h3>
+        <div class="homepageTrip__box">
+            <div class="homepageTrip__box--difficulty"><strong>Difficulty Level: </strong>${trip.difficultyLevel}</div>
+            <div class="homepageTrip__box--date"><strong>Date: </strong>${trip.date}</div>
+            <div class="homepageTrip__box--distance"><strong>Distance: </strong>${trip.distance}</div>
+        </div>
+      </div>
+    `;
+});
+*/
 
 guidedTrips.forEach((trip, index) => {
   let date = Date.parse(trip.date);
-  let today = Date.parse(new Date());
-
-  // Try to screen out the outdated trips, need to work on here
-  let futureTrips = [];
-  if (date > today) {
-    futureTrips = futureTrips.concat(trip);
-  }
-  //console.log(futureTrips);
-  console.log(futureTrips.length);
-
   // Add the up-to-date trips to DOM
   // If previous futureTrips works, we don't need if (date > today)
   if (date > today) {
     allTrips.innerHTML += `
       <div class="eachTrip">
-        <h3 class="eachTrip__title"><strong>Trail: </strong>${trip.event}</h3>
+        <div class="eachTrip__title"><strong>${trip.event}</strong></div>
         <div class="eachTrip__box">
-        <div class="eachTrip__box--color-rating color-rating">${addDifficultyColor()}</div>
-        <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${
-          trip.difficultyLevel
-        }</div>
-        <div class="eachTrip__box--date"><strong>Date: </strong>${
-          trip.date
-        }</div>
-        <div class="eachTrip__box--meetup-time"><strong>Meetup Time: </strong>${
-          trip.meetupTime
-        }</div>
-        <div class="eachTrip__box--meetup-point"><strong>Meetup Point: </strong>${
-          trip.meetupPoint
-        }</div>             
-        <div class="eachTrip__box--transportation"><strong>Transportation: </strong>${
-          trip.transportation
-        }</div>                        
-        <div class="eachTrip__box--distance"><strong>Distance: </strong>${
-          trip.distance
-        }</div>
-        <div class="eachTrip__box--hiking-club"><strong>Hiking Club: </strong>${
-          trip.hikingClub
-        }</div>
-        <div class="eachTrip__box--guide"><strong>Guide: </strong>${
-          trip.guide
-        }</div>
-        <div class="eachTrip__box--about-trail"><strong>About the trail: <br></strong>${
-          trip.aboutTrail
-        }</div>
+        <div class="eachTrip__box--color-rating color-rating">Color to be put</div>
+        <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${trip.difficultyLevel}</div>
+        <div class="eachTrip__box--date"><strong>Date: </strong>${trip.date}</div>
+        <div class="eachTrip__box--meetup-time"><strong>Meetup Time: </strong>${trip.meetupTime}</div>
+        <div class="eachTrip__box--meetup-point"><strong>Meetup Point: </strong>${trip.meetupPoint}</div>             
+        <div class="eachTrip__box--transportation"><strong>Transportation: </strong>${trip.transportation}</div>                        
+        <div class="eachTrip__box--distance"><strong>Distance: </strong>${trip.distance}</div>
+        <div class="eachTrip__box--hiking-club"><strong>Hiking Club: </strong>${trip.hikingClub}</div>
+        <div class="eachTrip__box--guide"><strong>Guide: </strong>${trip.guide}</div>
+        <div class="eachTrip__box--about-trail"><strong>About the trail: <br></strong>${trip.aboutTrail}</div>
       </div>
       </div>
       `;
@@ -699,3 +757,14 @@ guidedTrips.forEach((trip, index) => {
 
   // Try to add colors according to the difficulity level
 });
+
+/*
+let eleVal = Object.values(resDate);
+      let dateArr = [];
+      for (let trip of eleVal) {
+        dateArr.push([trip, Date.parse(trip.Date)]);
+        dateArr.sort(function(a, b) {
+          return a[1] - b[1];
+        });
+      }
+*/

@@ -107,27 +107,28 @@
   }
 }
 
-#oneDayFree {
+#allTrips {
   margin: 1rem auto;
   width: 90%;
-  max-height: 110rem;
-  overflow: hidden;
+  height: auto;
+  // max-height: 110rem;
+  // overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   transition: all 0.5s ease-in-out;
 
   @include responsive(tab) {
     width: 100%;
-    max-height: 70rem;
+    //max-height: 70rem;
   }
 }
 // click Show all or Show less
-#oneDayFree.open {
+#allTrips.open {
   max-height: max-content;
   transition: all 0.5s ease-in-out;
 }
 
-.singleTrip {
+.eachTrip {
   margin: 2rem auto;
   min-width: 24rem;
   max-width: 30rem;
@@ -157,11 +158,15 @@
 
   &__title {
     width: 100%;
+    min-height: 33%;
     padding: 1rem;
     display: inline-block;
     font-size: $font-size-xs;
-    height: auto;
     background-color: lighten($color-tan, 5%);
+    display: flex;
+    align-items: center;
+    box-shadow: 0.2rem 0.2rem 1rem darken($color-tan, 10%);
+
     @include responsive(sm-desktop) {
       font-size: $font-size-s;
     }
@@ -195,20 +200,4 @@
 .customized {
   margin: 1rem auto 5rem;
   @include flex-center;
-}
-
-///////////////////// Test new array of objects about trips
-
-#allTrips {
-  margin: 2rem auto;
-  border: 3px solid plum;
-  padding: 1rem;
-}
-
-.eachTrip {
-  margin: 2rem auto;
-  padding: 1rem;
-  width: 90%;
-  height: 30rem;
-  border: 2px solid salmon;
 }
