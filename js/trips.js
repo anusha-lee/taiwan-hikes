@@ -700,19 +700,20 @@ let guidedTrips = [
   }
 ];
 
-const allTrips = document.querySelector("#allTrips");
+// Homepage's Latest Free Hikes
+// Show titles, dates, and difficulity of 3 trips on homepage
 const homepageTripBox = document.querySelector("#homepageTripBox");
 let today = Date.parse(new Date());
-
-// Show titles and dates of 3 trips on homepage
-/*
 let homepageTrips = guidedTrips;
-homepageTrips.forEach(trip => {
-  let date = Date.parse(trip.date);
-  if (date > today) {
-    homepageTrips.slice(0, 3);
-    console.log(homepageTrips);
+let upToDateTrip = [];
+
+homepageTrips.forEach((trip, index) => {
+  if (Date.parse(trip.date) > today) {
+    upToDateTrip.push(trip);
   }
+});
+/*
+upToDateTrip.forEach(trip => {
   homepageTripBox.innerHtml += `
       <div class="homepageTrip">
         <h3 class="homepageTrip__title"><strong>Trail: </strong>${trip.event}</h3>
@@ -726,12 +727,11 @@ homepageTrips.forEach(trip => {
 });
 */
 
-guidedTrips.forEach((trip, index) => {
-  let date = Date.parse(trip.date);
-  // Add the up-to-date trips to DOM
-  // If previous futureTrips works, we don't need if (date > today)
-  if (date > today) {
-    allTrips.innerHTML += `
+// Guided Free Hikes
+const allTrips = document.querySelector("#allTrips");
+
+upToDateTrip.forEach(trip => {
+  allTrips.innerHTML += `
       <div class="eachTrip">
         <div class="eachTrip__title"><strong>${trip.event}</strong></div>
         <div class="eachTrip__box">
@@ -748,23 +748,9 @@ guidedTrips.forEach((trip, index) => {
       </div>
       </div>
       `;
-    //console.log(trip.event, trip.date);
-  }
-
   // Need to sort out the trips according to the date
 
   // Need to sort out the trips according to the difficulity level
 
   // Try to add colors according to the difficulity level
 });
-
-/*
-let eleVal = Object.values(resDate);
-      let dateArr = [];
-      for (let trip of eleVal) {
-        dateArr.push([trip, Date.parse(trip.Date)]);
-        dateArr.sort(function(a, b) {
-          return a[1] - b[1];
-        });
-      }
-*/

@@ -784,12 +784,11 @@ footer {
   max-height: 32rem;
   padding: 2rem;
   color: #383838;
-  overflow: scroll;
+  overflow-y: scroll;
   line-height: 1.4;
   box-shadow: 0.2rem 0.2rem 0.5rem #d1d1d1; }
   .eachTrip__title {
     width: 100%;
-    min-height: 33%;
     padding: 1rem;
     display: inline-block;
     font-size: 1.4rem;
@@ -797,6 +796,9 @@ footer {
     display: flex;
     align-items: center;
     box-shadow: 0.2rem 0.2rem 1rem #ffe09b; }
+    @media only screen and (min-width: 580px) {
+      .eachTrip__title {
+        min-height: 33%; } }
     @media only screen and (min-width: 900px) {
       .eachTrip__title {
         font-size: 1.8rem; } }

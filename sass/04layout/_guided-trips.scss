@@ -135,7 +135,7 @@
   max-height: 32rem;
   padding: 2rem;
   color: $color-deep-blue-grey;
-  overflow: scroll;
+  overflow-y: scroll;
   line-height: 1.4;
   box-shadow: 0.2rem 0.2rem 0.5rem lighten($color-deep-blue-grey, 60%);
 
@@ -158,7 +158,6 @@
 
   &__title {
     width: 100%;
-    min-height: 33%;
     padding: 1rem;
     display: inline-block;
     font-size: $font-size-xs;
@@ -167,6 +166,9 @@
     align-items: center;
     box-shadow: 0.2rem 0.2rem 1rem darken($color-tan, 10%);
 
+    @include responsive(tab) {
+      min-height: 33%;
+    }
     @include responsive(sm-desktop) {
       font-size: $font-size-s;
     }

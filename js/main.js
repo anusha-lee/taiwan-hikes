@@ -39,19 +39,6 @@ scrollToTopBtn.addEventListener("click", function() {
 
 const showAllBtn = document.querySelector(".show-all__btn");
 
-/*
-showAllBtn.addEventListener("click", event => {
-  if (oneDayFreeTrips.classList.contains("open")) {
-    // shrink the box
-    oneDayFreeTrips.classList.remove("open");
-    showAllBtn.textContent = "Show All";
-  } else {
-    // expand the box
-    oneDayFreeTrips.classList.add("open");
-    showAllBtn.textContent = "Show Less";
-  }
-});
-*/
 // The expand button on About page: seems to be conflict with the button
 // on guided trips page
 
@@ -68,6 +55,3 @@ const sizeCountries = document.querySelector(".size__countries");
 //     sizeBtn.textContent = "Close";
 //   }
 // });
-
-// Make onclick on those difficulty levels and only show those that are clicked
-// For example, if users click difficulty hikes, only those will show up.
