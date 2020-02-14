@@ -312,7 +312,7 @@ let guidedTrips = [
     event:
       " 雙溪山 連走梅花山 白石湖山 Mt. Shuāng xī, Mt. méihuā, and Mt. báishí hú",
     date: "2020/03/21",
-    eetupTime: "07:40",
+    meetupTime: "07:40",
     meetupPoint: "劍潭捷運站1號出口 Exit 1 Jiantan MRT Station",
     transportation:
       "搭小18公車 Take Bus Small 18 and get off at 聖人橋 Shèngrén Bridge Stop",
@@ -700,18 +700,31 @@ let guidedTrips = [
   }
 ];
 
-// Homepage's Latest Free Hikes
-// Show titles, dates, and difficulity of 3 trips on homepage
 const homepageTripBox = document.querySelector("#homepageTripBox");
 let today = Date.parse(new Date());
 let homepageTrips = guidedTrips;
 let upToDateTrip = [];
+//const allTrips = document.querySelector("#allTrips");
 
 homepageTrips.forEach((trip, index) => {
   if (Date.parse(trip.date) > today) {
     upToDateTrip.push(trip);
   }
 });
+
+// Sort trips by dates
+upToDateTrip.sort((a, b) => {
+  if (Date.parse(a.date) > Date.parse(b.date)) {
+    return 1;
+  } else if (Date.parse(a.date) < Date.parse(b.date)) {
+    return -1;
+  } else {
+    return 0;
+  }
+});
+
+// Homepage's Latest Free Hikes
+// Show titles, dates, and difficulity of 3 trips on homepage
 /*
 upToDateTrip.forEach(trip => {
   homepageTripBox.innerHtml += `
@@ -728,6 +741,7 @@ upToDateTrip.forEach(trip => {
 */
 
 // Guided Free Hikes
+
 const allTrips = document.querySelector("#allTrips");
 
 upToDateTrip.forEach(trip => {
@@ -748,9 +762,7 @@ upToDateTrip.forEach(trip => {
       </div>
       </div>
       `;
-  // Need to sort out the trips according to the date
-
-  // Need to sort out the trips according to the difficulity level
-
-  // Try to add colors according to the difficulity level
 });
+
+// Need to sort out the trips according to the difficulity level
+// by clicking the difficulty level
