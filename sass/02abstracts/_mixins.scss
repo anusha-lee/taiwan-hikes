@@ -67,13 +67,6 @@ how to apply:
   box-shadow: 0.2rem 0.2rem 0.4rem lighten($color-deep-blue-grey, 30%);
 }
 
-@mixin btn-base-color {
-  background: linear-gradient(
-    $color-base-blue,
-    lighten($color-deep-blue-grey, 10%)
-  );
-}
-
 @mixin btn-alarm-color {
   background: linear-gradient(
     $color-orangered,
@@ -94,12 +87,10 @@ how to apply:
 
 // links, a tags hover effects
 @mixin link-hover-active {
-  color: $color-deep-blue-grey;
+  color: $color-tan;
   font-weight: 600;
-  //text-decoration: underline;
-  //background-color: $color-tan;
 }
 
 @mixin link-visited {
-  color: $color-orangered;
+  color: lighten($color-orangered, 10%);
 }

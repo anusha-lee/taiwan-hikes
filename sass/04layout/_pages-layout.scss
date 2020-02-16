@@ -204,12 +204,15 @@ About page layout
   display: block;
 }
 
-// About page guided hikes box
+// Landing page and About page guided hikes box
 .freeHikes__btn-box {
-  margin-top: 2rem;
-  margin-bottom: 8rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   padding: 2rem 1rem;
   @include flex-center;
+}
+.about-freeHikes__btn-box {
+  margin-bottom: 8rem;
 }
 
 // Use Zell's course on Seven reasons page

@@ -38,22 +38,26 @@
   padding: 1.5rem 0.5rem;
 
   &--explore {
-    //display: block;
     @include flex-center;
     @include btn-style;
-    @include btn-base-color;
+    background: linear-gradient(
+      $color-base-blue,
+      lighten($color-deep-blue-grey, 10%)
+    );
   }
 
   &--explore:hover {
     @include btn-hover;
-    background-color: lighten($color-orangered, 5%);
+    background: linear-gradient(
+      lighten($color-base-blue, 5%),
+      lighten($color-deep-blue-grey, 10%)
+    );
   }
   &--explore:active {
     @include btn-active;
-    background-color: darken($color-orangered, 5%);
   }
   &--explore:visited {
-    color: $color-tan;
+    color: lighten($color-orangered, 20%);
   }
 }
 
@@ -80,7 +84,7 @@
 // Size button on About page
 .size__btn {
   @include btn-style;
-  @include btn-base-color;
+
   padding-top: 0.9rem;
   &:hover {
     @include btn-hover;
@@ -102,7 +106,6 @@
   height: max-content;
   @include flex-center;
   @include btn-style;
-  @include btn-base-color;
 
   &:hover {
     @include btn-hover;
@@ -129,7 +132,6 @@
   font-size: $font-size-s;
   @include flex-center;
   @include btn-style;
-  @include btn-base-color;
 
   &:hover {
     @include btn-hover;
@@ -163,7 +165,6 @@
   }
 }
 
-.trips__sorting--by-date,
 .trips__sorting--by-easy,
 .trips__sorting--by-moderate,
 .trips__sorting--by-challenging {

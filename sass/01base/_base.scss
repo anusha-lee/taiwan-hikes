@@ -25,19 +25,9 @@ body {
 li {
   list-style: none;
 }
-
 a:link {
   text-decoration: none;
-  color: #097392;
 }
-a:hover,
-a:active {
-  color: #d55534; //$color-orangered;
-}
-a:visited {
-  color: #383838; //$color-deep-blue-grey;
-}
-
 .container {
   margin: 0 auto;
 }

@@ -22,15 +22,7 @@ li {
   list-style: none; }
 
 a:link {
-  text-decoration: none;
-  color: #097392; }
-
-a:hover,
-a:active {
-  color: #d55534; }
-
-a:visited {
-  color: #383838; }
+  text-decoration: none; }
 
 .container {
   margin: 0 auto; }
@@ -61,9 +53,6 @@ h4,
 h5,
 h6 {
   font-family: "Alegreya", serif; }
-
-a:visited {
-  color: #922809; }
 
 .gradient-text {
   background: linear-gradient(#fff0ce, #08607a);
@@ -141,13 +130,12 @@ how to apply:
   .sevenReasons__btn--explore:hover {
     transform: translateY(-0.5rem);
     box-shadow: 0.4rem 0.4rem 0.6rem #525252;
-    background-color: #d96749; }
+    background: linear-gradient(#0a86aa, #525252); }
   .sevenReasons__btn--explore:active {
     transform: translateY(-0.2rem);
-    box-shadow: 0.2rem 0.2rem 0.3rem #1f1f1f;
-    background-color: #c64929; }
+    box-shadow: 0.2rem 0.2rem 0.3rem #1f1f1f; }
   .sevenReasons__btn--explore:visited {
-    color: #fff0ce; }
+    color: #e69c89; }
 
 .disclaimer__btn {
   display: flex;
@@ -182,7 +170,6 @@ how to apply:
   border-radius: 20px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0.2rem 0.2rem 0.4rem #858585;
-  background: linear-gradient(#097392, #525252);
   padding-top: 0.9rem; }
   .size__btn:hover {
     transform: translateY(-0.5rem);
@@ -210,8 +197,7 @@ how to apply:
   font-family: "Alegreya", serif;
   border-radius: 20px;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0.2rem 0.2rem 0.4rem #858585;
-  background: linear-gradient(#097392, #525252); }
+  box-shadow: 0.2rem 0.2rem 0.4rem #858585; }
   .article__btn:hover {
     transform: translateY(-0.5rem);
     box-shadow: 0.4rem 0.4rem 0.6rem #525252;
@@ -240,8 +226,7 @@ how to apply:
   font-family: "Alegreya", serif;
   border-radius: 20px;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0.2rem 0.2rem 0.4rem #858585;
-  background: linear-gradient(#097392, #525252); }
+  box-shadow: 0.2rem 0.2rem 0.4rem #858585; }
   .show-all__btn:hover {
     transform: translateY(-0.5rem);
     box-shadow: 0.4rem 0.4rem 0.6rem #525252;
@@ -279,7 +264,6 @@ how to apply:
   .customized__btn:visited {
     color: #fff0ce; }
 
-.trips__sorting--by-date,
 .trips__sorting--by-easy,
 .trips__sorting--by-moderate,
 .trips__sorting--by-challenging {
@@ -293,7 +277,6 @@ how to apply:
   transition: all 0.3s ease-in-out;
   cursor: pointer; }
   @media only screen and (min-width: 580px) {
-    .trips__sorting--by-date,
     .trips__sorting--by-easy,
     .trips__sorting--by-moderate,
     .trips__sorting--by-challenging {
@@ -303,19 +286,16 @@ how to apply:
       margin: 1rem 0;
       padding: 0.5rem; } }
   @media only screen and (min-width: 900px) {
-    .trips__sorting--by-date,
     .trips__sorting--by-easy,
     .trips__sorting--by-moderate,
     .trips__sorting--by-challenging {
       width: 17rem;
       height: 3rem; } }
-  .trips__sorting--by-date:hover,
   .trips__sorting--by-easy:hover,
   .trips__sorting--by-moderate:hover,
   .trips__sorting--by-challenging:hover {
     transform: translateY(-0.5rem);
     box-shadow: 0.4rem 0.4rem 0.6rem #525252; }
-  .trips__sorting--by-date:active,
   .trips__sorting--by-easy:active,
   .trips__sorting--by-moderate:active,
   .trips__sorting--by-challenging:active {
@@ -326,22 +306,22 @@ how to apply:
   background: linear-gradient(#fff0ce, #de785e); }
 
 .trips__sorting--by-easy {
-  background: linear-gradient(#9ACD32, gray); }
+  background: linear-gradient(#9acd32, gray); }
 
 .trips__sorting--by-moderate {
-  background: linear-gradient(#FFD700, gray); }
+  background: linear-gradient(#ffd700, gray); }
 
 .trips__sorting--by-challenging {
-  background: linear-gradient(#FF0000, gray); }
+  background: linear-gradient(#ff0000, gray); }
 
 .green {
-  background-color: #9ACD32; }
+  background-color: #9acd32; }
 
 .yellow {
-  background-color: #FFD700; }
+  background-color: #ffd700; }
 
 .red {
-  background-color: #FF0000;
+  background-color: #ff0000;
   color: #fcfcfc; }
 
 .progress {
@@ -352,6 +332,18 @@ how to apply:
     height: 0.8rem;
     background: #fff0ce;
     width: 0%; }
+
+.post-link-style {
+  text-decoration: none;
+  color: #097392;
+  transition: all .3s ease-in-out; }
+
+.post-link-style:hover,
+.post-link-style:active {
+  text-decoration: underline; }
+
+.post-link-style:visited {
+  color: #d55534; }
 
 .article {
   margin: 0 auto;
@@ -534,10 +526,10 @@ footer {
     .footer__copyright div a {
       transition: all 0.3s ease-in-out; }
       .footer__copyright div a:hover, .footer__copyright div a:active {
-        color: #383838;
+        color: #fff0ce;
         font-weight: 600; }
       .footer__copyright div a:visited {
-        color: #d55534; }
+        color: #de785e; }
   .footer__legal {
     margin: 0 auto;
     width: 90%; }
@@ -652,10 +644,10 @@ footer {
     .subscribeInput__agree a {
       transition: all 0.3s ease-in-out; }
       .subscribeInput__agree a:hover, .subscribeInput__agree a:active {
-        color: #383838;
+        color: #fff0ce;
         font-weight: 600; }
       .subscribeInput__agree a:visited {
-        color: #d55534; }
+        color: #de785e; }
 
 .legal__box {
   display: flex;
@@ -669,10 +661,10 @@ footer {
       color: #cccccc;
       transition: all 0.3s ease-in-out; }
     .legal__box--item a:hover, .legal__box--item a:active {
-      color: #383838;
+      color: #fff0ce;
       font-weight: 600; }
     .legal__box--item a:visited {
-      color: #d55534; }
+      color: #de785e; }
 
 .guided-hikes {
   margin: 2rem auto;
@@ -807,19 +799,19 @@ footer {
     font-size: 1.4rem; }
 
 .rating-green {
-  background-color: #9ACD32;
+  background-color: #9acd32;
   width: 5rem;
   height: 0.8rem;
   border-radius: 5px; }
 
 .rating-yellow {
-  background-color: #FFD700;
+  background-color: #ffd700;
   width: 5rem;
   height: 0.8rem;
   border-radius: 5px; }
 
 .rating-red {
-  background-color: #FF0000;
+  background-color: #ff0000;
   width: 5rem;
   height: 0.8rem;
   border-radius: 5px; }
@@ -1148,7 +1140,7 @@ header {
       text-decoration: underline;
       color: #525252; }
     .sevenReasons__title a:visited {
-      color: #d55534; }
+      color: #de785e; }
   .sevenReasons__text {
     display: inline-block;
     text-overflow: ellipsis;
@@ -1162,8 +1154,8 @@ header {
 .home-freeHikes {
   margin: 0 auto;
   width: 100%;
-  height: 80vh;
-  padding: 1rem;
+  height: auto;
+  padding: 1.5rem 0;
   background-image: url(/img/header-background-large.JPG);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1173,10 +1165,9 @@ header {
   justify-content: center; }
 
 .freeHikes {
-  margin: 0 auto;
-  padding: 2rem 1rem;
-  width: 95%;
-  height: 95%;
+  margin: 1rem auto;
+  padding: .5rem 1rem;
+  width: 90%;
   background-color: rgba(252, 252, 252, 0.8);
   display: flex;
   align-items: center;
@@ -1198,19 +1189,34 @@ header {
       max-height: 80rem; } }
   .freeHikes__trips {
     width: 100%;
-    min-height: 20vh; }
+    min-height: 70%; }
     .freeHikes__trips--title {
       font-size: 3.2rem;
       color: #097392;
       line-height: 1.2; }
 
+.homepageTrip {
+  margin: 1rem;
+  padding: 1rem;
+  color: #064d62;
+  line-height: 1.6;
+  box-shadow: 0.2rem 0.4rem 0.5rem #d1d1d1; }
+  .homepageTrip__title {
+    font-size: 1.4rem; }
+    @media only screen and (min-width: 580px) {
+      .homepageTrip__title {
+        font-size: 1.8rem; } }
+  @media only screen and (min-width: 580px) {
+    .homepageTrip__box {
+      font-size: 1.4rem; } }
+
 .home__testimonials {
   margin: 8rem auto;
   width: 100%;
-  height: 100vh; }
+  height: 70vh; }
 
 .testimonials {
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: 1rem;
   width: 90%;
   height: 100%;
@@ -1222,10 +1228,12 @@ header {
   justify-content: center; }
   @media only screen and (min-width: 580px) {
     .testimonials {
-      width: 80%; } }
+      width: 80%;
+      height: 110%; } }
   @media only screen and (min-width: 900px) {
     .testimonials {
-      width: 65%; } }
+      width: 65%;
+      height: 110%; } }
   @media only screen and (min-width: 1200px) {
     .testimonials {
       width: 55%; } }
@@ -1237,7 +1245,6 @@ header {
     top: 0;
     left: 0;
     width: 300%;
-    height: 100%;
     background-color: #fff8e8;
     transition: left 0.4s ease-in-out;
     display: flex;
@@ -1245,7 +1252,7 @@ header {
 
 .cell {
   width: 100vh;
-  height: 80%;
+  height: 70%;
   padding: 1rem;
   display: flex;
   flex: 1;
@@ -1285,7 +1292,7 @@ header {
     padding: 1rem 0 2rem; }
 
 .slider__nav {
-  margin: 4.5rem 2.5rem;
+  margin: 2.5rem;
   width: 1.5rem;
   height: 1.5rem;
   z-index: 10;
@@ -1326,12 +1333,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center; }
-
-.sponsors {
-  margin: 0 auto;
-  padding: 3rem 1rem;
-  width: 90%;
-  background-color: khaki; }
 
 *:focus {
   outline: none; }
@@ -1380,10 +1381,10 @@ Start Here and Blog Home page layout
       line-height: 1.2;
       transition: all 0.3s ease-in-out; }
       .here__title a:hover, .here__title a:active {
-        color: #383838;
+        color: #fff0ce;
         font-weight: 600; }
       .here__title a:visited {
-        color: #d55534; }
+        color: #de785e; }
   .here__text {
     padding: 1rem;
     font-size: 1.4rem;
@@ -1489,12 +1490,15 @@ About page layout
   display: block; }
 
 .freeHikes__btn-box {
-  margin-top: 2rem;
-  margin-bottom: 8rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   padding: 2rem 1rem;
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.about-freeHikes__btn-box {
+  margin-bottom: 8rem; }
 
 .zell {
   width: 100%;

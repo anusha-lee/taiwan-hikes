@@ -1,3 +1,17 @@
+// Link styles in the articles and blog posts
+.post-link-style {
+  text-decoration: none;
+  color: $color-base-blue; 
+  transition: all .3s ease-in-out;
+}
+.post-link-style:hover,
+.post-link-style:active {
+  text-decoration: underline;
+}
+.post-link-style:visited {
+  color: $color-orangered; //$color-deep-blue-grey;
+}
+
 // layout for articles, blog posts
 .article {
   margin: 0 auto;

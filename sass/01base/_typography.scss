@@ -19,9 +19,9 @@ $color-blue-grey: #83b4b3;
 $color-tan: #fff0ce;
 $color-orangered: #d55534;
 $color-deep-blue-grey: #383838;
-$color-green: #9ACD32;
-$color-yellow: #FFD700;
-$color-red: #FF0000;
+$color-green: #9acd32;
+$color-yellow: #ffd700;
+$color-red: #ff0000;
 
 // Fonts
 $font-title: "Alegreya", serif;
@@ -51,10 +51,6 @@ h6 {
 
 p {
   //font-family:
-}
-
-a:visited {
-  color: complement($color-base-blue);
 }
 
 .gradient-text {

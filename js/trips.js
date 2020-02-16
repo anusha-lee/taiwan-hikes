@@ -700,11 +700,11 @@ let guidedTrips = [
   }
 ];
 
+// Only up-to-date trips will show up on the page
 const homepageTripBox = document.querySelector("#homepageTripBox");
 let today = Date.parse(new Date());
 let homepageTrips = guidedTrips;
 let upToDateTrip = [];
-//const allTrips = document.querySelector("#allTrips");
 
 homepageTrips.forEach((trip, index) => {
   if (Date.parse(trip.date) > today) {
@@ -725,23 +725,22 @@ upToDateTrip.sort((a, b) => {
 
 // Homepage's Latest Free Hikes
 // Show titles, dates, and difficulity of 3 trips on homepage
-/*
-upToDateTrip.forEach(trip => {
-  homepageTripBox.innerHtml += `
+let tripsForHomepage = upToDateTrip.slice(0, 4);
+
+tripsForHomepage.forEach(tripHomepage => {
+  homepageTripBox.innerHTML += `
       <div class="homepageTrip">
-        <h3 class="homepageTrip__title"><strong>Trail: </strong>${trip.event}</h3>
+        <h3 class="homepageTrip__title">${tripHomepage.event}</h3>
         <div class="homepageTrip__box">
-            <div class="homepageTrip__box--difficulty"><strong>Difficulty Level: </strong>${trip.difficultyLevel}</div>
-            <div class="homepageTrip__box--date"><strong>Date: </strong>${trip.date}</div>
-            <div class="homepageTrip__box--distance"><strong>Distance: </strong>${trip.distance}</div>
+            <div class="homepageTrip__box--difficulty"><strong>Difficulty Level: </strong>${tripHomepage.difficultyLevel}</div>
+            <div class="homepageTrip__box--date"><strong>Date: </strong>${tripHomepage.date}</div>
+            <div class="homepageTrip__box--distance"><strong>Distance: </strong>${tripHomepage.distance}</div>
         </div>
       </div>
     `;
 });
-*/
 
 // Guided Free Hikes
-
 const allTrips = document.querySelector("#allTrips");
 
 upToDateTrip.forEach(trip => {
@@ -766,3 +765,6 @@ upToDateTrip.forEach(trip => {
 
 // Need to sort out the trips according to the difficulity level
 // by clicking the difficulty level
+
+// The show all/show less button for the trips
+//const showAllBtn = document.querySelector(".show-all__btn");
