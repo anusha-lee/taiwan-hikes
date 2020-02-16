@@ -130,19 +130,19 @@
   margin: 1rem auto;
   border: none;
   font-size: $font-size-s;
+  background: linear-gradient(
+      $color-base-blue,
+      lighten($color-deep-blue-grey, 10%)
+    );
   @include flex-center;
   @include btn-style;
 
   &:hover {
     @include btn-hover;
-    background-color: lighten($color-orangered, 5%);
-  }
-  &:active {
-    @include btn-active;
-    background-color: darken($color-orangered, 5%);
-  }
-  &:visited {
-    color: $color-tan;
+    background: linear-gradient(
+      lighten($color-base-blue, 5%),
+      lighten($color-deep-blue-grey, 10%)
+    );
   }
 }
 .customized__btn {

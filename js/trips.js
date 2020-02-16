@@ -725,6 +725,7 @@ upToDateTrip.sort((a, b) => {
 
 // Homepage's Latest Free Hikes
 // Show titles, dates, and difficulity of 3 trips on homepage
+/*
 let tripsForHomepage = upToDateTrip.slice(0, 4);
 
 tripsForHomepage.forEach(tripHomepage => {
@@ -739,6 +740,7 @@ tripsForHomepage.forEach(tripHomepage => {
       </div>
     `;
 });
+*/
 
 // Guided Free Hikes
 const allTrips = document.querySelector("#allTrips");
@@ -765,6 +767,66 @@ upToDateTrip.forEach(trip => {
 
 // Need to sort out the trips according to the difficulity level
 // by clicking the difficulty level
+const tripsSorting = document.querySelector(".trips__sorting");
+const sortingTripsRating = Array.from(tripsSorting.children);
+
+const greenBtn = document.querySelector(".green");
+const yellowBtn = document.querySelector(".yellow");
+const redBtn = document.querySelector(".red");
+let difficulitySortingA = [];
+let difficulitySortingB = [];
+let difficulitySortingC = [];
+const eachTrip = allTrips.querySelector(".eachTrip");
+//console.log(eachTrip);
+
+greenBtn.addEventListener("click", event => {
+  upToDateTrip.forEach(tripRating => {
+    if (tripRating.difficultyLevel === "A") {
+      difficulitySortingA.push(tripRating);
+    }
+    allTrips.innerHTML += `
+      <div class="eachTrip">
+        <div class="eachTrip__title"><strong>${tripRating.event}</strong></div>
+        <div class="eachTrip__box">
+        <div class="eachTrip__box--color-rating color-rating">Color to be put</div>
+        <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${tripRating.difficultyLevel}</div>
+        <div class="eachTrip__box--date"><strong>Date: </strong>${tripRating.date}</div>
+        <div class="eachTrip__box--meetup-time"><strong>Meetup Time: </strong>${tripRating.meetupTime}</div>
+        <div class="eachTrip__box--meetup-point"><strong>Meetup Point: </strong>${tripRating.meetupPoint}</div>
+        <div class="eachTrip__box--transportation"><strong>Transportation: </strong>${tripRating.transportation}</div>
+        <div class="eachTrip__box--distance"><strong>Distance: </strong>${tripRating.distance}</div>
+        <div class="eachTrip__box--hiking-club"><strong>Hiking Club: </strong>${tripRating.hikingClub}</div>
+        <div class="eachTrip__box--guide"><strong>Guide: </strong>${tripRating.guide}</div>
+        <div class="eachTrip__box--about-trail"><strong>About the trail: <br></strong>${tripRating.aboutTrail}</div>
+      </div>
+      </div>
+      `;
+  });
+  console.log("Green");
+});
+
+yellowBtn.addEventListener("click", event => {
+  upToDateTrip.forEach(tripRating => {
+    if (tripRating.difficultyLevel === "B") {
+      difficulitySortingB.push(tripRating);
+    }
+  });
+
+  console.log("Yellow");
+});
+
+redBtn.addEventListener("click", event => {
+  upToDateTrip.forEach(tripRating => {
+    if (
+      tripRating.difficultyLevel === "B+" ||
+      tripRating.difficultyLevel === "C"
+    ) {
+      difficulitySortingC.push(tripRating);
+    }
+  });
+
+  console.log("Red");
+});
 
 // The show all/show less button for the trips
 //const showAllBtn = document.querySelector(".show-all__btn");

@@ -216,6 +216,7 @@ how to apply:
   margin: 1rem auto;
   border: none;
   font-size: 1.8rem;
+  background: linear-gradient(#097392, #525252);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -230,13 +231,7 @@ how to apply:
   .show-all__btn:hover {
     transform: translateY(-0.5rem);
     box-shadow: 0.4rem 0.4rem 0.6rem #525252;
-    background-color: #d96749; }
-  .show-all__btn:active {
-    transform: translateY(-0.2rem);
-    box-shadow: 0.2rem 0.2rem 0.3rem #1f1f1f;
-    background-color: #c64929; }
-  .show-all__btn:visited {
-    color: #fff0ce; }
+    background: linear-gradient(#0a86aa, #525252); }
 
 .customized__btn {
   width: 32rem;
