@@ -744,7 +744,6 @@ tripsForHomepage.forEach(tripHomepage => {
 
 // Guided Free Hikes
 const allTrips = document.querySelector("#allTrips");
-
 upToDateTrip.forEach(trip => {
   allTrips.innerHTML += `
       <div class="eachTrip">
@@ -773,18 +772,18 @@ const sortingTripsRating = Array.from(tripsSorting.children);
 const greenBtn = document.querySelector(".green");
 const yellowBtn = document.querySelector(".yellow");
 const redBtn = document.querySelector(".red");
+const allBtn = document.querySelector(".all");
 let difficulitySortingA = [];
 let difficulitySortingB = [];
 let difficulitySortingC = [];
 const eachTrip = allTrips.querySelector(".eachTrip");
-//console.log(eachTrip);
 
 greenBtn.addEventListener("click", event => {
+  allTrips.innerHTML = "";
   upToDateTrip.forEach(tripRating => {
     if (tripRating.difficultyLevel === "A") {
       difficulitySortingA.push(tripRating);
-    }
-    allTrips.innerHTML += `
+      allTrips.innerHTML += `
       <div class="eachTrip">
         <div class="eachTrip__title"><strong>${tripRating.event}</strong></div>
         <div class="eachTrip__box">
@@ -801,32 +800,87 @@ greenBtn.addEventListener("click", event => {
       </div>
       </div>
       `;
+    }
   });
-  console.log("Green");
 });
 
 yellowBtn.addEventListener("click", event => {
+  allTrips.innerHTML = "";
   upToDateTrip.forEach(tripRating => {
     if (tripRating.difficultyLevel === "B") {
       difficulitySortingB.push(tripRating);
+
+      allTrips.innerHTML += `
+      <div class="eachTrip">
+        <div class="eachTrip__title"><strong>${tripRating.event}</strong></div>
+        <div class="eachTrip__box">
+        <div class="eachTrip__box--color-rating color-rating">Color to be put</div>
+        <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${tripRating.difficultyLevel}</div>
+        <div class="eachTrip__box--date"><strong>Date: </strong>${tripRating.date}</div>
+        <div class="eachTrip__box--meetup-time"><strong>Meetup Time: </strong>${tripRating.meetupTime}</div>
+        <div class="eachTrip__box--meetup-point"><strong>Meetup Point: </strong>${tripRating.meetupPoint}</div>
+        <div class="eachTrip__box--transportation"><strong>Transportation: </strong>${tripRating.transportation}</div>
+        <div class="eachTrip__box--distance"><strong>Distance: </strong>${tripRating.distance}</div>
+        <div class="eachTrip__box--hiking-club"><strong>Hiking Club: </strong>${tripRating.hikingClub}</div>
+        <div class="eachTrip__box--guide"><strong>Guide: </strong>${tripRating.guide}</div>
+        <div class="eachTrip__box--about-trail"><strong>About the trail: <br></strong>${tripRating.aboutTrail}</div>
+      </div>
+      </div>
+      `;
     }
   });
-
-  console.log("Yellow");
 });
 
 redBtn.addEventListener("click", event => {
+  allTrips.innerHTML = "";
   upToDateTrip.forEach(tripRating => {
     if (
       tripRating.difficultyLevel === "B+" ||
       tripRating.difficultyLevel === "C"
     ) {
       difficulitySortingC.push(tripRating);
+      allTrips.innerHTML += `
+      <div class="eachTrip">
+        <div class="eachTrip__title"><strong>${tripRating.event}</strong></div>
+        <div class="eachTrip__box">
+        <div class="eachTrip__box--color-rating color-rating">Color to be put</div>
+        <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${tripRating.difficultyLevel}</div>
+        <div class="eachTrip__box--date"><strong>Date: </strong>${tripRating.date}</div>
+        <div class="eachTrip__box--meetup-time"><strong>Meetup Time: </strong>${tripRating.meetupTime}</div>
+        <div class="eachTrip__box--meetup-point"><strong>Meetup Point: </strong>${tripRating.meetupPoint}</div>
+        <div class="eachTrip__box--transportation"><strong>Transportation: </strong>${tripRating.transportation}</div>
+        <div class="eachTrip__box--distance"><strong>Distance: </strong>${tripRating.distance}</div>
+        <div class="eachTrip__box--hiking-club"><strong>Hiking Club: </strong>${tripRating.hikingClub}</div>
+        <div class="eachTrip__box--guide"><strong>Guide: </strong>${tripRating.guide}</div>
+        <div class="eachTrip__box--about-trail"><strong>About the trail: <br></strong>${tripRating.aboutTrail}</div>
+      </div>
+      </div>
+      `;
     }
   });
-
-  console.log("Red");
 });
 
+allBtn.addEventListener("click", event => {
+  console.log("All");
+  allTrips.innerHTML = "";
+  upToDateTrip.forEach(trip => {
+    allTrips.innerHTML += `
+        <div class="eachTrip">
+          <div class="eachTrip__title"><strong>${trip.event}</strong></div>
+          <div class="eachTrip__box">
+          <div class="eachTrip__box--color-rating color-rating">Color to be put</div>
+          <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${trip.difficultyLevel}</div>
+          <div class="eachTrip__box--date"><strong>Date: </strong>${trip.date}</div>
+          <div class="eachTrip__box--meetup-time"><strong>Meetup Time: </strong>${trip.meetupTime}</div>
+          <div class="eachTrip__box--meetup-point"><strong>Meetup Point: </strong>${trip.meetupPoint}</div>             
+          <div class="eachTrip__box--transportation"><strong>Transportation: </strong>${trip.transportation}</div>                        
+          <div class="eachTrip__box--distance"><strong>Distance: </strong>${trip.distance}</div>
+          <div class="eachTrip__box--hiking-club"><strong>Hiking Club: </strong>${trip.hikingClub}</div>
+          <div class="eachTrip__box--guide"><strong>Guide: </strong>${trip.guide}</div>
+          <div class="eachTrip__box--about-trail"><strong>About the trail: <br></strong>${trip.aboutTrail}</div>
+        </div>
+        </div>
+        `;
+  });
+});
 // The show all/show less button for the trips
-//const showAllBtn = document.querySelector(".show-all__btn");

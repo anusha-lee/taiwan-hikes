@@ -212,27 +212,6 @@ how to apply:
 .background-story__btn {
   width: 20rem; }
 
-.show-all__btn {
-  margin: 1rem auto;
-  border: none;
-  font-size: 1.8rem;
-  background: linear-gradient(#097392, #525252);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 16rem;
-  height: 4rem;
-  color: #fcfcfc;
-  font-size: 1.8rem;
-  font-family: "Alegreya", serif;
-  border-radius: 20px;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0.2rem 0.2rem 0.4rem #858585; }
-  .show-all__btn:hover {
-    transform: translateY(-0.5rem);
-    box-shadow: 0.4rem 0.4rem 0.6rem #525252;
-    background: linear-gradient(#0a86aa, #525252); }
-
 .customized__btn {
   width: 32rem;
   text-align: center;
@@ -261,7 +240,8 @@ how to apply:
 
 .trips__sorting--by-easy,
 .trips__sorting--by-moderate,
-.trips__sorting--by-challenging {
+.trips__sorting--by-challenging,
+.trips__sorting--by-all {
   margin: 1rem;
   width: 17rem;
   height: 3rem;
@@ -274,7 +254,8 @@ how to apply:
   @media only screen and (min-width: 580px) {
     .trips__sorting--by-easy,
     .trips__sorting--by-moderate,
-    .trips__sorting--by-challenging {
+    .trips__sorting--by-challenging,
+    .trips__sorting--by-all {
       width: 16rem;
       height: 4rem;
       border-radius: 0;
@@ -283,17 +264,20 @@ how to apply:
   @media only screen and (min-width: 900px) {
     .trips__sorting--by-easy,
     .trips__sorting--by-moderate,
-    .trips__sorting--by-challenging {
+    .trips__sorting--by-challenging,
+    .trips__sorting--by-all {
       width: 17rem;
       height: 3rem; } }
   .trips__sorting--by-easy:hover,
   .trips__sorting--by-moderate:hover,
-  .trips__sorting--by-challenging:hover {
+  .trips__sorting--by-challenging:hover,
+  .trips__sorting--by-all:hover {
     transform: translateY(-0.5rem);
     box-shadow: 0.4rem 0.4rem 0.6rem #525252; }
   .trips__sorting--by-easy:active,
   .trips__sorting--by-moderate:active,
-  .trips__sorting--by-challenging:active {
+  .trips__sorting--by-challenging:active,
+  .trips__sorting--by-all:active {
     transform: translateY(-0.2rem);
     box-shadow: 0.2rem 0.2rem 0.3rem #1f1f1f; }
 
@@ -307,7 +291,12 @@ how to apply:
   background: linear-gradient(#ffd700, gray); }
 
 .trips__sorting--by-challenging {
-  background: linear-gradient(#ff0000, gray); }
+  background: linear-gradient(#ff0000, gray);
+  color: #fcfcfc; }
+
+.trips__sorting--by-all {
+  background: linear-gradient(#097392, #525252);
+  color: #fcfcfc; }
 
 .green {
   background-color: #9acd32; }
@@ -316,8 +305,7 @@ how to apply:
   background-color: #ffd700; }
 
 .red {
-  background-color: #ff0000;
-  color: #fcfcfc; }
+  background-color: #ff0000; }
 
 .progress {
   width: 100%;

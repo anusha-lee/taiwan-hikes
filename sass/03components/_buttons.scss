@@ -125,26 +125,6 @@
   width: 20rem;
 }
 
-// Guided-trips Buttons
-.show-all__btn {
-  margin: 1rem auto;
-  border: none;
-  font-size: $font-size-s;
-  background: linear-gradient(
-      $color-base-blue,
-      lighten($color-deep-blue-grey, 10%)
-    );
-  @include flex-center;
-  @include btn-style;
-
-  &:hover {
-    @include btn-hover;
-    background: linear-gradient(
-      lighten($color-base-blue, 5%),
-      lighten($color-deep-blue-grey, 10%)
-    );
-  }
-}
 .customized__btn {
   width: 32rem;
   text-align: center;
@@ -167,7 +147,8 @@
 
 .trips__sorting--by-easy,
 .trips__sorting--by-moderate,
-.trips__sorting--by-challenging {
+.trips__sorting--by-challenging,
+.trips__sorting--by-all {
   margin: 1rem;
   width: 17rem;
   height: 3rem;
@@ -213,6 +194,14 @@
 
 .trips__sorting--by-challenging {
   background: linear-gradient($color-red, lighten($color-black, 50%));
+  color: $color-white;
+}
+.trips__sorting--by-all {
+  background: linear-gradient(
+    $color-base-blue,
+    lighten($color-deep-blue-grey, 10%)
+  );
+  color: $color-white;
 }
 
 .green {
@@ -223,5 +212,4 @@
 }
 .red {
   background-color: $color-red;
-  color: $color-white;
 }
