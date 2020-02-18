@@ -407,7 +407,7 @@ let guidedTrips = [
     transportation: "Hired bus",
     difficultyLevel: "A",
     distance: "9K",
-    hikingClub: "台北市新興登山會XinXin",
+    hikingClub: "台北市新興登山會XingXing",
     cost: "",
     guide: "謝長宏 Xie Changhong",
     aboutTrail:
@@ -421,7 +421,7 @@ let guidedTrips = [
     transportation: "Local Train 1128 at 07:40 at Taipei Station",
     difficultyLevel: "A",
     distance: "9K",
-    hikingClub: "台北市新興登山會XinXin",
+    hikingClub: "台北市新興登山會XingXing",
     cost: "free",
     guide: "林清祥 Lin Qingxiang",
     aboutTrail:
@@ -436,7 +436,7 @@ let guidedTrips = [
     transportation: "Bus 666",
     difficultyLevel: "A",
     distance: "10K",
-    hikingClub: "台北市新興登山會XinXin",
+    hikingClub: "台北市新興登山會XingXing",
     cost: "free",
     guide: "簡才智 Jian Caizhi",
     aboutTrail:
@@ -451,7 +451,7 @@ let guidedTrips = [
     transportation: "Local Trail 4152 from Taipei Train Station, 區間車4152次",
     difficultyLevel: "A",
     distance: "9K",
-    hikingClub: "台北市新興登山會XinXin",
+    hikingClub: "台北市新興登山會XingXing",
     cost: "free",
     guide: "謝長宏 Xie Changhong",
     aboutTrail:
@@ -467,7 +467,7 @@ let guidedTrips = [
       "07:34 Local Train 4148 at Taipei Train Station, 台北搭4148次區間車",
     difficultyLevel: "A",
     distance: "9K",
-    hikingClub: "台北市新興登山會XinXin",
+    hikingClub: "台北市新興登山會XingXing",
     cost: "",
     guide: "劉盛雄 Liu Shengxiong",
     aboutTrail:
@@ -481,7 +481,7 @@ let guidedTrips = [
     transportation: "Hired bus",
     difficultyLevel: "B",
     distance: "18.5K",
-    hikingClub: "台北市新興登山會XinXin",
+    hikingClub: "台北市新興登山會XingXing",
     cost: "Pre-register, Members 700, Non-Member 750",
     guide: "林清祥 Lin Qingxiang",
     aboutTrail:
@@ -496,7 +496,7 @@ let guidedTrips = [
     transportation: "Carpool",
     difficultyLevel: "A",
     distance: "9K",
-    hikingClub: "台北市新興登山會XinXin",
+    hikingClub: "台北市新興登山會XingXing",
     cost: "free",
     guide: "張光榮 Zhang Guangrong",
     aboutTrail:
@@ -511,7 +511,7 @@ let guidedTrips = [
       "1) Take the 795 bus (Muzha → Shifen) or 2) Take the train to Taipei 06:52 (1120 times), transfer to Bada Station and take the Pingxi Line 07:48, get off at Pingxi Station. 1) 搭795公車（木柵→十分寮）或2)搭火車台北開 06：52（ 1120 次），至八堵站轉搭平溪線 07：48 開，至平溪站下車",
     difficultyLevel: "A",
     distance: "9K",
-    hikingClub: "台北市新興登山會XinXin",
+    hikingClub: "台北市新興登山會XingXing",
     cost: "free",
     guide: "林清祥 Lin Qingxiang",
     aboutTrail:
@@ -526,7 +526,7 @@ let guidedTrips = [
       "08:00 Wulai Line (former bus 849), 08:00 烏來線(前公車849)",
     difficultyLevel: "A",
     distance: "9K",
-    hikingClub: "台北市新興登山會XinXin",
+    hikingClub: "台北市新興登山會XingXing",
     cost: "free",
     guide: "劉盛雄 Liu Shengxiong",
     aboutTrail:
@@ -541,7 +541,7 @@ let guidedTrips = [
     transportation: "Hired bus",
     difficultyLevel: "A",
     distance: "10K",
-    hikingClub: "台北市新興登山會XinXin",
+    hikingClub: "台北市新興登山會XingXing",
     cost: "Contact for details",
     guide: "吳福仁 Wu Furen",
     aboutTrail:
@@ -555,7 +555,7 @@ let guidedTrips = [
     transportation: "Bus 601, 601公車, 重慶幹線",
     difficultyLevel: "A",
     distance: "7.5K",
-    hikingClub: "台北市新興登山會XinXin",
+    hikingClub: "台北市新興登山會XingXing",
     cost: "free",
     guide: "簡才智 Jian Caizhi",
     aboutTrail:
@@ -570,7 +570,7 @@ let guidedTrips = [
       "Bus Small 15 to Lengshueikeng Visitor Center, 小15公車到冷水坑遊客服務站",
     difficultyLevel: "A",
     distance: "8K",
-    hikingClub: "台北市新興登山會XinXin",
+    hikingClub: "台北市新興登山會XingXing",
     cost: "free",
     guide: "王朝勝 Wang Chaosheng",
     aboutTrail:
@@ -585,7 +585,7 @@ let guidedTrips = [
     transportation: "MRT",
     difficultyLevel: "A",
     distance: "8K",
-    hikingClub: "台北市新興登山會XinXin",
+    hikingClub: "台北市新興登山會XingXing",
     cost: "NT400",
     guide: "張光榮 Zhang Guangrong",
     aboutTrail:
@@ -600,7 +600,7 @@ let guidedTrips = [
       "1) 忠孝復興站 2 號出口坐1062, 或2)西門坐 965公車往金瓜石 1) Take Bus 1062 at Exit 2 Zhongxiao Fuxing MRT Station, or 2) take bus 965 at Ximen to Jinguashi",
     difficultyLevel: "A",
     distance: "9K",
-    hikingClub: "台北市新興登山會XinXin",
+    hikingClub: "台北市新興登山會XingXing",
     cost: "free",
     guide: "潘清欽 Pan Qingqin",
     aboutTrail:
@@ -616,7 +616,7 @@ let guidedTrips = [
       "Take Bus 795 at 8:00 at Mucha MRT Station. 08：00搭795公車",
     difficultyLevel: "A",
     distance: "9K",
-    hikingClub: "台北市新興登山會XinXin",
+    hikingClub: "台北市新興登山會XingXing",
     cost: "free",
     guide: "林清祥 Lin Qingxiang",
     aboutTrail:
@@ -631,7 +631,7 @@ let guidedTrips = [
       "Tze-Chiang Limited Express 272 or Local Train to Ruifang, and take Bus 856",
     difficultyLevel: "C",
     distance: "9K",
-    hikingClub: "台北市新興登山會XinXin",
+    hikingClub: "台北市新興登山會XingXing",
     cost: "free",
     guide: "劉盛雄 Liu Shengxiong",
     aboutTrail:
@@ -725,9 +725,9 @@ upToDateTrip.sort((a, b) => {
 
 // Homepage's Latest Free Hikes
 // Show titles, dates, and difficulity of 3 trips on homepage
-/*
-let tripsForHomepage = upToDateTrip.slice(0, 4);
 
+let tripsForHomepage = upToDateTrip.slice(0, 3);
+/*
 tripsForHomepage.forEach(tripHomepage => {
   homepageTripBox.innerHTML += `
       <div class="homepageTrip">
@@ -747,21 +747,36 @@ const allTrips = document.querySelector("#allTrips");
 upToDateTrip.forEach(trip => {
   allTrips.innerHTML += `
       <div class="eachTrip">
+        <div class="eachTrip__color-rating"></div>
         <div class="eachTrip__title"><strong>${trip.event}</strong></div>
-        <div class="eachTrip__box">
-        <div class="eachTrip__box--color-rating color-rating">Color to be put</div>
-        <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${trip.difficultyLevel}</div>
-        <div class="eachTrip__box--date"><strong>Date: </strong>${trip.date}</div>
-        <div class="eachTrip__box--meetup-time"><strong>Meetup Time: </strong>${trip.meetupTime}</div>
-        <div class="eachTrip__box--meetup-point"><strong>Meetup Point: </strong>${trip.meetupPoint}</div>             
-        <div class="eachTrip__box--transportation"><strong>Transportation: </strong>${trip.transportation}</div>                        
-        <div class="eachTrip__box--distance"><strong>Distance: </strong>${trip.distance}</div>
-        <div class="eachTrip__box--hiking-club"><strong>Hiking Club: </strong>${trip.hikingClub}</div>
-        <div class="eachTrip__box--guide"><strong>Guide: </strong>${trip.guide}</div>
-        <div class="eachTrip__box--about-trail"><strong>About the trail: <br></strong>${trip.aboutTrail}</div>
-      </div>
+        <div class="eachTrip__box">          
+          <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${trip.difficultyLevel}</div>
+          <div class="eachTrip__box--date"><strong>Date: </strong>${trip.date}</div>
+          <div class="eachTrip__box--meetup-time"><strong>Meetup Time: </strong>${trip.meetupTime}</div>
+          <div class="eachTrip__box--meetup-point"><strong>Meetup Point: </strong>${trip.meetupPoint}</div>
+          <div class="eachTrip__box--transportation"><strong>Transportation: </strong>${trip.transportation}</div>
+          <div class="eachTrip__box--distance"><strong>Distance: </strong>${trip.distance}</div>
+          <div class="eachTrip__box--hiking-club"><strong>Hiking Club: </strong>${trip.hikingClub}</div>
+          <div class="eachTrip__box--guide"><strong>Guide: </strong>${trip.guide}</div>
+          <div class="eachTrip__box--about-trail"><strong>About the trail: <br></strong>${trip.aboutTrail}</div>
+        </div>
       </div>
       `;
+  // Assign rating color bars for each trip box
+  const ratingColor = document.querySelectorAll(".eachTrip__color-rating");
+  let checkRatingColor = Array.from(ratingColor);
+
+  checkRatingColor.forEach(checkColor => {
+    console.log(checkColor.difficultyLevel); // undefined, need to check
+    if (checkColor.difficultyLevel === "A") {
+      checkColor.classList.add("rating-green");
+    } else if (checkColor.difficultyLevel === "B") {
+      checkColor.classList.add("rating-yellow");
+    } else {
+      checkColor.classList.add("rating-red");
+    }
+  });
+  //console.log(checkRatingColor);
 });
 
 // Need to sort out the trips according to the difficulity level
@@ -787,17 +802,17 @@ greenBtn.addEventListener("click", event => {
       <div class="eachTrip">
         <div class="eachTrip__title"><strong>${tripRating.event}</strong></div>
         <div class="eachTrip__box">
-        <div class="eachTrip__box--color-rating color-rating">Color to be put</div>
-        <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${tripRating.difficultyLevel}</div>
-        <div class="eachTrip__box--date"><strong>Date: </strong>${tripRating.date}</div>
-        <div class="eachTrip__box--meetup-time"><strong>Meetup Time: </strong>${tripRating.meetupTime}</div>
-        <div class="eachTrip__box--meetup-point"><strong>Meetup Point: </strong>${tripRating.meetupPoint}</div>
-        <div class="eachTrip__box--transportation"><strong>Transportation: </strong>${tripRating.transportation}</div>
-        <div class="eachTrip__box--distance"><strong>Distance: </strong>${tripRating.distance}</div>
-        <div class="eachTrip__box--hiking-club"><strong>Hiking Club: </strong>${tripRating.hikingClub}</div>
-        <div class="eachTrip__box--guide"><strong>Guide: </strong>${tripRating.guide}</div>
-        <div class="eachTrip__box--about-trail"><strong>About the trail: <br></strong>${tripRating.aboutTrail}</div>
-      </div>
+          <div class="eachTrip__box--color-rating"></div>
+          <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${tripRating.difficultyLevel}</div>
+          <div class="eachTrip__box--date"><strong>Date: </strong>${tripRating.date}</div>
+          <div class="eachTrip__box--meetup-time"><strong>Meetup Time: </strong>${tripRating.meetupTime}</div>
+          <div class="eachTrip__box--meetup-point"><strong>Meetup Point: </strong>${tripRating.meetupPoint}</div>
+          <div class="eachTrip__box--transportation"><strong>Transportation: </strong>${tripRating.transportation}</div>
+          <div class="eachTrip__box--distance"><strong>Distance: </strong>${tripRating.distance}</div>
+          <div class="eachTrip__box--hiking-club"><strong>Hiking Club: </strong>${tripRating.hikingClub}</div>
+          <div class="eachTrip__box--guide"><strong>Guide: </strong>${tripRating.guide}</div>
+          <div class="eachTrip__box--about-trail"><strong>About the trail: <br></strong>${tripRating.aboutTrail}</div>
+        </div>
       </div>
       `;
     }
@@ -814,17 +829,17 @@ yellowBtn.addEventListener("click", event => {
       <div class="eachTrip">
         <div class="eachTrip__title"><strong>${tripRating.event}</strong></div>
         <div class="eachTrip__box">
-        <div class="eachTrip__box--color-rating color-rating">Color to be put</div>
-        <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${tripRating.difficultyLevel}</div>
-        <div class="eachTrip__box--date"><strong>Date: </strong>${tripRating.date}</div>
-        <div class="eachTrip__box--meetup-time"><strong>Meetup Time: </strong>${tripRating.meetupTime}</div>
-        <div class="eachTrip__box--meetup-point"><strong>Meetup Point: </strong>${tripRating.meetupPoint}</div>
-        <div class="eachTrip__box--transportation"><strong>Transportation: </strong>${tripRating.transportation}</div>
-        <div class="eachTrip__box--distance"><strong>Distance: </strong>${tripRating.distance}</div>
-        <div class="eachTrip__box--hiking-club"><strong>Hiking Club: </strong>${tripRating.hikingClub}</div>
-        <div class="eachTrip__box--guide"><strong>Guide: </strong>${tripRating.guide}</div>
-        <div class="eachTrip__box--about-trail"><strong>About the trail: <br></strong>${tripRating.aboutTrail}</div>
-      </div>
+          <div class="eachTrip__box--color-rating"></div>
+          <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${tripRating.difficultyLevel}</div>
+          <div class="eachTrip__box--date"><strong>Date: </strong>${tripRating.date}</div>
+          <div class="eachTrip__box--meetup-time"><strong>Meetup Time: </strong>${tripRating.meetupTime}</div>
+          <div class="eachTrip__box--meetup-point"><strong>Meetup Point: </strong>${tripRating.meetupPoint}</div>
+          <div class="eachTrip__box--transportation"><strong>Transportation: </strong>${tripRating.transportation}</div>
+          <div class="eachTrip__box--distance"><strong>Distance: </strong>${tripRating.distance}</div>
+          <div class="eachTrip__box--hiking-club"><strong>Hiking Club: </strong>${tripRating.hikingClub}</div>
+          <div class="eachTrip__box--guide"><strong>Guide: </strong>${tripRating.guide}</div>
+          <div class="eachTrip__box--about-trail"><strong>About the trail: <br></strong>${tripRating.aboutTrail}</div>
+        </div>
       </div>
       `;
     }
@@ -843,16 +858,16 @@ redBtn.addEventListener("click", event => {
       <div class="eachTrip">
         <div class="eachTrip__title"><strong>${tripRating.event}</strong></div>
         <div class="eachTrip__box">
-        <div class="eachTrip__box--color-rating color-rating">Color to be put</div>
-        <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${tripRating.difficultyLevel}</div>
-        <div class="eachTrip__box--date"><strong>Date: </strong>${tripRating.date}</div>
-        <div class="eachTrip__box--meetup-time"><strong>Meetup Time: </strong>${tripRating.meetupTime}</div>
-        <div class="eachTrip__box--meetup-point"><strong>Meetup Point: </strong>${tripRating.meetupPoint}</div>
-        <div class="eachTrip__box--transportation"><strong>Transportation: </strong>${tripRating.transportation}</div>
-        <div class="eachTrip__box--distance"><strong>Distance: </strong>${tripRating.distance}</div>
-        <div class="eachTrip__box--hiking-club"><strong>Hiking Club: </strong>${tripRating.hikingClub}</div>
-        <div class="eachTrip__box--guide"><strong>Guide: </strong>${tripRating.guide}</div>
-        <div class="eachTrip__box--about-trail"><strong>About the trail: <br></strong>${tripRating.aboutTrail}</div>
+          <div class="eachTrip__box--color-rating"></div>
+          <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${tripRating.difficultyLevel}</div>
+          <div class="eachTrip__box--date"><strong>Date: </strong>${tripRating.date}</div>
+          <div class="eachTrip__box--meetup-time"><strong>Meetup Time: </strong>${tripRating.meetupTime}</div>
+          <div class="eachTrip__box--meetup-point"><strong>Meetup Point: </strong>${tripRating.meetupPoint}</div>
+          <div class="eachTrip__box--transportation"><strong>Transportation: </strong>${tripRating.transportation}</div>
+          <div class="eachTrip__box--distance"><strong>Distance: </strong>${tripRating.distance}</div>
+          <div class="eachTrip__box--hiking-club"><strong>Hiking Club: </strong>${tripRating.hikingClub}</div>
+          <div class="eachTrip__box--guide"><strong>Guide: </strong>${tripRating.guide}</div>
+          <div class="eachTrip__box--about-trail"><strong>About the trail: <br></strong>${tripRating.aboutTrail}</div>
       </div>
       </div>
       `;
@@ -868,7 +883,7 @@ allBtn.addEventListener("click", event => {
         <div class="eachTrip">
           <div class="eachTrip__title"><strong>${trip.event}</strong></div>
           <div class="eachTrip__box">
-          <div class="eachTrip__box--color-rating color-rating">Color to be put</div>
+          <div class="eachTrip__box--color-rating"></div>
           <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${trip.difficultyLevel}</div>
           <div class="eachTrip__box--date"><strong>Date: </strong>${trip.date}</div>
           <div class="eachTrip__box--meetup-time"><strong>Meetup Time: </strong>${trip.meetupTime}</div>

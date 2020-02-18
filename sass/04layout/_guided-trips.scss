@@ -130,8 +130,8 @@
 
 .eachTrip {
   margin: 2rem auto;
-  min-width: 24rem;
-  max-width: 30rem;
+  min-width: 14rem;
+  max-width: 28rem;
   max-height: 32rem;
   padding: 2rem;
   color: $color-deep-blue-grey;
@@ -176,23 +176,31 @@
   &__box {
     padding: 1rem;
     font-size: $font-size-xs;
+    // &--color-rating {
+    //   width: 10rem;
+    //   height: 1.6rem;
+    //   border: 2px solid pink;
+    // }
   }
 }
 
 // difficulty rating explanation
 .rating-green {
+  margin-bottom: 1rem;
   background-color: $color-green;
   width: 5rem;
   height: 0.8rem;
   border-radius: 5px;
 }
 .rating-yellow {
+  margin-bottom: 1rem;
   background-color: $color-yellow;
   width: 5rem;
   height: 0.8rem;
   border-radius: 5px;
 }
 .rating-red {
+  margin-bottom: 1rem;
   background-color: $color-red;
   width: 5rem;
   height: 0.8rem;

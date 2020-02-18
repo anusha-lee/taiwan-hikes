@@ -84,18 +84,17 @@
 // Size button on About page
 .size__btn {
   @include btn-style;
+  background: linear-gradient(
+    $color-base-blue,
+    lighten($color-deep-blue-grey, 10%)
+  );
 
   padding-top: 0.9rem;
   &:hover {
     @include btn-hover;
-    background-color: lighten($color-orangered, 5%);
   }
   &:active {
     @include btn-active;
-    background-color: darken($color-orangered, 5%);
-  }
-  &:visited {
-    color: $color-tan;
   }
 }
 

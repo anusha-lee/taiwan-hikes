@@ -170,17 +170,14 @@ how to apply:
   border-radius: 20px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0.2rem 0.2rem 0.4rem #858585;
+  background: linear-gradient(#097392, #525252);
   padding-top: 0.9rem; }
   .size__btn:hover {
     transform: translateY(-0.5rem);
-    box-shadow: 0.4rem 0.4rem 0.6rem #525252;
-    background-color: #d96749; }
+    box-shadow: 0.4rem 0.4rem 0.6rem #525252; }
   .size__btn:active {
     transform: translateY(-0.2rem);
-    box-shadow: 0.2rem 0.2rem 0.3rem #1f1f1f;
-    background-color: #c64929; }
-  .size__btn:visited {
-    color: #fff0ce; }
+    box-shadow: 0.2rem 0.2rem 0.3rem #1f1f1f; }
 
 .article__btn {
   margin: 0 auto;
@@ -754,8 +751,8 @@ footer {
 
 .eachTrip {
   margin: 2rem auto;
-  min-width: 24rem;
-  max-width: 30rem;
+  min-width: 14rem;
+  max-width: 28rem;
   max-height: 32rem;
   padding: 2rem;
   color: #383838;
@@ -782,18 +779,21 @@ footer {
     font-size: 1.4rem; }
 
 .rating-green {
+  margin-bottom: 1rem;
   background-color: #9acd32;
   width: 5rem;
   height: 0.8rem;
   border-radius: 5px; }
 
 .rating-yellow {
+  margin-bottom: 1rem;
   background-color: #ffd700;
   width: 5rem;
   height: 0.8rem;
   border-radius: 5px; }
 
 .rating-red {
+  margin-bottom: 1rem;
   background-color: #ff0000;
   width: 5rem;
   height: 0.8rem;
