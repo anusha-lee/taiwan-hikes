@@ -278,9 +278,6 @@ how to apply:
     transform: translateY(-0.2rem);
     box-shadow: 0.2rem 0.2rem 0.3rem #1f1f1f; }
 
-.trips__sorting--by-date {
-  background: linear-gradient(#fff0ce, #de785e); }
-
 .trips__sorting--by-easy {
   background: linear-gradient(#9acd32, gray); }
 
@@ -1346,11 +1343,14 @@ Start Here and Blog Home page layout
       width: 55%; } }
 
 .here {
-  margin: 2rem auto 12rem;
+  margin: 2rem auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column; }
+  @media only screen and (min-width: 580px) {
+    .here {
+      margin-bottom: 4rem; } }
   .here__title {
     padding: 1rem;
     font-size: 2.4rem;
@@ -1382,14 +1382,17 @@ Start Here and Blog Home page layout
     align-items: center;
     justify-content: center; }
     .here__img img {
-      width: 40%;
+      width: 60%;
       box-shadow: 1rem 1rem 1rem #9e9e9e; }
-      @media only screen and (min-width: 580px) {
-        .here__img img {
-          width: 50%; } }
-      @media only screen and (min-width: 900px) {
-        .here__img img {
-          width: 60%; } }
+
+.sevenReasons__btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6rem; }
+  @media only screen and (min-width: 580px) {
+    .sevenReasons__btn-box {
+      margin-bottom: 12rem; } }
 
 /***********************************************
 About page layout

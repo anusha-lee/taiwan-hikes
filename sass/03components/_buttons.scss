@@ -33,7 +33,7 @@
   }
 }
 
-// Landing Page 7 Reasons Explore button
+// Landing Page and 7 Reasons Explore button
 .sevenReasons__btn {
   padding: 1.5rem 0.5rem;
 
@@ -60,6 +60,7 @@
     color: lighten($color-orangered, 20%);
   }
 }
+
 
 // Disclaimer button
 .disclaimer__btn {
@@ -177,10 +178,6 @@
   &:active {
     @include btn-active;
   }
-}
-
-.trips__sorting--by-date {
-  background: linear-gradient($color-tan, lighten($color-orangered, 10%));
 }
 
 .trips__sorting--by-easy {

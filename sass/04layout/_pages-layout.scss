@@ -33,9 +33,12 @@ Start Here and Blog Home page layout
 }
 
 .here {
-  margin: 2rem auto 12rem;
+  margin: 2rem auto;
   @include flex-center;
   flex-direction: column;
+  @include responsive(tab) {
+    margin-bottom: 4rem;
+  }
 
   &__title {
     padding: 1rem;
@@ -83,15 +86,17 @@ Start Here and Blog Home page layout
     @include flex-center;
 
     & img {
-      width: 40%;
+      width: 60%;
       box-shadow: 1rem 1rem 1rem lighten($color-deep-blue-grey, 40%);
-      @include responsive(tab) {
-        width: 50%;
-      }
-      @include responsive(sm-desktop) {
-        width: 60%;
-      }
     }
+  }
+}
+
+.sevenReasons__btn-box {
+  @include flex-center;
+  margin-bottom: 6rem;
+  @include responsive(tab) {
+    margin-bottom: 12rem;
   }
 }
 
