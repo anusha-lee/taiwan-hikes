@@ -3,13 +3,13 @@
   width: 100%;
 
   @include responsive(tab) {
-    width: 80%;
+    width: 90%;
   }
   @include responsive(sm-desktop) {
     width: 70%;
   }
   @include responsive(normal-desktop) {
-    width: 60%;
+    width: 55%;
   }
 }
 

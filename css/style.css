@@ -651,13 +651,13 @@ footer {
   width: 100%; }
   @media only screen and (min-width: 580px) {
     .guided-hikes {
-      width: 80%; } }
+      width: 90%; } }
   @media only screen and (min-width: 900px) {
     .guided-hikes {
       width: 70%; } }
   @media only screen and (min-width: 1200px) {
     .guided-hikes {
-      width: 60%; } }
+      width: 55%; } }
 
 .sharethis-inline-share-buttons {
   margin: 0 auto; }

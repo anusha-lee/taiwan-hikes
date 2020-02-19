@@ -697,23 +697,36 @@ let guidedTrips = [
     guide: "蕭媚娜 Xiao Meina",
     aboutTrail:
       "The Dongshige Yueling Trail is an ancient trail that was mainly used by residents living in Pingxi and Dongshige in the past, with a total length of 3.4 kilometers. We enter from the trail entrance opposite the Pingxi Middle School, and slowly rise along the Guaukeng Creek to connect to the old carriageway. This walkway is renovated from the old carriageway. This walkway is gentle and paved with old platforms Debris on the driveway, walk about half an hour to reach the old mine of Jianyuan Coal Mine. Abandoned pits, arch bridges, the site of the mining office and stone temples are still left nearby. The mountain trails are relatively rugged and slippery, but with the help of steel nails and cables, it is not difficult to pass. The trees are dense and full of ancient atmosphere along the way."
+  },
+  {
+    event: "龜媽坑古道O型 Guimakeng Old Trail, loop",
+    date: "2020/03/08",
+    meetupTime: "09:15",
+    meetupPoint: "福隆火車站 Fulong Train Station",
+    transportation:
+      "1) 自強272次(對號快車)：07:11板橋→07:27台北→08:40福隆. 2) 區間4148次(各站皆停)，07:20板橋→07:34台北→09:11福隆. Railway: 1) Tze-Chiang Limited Express 272, from Taipei Train Station 07:27 to Fulong 08:40. 2) Local trail 4148, from Taipei Train Station 07:34 to Fulong 09:11",
+    difficultyLevel: "A",
+    distance: "10K",
+    hikingClub: "台灣山野樂活協會LOHAS",
+    cost: "free",
+    guide: "潘建宇 Pan Jianyu 0936232953",
+    aboutTrail:
+      "09:30 Fulong Station → 10:00 No. 22 Guishougu Street → 10:30 Ancient Morning Post → 11:20 Dahushan → 12:00 Guimakeng Center Lun (Lunch) → 14:00 Huzishan Ancient Turnout → 15: 00 No.23 Guishougu Street → 15: 30 Fulong Railway Station. (1) Guimakeng: Also known as Guishougu, the old man was nicknamed Turtle Mom, and he was named after it.(2) Dahu Mountain: elevation 489M, cement-based column, good prospects. (3) Guilun Pit Center Lun: Also known as the North Peak of Mount Fulong, the elevation is 345M, and the cornerstone of No.441 Mining Division. (4) You can buy delicious Fulong bento at Fulong Station for lunch. It is recommended that you bring your own fresh-keeping box to the store to reduce garbage."
   }
 ];
 
 // Only up-to-date trips will show up on the page
-const homepageTripBox = document.querySelector("#homepageTripBox");
 let today = Date.parse(new Date());
-let homepageTrips = guidedTrips;
-let upToDateTrip = [];
+let upToDateTrips = [];
 
-homepageTrips.forEach((trip, index) => {
+guidedTrips.forEach(trip => {
   if (Date.parse(trip.date) > today) {
-    upToDateTrip.push(trip);
+    upToDateTrips.push(trip);
   }
 });
 
-// Sort trips by dates
-upToDateTrip.sort((a, b) => {
+// Sort upToDateTrips by dates
+upToDateTrips.sort((a, b) => {
   if (Date.parse(a.date) > Date.parse(b.date)) {
     return 1;
   } else if (Date.parse(a.date) < Date.parse(b.date)) {
@@ -725,10 +738,10 @@ upToDateTrip.sort((a, b) => {
 
 // Homepage's Latest Free Hikes
 // Show titles, dates, and difficulity of 3 trips on homepage
-
-let tripsForHomepage = upToDateTrip.slice(0, 3);
 /*
-tripsForHomepage.forEach(tripHomepage => {
+const homepageTripBox = document.querySelector("#homepageTripBox");
+let homepageTrips = upToDateTrips.slice(0, 3);
+homepageTrips.forEach(tripHomepage => {
   homepageTripBox.innerHTML += `
       <div class="homepageTrip">
         <h3 class="homepageTrip__title">${tripHomepage.event}</h3>
@@ -744,7 +757,8 @@ tripsForHomepage.forEach(tripHomepage => {
 
 // Guided Free Hikes
 const allTrips = document.querySelector("#allTrips");
-upToDateTrip.forEach(trip => {
+
+upToDateTrips.forEach(trip => {
   allTrips.innerHTML += `
       <div class="eachTrip">
         <div class="eachTrip__color-rating"></div>
@@ -762,28 +776,23 @@ upToDateTrip.forEach(trip => {
         </div>
       </div>
       `;
+
   // Assign rating color bars for each trip box
   const ratingColor = document.querySelectorAll(".eachTrip__color-rating");
-  let checkRatingColor = Array.from(ratingColor);
-  let difficultyLevel = trip.difficultyLevel;
 
-  checkRatingColor.forEach(checkColor => {
-    if (difficultyLevel === "A") {
+  ratingColor.forEach(checkColor => {
+    if (trip.difficultyLevel === "A") {
       checkColor.classList.replace("eachTrip__color-rating", "rating-green");
-    } else if (difficultyLevel === "B") {
+    } else if (trip.difficultyLevel === "B") {
       checkColor.classList.replace("eachTrip__color-rating", "rating-yellow");
     } else {
       checkColor.classList.replace("eachTrip__color-rating", "rating-red");
     }
   });
-  //console.log(checkRatingColor);
 });
 
-// Need to sort out the trips according to the difficulity level
+// Sort out the trips according to the difficulity level
 // by clicking the difficulty level
-const tripsSorting = document.querySelector(".trips__sorting");
-const sortingTripsRating = Array.from(tripsSorting.children);
-
 const greenBtn = document.querySelector(".green");
 const yellowBtn = document.querySelector(".yellow");
 const redBtn = document.querySelector(".red");
@@ -795,95 +804,102 @@ const eachTrip = allTrips.querySelector(".eachTrip");
 
 greenBtn.addEventListener("click", event => {
   allTrips.innerHTML = "";
-  upToDateTrip.forEach(tripRating => {
-    if (tripRating.difficultyLevel === "A") {
-      difficulitySortingA.push(tripRating);
+  upToDateTrips.forEach(trip => {
+    if (trip.difficultyLevel === "A") {
+      difficulitySortingA.push(trip);
       allTrips.innerHTML += `
       <div class="eachTrip">
-        <div class="eachTrip__title"><strong>${tripRating.event}</strong></div>
+        <div class="eachTrip__color-rating"></div>
+        <div class="eachTrip__title"><strong>${trip.event}</strong></div>
         <div class="eachTrip__box">
-          <div class="eachTrip__box--color-rating"></div>
-          <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${tripRating.difficultyLevel}</div>
-          <div class="eachTrip__box--date"><strong>Date: </strong>${tripRating.date}</div>
-          <div class="eachTrip__box--meetup-time"><strong>Meetup Time: </strong>${tripRating.meetupTime}</div>
-          <div class="eachTrip__box--meetup-point"><strong>Meetup Point: </strong>${tripRating.meetupPoint}</div>
-          <div class="eachTrip__box--transportation"><strong>Transportation: </strong>${tripRating.transportation}</div>
-          <div class="eachTrip__box--distance"><strong>Distance: </strong>${tripRating.distance}</div>
-          <div class="eachTrip__box--hiking-club"><strong>Hiking Club: </strong>${tripRating.hikingClub}</div>
-          <div class="eachTrip__box--guide"><strong>Guide: </strong>${tripRating.guide}</div>
-          <div class="eachTrip__box--about-trail"><strong>About the trail: <br></strong>${tripRating.aboutTrail}</div>
+          <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${trip.difficultyLevel}</div>
+          <div class="eachTrip__box--date"><strong>Date: </strong>${trip.date}</div>
+          <div class="eachTrip__box--meetup-time"><strong>Meetup Time: </strong>${trip.meetupTime}</div>
+          <div class="eachTrip__box--meetup-point"><strong>Meetup Point: </strong>${trip.meetupPoint}</div>
+          <div class="eachTrip__box--transportation"><strong>Transportation: </strong>${trip.transportation}</div>
+          <div class="eachTrip__box--distance"><strong>Distance: </strong>${trip.distance}</div>
+          <div class="eachTrip__box--hiking-club"><strong>Hiking Club: </strong>${trip.hikingClub}</div>
+          <div class="eachTrip__box--guide"><strong>Guide: </strong>${trip.guide}</div>
+          <div class="eachTrip__box--about-trail"><strong>About the trail: <br></strong>${trip.aboutTrail}</div>
         </div>
       </div>
       `;
     }
+    const ratingColor = document.querySelectorAll(".eachTrip__color-rating");
+    ratingColor.forEach(checkColor => {
+      checkColor.classList.replace("eachTrip__color-rating", "rating-green");
+    });
   });
 });
 
 yellowBtn.addEventListener("click", event => {
   allTrips.innerHTML = "";
-  upToDateTrip.forEach(tripRating => {
-    if (tripRating.difficultyLevel === "B") {
-      difficulitySortingB.push(tripRating);
-
+  upToDateTrips.forEach(trip => {
+    if (trip.difficultyLevel === "B") {
+      difficulitySortingB.push(trip);
       allTrips.innerHTML += `
       <div class="eachTrip">
-        <div class="eachTrip__title"><strong>${tripRating.event}</strong></div>
+        <div class="eachTrip__color-rating"></div>
+        <div class="eachTrip__title"><strong>${trip.event}</strong></div>
         <div class="eachTrip__box">
-          <div class="eachTrip__box--color-rating"></div>
-          <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${tripRating.difficultyLevel}</div>
-          <div class="eachTrip__box--date"><strong>Date: </strong>${tripRating.date}</div>
-          <div class="eachTrip__box--meetup-time"><strong>Meetup Time: </strong>${tripRating.meetupTime}</div>
-          <div class="eachTrip__box--meetup-point"><strong>Meetup Point: </strong>${tripRating.meetupPoint}</div>
-          <div class="eachTrip__box--transportation"><strong>Transportation: </strong>${tripRating.transportation}</div>
-          <div class="eachTrip__box--distance"><strong>Distance: </strong>${tripRating.distance}</div>
-          <div class="eachTrip__box--hiking-club"><strong>Hiking Club: </strong>${tripRating.hikingClub}</div>
-          <div class="eachTrip__box--guide"><strong>Guide: </strong>${tripRating.guide}</div>
-          <div class="eachTrip__box--about-trail"><strong>About the trail: <br></strong>${tripRating.aboutTrail}</div>
+          <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${trip.difficultyLevel}</div>
+          <div class="eachTrip__box--date"><strong>Date: </strong>${trip.date}</div>
+          <div class="eachTrip__box--meetup-time"><strong>Meetup Time: </strong>${trip.meetupTime}</div>
+          <div class="eachTrip__box--meetup-point"><strong>Meetup Point: </strong>${trip.meetupPoint}</div>
+          <div class="eachTrip__box--transportation"><strong>Transportation: </strong>${trip.transportation}</div>
+          <div class="eachTrip__box--distance"><strong>Distance: </strong>${trip.distance}</div>
+          <div class="eachTrip__box--hiking-club"><strong>Hiking Club: </strong>${trip.hikingClub}</div>
+          <div class="eachTrip__box--guide"><strong>Guide: </strong>${trip.guide}</div>
+          <div class="eachTrip__box--about-trail"><strong>About the trail: <br></strong>${trip.aboutTrail}</div>
         </div>
       </div>
       `;
     }
+    const ratingColor = document.querySelectorAll(".eachTrip__color-rating");
+    ratingColor.forEach(checkColor => {
+      checkColor.classList.replace("eachTrip__color-rating", "rating-yellow");
+    });
   });
 });
 
 redBtn.addEventListener("click", event => {
   allTrips.innerHTML = "";
-  upToDateTrip.forEach(tripRating => {
-    if (
-      tripRating.difficultyLevel === "B+" ||
-      tripRating.difficultyLevel === "C"
-    ) {
-      difficulitySortingC.push(tripRating);
+  upToDateTrips.forEach(trip => {
+    if (trip.difficultyLevel === "B+" || trip.difficultyLevel === "C") {
+      difficulitySortingC.push(trip);
       allTrips.innerHTML += `
       <div class="eachTrip">
-        <div class="eachTrip__title"><strong>${tripRating.event}</strong></div>
+        <div class="eachTrip__color-rating"></div>
+        <div class="eachTrip__title"><strong>${trip.event}</strong></div>
         <div class="eachTrip__box">
-          <div class="eachTrip__box--color-rating"></div>
-          <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${tripRating.difficultyLevel}</div>
-          <div class="eachTrip__box--date"><strong>Date: </strong>${tripRating.date}</div>
-          <div class="eachTrip__box--meetup-time"><strong>Meetup Time: </strong>${tripRating.meetupTime}</div>
-          <div class="eachTrip__box--meetup-point"><strong>Meetup Point: </strong>${tripRating.meetupPoint}</div>
-          <div class="eachTrip__box--transportation"><strong>Transportation: </strong>${tripRating.transportation}</div>
-          <div class="eachTrip__box--distance"><strong>Distance: </strong>${tripRating.distance}</div>
-          <div class="eachTrip__box--hiking-club"><strong>Hiking Club: </strong>${tripRating.hikingClub}</div>
-          <div class="eachTrip__box--guide"><strong>Guide: </strong>${tripRating.guide}</div>
-          <div class="eachTrip__box--about-trail"><strong>About the trail: <br></strong>${tripRating.aboutTrail}</div>
+          <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${trip.difficultyLevel}</div>
+          <div class="eachTrip__box--date"><strong>Date: </strong>${trip.date}</div>
+          <div class="eachTrip__box--meetup-time"><strong>Meetup Time: </strong>${trip.meetupTime}</div>
+          <div class="eachTrip__box--meetup-point"><strong>Meetup Point: </strong>${trip.meetupPoint}</div>
+          <div class="eachTrip__box--transportation"><strong>Transportation: </strong>${trip.transportation}</div>
+          <div class="eachTrip__box--distance"><strong>Distance: </strong>${trip.distance}</div>
+          <div class="eachTrip__box--hiking-club"><strong>Hiking Club: </strong>${trip.hikingClub}</div>
+          <div class="eachTrip__box--guide"><strong>Guide: </strong>${trip.guide}</div>
+          <div class="eachTrip__box--about-trail"><strong>About the trail: <br></strong>${trip.aboutTrail}</div>
       </div>
       </div>
       `;
     }
+    const ratingColor = document.querySelectorAll(".eachTrip__color-rating");
+    ratingColor.forEach(checkColor => {
+      checkColor.classList.replace("eachTrip__color-rating", "rating-red");
+    });
   });
 });
 
 allBtn.addEventListener("click", event => {
-  console.log("All");
   allTrips.innerHTML = "";
-  upToDateTrip.forEach(trip => {
+  upToDateTrips.forEach(trip => {
     allTrips.innerHTML += `
         <div class="eachTrip">
+          <div class="eachTrip__color-rating"></div>
           <div class="eachTrip__title"><strong>${trip.event}</strong></div>
           <div class="eachTrip__box">
-          <div class="eachTrip__box--color-rating"></div>
           <div class="eachTrip__box--difficulty"><strong>Difficulty Level: </strong>${trip.difficultyLevel}</div>
           <div class="eachTrip__box--date"><strong>Date: </strong>${trip.date}</div>
           <div class="eachTrip__box--meetup-time"><strong>Meetup Time: </strong>${trip.meetupTime}</div>
@@ -896,6 +912,16 @@ allBtn.addEventListener("click", event => {
         </div>
         </div>
         `;
+    // Assign rating color bars for each trip box
+    const ratingColor = document.querySelectorAll(".eachTrip__color-rating");
+    ratingColor.forEach(checkColor => {
+      if (trip.difficultyLevel === "A") {
+        checkColor.classList.replace("eachTrip__color-rating", "rating-green");
+      } else if (trip.difficultyLevel === "B") {
+        checkColor.classList.replace("eachTrip__color-rating", "rating-yellow");
+      } else {
+        checkColor.classList.replace("eachTrip__color-rating", "rating-red");
+      }
+    });
   });
 });
-// The show all/show less button for the trips
