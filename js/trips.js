@@ -765,15 +765,15 @@ upToDateTrip.forEach(trip => {
   // Assign rating color bars for each trip box
   const ratingColor = document.querySelectorAll(".eachTrip__color-rating");
   let checkRatingColor = Array.from(ratingColor);
+  let difficultyLevel = trip.difficultyLevel;
 
   checkRatingColor.forEach(checkColor => {
-    console.log(checkColor.difficultyLevel); // undefined, need to check
-    if (checkColor.difficultyLevel === "A") {
-      checkColor.classList.add("rating-green");
-    } else if (checkColor.difficultyLevel === "B") {
-      checkColor.classList.add("rating-yellow");
+    if (difficultyLevel === "A") {
+      checkColor.classList.replace("eachTrip__color-rating", "rating-green");
+    } else if (difficultyLevel === "B") {
+      checkColor.classList.replace("eachTrip__color-rating", "rating-yellow");
     } else {
-      checkColor.classList.add("rating-red");
+      checkColor.classList.replace("eachTrip__color-rating", "rating-red");
     }
   });
   //console.log(checkRatingColor);
