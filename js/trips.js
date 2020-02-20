@@ -738,9 +738,11 @@ upToDateTrips.sort((a, b) => {
 
 // Homepage's Latest Free Hikes
 // Show titles, dates, and difficulity of 3 trips on homepage
-/*
+
 const homepageTripBox = document.querySelector("#homepageTripBox");
 let homepageTrips = upToDateTrips.slice(0, 3);
+
+/*
 homepageTrips.forEach(tripHomepage => {
   homepageTripBox.innerHTML += `
       <div class="homepageTrip">
@@ -754,7 +756,6 @@ homepageTrips.forEach(tripHomepage => {
     `;
 });
 */
-
 // Guided Free Hikes
 const allTrips = document.querySelector("#allTrips");
 
