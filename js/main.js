@@ -42,11 +42,22 @@ const carousel = document.querySelector(".homeCarousel");
 const previousButton = carousel.querySelector(".previous-button");
 const nextButton = carousel.querySelector(".next-button");
 const contents = carousel.querySelector(".homeCarousel__contents");
+const dotsContainer = carousel.querySelector(".carousel__dot");
+
+const slides = Array.from(carousel.querySelectorAll(".homeCarousel__slide"));
+const dots = Array.from(carousel.querySelectorAll(".homeCarousel__dot"));
+
+// Use JavaScript to position slides
+const slideWidth = slides[0].getBoundingClientRect().width;
+slides.forEach((slide, index) => {
+  slide.style.left = slideWidth * index + "px";
+});
 
 nextButton.addEventListener("click", event => {
   const currentSlide = contents.querySelector(".is-selected");
   const nextSlide = currentSlide.nextElementSibling;
   const destination = getComputedStyle(nextSlide).left;
+  // Show next slide
   contents.style.left = "-" + destination;
   currentSlide.classList.remove("is-selected");
   nextSlide.classList.add("is-selected");
@@ -56,14 +67,13 @@ nextButton.addEventListener("click", event => {
   if (!nextSlide.nextElementSibling) {
     nextButton.setAttribute("hidden", true);
   }
-
-  // console.log(destination);
 });
 
 previousButton.addEventListener("click", event => {
   const currentSlide = contents.querySelector(".is-selected");
   const previousSlide = currentSlide.previousElementSibling;
   const destination = getComputedStyle(previousSlide).left;
+  // Show previous slide
   contents.style.left = "-" + destination;
   currentSlide.classList.remove("is-selected");
   previousSlide.classList.add("is-selected");
@@ -73,12 +83,8 @@ previousButton.addEventListener("click", event => {
   if (!previousSlide.previousElementSibling) {
     previousButton.setAttribute("hidden", true);
   }
-
-  // console.log(destination);
 });
 
-const dots = Array.from(carousel.querySelectorAll(".homeCarousel__dot"));
-const slides = Array.from(carousel.querySelectorAll(".homeCarousel__slide"));
 dots.forEach(dot => {
   dot.addEventListener("click", event => {
     let clickedDotIndex;
@@ -87,10 +93,14 @@ dots.forEach(dot => {
         clickedDotIndex = index;
       }
     }
+    // Show slide
     const slideToShow = slides[clickedDotIndex];
     const destination = getComputedStyle(slideToShow).left;
     contents.style.left = "-" + destination;
 
-    console.log(destination);
+    slides.forEach(slide => {
+      slide.classList.remove("is-selected");
+    });
+    dot.classList.add("is-selected");
   });
 });

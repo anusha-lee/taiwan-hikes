@@ -299,7 +299,7 @@
   margin: 2rem 0 6rem;
   padding: 2rem 1rem;
   display: grid;
-  grid-template-columns: 3rem 1fr 3rem;
+  grid-template-columns: 3rem 80vw 3rem;
   grid-template-rows: minmax(45vh, 65vh) 3rem;
   align-items: center;
   grid-gap: 1rem;
@@ -309,12 +309,15 @@
     align-self: stretch;
   }
 
+  // Buttons
+  &__button {
+    padding: 0.3rem;
+    border: none;
+    fill: lighten($color-deep-blue-grey, 30%);
+  }
+
   &__contents-container {
     overflow: hidden;
-    @include responsive(tab) {
-    }
-    @include responsive(sm-desktop) {
-    }
   }
 
   &__contents {
@@ -380,21 +383,6 @@
       color: $color-base-blue;
       padding: 1rem 0 2rem;
     }
-  }
-  &__slide:nth-child(2) {
-    left: 60rem;
-    @include responsive(tab) {
-      left: 80rem;
-    }
-    @include responsive(sm-desktop) {
-      left: 100rem;
-    }
-    @include responsive(xl-desktop) {
-      left: 120rem;
-    }
-  }
-  &__slide:nth-child(3) {
-    left: 120rem;
   }
 }
 
