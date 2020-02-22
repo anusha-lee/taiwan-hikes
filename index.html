@@ -166,14 +166,48 @@
         </div>
 
         <section class="homeCarousel testimonialsZell">
-          <button class="homeCarousel__button"><=</button>
-          <ul class="homeCarousel__contents">
-            <li class="homeCarousel__slide">Lucy and Dale</li>
-            <li class="homeCarousel__slide">Emma</li>
-            <li class="homeCarousel__slide">Raj</li>
-          </ul>
-          <button class="homeCarousel__button">=></button>
-          <div class="homeCarousel__dots"></div>
+          <button class="homeCarousel__button previous-button" hidden>
+            <svg id="left" viewBox="0 0 54 69.007">
+              <path d="M47 0L3.44 34.502 47 69.007z" />
+            </svg>
+          </button>
+          <div class="homeCarousel__contents-container">
+            <ul class="homeCarousel__contents">
+              <li class="homeCarousel__slide is-selected">                
+                  <img src="/img/testimonial-lucy-dale.jpg" alt="Lucy and Dale" class="homeCarousel__slide--avatar" />
+                  <q class="homeCarousel__slide--quote"
+                    >Hiking is a great way to see the natural landscape of Taiwan. There are many hiking groups that a person can participate with to get started. Become a member or not, they welcome all. Find a group that matches your ability and desires to see the beauty of Taiwan from the trail.</q
+                  >
+                  <span class="homeCarousel__slide--author">Lucy and Dale</span>                
+              </li>
+              <li class="homeCarousel__slide">
+                <img src="img/testimonial-lucy-emma.jpg" alt="Emma S." class="homeCarousel__slide--avatar" />
+                  <q class="homeCarousel__slide--quote"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquam nostrum quo iusto magni, adipisci volupta.</q
+                  >
+                  <span class="homeCarousel__slide--author">Emma S.</span>
+              </li>
+              <li class="homeCarousel__slide">
+                <img src="img/icons/avatars/man-2.png" alt="Arjun L." class="homeCarousel__slide--avatar" />
+                  <q class="homeCarousel__slide--quote"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquam nostrum quo iusto magni, adipisci volupta.</q
+                  >
+                  <span class="homeCarousel__slide--author">Arjun L.</span>
+              </li>
+            </ul>
+          </div>          
+          <button class="homeCarousel__button next-button">
+            <svg viewBox="0 0 54 69.007">
+              <path d="M5-.121l43.56 34.502L5 68.886z" />
+            </svg>
+          </button>
+          <div class="homeCarousel__dots">
+            <button class="homeCarousel__dot"></button>
+            <button class="homeCarousel__dot"></button>
+            <button class="homeCarousel__dot"></button>
+          </div>
         </section>
 
         <!-- <div class="home__sponsors">

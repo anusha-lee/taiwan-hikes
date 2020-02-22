@@ -37,18 +37,60 @@ scrollToTopBtn.addEventListener("click", function() {
   });
 });
 
-// The expand button on About page:
-// seems to be conflict with the button on guided trips page
+// Testimonial carousel buttons
+const carousel = document.querySelector(".homeCarousel");
+const previousButton = carousel.querySelector(".previous-button");
+const nextButton = carousel.querySelector(".next-button");
+const contents = carousel.querySelector(".homeCarousel__contents");
 
-const sizeBtn = document.querySelector(".size__btn");
-const sizeCountries = document.querySelector(".size__countries");
-//console.log(sizeCountries);
-sizeBtn.addEventListener("click", event => {
-  if (sizeCountries.classList.contains("size-is-open")) {
-    sizeCountries.classList.remove("size-is-open");
-    sizeBtn.textContent = "Click to Expand";
-  } else {
-    sizeCountries.classList.add("size-is-open");
-    sizeBtn.textContent = "Close";
+nextButton.addEventListener("click", event => {
+  const currentSlide = contents.querySelector(".is-selected");
+  const nextSlide = currentSlide.nextElementSibling;
+  const destination = getComputedStyle(nextSlide).left;
+  contents.style.left = "-" + destination;
+  currentSlide.classList.remove("is-selected");
+  nextSlide.classList.add("is-selected");
+  // Show previous button again
+  previousButton.removeAttribute("hidden");
+  // Hide the last next button
+  if (!nextSlide.nextElementSibling) {
+    nextButton.setAttribute("hidden", true);
   }
+
+  // console.log(destination);
+});
+
+previousButton.addEventListener("click", event => {
+  const currentSlide = contents.querySelector(".is-selected");
+  const previousSlide = currentSlide.previousElementSibling;
+  const destination = getComputedStyle(previousSlide).left;
+  contents.style.left = "-" + destination;
+  currentSlide.classList.remove("is-selected");
+  previousSlide.classList.add("is-selected");
+  // Show next button when users click the left button
+  nextButton.removeAttribute("hidden");
+  // Hide previous button when the user reaches the first slide
+  if (!previousSlide.previousElementSibling) {
+    previousButton.setAttribute("hidden", true);
+  }
+
+  // console.log(destination);
+});
+
+const dots = Array.from(carousel.querySelectorAll(".homeCarousel__dot"));
+const slides = Array.from(carousel.querySelectorAll(".homeCarousel__slide"));
+dots.forEach(dot => {
+  dot.addEventListener("click", event => {
+    let clickedDotIndex;
+    for (let index = 0; index < dots.length; index++) {
+      if (dots[index] === dot) {
+        clickedDotIndex = index;
+      }
+    }
+    const slideToShow = slides[clickedDotIndex];
+    const destination = getComputedStyle(slideToShow).left;
+    contents.style.left = "-" + destination;
+
+    console.log(destination);
+  });
 });
