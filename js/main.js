@@ -53,6 +53,11 @@ slides.forEach((slide, index) => {
   slide.style.left = slideWidth * index + "px";
 });
 
+// const button = document.querySelector("button");
+// button.addEventListener("click", event => {
+//   button.style.color = "blue";
+// });
+
 nextButton.addEventListener("click", event => {
   const currentSlide = contents.querySelector(".is-selected");
   const nextSlide = currentSlide.nextElementSibling;
@@ -85,6 +90,7 @@ previousButton.addEventListener("click", event => {
   }
 });
 
+// something wrong with dots
 dots.forEach(dot => {
   dot.addEventListener("click", event => {
     let clickedDotIndex;
@@ -97,6 +103,9 @@ dots.forEach(dot => {
     const slideToShow = slides[clickedDotIndex];
     const destination = getComputedStyle(slideToShow).left;
     contents.style.left = "-" + destination;
+
+    // const currentSlide = contents.querySelector('.is-selected')
+    // currentSlide.classList.remove('is-selected')
 
     slides.forEach(slide => {
       slide.classList.remove("is-selected");

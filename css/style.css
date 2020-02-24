@@ -1306,19 +1306,11 @@ header {
 .slider__nav:checked:nth-of-type(3) ~ .testimonials__box {
   left: -200%; }
 
-.home__sponsors {
-  margin: 0 auto;
-  width: 100%;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
 .homeCarousel {
   margin: 2rem 0 6rem;
   padding: 2rem 1rem;
   display: grid;
-  grid-template-columns: 3rem 80vw 3rem;
+  grid-template-columns: 3rem minmax(45vw, 80vw) 3rem;
   grid-template-rows: minmax(45vh, 65vh) 3rem;
   align-items: center;
   grid-gap: 1rem; }
