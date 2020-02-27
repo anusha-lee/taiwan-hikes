@@ -42,7 +42,7 @@ const carousel = document.querySelector(".homeCarousel");
 const previousButton = carousel.querySelector(".previous-button");
 const nextButton = carousel.querySelector(".next-button");
 const contents = carousel.querySelector(".homeCarousel__contents");
-const dotsContainer = carousel.querySelector(".carousel__dot");
+const dotsContainer = carousel.querySelector(".homeCarousel__dots");
 
 const slides = Array.from(carousel.querySelectorAll(".homeCarousel__slide"));
 const dots = Array.from(carousel.querySelectorAll(".homeCarousel__dot"));
@@ -72,6 +72,11 @@ nextButton.addEventListener("click", event => {
   if (!nextSlide.nextElementSibling) {
     nextButton.setAttribute("hidden", true);
   }
+  // Highlight dot
+  const currentDot = dotsContainer.querySelector(".is-selected");
+  const nextDot = currentDot.nextElementSibling;
+  currentDot.classList.remove("is-selected");
+  nextDot.classList.add(".is-selected");
 });
 
 previousButton.addEventListener("click", event => {
@@ -88,6 +93,11 @@ previousButton.addEventListener("click", event => {
   if (!previousSlide.previousElementSibling) {
     previousButton.setAttribute("hidden", true);
   }
+  // Highlight dot
+  const currentDot = dotsContainer.querySelector(".is-selected");
+  const previousDot = currentDot.previousElementSibling;
+  currentDot.classList.remove("is-selected");
+  previousDot.classList.add(".is-selected");
 });
 
 // something wrong with dots
@@ -104,11 +114,14 @@ dots.forEach(dot => {
     const destination = getComputedStyle(slideToShow).left;
     contents.style.left = "-" + destination;
 
-    // const currentSlide = contents.querySelector('.is-selected')
-    // currentSlide.classList.remove('is-selected')
-
     slides.forEach(slide => {
       slide.classList.remove("is-selected");
+    });
+    dot.classList.add("is-selected");
+
+    // Highlight dot
+    dots.forEach(d => {
+      d.classList.remove("is-selected");
     });
     dot.classList.add("is-selected");
   });

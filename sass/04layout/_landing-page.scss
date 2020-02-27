@@ -151,6 +151,7 @@
 }
 
 // testimonials section
+/*
 .home__testimonials {
   margin: 8rem auto;
   width: 100%;
@@ -284,6 +285,69 @@
 .slider__nav:checked:nth-of-type(3) ~ .testimonials__box {
   left: -200%;
 }
+*/
+
+// Simple testimonial
+.simple-testimonial {
+  margin: 8rem auto;
+  width: 90%;
+  height: auto;
+  @include responsive(tab) {
+    width: 80%;
+  }
+  @include responsive(sm-desktop) {
+    width: 65%;
+    height: 110%;
+  }
+  @include responsive(normal-desktop) {
+    width: 55%;
+  }
+  @include responsive(xl-desktop) {
+    width: 45%;
+  }
+
+  &__title {
+    font-size: $font-size-m;
+    color: $color-base-blue;
+    line-height: 1.2;
+  }
+}
+.simple__box {
+  background-color: lighten($color-tan, 5%);
+  margin: 2rem auto;
+  padding: 2rem;
+  width: 90%;
+  height: auto;
+  @include flex-center;
+  flex-direction: column;
+  &--avatar {
+    width: 25%;
+    max-width: 15rem;
+    padding: 1rem 0;
+    text-align: center;
+    border-radius: 50%;
+  }
+  &--quote {
+    display: inline-block;
+    width: 95%;
+    height: auto;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: $font-size-xs;
+    line-height: 1.6;
+    @include responsive(tab) {
+      width: 90%;
+      font-size: $font-size-s;
+    }
+  }
+  &--author {
+    display: block;
+    font-size: $font-size-sm;
+    font-family: $font-title;
+    color: $color-base-blue;
+    padding: 1rem 0 2rem;
+  }
+}
 
 // Sponsors section
 // .home__sponsors {
@@ -295,6 +359,7 @@
 // }
 
 // Testimonials using Zell's course
+/*
 .homeCarousel {
   margin: 2rem 0 6rem;
   padding: 2rem 1rem;
@@ -413,3 +478,4 @@
 .is-hidden {
   display: none;
 }
+*/
