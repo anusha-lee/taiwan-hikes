@@ -313,7 +313,7 @@ how to apply:
 .post-link-style {
   text-decoration: none;
   color: #097392;
-  transition: all .3s ease-in-out; }
+  transition: all 0.3s ease-in-out; }
 
 .post-link-style:hover,
 .post-link-style:active {
@@ -321,6 +321,11 @@ how to apply:
 
 .post-link-style:visited {
   color: #d55534; }
+
+.seven {
+  margin: 0 auto;
+  width: 100%;
+  height: auto; }
 
 .article {
   margin: 0 auto;
@@ -1505,11 +1510,6 @@ header {
 *:focus {
   outline: none; }
 
-.seven {
-  margin: 0 auto;
-  width: 100%;
-  height: auto; }
-
 /***********************************************
 Start Here and Blog Home page layout
 ************************************************/
@@ -1531,14 +1531,11 @@ Start Here and Blog Home page layout
       width: 55%; } }
 
 .here {
-  margin: 2rem auto;
+  margin: 4rem auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column; }
-  @media only screen and (min-width: 580px) {
-    .here {
-      margin-bottom: 4rem; } }
   .here__title {
     padding: 1rem;
     font-size: 2.4rem;

@@ -1,12 +1,7 @@
+// Layouts for Start Here and Blog home
+
 *:focus {
   outline: none;
-}
-
-// Seven Reasons section basic layout
-.seven {
-  margin: 0 auto;
-  width: 100%;
-  height: auto;
 }
 
 /***********************************************
@@ -33,12 +28,12 @@ Start Here and Blog Home page layout
 }
 
 .here {
-  margin: 2rem auto;
+  margin: 4rem auto;
   @include flex-center;
   flex-direction: column;
-  @include responsive(tab) {
-    margin-bottom: 4rem;
-  }
+  // @include responsive(tab) {
+  //   margin-bottom: 4rem;
+  // }
 
   &__title {
     padding: 1rem;
