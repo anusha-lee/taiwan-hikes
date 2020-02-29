@@ -153,15 +153,15 @@
 }
 .collage {
   margin: 2rem auto 2rem;
-  padding: 4rem 1.5rem;
+  padding: 4rem 3rem;
   background: $color-blue-grey;
   display: none;
 
   @include responsive(sm-desktop) {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(5, 13vh);
-    grid-gap: 1.5rem;
+    grid-template-rows: repeat(5, minmax(8vh, 13vh));
+    grid-gap: 1rem;
   }
 
   &__item {
