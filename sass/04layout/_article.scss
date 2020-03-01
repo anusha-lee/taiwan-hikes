@@ -12,114 +12,6 @@
   color: $color-orangered; //$color-deep-blue-grey;
 }
 
-// Seven Reasons section basic layout
-.seven {
-  margin: 0 auto;
-  width: 100%;
-  height: auto;
-}
-
-// layout for articles, blog posts
-.article {
-  margin: 0 auto;
-  width: 90%;
-  padding: 1rem;
-
-  @include responsive(tab) {
-    width: 80%;
-  }
-  @include responsive(sm-desktop) {
-    width: 70%;
-  }
-  @include responsive(normal-desktop) {
-    width: 60%;
-  }
-  @include responsive(xl-desktop) {
-    width: 50%;
-  }
-
-  /**********************
-  style this part later
-  ***********************/
-  &__H2title {
-    width: 100%;
-    margin: 5rem auto;
-    padding-top: 1rem;
-    font-size: $font-size-m;
-    color: $color-base-blue;
-    text-align: center;
-
-    @include responsive(tab) {
-      font-size: $font-size-large;
-    }
-    @include responsive(sm-desktop) {
-      font-size: $font-size-xl;
-    }
-    // @include responsive(normal-desktop) {
-    // }
-    // @include responsive(xl-desktop) {
-    // }
-  }
-
-  &__basic {
-    width: 100%;
-    height: auto;
-    padding: 2rem 0;
-    font-size: $font-size-xs;
-
-    &--author {
-      height: auto;
-      margin: 0 auto;
-      padding: 1rem 1rem 2rem 1rem;
-      @include flex-center;
-
-      & span {
-        font-style: italic;
-        font-size: $font-size-xs;
-        text-align: center;
-      }
-    }
-  }
-
-  &__intro,
-  &__content {
-    padding: 1.2rem 0;
-    font-size: $font-size-xs;
-    line-height: 2;
-
-    @include responsive(tab) {
-      font-size: $font-size-s;
-      padding: 0.4rem 0;
-    }
-  }
-
-  &__intro--content a,
-  &__content a {
-    color: $color-base-blue;
-    transition: all 0.3s ease-in-out;
-    &:hover,
-    &:active {
-      // color: $color-white;
-      // background-color: $color-blue-grey;
-      text-decoration: underline;
-    }
-    &:visited {
-      color: $color-orangered;
-    }
-  }
-
-  &__title {
-    font-size: $font-size-sm;
-    line-height: 1.4;
-    display: inline-block;
-    margin: 1rem auto;
-
-    @include responsive(tab) {
-      font-size: $font-size-m;
-    }
-  }
-}
-
 /*******************************
   7 Reasons collage layout
   *******************************/
@@ -202,39 +94,143 @@
   }
 }
 
-// Carousel
-/*
-.main-carousel {
-  margin: 2rem 0 2rem;
-  background: $color-blue-grey;
-  //height: 60vh;
+/******************************************************
+4 Ways page layout, also for articles and blog posts
+******************************************************/
+.article--container {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
-.carousel-cell {
-  @include flex-center;
-  padding: 5rem 0;
+
+// Layout for author, social media share and comments
+.article__opening {
+  &--pageTitle {
+    width: 100%;
+    margin: 5rem auto 2rem;
+    padding-top: 1rem;
+    font-size: $font-size-m;
+    color: $color-base-blue;
+    text-align: center;
+
+    @include responsive(tab) {
+      font-size: $font-size-large;
+    }
+    @include responsive(sm-desktop) {
+      font-size: $font-size-xl;
+    }
+  }
+  &--author {
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem 1rem 2rem 1rem;
+    @include flex-center;
+
+    & span {
+      font-style: italic;
+      font-size: $font-size-xs;
+      text-align: center;
+    }
+  }
 }
-.carousel-cell img {
-  display: block;
-  width: auto;
-  height: 25rem;
-  margin-right: 1rem;
-  border-radius: 0.5rem;
+
+// layout for articles, blog posts
+.article {
+  margin: 0 auto;
+  width: 90%;
+  padding: 1rem;
 
   @include responsive(tab) {
-    height: 30rem;
+    width: 80%;
   }
   @include responsive(sm-desktop) {
-    height: 35rem;
+    width: 70%;
   }
-}
-.carousel-cell::before,
-.carousel-cell::after {
-  display: block;
-  color: transparent;
-}
+  @include responsive(normal-desktop) {
+    width: 60%;
+  }
+  @include responsive(xl-desktop) {
+    width: 50%;
+  }
 
-figcaption {
-  font-size: $font-size-xs;
-  color: $color-base-blue; //$color-deep-blue-grey;
+  /**********************
+  style this part later, Four Ways page
+  ***********************/
+  // &__H2title {
+  //   width: 100%;
+  //   margin: 5rem auto;
+  //   padding-top: 1rem;
+  //   font-size: $font-size-m;
+  //   color: $color-base-blue;
+  //   text-align: center;
+
+  //   @include responsive(tab) {
+  //     font-size: $font-size-large;
+  //   }
+  //   @include responsive(sm-desktop) {
+  //     font-size: $font-size-xl;
+  //   }
+  //   // @include responsive(normal-desktop) {
+  //   // }
+  //   // @include responsive(xl-desktop) {
+  //   // }
+  // }
+
+  // &__basic {
+  //   width: 100%;
+  //   height: auto;
+  //   padding: 2rem 0;
+  //   font-size: $font-size-xs;
+
+  //   &--author {
+  //     height: auto;
+  //     margin: 0 auto;
+  //     padding: 1rem 1rem 2rem 1rem;
+  //     @include flex-center;
+
+  //     & span {
+  //       font-style: italic;
+  //       font-size: $font-size-xs;
+  //       text-align: center;
+  //     }
+  //   }
+  // }
+
+  // &__intro,
+  // &__content {
+  //   padding: 1.2rem 0;
+  //   font-size: $font-size-xs;
+  //   line-height: 1.6;
+
+  //   @include responsive(tab) {
+  //     font-size: $font-size-s;
+  //     padding: 0.4rem 0;
+  //   }
+  // }
+
+  // &__intro--content a,
+  // &__content a {
+  //   color: $color-base-blue;
+  //   transition: all 0.3s ease-in-out;
+  //   &:hover,
+  //   &:active {
+  //     // color: $color-white;
+  //     // background-color: $color-blue-grey;
+  //     text-decoration: underline;
+  //   }
+  //   &:visited {
+  //     color: $color-orangered;
+  //   }
+  // }
+
+  // &__title {
+  //   font-size: $font-size-sm;
+  //   line-height: 1.4;
+  //   display: inline-block;
+  //   margin: 1rem auto;
+
+  //   @include responsive(tab) {
+  //     font-size: $font-size-m;
+  //   }
+  // }
 }
-*/
