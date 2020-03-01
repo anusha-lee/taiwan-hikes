@@ -404,7 +404,8 @@ how to apply:
   *******************************/
 .article__content--text {
   margin-top: 1rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  line-height: 1.6; }
   @media only screen and (min-width: 900px) {
     .article__content--text {
       margin-top: 2.5rem;
@@ -414,12 +415,11 @@ how to apply:
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3rem 0; }
+  padding: 1rem 0; }
   .seven-reason-image-box-mobile figure img {
     display: block;
     width: auto;
     height: 25rem;
-    margin-right: 1rem;
     border-radius: 0.5rem; }
   .seven-reason-image-box-mobile figure figcaption {
     font-size: 1.4rem;
