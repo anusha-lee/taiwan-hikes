@@ -34,6 +34,13 @@
 }
 
 // Landing Page and 7 Reasons Explore button
+.sevenReasons__btn-box {
+  @include flex-center;
+  margin-bottom: 6rem;
+  @include responsive(tab) {
+    margin-bottom: 12rem;
+  }
+}
 .sevenReasons__btn {
   padding: 1.5rem 0.5rem;
 
@@ -60,7 +67,6 @@
     color: lighten($color-orangered, 20%);
   }
 }
-
 
 // Disclaimer button
 .disclaimer__btn {

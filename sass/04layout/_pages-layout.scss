@@ -87,14 +87,6 @@ Start Here and Blog Home page layout
   }
 }
 
-.sevenReasons__btn-box {
-  @include flex-center;
-  margin-bottom: 6rem;
-  @include responsive(tab) {
-    margin-bottom: 12rem;
-  }
-}
-
 /***********************************************
 About page layout
 ************************************************/

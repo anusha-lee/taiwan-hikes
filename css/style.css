@@ -112,6 +112,15 @@ how to apply:
       transform: translateY(-0.2rem);
       border-radius: 50%; }
 
+.sevenReasons__btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6rem; }
+  @media only screen and (min-width: 580px) {
+    .sevenReasons__btn-box {
+      margin-bottom: 12rem; } }
+
 .sevenReasons__btn {
   padding: 1.5rem 0.5rem; }
   .sevenReasons__btn--explore {
@@ -325,15 +334,6 @@ how to apply:
 /*******************************
   7 Reasons collage layout
   *******************************/
-.article__content--text {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  line-height: 1.6; }
-  @media only screen and (min-width: 900px) {
-    .article__content--text {
-      margin-top: 2.5rem;
-      margin-bottom: 2.5rem; } }
-
 .seven-reason-image-box-mobile {
   display: flex;
   align-items: center;
@@ -390,7 +390,7 @@ how to apply:
     display: block; }
 
 /******************************************************
-4 Ways page layout, also for articles and blog posts
+Page layout for articles on Start Here and blog posts
 ******************************************************/
 .article--container {
   margin: 0 auto;
@@ -398,7 +398,7 @@ how to apply:
   height: auto; }
 
 .article__opening--pageTitle {
-  width: 100%;
+  width: 95%;
   margin: 5rem auto 2rem;
   padding-top: 1rem;
   font-size: 3.2rem;
@@ -441,6 +441,33 @@ how to apply:
   @media only screen and (min-width: 1500px) {
     .article {
       width: 50%; } }
+  .article .article__section--title {
+    font-size: 2.4rem;
+    line-height: 1.4;
+    display: inline-block;
+    margin: 1rem auto; }
+    @media only screen and (min-width: 580px) {
+      .article .article__section--title {
+        font-size: 3.2rem; } }
+  .article .article__section--subtitle {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    display: inline-block;
+    border: 2px solid pink; }
+  .article .article__section--reasonTitle {
+    border: 2px solid blue; }
+  .article .article__section--content {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1.2rem 0;
+    line-height: 1.6;
+    font-size: 1.4rem; }
+    @media only screen and (min-width: 900px) {
+      .article .article__section--content {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+        font-size: 1.8rem;
+        padding: 0.4rem 0; } }
 
 footer {
   margin: 0 auto;
@@ -1580,15 +1607,6 @@ Start Here and Blog Home page layout
     .here__img img {
       width: 60%;
       box-shadow: 1rem 1rem 1rem #9e9e9e; }
-
-.sevenReasons__btn-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 6rem; }
-  @media only screen and (min-width: 580px) {
-    .sevenReasons__btn-box {
-      margin-bottom: 12rem; } }
 
 /***********************************************
 About page layout

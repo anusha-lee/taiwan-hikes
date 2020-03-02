@@ -15,15 +15,7 @@
 /*******************************
   7 Reasons collage layout
   *******************************/
-.article__content--text {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  line-height: 1.6;
-  @include responsive(sm-desktop) {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-  }
-}
+// Seven Reason images for mobile screens
 .seven-reason-image-box-mobile {
   @include flex-center;
   padding: 1rem 0;
@@ -43,6 +35,7 @@
     display: none;
   }
 }
+// Collage
 .collage {
   margin: 2rem auto 2rem;
   padding: 4rem 3rem;
@@ -95,7 +88,7 @@
 }
 
 /******************************************************
-4 Ways page layout, also for articles and blog posts
+Page layout for articles on Start Here and blog posts
 ******************************************************/
 .article--container {
   margin: 0 auto;
@@ -106,7 +99,7 @@
 // Layout for author, social media share and comments
 .article__opening {
   &--pageTitle {
-    width: 100%;
+    width: 95%;
     margin: 5rem auto 2rem;
     padding-top: 1rem;
     font-size: $font-size-m;
@@ -153,6 +146,44 @@
     width: 50%;
   }
 
+  .article__section {
+    &--title {
+      font-size: $font-size-sm;
+      line-height: 1.4;
+      display: inline-block;
+      margin: 1rem auto;
+
+      @include responsive(tab) {
+        font-size: $font-size-m;
+      }
+    }
+    &--subtitle {
+      font-size: $font-size-s;
+      line-height: 1.4;
+      display: inline-block;
+      // margin: 1rem auto;
+      border: 2px solid pink;
+    }
+    &--reasonTitle {
+      border: 2px solid blue;
+    }
+
+    &--content {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      padding: 1.2rem 0;
+      line-height: 1.6;
+      font-size: $font-size-xs;
+
+      @include responsive(sm-desktop) {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+        font-size: $font-size-s;
+        padding: 0.4rem 0;
+      }
+    }
+  }
+
   /**********************
   style this part later, Four Ways page
   ***********************/
@@ -176,26 +207,6 @@
   //   // }
   // }
 
-  // &__basic {
-  //   width: 100%;
-  //   height: auto;
-  //   padding: 2rem 0;
-  //   font-size: $font-size-xs;
-
-  //   &--author {
-  //     height: auto;
-  //     margin: 0 auto;
-  //     padding: 1rem 1rem 2rem 1rem;
-  //     @include flex-center;
-
-  //     & span {
-  //       font-style: italic;
-  //       font-size: $font-size-xs;
-  //       text-align: center;
-  //     }
-  //   }
-  // }
-
   // &__intro,
   // &__content {
   //   padding: 1.2rem 0;
@@ -205,21 +216,6 @@
   //   @include responsive(tab) {
   //     font-size: $font-size-s;
   //     padding: 0.4rem 0;
-  //   }
-  // }
-
-  // &__intro--content a,
-  // &__content a {
-  //   color: $color-base-blue;
-  //   transition: all 0.3s ease-in-out;
-  //   &:hover,
-  //   &:active {
-  //     // color: $color-white;
-  //     // background-color: $color-blue-grey;
-  //     text-decoration: underline;
-  //   }
-  //   &:visited {
-  //     color: $color-orangered;
   //   }
   // }
 
