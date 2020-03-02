@@ -147,6 +147,7 @@ Page layout for articles on Start Here and blog posts
   }
 
   .article__section {
+    margin: 2rem auto 1rem;
     &--title {
       font-size: $font-size-sm;
       line-height: 1.4;
@@ -158,14 +159,25 @@ Page layout for articles on Start Here and blog posts
       }
     }
     &--subtitle {
+      margin: 1rem 0;
       font-size: $font-size-s;
       line-height: 1.4;
       display: inline-block;
-      // margin: 1rem auto;
-      border: 2px solid pink;
+
+      @include responsive(tab) {
+        font-size: $font-size-sm;
+      }
+      // @include responsive(sm-desktop) {
+      //   font-size: $font-size-s;
+      // }
     }
     &--reasonTitle {
-      border: 2px solid blue;
+      margin: 1rem 0;
+      font-size: $font-size-xs;
+
+      @include responsive(tab) {
+        font-size: $font-size-s;
+      }
     }
 
     &--content {
@@ -176,48 +188,52 @@ Page layout for articles on Start Here and blog posts
       font-size: $font-size-xs;
 
       @include responsive(sm-desktop) {
-        margin-top: 2.5rem;
-        margin-bottom: 2.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         font-size: $font-size-s;
         padding: 0.4rem 0;
+      }
+    }
+
+    &--imageBox {
+      margin: 1rem auto 2rem;
+      width: 80%;
+      @include responsive(tab) {
+        width: 60%;
+      }
+      @include responsive(sm-desktop) {
+        width: 45%;
+      }
+
+      & figure {
+        & img {
+          margin: 0.5rem auto;
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          box-shadow: 1rem 1rem 1rem lighten($color-deep-blue-grey, 40%);
+        }
+        & figcaption {
+          margin: 1rem auto 2rem;
+          font-size: $font-size-xs;
+          color: $color-base-blue;
+        }
       }
     }
   }
 
   /**********************
-  style this part later, Four Ways page
+  Background story style
   ***********************/
-  // &__H2title {
-  //   width: 100%;
-  //   margin: 5rem auto;
-  //   padding-top: 1rem;
-  //   font-size: $font-size-m;
-  //   color: $color-base-blue;
-  //   text-align: center;
-
-  //   @include responsive(tab) {
-  //     font-size: $font-size-large;
-  //   }
-  //   @include responsive(sm-desktop) {
-  //     font-size: $font-size-xl;
-  //   }
-  //   // @include responsive(normal-desktop) {
-  //   // }
-  //   // @include responsive(xl-desktop) {
-  //   // }
-  // }
-
-  // &__intro,
-  // &__content {
-  //   padding: 1.2rem 0;
-  //   font-size: $font-size-xs;
-  //   line-height: 1.6;
-
-  //   @include responsive(tab) {
-  //     font-size: $font-size-s;
-  //     padding: 0.4rem 0;
-  //   }
-  // }
+  .background-story {
+    margin: 1rem auto;
+    padding: 1.5rem;
+    width: 95%;
+    box-shadow: 1rem 1rem 3rem lighten($color-deep-blue-grey, 50%);
+    @include responsive(tab) {
+      width: 70%;
+    }
+  }
 
   // &__title {
   //   font-size: $font-size-sm;
@@ -229,4 +245,8 @@ Page layout for articles on Start Here and blog posts
   //     font-size: $font-size-m;
   //   }
   // }
+}
+
+.background-story {
+  display: none;
 }

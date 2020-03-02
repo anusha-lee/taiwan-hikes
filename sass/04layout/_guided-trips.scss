@@ -176,11 +176,9 @@
   &__box {
     padding: 1rem;
     font-size: $font-size-xs;
-    // &--color-rating {
-    //   width: 10rem;
-    //   height: 1.6rem;
-    //   border: 2px solid pink;
-    // }
+    &--cost {
+      text-decoration: underline;
+    }
   }
 }
 
