@@ -157,6 +157,9 @@ Page layout for articles on Start Here and blog posts
       @include responsive(tab) {
         font-size: $font-size-m;
       }
+      @include responsive(sm-desktop) {
+        font-size: $font-size-large;
+      }
     }
     &--subtitle {
       margin: 1rem 0;
@@ -167,9 +170,6 @@ Page layout for articles on Start Here and blog posts
       @include responsive(tab) {
         font-size: $font-size-sm;
       }
-      // @include responsive(sm-desktop) {
-      //   font-size: $font-size-s;
-      // }
     }
     &--reasonTitle {
       margin: 1rem 0;
@@ -202,7 +202,7 @@ Page layout for articles on Start Here and blog posts
         width: 60%;
       }
       @include responsive(sm-desktop) {
-        width: 45%;
+        width: 50%;
       }
 
       & figure {
@@ -211,6 +211,7 @@ Page layout for articles on Start Here and blog posts
           width: 100%;
           height: auto;
           object-fit: cover;
+          border-radius: 0.5rem;
           box-shadow: 1rem 1rem 1rem lighten($color-deep-blue-grey, 40%);
         }
         & figcaption {
@@ -234,17 +235,6 @@ Page layout for articles on Start Here and blog posts
       width: 70%;
     }
   }
-
-  // &__title {
-  //   font-size: $font-size-sm;
-  //   line-height: 1.4;
-  //   display: inline-block;
-  //   margin: 1rem auto;
-
-  //   @include responsive(tab) {
-  //     font-size: $font-size-m;
-  //   }
-  // }
 }
 
 .background-story {

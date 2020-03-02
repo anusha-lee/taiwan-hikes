@@ -135,6 +135,7 @@
 .customized__btn {
   width: 32rem;
   text-align: center;
+  border: none;
   @include flex-center;
   @include btn-style;
   @include btn-alarm-color;
