@@ -514,6 +514,15 @@ Page layout for articles on Start Here and blog posts
 .background-story {
   display: none; }
 
+#emergency-app {
+  width: 100%; }
+  @media only screen and (min-width: 580px) {
+    #emergency-app {
+      width: 85%; } }
+  @media only screen and (min-width: 900px) {
+    #emergency-app {
+      width: 75%; } }
+
 footer {
   margin: 0 auto;
   width: 100%; }

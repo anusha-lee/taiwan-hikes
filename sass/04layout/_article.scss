@@ -240,3 +240,13 @@ Page layout for articles on Start Here and blog posts
 .background-story {
   display: none;
 }
+
+#emergency-app {
+  width: 100%;
+  @include responsive(tab) {
+    width: 85%;
+  }
+  @include responsive(sm-desktop) {
+    width: 75%;
+  }
+}
