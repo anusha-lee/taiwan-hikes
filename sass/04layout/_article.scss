@@ -45,7 +45,7 @@
   @include responsive(sm-desktop) {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(5, minmax(8vh, 13vh));
+    grid-template-rows: repeat(5, minmax(7vh, 11vh));
     grid-gap: 1rem;
   }
 

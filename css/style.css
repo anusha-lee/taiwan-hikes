@@ -362,7 +362,7 @@ how to apply:
     .collage {
       display: grid;
       grid-template-columns: repeat(9, 1fr);
-      grid-template-rows: repeat(5, minmax(8vh, 13vh));
+      grid-template-rows: repeat(5, minmax(7vh, 11vh));
       grid-gap: 1rem; } }
   .collage__item--1 {
     grid-column: 1 / 3;
@@ -1007,6 +1007,11 @@ header {
   background-image: url("../img/header-background7.jpg");
   background-size: cover;
   background-position: center; }
+
+.header__background-img-15Things {
+  background-image: url("../img/header-15things.jpg");
+  background-size: cover;
+  background-position: right 45% bottom; }
 
 .logo {
   padding: 1rem 1rem 1rem 1.5rem;
