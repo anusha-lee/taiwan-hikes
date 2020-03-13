@@ -1013,6 +1013,11 @@ header {
   background-size: cover;
   background-position: right 45% bottom; }
 
+.header__background-img-teapot {
+  background-image: url("../img/blog/01-Mt-Teapot/000-Teapot-cover-2.jpg");
+  background-size: cover;
+  background-position: center; }
+
 .logo {
   padding: 1rem 1rem 1rem 1.5rem;
   transition: display 0.3s ease-in-out; }
