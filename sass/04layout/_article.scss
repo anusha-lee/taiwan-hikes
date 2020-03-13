@@ -250,3 +250,27 @@ Page layout for articles on Start Here and blog posts
     width: 75%;
   }
 }
+
+/**********************
+  Infographic style
+  ***********************/
+#infographic-mobile {
+  max-width: 90%;
+  & figure img {
+    box-shadow: none;
+  }
+  @include responsive(tab) {
+    display: none;
+  }
+}
+
+#infographic-desktop {
+  display: none;
+  @include responsive(tab) {
+    display: block;
+    max-width: 100%;
+    & figure img {
+      box-shadow: none;
+    }
+  }
+}

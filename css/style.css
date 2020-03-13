@@ -523,6 +523,26 @@ Page layout for articles on Start Here and blog posts
     #emergency-app {
       width: 75%; } }
 
+/**********************
+  Infographic style
+  ***********************/
+#infographic-mobile {
+  max-width: 90%; }
+  #infographic-mobile figure img {
+    box-shadow: none; }
+  @media only screen and (min-width: 580px) {
+    #infographic-mobile {
+      display: none; } }
+
+#infographic-desktop {
+  display: none; }
+  @media only screen and (min-width: 580px) {
+    #infographic-desktop {
+      display: block;
+      max-width: 100%; }
+      #infographic-desktop figure img {
+        box-shadow: none; } }
+
 footer {
   margin: 0 auto;
   width: 100%; }
