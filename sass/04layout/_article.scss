@@ -197,13 +197,13 @@ Page layout for articles on Start Here and blog posts
 
     &--imageBox {
       margin: 1rem auto 2rem;
-      width: 80%;
-      @include responsive(tab) {
-        width: 60%;
-      }
-      @include responsive(sm-desktop) {
-        width: 50%;
-      }
+      width: 100%;
+      // @include responsive(tab) {
+      //   width: 85%;
+      // }
+      // @include responsive(sm-desktop) {
+      //   width: 70%;
+      // }
 
       & figure {
         & img {
@@ -268,9 +268,12 @@ Page layout for articles on Start Here and blog posts
   display: none;
   @include responsive(tab) {
     display: block;
-    max-width: 100%;
+    width: 100%;
     & figure img {
       box-shadow: none;
     }
+  }
+  @include responsive(sm-desktop) {
+    width: 90%;
   }
 }

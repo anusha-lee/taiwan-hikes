@@ -484,13 +484,7 @@ Page layout for articles on Start Here and blog posts
           padding: 0.4rem 0; } }
     .article .article__section--imageBox {
       margin: 1rem auto 2rem;
-      width: 80%; }
-      @media only screen and (min-width: 580px) {
-        .article .article__section--imageBox {
-          width: 60%; } }
-      @media only screen and (min-width: 900px) {
-        .article .article__section--imageBox {
-          width: 50%; } }
+      width: 100%; }
       .article .article__section--imageBox figure img {
         margin: 0.5rem auto;
         width: 100%;
@@ -539,9 +533,12 @@ Page layout for articles on Start Here and blog posts
   @media only screen and (min-width: 580px) {
     #infographic-desktop {
       display: block;
-      max-width: 100%; }
+      width: 100%; }
       #infographic-desktop figure img {
         box-shadow: none; } }
+  @media only screen and (min-width: 900px) {
+    #infographic-desktop {
+      width: 90%; } }
 
 footer {
   margin: 0 auto;
