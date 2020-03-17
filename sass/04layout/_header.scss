@@ -139,6 +139,18 @@ header {
   background-position: center;
 }
 
+.header__background-img-privacy {
+  background-image: url("../img/ex04.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header__background-img-terms {
+  background-image: url("../img/ex05.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
 // Logo
 
 .logo {
