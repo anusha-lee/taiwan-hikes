@@ -133,10 +133,16 @@ header {
   background-position: right 45% bottom;
 }
 
+.header__background-img-blog {
+  background-image: url("../img/header-blog.jpg");
+  background-size: cover;
+  background-position: left center;
+}
+
 .header__background-img-teapot {
   background-image: url("../img/blog/01-Mt-Teapot/000-Teapot-cover-2.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: left bottom;
 }
 
 .header__background-img-privacy {
@@ -146,9 +152,9 @@ header {
 }
 
 .header__background-img-terms {
-  background-image: url("../img/ex05.jpg");
+  background-image: url("../img/header-terms.jpg");
   background-size: cover;
-  background-position: bottom;
+  background-position: right center;
 }
 
 // Logo
