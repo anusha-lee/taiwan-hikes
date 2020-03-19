@@ -63,9 +63,9 @@
   &--explore:active {
     @include btn-active;
   }
-  &--explore:visited {
-    color: lighten($color-orangered, 20%);
-  }
+  // &--explore:visited {
+  //   color: lighten($color-orangered, 20%);
+  // }
 }
 
 // Disclaimer button
@@ -83,9 +83,9 @@
     @include btn-active;
     background-color: darken($color-orangered, 5%);
   }
-  &:visited {
-    color: $color-tan;
-  }
+  // &:visited {
+  //   color: $color-tan;
+  // }
 }
 
 // Size button on About page
@@ -98,7 +98,12 @@
 
   padding-top: 0.9rem;
   &:hover {
+    cursor: pointer;
     @include btn-hover;
+    background: linear-gradient(
+      lighten($color-base-blue, 5%),
+      lighten($color-deep-blue-grey, 10%)
+    );
   }
   &:active {
     @include btn-active;
@@ -121,9 +126,9 @@
     @include btn-active;
     background-color: darken($color-orangered, 5%);
   }
-  &:visited {
-    color: $color-tan;
-  }
+  // &:visited {
+  //   color: $color-tan;
+  // }
 }
 
 // 4 Ways background-story button
@@ -148,9 +153,9 @@
     @include btn-active;
     background-color: darken($color-orangered, 5%);
   }
-  &:visited {
-    color: $color-tan;
-  }
+  // &:visited {
+  //   color: $color-tan;
+  // }
 }
 
 .trips__sorting--by-easy,

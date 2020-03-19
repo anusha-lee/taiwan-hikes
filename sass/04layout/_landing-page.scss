@@ -94,6 +94,7 @@
   margin: 1rem auto;
   padding: 0.5rem 1rem;
   width: 90%;
+  max-height: 90%;
   background-color: rgba($color-white, 0.8);
 
   @include flex-center;
@@ -119,7 +120,7 @@
 
   &__trips {
     width: 100%;
-    min-height: 70%;
+    max-height: 70%;
 
     &--title {
       font-size: $font-size-m;
@@ -134,9 +135,9 @@
   margin: 1rem;
   padding: 1rem;
   color: darken($color-base-blue, 10%);
-  line-height: 1.6;
+  line-height: 1.2;
   box-shadow: 0.2rem 0.4rem 0.5rem lighten($color-deep-blue-grey, 60%);
-
+  overflow-y: auto;
   &__title {
     font-size: $font-size-xs;
     @include responsive(tab) {

@@ -6,10 +6,11 @@
 }
 .post-link-style:hover,
 .post-link-style:active {
+  color: complement($color-base-blue);
   text-decoration: underline;
 }
 .post-link-style:visited {
-  color: $color-orangered; //$color-deep-blue-grey;
+  color: $color-orangered;
 }
 
 /*******************************

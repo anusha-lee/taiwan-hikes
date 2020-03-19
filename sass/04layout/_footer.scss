@@ -102,18 +102,18 @@ footer {
     font-size: $font-size-xs;
     text-align: center;
 
-    & div a {
-      transition: all 0.3s ease-in-out;
+    // & div a {
+    //   transition: all 0.3s ease-in-out;
 
-      &:hover,
-      &:active {
-        @include link-hover-active;
-      }
+    //   &:hover,
+    //   &:active {
+    //     @include link-hover-active;
+    //   }
 
-      &:visited {
-        @include link-visited;
-      }
-    }
+    //   &:visited {
+    //     @include link-visited;
+    //   }
+    // }
   }
 
   &__legal {

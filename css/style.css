@@ -143,8 +143,6 @@ how to apply:
   .sevenReasons__btn--explore:active {
     transform: translateY(-0.2rem);
     box-shadow: 0.2rem 0.2rem 0.3rem #1f1f1f; }
-  .sevenReasons__btn--explore:visited {
-    color: #e69c89; }
 
 .disclaimer__btn {
   display: flex;
@@ -167,8 +165,6 @@ how to apply:
     transform: translateY(-0.2rem);
     box-shadow: 0.2rem 0.2rem 0.3rem #1f1f1f;
     background-color: #c64929; }
-  .disclaimer__btn:visited {
-    color: #fff0ce; }
 
 .size__btn {
   width: 16rem;
@@ -182,8 +178,10 @@ how to apply:
   background: linear-gradient(#097392, #525252);
   padding-top: 0.9rem; }
   .size__btn:hover {
+    cursor: pointer;
     transform: translateY(-0.5rem);
-    box-shadow: 0.4rem 0.4rem 0.6rem #525252; }
+    box-shadow: 0.4rem 0.4rem 0.6rem #525252;
+    background: linear-gradient(#0a86aa, #525252); }
   .size__btn:active {
     transform: translateY(-0.2rem);
     box-shadow: 0.2rem 0.2rem 0.3rem #1f1f1f; }
@@ -212,8 +210,6 @@ how to apply:
     transform: translateY(-0.2rem);
     box-shadow: 0.2rem 0.2rem 0.3rem #1f1f1f;
     background-color: #c64929; }
-  .article__btn:visited {
-    color: #fff0ce; }
 
 .background-story__btn {
   width: 20rem;
@@ -243,8 +239,6 @@ how to apply:
     transform: translateY(-0.2rem);
     box-shadow: 0.2rem 0.2rem 0.3rem #1f1f1f;
     background-color: #c64929; }
-  .customized__btn:visited {
-    color: #fff0ce; }
 
 .trips__sorting--by-easy,
 .trips__sorting--by-moderate,
@@ -328,6 +322,7 @@ how to apply:
 
 .post-link-style:hover,
 .post-link-style:active {
+  color: #922809;
   text-decoration: underline; }
 
 .post-link-style:visited {
@@ -614,13 +609,6 @@ footer {
     grid-row: 3 / 4;
     font-size: 1.4rem;
     text-align: center; }
-    .footer__copyright div a {
-      transition: all 0.3s ease-in-out; }
-      .footer__copyright div a:hover, .footer__copyright div a:active {
-        color: #fff0ce;
-        font-weight: 600; }
-      .footer__copyright div a:visited {
-        color: #de785e; }
   .footer__legal {
     margin: 0 auto;
     width: 90%; }
@@ -735,7 +723,6 @@ footer {
     .subscribeInput__agree a {
       transition: all 0.3s ease-in-out; }
       .subscribeInput__agree a:hover, .subscribeInput__agree a:active {
-        color: #fff0ce;
         font-weight: 600; }
       .subscribeInput__agree a:visited {
         color: #de785e; }
@@ -752,7 +739,6 @@ footer {
       color: #cccccc;
       transition: all 0.3s ease-in-out; }
     .legal__box--item a:hover, .legal__box--item a:active {
-      color: #fff0ce;
       font-weight: 600; }
     .legal__box--item a:visited {
       color: #de785e; }
@@ -1289,6 +1275,7 @@ header {
   margin: 1rem auto;
   padding: 0.5rem 1rem;
   width: 90%;
+  max-height: 90%;
   background-color: rgba(252, 252, 252, 0.8);
   display: flex;
   align-items: center;
@@ -1310,7 +1297,7 @@ header {
       max-height: 80rem; } }
   .freeHikes__trips {
     width: 100%;
-    min-height: 70%; }
+    max-height: 70%; }
     .freeHikes__trips--title {
       font-size: 3.2rem;
       color: #097392;
@@ -1320,8 +1307,9 @@ header {
   margin: 1rem;
   padding: 1rem;
   color: #064d62;
-  line-height: 1.6;
-  box-shadow: 0.2rem 0.4rem 0.5rem #d1d1d1; }
+  line-height: 1.2;
+  box-shadow: 0.2rem 0.4rem 0.5rem #d1d1d1;
+  overflow-y: auto; }
   .homepageTrip__title {
     font-size: 1.4rem; }
     @media only screen and (min-width: 580px) {
@@ -1685,7 +1673,6 @@ Start Here and Blog Home page layout
       line-height: 1.2;
       transition: all 0.3s ease-in-out; }
       .here__title a:hover, .here__title a:active {
-        color: #fff0ce;
         font-weight: 600; }
       .here__title a:visited {
         color: #de785e; }
@@ -1791,7 +1778,7 @@ About page layout
 .freeHikes__btn-box {
   margin-top: 1rem;
   margin-bottom: 2rem;
-  padding: 2rem 1rem;
+  padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
   justify-content: center; }

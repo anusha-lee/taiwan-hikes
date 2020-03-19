@@ -85,12 +85,12 @@ how to apply:
   box-shadow: 0.2rem 0.2rem 0.3rem darken($color-deep-blue-grey, 10%);
 }
 
+// need to remove later
 // links, a tags hover effects
 @mixin link-hover-active {
-  color: $color-tan;
   font-weight: 600;
 }
-
+// need to remove later
 @mixin link-visited {
   color: lighten($color-orangered, 10%);
 }
