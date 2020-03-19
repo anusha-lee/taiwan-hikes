@@ -19,11 +19,25 @@ footer {
 
     &--img {
       width: 100%;
-      height: 70vh;
-      background-image: url("../img/footer-img.jpg");
+      height: 40vh;
+      background-image: url("../img/footer-img2.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
+      @include responsive(tab) {
+        height: 55vh;
+        background-position: 40% 30%;
+      }
+      @include responsive(sm-desktop) {
+        height: 70vh;
+        background-position: 20% 35%;
+      }
+      @include responsive(normal-desktop) {
+        height: 75vh;
+      }
+      @include responsive(xl-desktop) {
+        height: 80vh;
+      }
     }
 
     // same as subscribeInput
