@@ -387,7 +387,7 @@ how to apply:
     display: block; }
 
 /******************************************************
-Page layout for articles on Start Here and blog posts
+Page layout for articles on Start Here 
 ******************************************************/
 .article--container {
   margin: 0 auto;
@@ -535,6 +535,9 @@ Page layout for articles on Start Here and blog posts
     #infographic-desktop {
       width: 90%; } }
 
+/**************************************
+********** Blog grid layout
+**************************************/
 footer {
   margin: 0 auto;
   width: 100%; }
@@ -1037,6 +1040,11 @@ header {
 
 .header__background-img-teapot {
   background-image: url("../img/blog/01-Mt-Teapot/000-Teapot-cover-2.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.header__background-img-keelung {
+  background-image: url("../img/blog/02-Mt-Keelung/00-header-keelung.jpg");
   background-size: cover;
   background-position: center; }
 
