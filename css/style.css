@@ -1823,16 +1823,16 @@ About page layout
   @media only screen and (min-width: 580px) {
     .blog__container {
       width: 95%; } }
-  @media only screen and (min-width: 900px) {
-    .blog__container {
-      width: 85%; } }
   @media only screen and (min-width: 1200px) {
     .blog__container {
       width: 75%; } }
+  @media only screen and (min-width: 1500px) {
+    .blog__container {
+      width: 70%; } }
   .blog__container--section {
     max-width: 90%;
     margin: 1.5rem 2.5rem;
-    height: 40rem;
+    height: 30rem;
     padding: 1.5rem;
     box-shadow: 1rem 1rem 3rem #b8b8b8;
     display: grid;
@@ -1840,13 +1840,15 @@ About page layout
     grid-template-rows: 1fr minmax(2fr, 4fr); }
     @media only screen and (min-width: 580px) {
       .blog__container--section {
-        max-width: 60%; } }
+        max-width: 38%;
+        height: 35rem; } }
     @media only screen and (min-width: 900px) {
       .blog__container--section {
-        max-width: 38%; } }
+        max-width: 27%;
+        height: 40rem; } }
     @media only screen and (min-width: 1500px) {
       .blog__container--section {
-        max-width: 28%; } }
+        max-width: 25%; } }
     .blog__container--section--title {
       font-size: 1.4rem;
       text-align: center;
@@ -1872,7 +1874,7 @@ About page layout
         object-fit: cover;
         transition: transform 0.3s ease-in-out; }
         .blog__container--section--img img:hover {
-          transform: scale(1.5); }
+          transform: scale(1.2); }
 
 @-webkit-keyframes check {
   50% {

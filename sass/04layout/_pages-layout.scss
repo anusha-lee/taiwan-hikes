@@ -221,20 +221,20 @@ About page layout
   @include responsive(tab) {
     width: 95%;
   }
-  @include responsive(sm-desktop) {
-    width: 85%;
-  }
+  // @include responsive(sm-desktop) {
+  //   width: 90%;
+  // }
   @include responsive(normal-desktop) {
     width: 75%;
   }
-  // @include responsive(xl-desktop) {
-  //   width: 70%;
-  // }
+  @include responsive(xl-desktop) {
+    width: 70%;
+  }
 
   &--section {
     max-width: 90%;
     margin: 1.5rem 2.5rem;
-    height: 40rem;
+    height: 30rem;
     padding: 1.5rem;
     box-shadow: 1rem 1rem 3rem lighten($color-deep-blue-grey, 50%);
 
@@ -243,13 +243,15 @@ About page layout
     grid-template-rows: 1fr minmax(2fr, 4fr);
 
     @include responsive(tab) {
-      max-width: 60%;
+      max-width: 38%;
+      height: 35rem;
     }
     @include responsive(sm-desktop) {
-      max-width: 38%;
+      max-width: 27%;
+      height: 40rem;
     }
     @include responsive(xl-desktop) {
-      max-width: 28%;
+      max-width: 25%;
     }
     // @include responsive(xl-desktop) {
     //   max-width: 30%;
@@ -284,7 +286,7 @@ About page layout
         @include responsive(tab) {
         }
         &:hover {
-          transform: scale(1.5);
+          transform: scale(1.2);
         }
       }
     }
