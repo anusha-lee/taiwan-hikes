@@ -279,6 +279,10 @@ Page layout for articles on Start Here
   }
 }
 
-/**************************************
-********** Blog grid layout
-**************************************/
+#panview {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.5);
+  }
+}

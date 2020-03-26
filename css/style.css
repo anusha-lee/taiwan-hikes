@@ -535,9 +535,12 @@ Page layout for articles on Start Here
     #infographic-desktop {
       width: 90%; } }
 
-/**************************************
-********** Blog grid layout
-**************************************/
+#panview {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer; }
+  #panview:hover {
+    transform: scale(1.5); }
+
 footer {
   margin: 0 auto;
   width: 100%; }
@@ -1807,6 +1810,69 @@ About page layout
 
 .about-freeHikes__btn-box {
   margin-bottom: 8rem; }
+
+/**************************************
+********** Blog grid layout
+**************************************/
+.blog__container {
+  margin: 4rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+  @media only screen and (min-width: 580px) {
+    .blog__container {
+      width: 95%; } }
+  @media only screen and (min-width: 900px) {
+    .blog__container {
+      width: 85%; } }
+  @media only screen and (min-width: 1200px) {
+    .blog__container {
+      width: 75%; } }
+  .blog__container--section {
+    max-width: 90%;
+    margin: 1.5rem 2.5rem;
+    height: 40rem;
+    padding: 1.5rem;
+    box-shadow: 1rem 1rem 3rem #b8b8b8;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr minmax(2fr, 4fr); }
+    @media only screen and (min-width: 580px) {
+      .blog__container--section {
+        max-width: 60%; } }
+    @media only screen and (min-width: 900px) {
+      .blog__container--section {
+        max-width: 38%; } }
+    @media only screen and (min-width: 1500px) {
+      .blog__container--section {
+        max-width: 28%; } }
+    .blog__container--section--title {
+      font-size: 1.4rem;
+      text-align: center;
+      grid-row: 1 / 2; }
+      .blog__container--section--title a {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      @media only screen and (min-width: 580px) {
+        .blog__container--section--title {
+          font-size: 1.8rem; } }
+      @media only screen and (min-width: 900px) {
+        .blog__container--section--title {
+          font-size: 2.4rem; } }
+    .blog__container--section--img {
+      margin: 1rem auto;
+      grid-row: 2 / 3;
+      overflow: hidden; }
+      .blog__container--section--img img {
+        width: auto;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out; }
+        .blog__container--section--img img:hover {
+          transform: scale(1.5); }
 
 @-webkit-keyframes check {
   50% {

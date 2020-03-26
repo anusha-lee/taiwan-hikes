@@ -207,3 +207,86 @@ About page layout
 .about-freeHikes__btn-box {
   margin-bottom: 8rem;
 }
+
+/**************************************
+********** Blog grid layout
+**************************************/
+.blog__container {
+  //width: ;
+  margin: 4rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  @include responsive(tab) {
+    width: 95%;
+  }
+  @include responsive(sm-desktop) {
+    width: 85%;
+  }
+  @include responsive(normal-desktop) {
+    width: 75%;
+  }
+  // @include responsive(xl-desktop) {
+  //   width: 70%;
+  // }
+
+  &--section {
+    max-width: 90%;
+    margin: 1.5rem 2.5rem;
+    height: 40rem;
+    padding: 1.5rem;
+    box-shadow: 1rem 1rem 3rem lighten($color-deep-blue-grey, 50%);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr minmax(2fr, 4fr);
+
+    @include responsive(tab) {
+      max-width: 60%;
+    }
+    @include responsive(sm-desktop) {
+      max-width: 38%;
+    }
+    @include responsive(xl-desktop) {
+      max-width: 28%;
+    }
+    // @include responsive(xl-desktop) {
+    //   max-width: 30%;
+    // }
+    &--title {
+      font-size: $font-size-xs;
+      text-align: center;
+      grid-row: 1 / 2;
+
+      & a {
+        height: 100%;
+        @include flex-center;
+      }
+
+      @include responsive(tab) {
+        font-size: $font-size-s;
+      }
+      @include responsive(sm-desktop) {
+        font-size: $font-size-sm;
+      }
+    }
+    &--img {
+      margin: 1rem auto;
+      grid-row: 2 / 3;
+      overflow: hidden;
+
+      & img {
+        width: auto;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+        @include responsive(tab) {
+        }
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+}
