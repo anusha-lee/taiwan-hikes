@@ -71,7 +71,7 @@ footer {
 
     &--box {
       min-height: min-content;
-      padding: 0rem 0 3rem;
+      padding: 3rem 0;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -143,21 +143,20 @@ footer {
 }
 .subscribeInput {
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 4rem 2rem 3rem;
   width: 100%;
-  min-height: 30vh;
+  height: auto;
 
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
 
   @include responsive(tab) {
+    padding-top: 5rem;
     width: 80%;
-    height: 40vh;
   }
   @include responsive(sm-desktop) {
     width: 70%;
-    height: 45vh;
   }
   @include responsive(normal-desktop) {
     width: 60%;
@@ -166,6 +165,7 @@ footer {
     width: 50%;
   }
 
+  /*
   &__form {
     margin: 0 auto;
     padding: 1rem 0;
@@ -258,8 +258,9 @@ footer {
     // & input[type="submit"]:visited {
     // }
   }
+  */
   &__agree {
-    margin: 0 auto;
+    margin: 1rem auto 0;
     padding: 0 0 1.5rem;
     display: inline-block;
     width: 90%;
@@ -268,6 +269,7 @@ footer {
     font-size: $font-size-xs;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    text-align: center;
 
     & a {
       transition: all 0.3s ease-in-out;
