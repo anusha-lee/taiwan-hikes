@@ -137,10 +137,10 @@ footer {
 }
 
 // Receive update form
-::placeholder {
-  color: $color-base-blue;
-  font-size: $font-size-xs;
-}
+// ::placeholder {
+//   color: $color-base-blue;
+//   font-size: $font-size-xs;
+// }
 .subscribeInput {
   margin: 0 auto;
   padding: 4rem 2rem 3rem;

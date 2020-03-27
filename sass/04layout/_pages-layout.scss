@@ -57,13 +57,6 @@ Start Here and Blog Home page layout
         @include link-visited;
       }
     }
-    // & a:hover,
-    // & a:active {
-    //   @include link-hover-active;
-    // }
-    // & a:visited {
-    //   @include link-visited;
-    // }
   }
 
   &__text {
@@ -81,7 +74,7 @@ Start Here and Blog Home page layout
     @include flex-center;
 
     & img {
-      width: 60%;
+      width: 100%;
       box-shadow: 1rem 1rem 1rem lighten($color-deep-blue-grey, 40%);
     }
   }
