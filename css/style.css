@@ -176,6 +176,7 @@ how to apply:
   transition: all 0.3s ease-in-out;
   box-shadow: 0.2rem 0.2rem 0.4rem #858585;
   background: linear-gradient(#097392, #525252);
+  width: 23rem;
   padding-top: 0.9rem; }
   .size__btn:hover {
     cursor: pointer;
@@ -1806,7 +1807,8 @@ About page layout
     margin: 2rem auto 4rem;
     padding: 2rem;
     box-shadow: 1rem 1rem 3rem #b8b8b8;
-    line-height: 2; }
+    line-height: 2;
+    border-radius: 0.5rem; }
     @media only screen and (min-width: 580px) {
       .sizes__clickToSee--countries {
         padding: 3rem; } }

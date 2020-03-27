@@ -169,6 +169,7 @@ About page layout
       padding: 2rem;
       box-shadow: 1rem 1rem 3rem lighten($color-deep-blue-grey, 50%);
       line-height: 2;
+      border-radius: 0.5rem;
 
       @include responsive(tab) {
         padding: 3rem;

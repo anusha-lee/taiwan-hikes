@@ -5,7 +5,7 @@ const sizeCountries = document.querySelector(".size__countries");
 sizeBtn.addEventListener("click", event => {
   if (sizeCountries.classList.contains("size-is-open")) {
     sizeCountries.classList.remove("size-is-open");
-    sizeBtn.textContent = "Click to Expand";
+    sizeBtn.textContent = "How samll is Taiwan?";
   } else {
     sizeCountries.classList.add("size-is-open");
     sizeBtn.textContent = "Close";
