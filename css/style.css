@@ -1071,6 +1071,11 @@ header {
   background-size: cover;
   background-position: center; }
 
+.header__background-img-tefuye {
+  background-image: url("../img/blog/03-tefuye/00-tefuye-header.jpg");
+  background-size: cover;
+  background-position: 40% 20%; }
+
 .header__background-img-privacy {
   background-image: url("../img/ex04.jpg");
   background-size: cover;
