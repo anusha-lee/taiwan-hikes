@@ -101,7 +101,7 @@ Page layout for articles on Start Here
 .article__opening {
   &--pageTitle {
     width: 95%;
-    margin: 5rem auto 2rem;
+    margin: 4rem auto 3rem;
     padding-top: 1rem;
     font-size: $font-size-m;
     color: $color-base-blue;
@@ -117,7 +117,7 @@ Page layout for articles on Start Here
   &--author {
     height: auto;
     margin: 0 auto;
-    padding: 1rem 1rem 2rem 1rem;
+    padding: 1rem;
     @include flex-center;
 
     & span {
@@ -222,6 +222,12 @@ Page layout for articles on Start Here
         }
       }
     }
+  }
+
+  #article__social-sharing {
+    margin: 2rem auto 4rem;
+    padding: 1rem 0;
+    width: 100%;
   }
 
   /**********************
