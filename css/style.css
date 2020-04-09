@@ -481,17 +481,17 @@ Page layout for articles on Start Here
     .article .article__section--imageBox {
       margin: 1rem auto 2rem;
       width: 100%; }
-      .article .article__section--imageBox figure img {
+      .article .article__section--imageBox figure a img {
         margin: 0.5rem auto;
-        width: 100%;
-        height: auto;
+        height: 50%;
+        width: auto;
         object-fit: cover;
-        border-radius: 0.5rem;
-        box-shadow: 1rem 1rem 1rem #9e9e9e; }
+        border-radius: 0.5rem; }
       .article .article__section--imageBox figure figcaption {
         margin: 1rem auto 2rem;
         font-size: 1.4rem;
-        color: #097392; }
+        color: #097392;
+        text-align: center; }
   .article #article__social-sharing {
     margin: 2rem auto 4rem;
     padding: 1rem 0;
@@ -540,11 +540,11 @@ Page layout for articles on Start Here
     #infographic-desktop {
       width: 90%; } }
 
-#panview {
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer; }
-  #panview:hover {
-    transform: scale(1.5); }
+@media only screen and (min-width: 900px) {
+  #panview {
+    transition: transform 0.3s ease-in-out; }
+    #panview:hover {
+      transform: scale(1.2); } }
 
 footer {
   margin: 0 auto;

@@ -207,18 +207,21 @@ Page layout for articles on Start Here
       // }
 
       & figure {
-        & img {
+        & a img {
           margin: 0.5rem auto;
-          width: 100%;
-          height: auto;
+          // width: 100%;
+          //height: auto;
+          height: 50%;
+          width: auto;
           object-fit: cover;
           border-radius: 0.5rem;
-          box-shadow: 1rem 1rem 1rem lighten($color-deep-blue-grey, 40%);
+          // box-shadow: 1rem 1rem 1rem lighten($color-deep-blue-grey, 40%);
         }
         & figcaption {
           margin: 1rem auto 2rem;
           font-size: $font-size-xs;
           color: $color-base-blue;
+          text-align: center;
         }
       }
     }
@@ -286,9 +289,10 @@ Page layout for articles on Start Here
 }
 
 #panview {
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
-  &:hover {
-    transform: scale(1.5);
+  @include responsive(sm-desktop) {
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }
