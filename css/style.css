@@ -483,7 +483,7 @@ Page layout for articles on Start Here
       width: 100%; }
       .article .article__section--imageBox figure a img {
         margin: 0.5rem auto;
-        height: 50%;
+        height: 80%;
         width: auto;
         object-fit: cover;
         border-radius: 0.5rem; }
