@@ -1817,9 +1817,19 @@ About page layout
   @media only screen and (min-width: 580px) {
     .modal__overlay {
       padding-top: 40rem; } }
-  .modal__overlay--box--countries {
-    padding: 3rem 2rem;
-    background-color: #83b4b3; }
+  .modal__overlay--box {
+    display: grid;
+    place-items: center; }
+    .modal__overlay--box--countries {
+      width: 85%;
+      padding: 1rem;
+      overflow-y: scroll;
+      background-color: #83b4b3; }
+      @media only screen and (min-width: 580px) {
+        .modal__overlay--box--countries {
+          width: 100%;
+          padding: 3rem 2rem;
+          overflow-y: visible; } }
 
 .modal-is-open {
   opacity: 1;

@@ -194,9 +194,18 @@ About page layout
   }
 
   &--box {
+    display: grid;
+    place-items: center;
     &--countries {
-      padding: 3rem 2rem;
+      width: 85%;
+      padding: 1rem;
+      overflow-y: scroll;
       background-color: $color-blue-grey;
+      @include responsive(tab) {
+        width: 100%;
+        padding: 3rem 2rem;
+        overflow-y: visible;
+      }
     }
   }
 }
