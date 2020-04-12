@@ -307,10 +307,10 @@ header {
       //opacity: 1;
       display: block;
       padding-top: 5rem;
-      width: 103vw;
+      width: 104vw;
       height: 103vh;
       margin-top: -3rem;
-      margin-right: -1rem;
+      margin-right: -1.2rem;
 
       @include responsive(tab) {
         margin-right: -6rem;

@@ -1172,10 +1172,10 @@ header {
     .menu__hamburger--toggle:checked ~ .menu__hamburger--list {
       display: block;
       padding-top: 5rem;
-      width: 103vw;
+      width: 104vw;
       height: 103vh;
       margin-top: -3rem;
-      margin-right: -1rem; }
+      margin-right: -1.2rem; }
       @media only screen and (min-width: 580px) {
         .menu__hamburger--toggle:checked ~ .menu__hamburger--list {
           margin-right: -6rem;
