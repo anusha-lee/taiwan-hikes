@@ -520,26 +520,6 @@ Page layout for articles on Start Here
 /**********************
   Infographic style
   ***********************/
-#infographic-mobile {
-  max-width: 90%; }
-  #infographic-mobile figure img {
-    box-shadow: none; }
-  @media only screen and (min-width: 580px) {
-    #infographic-mobile {
-      display: none; } }
-
-#infographic-desktop {
-  display: none; }
-  @media only screen and (min-width: 580px) {
-    #infographic-desktop {
-      display: block;
-      width: 100%; }
-      #infographic-desktop figure img {
-        box-shadow: none; } }
-  @media only screen and (min-width: 900px) {
-    #infographic-desktop {
-      width: 90%; } }
-
 @media only screen and (min-width: 900px) {
   #panview {
     transition: transform 0.3s ease-in-out; }
@@ -1253,7 +1233,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 9998;
   background: linear-gradient(to bottom, #fcfcfc 20%, rgba(252, 252, 252, 0.8) 50%, rgba(252, 252, 252, 0.6) 70%, rgba(252, 252, 252, 0.4) 85%, rgba(252, 252, 252, 0)); }
 
 .home-7Reasons {
@@ -1806,29 +1786,44 @@ About page layout
   color: #d55534; }
 
 .sizes__clickToSee {
-  margin: 2rem auto;
-  transition: display 0.3s ease-in-out;
+  margin: 0rem auto;
   display: flex;
   align-items: center;
   justify-content: center; }
-  .sizes__clickToSee--countries {
-    display: none;
-    margin: 2rem auto 4rem;
-    padding: 2rem;
-    box-shadow: 1rem 1rem 3rem #b8b8b8;
-    line-height: 2;
-    border-radius: 0.5rem; }
-    @media only screen and (min-width: 580px) {
-      .sizes__clickToSee--countries {
-        padding: 3rem; } }
-    @media only screen and (min-width: 900px) {
-      .sizes__clickToSee--countries {
-        padding: 4rem; } }
   .sizes__clickToSee--content b {
     color: #097392; }
 
-.size-is-open {
-  display: block; }
+.modal {
+  margin: 0; }
+
+.modal__overlay {
+  -webkit-backdrop-filter: opacity(50%);
+  backdrop-filter: opacity(50%);
+  font-family: "Alegreya", serif;
+  overflow-y: scroll;
+  padding-top: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 2;
+  position: fixed;
+  top: -2rem;
+  bottom: -2rem;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.3s ease-in-out; }
+  @media only screen and (min-width: 580px) {
+    .modal__overlay {
+      padding-top: 40rem; } }
+  .modal__overlay--box--countries {
+    padding: 3rem 2rem;
+    background-color: #83b4b3; }
+
+.modal-is-open {
+  opacity: 1;
+  z-index: 9999; }
 
 .freeHikes__btn-box {
   margin-top: 1rem;

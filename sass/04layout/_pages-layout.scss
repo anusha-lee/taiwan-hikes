@@ -155,29 +155,11 @@ About page layout
 //   margin: 1rem auto 6rem;
 // }
 
-// Sizes of Taiwan compared to other countries
+// Size Modal of Taiwan compared to other countries
 .sizes {
   &__clickToSee {
-    margin: 2rem auto;
-    // transition: display 3s ease-in-out; not working
-    transition: display 0.3s ease-in-out;
+    margin: 0rem auto;
     @include flex-center;
-
-    &--countries {
-      display: none;
-      margin: 2rem auto 4rem;
-      padding: 2rem;
-      box-shadow: 1rem 1rem 3rem lighten($color-deep-blue-grey, 50%);
-      line-height: 2;
-      border-radius: 0.5rem;
-
-      @include responsive(tab) {
-        padding: 3rem;
-      }
-      @include responsive(sm-desktop) {
-        padding: 4rem;
-      }
-    }
 
     &--content {
       & b {
@@ -186,9 +168,41 @@ About page layout
     }
   }
 }
+.modal {
+  margin: 0;
+}
 
-.size-is-open {
-  display: block;
+.modal__overlay {
+  -webkit-backdrop-filter: opacity(50%);
+  backdrop-filter: opacity(50%);
+  font-family: $font-title;
+  overflow-y: scroll;
+  padding-top: 30rem;
+  @include flex-center;
+  line-height: 2;
+  position: fixed;
+  top: -2rem;
+  bottom: -2rem;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+
+  @include responsive(tab) {
+    padding-top: 40rem;
+  }
+
+  &--box {
+    &--countries {
+      padding: 3rem 2rem;
+      background-color: $color-blue-grey;
+    }
+  }
+}
+.modal-is-open {
+  opacity: 1;
+  z-index: 9999; // put on the top of the header
 }
 
 // Landing page and About page guided hikes box
