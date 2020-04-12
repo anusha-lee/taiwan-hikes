@@ -1150,7 +1150,7 @@ header {
       font-size: 2.2rem;
       font-family: "Alegreya", serif;
       margin-right: 0;
-      background: rgba(9, 115, 146, 0.9);
+      background-image: radial-gradient(#097392, #4c4c4c);
       position: absolute;
       top: 0;
       right: -1rem;
@@ -1165,10 +1165,11 @@ header {
           padding: 2rem 1rem;
           color: #fcfcfc;
           text-align: center;
-          transition: all 0.5s ease-in-out;
+          transition: all 0.3s ease-in-out;
           backface-visibility: hidden; }
-        .menu__hamburger--list-item a:hover {
-          background-color: #83b4b3; }
+        .menu__hamburger--list-item a:hover, .menu__hamburger--list-item a:active {
+          transform: translate(-1.5rem);
+          mix-blend-mode: difference; }
     .menu__hamburger--toggle:checked ~ .menu__hamburger--list {
       display: block;
       padding-top: 5rem;
