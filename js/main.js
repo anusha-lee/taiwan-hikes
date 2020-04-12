@@ -1,5 +1,5 @@
 // Fix inconsistency of button focus among different browsers
-document.addEventListener("click", function(event) {
+document.addEventListener("click", function (event) {
   if (event.target.matches("button")) {
     event.target.focus();
   }
@@ -30,12 +30,20 @@ window.addEventListener("scroll", function showScroll() {
 
 const scrollToTopBtn = document.querySelector(".scroll-up");
 const container = document.querySelector(".header");
-scrollToTopBtn.addEventListener("click", function() {
+scrollToTopBtn.addEventListener("click", function () {
   container.scrollIntoView({
     behavior: "smooth",
-    block: "start"
+    block: "start",
   });
 });
+
+// Off-canvas hamburger menu
+// const offCanvasBtn = document.querySelector("off-canvas-btn");
+// const body = document.body;
+
+// offCanvasBtn.addEventListener("click", (event) => {
+//   body.classList.toggle("offcanvas-is-open");
+// });
 
 // Testimonial carousel buttons
 // const carousel = document.querySelector(".homeCarousel");

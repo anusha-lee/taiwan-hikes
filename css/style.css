@@ -520,6 +520,25 @@ Page layout for articles on Start Here
 /**********************
   Infographic style
   ***********************/
+#infographic-mobile {
+  max-width: 90%; }
+  #infographic-mobile figure img {
+    box-shadow: none; }
+  @media only screen and (min-width: 580px) {
+    #infographic-mobile {
+      display: none; } }
+
+#infographic-desktop {
+  display: none; }
+  @media only screen and (min-width: 580px) {
+    #infographic-desktop {
+      display: block;
+      width: 50%;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out; }
+      #infographic-desktop:hover {
+        transform: scale(1.3); } }
+
 @media only screen and (min-width: 900px) {
   #panview {
     transition: transform 0.3s ease-in-out; }
@@ -1010,66 +1029,6 @@ header {
         margin-top: 4rem;
         font-size: 2.8rem; } }
 
-.header__background-img-7Reasons {
-  background-image: url("../img/header-background5.jpg");
-  background-size: cover;
-  background-position: bottom; }
-
-.header__background-img-4Methods {
-  background-image: url("../img/header-background8.jpg");
-  background-size: cover;
-  background-position: top; }
-
-.header__background-img-guided-tours {
-  background-image: url("../img/header-background2.jpg");
-  background-size: cover;
-  background-position: 55% 35%; }
-
-.header__background-img-start-here {
-  background-image: url("../img/header-background6.jpg");
-  background-size: cover;
-  background-position: 90%; }
-
-.header__background-img-about {
-  background-image: url("../img/header-background7.jpg");
-  background-size: cover;
-  background-position: center; }
-
-.header__background-img-15Things {
-  background-image: url("../img/header-15things.jpg");
-  background-size: cover;
-  background-position: right 45% bottom; }
-
-.header__background-img-blog {
-  background-image: url("../img/header-blog.jpg");
-  background-size: cover;
-  background-position: left center; }
-
-.header__background-img-teapot {
-  background-image: url("../img/blog/01-Mt-Teapot/000-Teapot-cover-2.jpg");
-  background-size: cover;
-  background-position: center; }
-
-.header__background-img-keelung {
-  background-image: url("../img/blog/02-Mt-Keelung/00-header-keelung.jpg");
-  background-size: cover;
-  background-position: center; }
-
-.header__background-img-tefuye {
-  background-image: url("../img/blog/03-tefuye/00-tefuye-header.jpg");
-  background-size: cover;
-  background-position: 40% 20%; }
-
-.header__background-img-privacy {
-  background-image: url("../img/ex04.jpg");
-  background-size: cover;
-  background-position: center; }
-
-.header__background-img-terms {
-  background-image: url("../img/header-terms.jpg");
-  background-size: cover;
-  background-position: right center; }
-
 .logo {
   padding: 1rem 1rem 1rem 1.5rem;
   transition: display 0.3s ease-in-out; }
@@ -1192,11 +1151,9 @@ header {
       font-family: "Alegreya", serif;
       margin-right: 0;
       background: rgba(9, 115, 146, 0.9);
-      width: 100vw;
-      height: 100vh;
       position: absolute;
       top: 0;
-      right: 0;
+      right: -1rem;
       display: none; }
       .menu__hamburger--list-item {
         margin: 1rem auto;
@@ -1205,7 +1162,6 @@ header {
           display: inline-block;
           margin: 0 auto;
           width: 100%;
-          height: 100%;
           padding: 2rem 1rem;
           color: #fcfcfc;
           text-align: center;
@@ -1216,14 +1172,14 @@ header {
     .menu__hamburger--toggle:checked ~ .menu__hamburger--list {
       display: block;
       padding-top: 5rem;
-      width: 100vw;
-      height: 100vh;
+      width: 103vw;
+      height: 103vh;
       margin-top: -3rem;
       margin-right: -1rem; }
       @media only screen and (min-width: 580px) {
         .menu__hamburger--toggle:checked ~ .menu__hamburger--list {
           margin-right: -6rem;
-          width: 106vw; } }
+          width: 107vw; } }
 
 .fixedNav {
   margin: 0 auto;
@@ -1235,6 +1191,75 @@ header {
   left: 0;
   z-index: 9998;
   background: linear-gradient(to bottom, #fcfcfc 20%, rgba(252, 252, 252, 0.8) 50%, rgba(252, 252, 252, 0.6) 70%, rgba(252, 252, 252, 0.4) 85%, rgba(252, 252, 252, 0)); }
+
+/*******************************
+********* Start here page
+*******************************/
+.header__background-img-7Reasons {
+  background-image: url("../img/header-background5.jpg");
+  background-size: cover;
+  background-position: bottom; }
+
+.header__background-img-4Methods {
+  background-image: url("../img/header-background8.jpg");
+  background-size: cover;
+  background-position: top; }
+
+.header__background-img-guided-tours {
+  background-image: url("../img/header-background2.jpg");
+  background-size: cover;
+  background-position: 55% 35%; }
+
+.header__background-img-start-here {
+  background-image: url("../img/header-background6.jpg");
+  background-size: cover;
+  background-position: 90%; }
+
+.header__background-img-about {
+  background-image: url("../img/header-background7.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.header__background-img-15Things {
+  background-image: url("../img/header-15things.jpg");
+  background-size: cover;
+  background-position: right 45% bottom; }
+
+/*******************************
+********* Legal pages
+*******************************/
+.header__background-img-privacy {
+  background-image: url("../img/ex04.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.header__background-img-terms {
+  background-image: url("../img/header-terms.jpg");
+  background-size: cover;
+  background-position: right center; }
+
+/*******************************
+********* Blog and blog post
+*******************************/
+.header__background-img-blog {
+  background-image: url("../img/header-blog.jpg");
+  background-size: cover;
+  background-position: left center; }
+
+.header__background-img-teapot {
+  background-image: url("../img/blog/01-Mt-Teapot/000-Teapot-cover-2.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.header__background-img-keelung {
+  background-image: url("../img/blog/02-Mt-Keelung/00-header-keelung.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.header__background-img-tefuye {
+  background-image: url("../img/blog/03-tefuye/00-tefuye-header.jpg");
+  background-size: cover;
+  background-position: 40% 20%; }
 
 .home-7Reasons {
   margin: 0 auto;
