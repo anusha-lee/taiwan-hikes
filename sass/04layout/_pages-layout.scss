@@ -29,11 +29,18 @@ Start Here and Blog Home page layout
 
 .here {
   margin: 4rem auto;
+  width: 95%;
+  padding: 1rem;
+  box-shadow: 1rem 1rem 2rem lighten($color-deep-blue-grey, 40%);
   @include flex-center;
   flex-direction: column;
-  // @include responsive(tab) {
-  //   margin-bottom: 4rem;
-  // }
+  @include responsive(tab) {
+    width: 85%;
+    padding: 3rem;
+  }
+  @include responsive(sm-desktop) {
+    padding: 5rem;
+  }
 
   &__title {
     padding: 1rem;
@@ -75,7 +82,7 @@ Start Here and Blog Home page layout
 
     & img {
       width: 100%;
-      box-shadow: 1rem 1rem 1rem lighten($color-deep-blue-grey, 40%);
+      box-shadow: 0.4rem 0.4rem 1rem lighten($color-deep-blue-grey, 60%);
     }
   }
 }
