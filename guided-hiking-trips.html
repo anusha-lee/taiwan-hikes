@@ -125,19 +125,44 @@
             </a>
           </div>
       </div>
-      
-      <div class="unit-converter">
-        <button class="unit-converter__button">Unit converter</button>
-        <div class="unit-converter__box converter">
-          Test
+
+      <div class="converter-container">
+        <div class="converter__show">
+          <button class="converter__show--button"><span>Unit<br> converter</span></button>
         </div>
+        
+        <div class="converter__close close">X</div>
+
+        <div class="converter-tabby">
+
+          <div class="converter__tabs">
+            <button class="converter__tabs--singleTab is-selected">Length</button>
+            <button class="converter__tabs--singleTab">Temperature</button>
+          </div>
+
+          <div class="converter__contents">
+            <div class="converter__contents--box length is-selected">
+              <input type="text" class="content__input length__input" id="meters" name="meters" placeholder="Meters">
+              <button class="converter__button">⇌</button>
+              <input type="text" class="content__input length__input" id="feet" name="feet" placeholder="Feet">
+              
+            </div>
+            <div class="converter__contents--box temperature">
+              <input type="text" class="content__input temperature__input" id="celsius" name="celsius" placeholder="Celsius">
+              <button class="converter__button">⇌</button>
+              <input type="text" class="content__input temperature__input" id="fahrenheit" name="fahrenheit" placeholder="Fahrenheit">
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
       <div class="guided-hikes__trips trips">
         <!-- <h3 class="trips__title">
           Free guided hikes
         </h3> -->
-        <h3 style="color:red;font-size:22px;text-align:center;">Due to Coronavirus, many trips in April are canceled.</h3>
+        <h3 style="color:red;font-size:22px;text-align:center;">Due to Coronavirus, some trips might be canceled.</h3>
         <div class="guided-hikes__sorting trips__sorting">
           <button class="trips__sorting--by-easy green">Show Easy Hikes</button>
           <button class="trips__sorting--by-moderate yellow">Show Moderate Hikes</button>
