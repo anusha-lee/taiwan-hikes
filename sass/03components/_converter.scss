@@ -1,18 +1,18 @@
 .converter-container {
   border: 0.2rem solid pink;
   margin: 5rem auto 0;
-  width: 90%;
+  width: 30rem;
   padding: 1rem;
 
-  @include responsive(tab) {
-    width: 70%;
-  }
-  @include responsive(sm-desktop) {
-    width: 60%;
-  }
-  @include responsive(normal-desktop) {
-    width: 55%;
-  }
+  // @include responsive(tab) {
+  //   width: 70%;
+  // }
+  // @include responsive(sm-desktop) {
+  //   width: 60%;
+  // }
+  // @include responsive(normal-desktop) {
+  //   width: 55%;
+  // }
 }
 
 .converter-tabby {

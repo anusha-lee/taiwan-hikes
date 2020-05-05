@@ -310,17 +310,8 @@ how to apply:
 .converter-container {
   border: 0.2rem solid pink;
   margin: 5rem auto 0;
-  width: 90%;
+  width: 30rem;
   padding: 1rem; }
-  @media only screen and (min-width: 580px) {
-    .converter-container {
-      width: 70%; } }
-  @media only screen and (min-width: 900px) {
-    .converter-container {
-      width: 60%; } }
-  @media only screen and (min-width: 1200px) {
-    .converter-container {
-      width: 55%; } }
 
 .converter-tabby {
   background-color: cornsilk;
