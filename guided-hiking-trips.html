@@ -126,28 +126,49 @@
           </div>
       </div>
 
-      <div class="converter-container">
+      <!-- <div class="converter-container">
         <div class="converter__show">
           <button class="converter__show--button"><span>Unit<br> converter</span></button>
+        </div>        
+        <div class="converter__close close">X</div>
+        <div class="converter-tabby">
+          <div class="converter__contents">
+            <div class="content__box length">
+              <h3 class="content__box--title">Length</h3>
+              <input type="text" class="content__box--input length__input" id="meters" name="meters" placeholder="Meters">
+              <button class="content__box--button">⇌</button>
+              <input type="text" class="content__box--input length__output" id="feet" name="feet" placeholder="Feet">
+              
+            </div>
+            <div class="content__box temperature">
+              <h3 class="content__box--title">Temperature</h3>
+              <input type="text" class="content__box--input temperature__input" id="celsius" name="celsius" placeholder="Celsius">
+              <button class="content__box--button">⇌</button>
+              <input type="text" class="content__box--input temperature__output" id="fahrenheit" name="fahrenheit" placeholder="Fahrenheit">
+            </div>
+          </div>
+        </div>
+      </div> -->
+      
+      <div class="converter-container">
+        <div class="converter__show">
+          <button class="converter__show--button"><span>Unit converter</span></button>
         </div>
         
         <div class="converter__close close">X</div>
 
         <div class="converter-tabby">
-
           <div class="converter__tabs">
-            <button class="converter__tabs--singleTab is-selected">Length</button>
-            <button class="converter__tabs--singleTab">Temperature</button>
+            <button class="converter__tabs--singleTab is-selected" data-target="length">Length</button>
+            <button class="converter__tabs--singleTab" data-target="temperature">Temperature</button>
           </div>
-
           <div class="converter__contents">
-            <div class="converter__contents--box length is-selected">
+            <div class="converter__contents--box length is-selected" id="length">
               <input type="text" class="content__input length__input" id="meters" name="meters" placeholder="Meters">
               <button class="converter__button">⇌</button>
               <input type="text" class="content__input length__input" id="feet" name="feet" placeholder="Feet">
-              
             </div>
-            <div class="converter__contents--box temperature">
+            <div class="converter__contents--box temperature" id="temperature">
               <input type="text" class="content__input temperature__input" id="celsius" name="celsius" placeholder="Celsius">
               <button class="converter__button">⇌</button>
               <input type="text" class="content__input temperature__input" id="fahrenheit" name="fahrenheit" placeholder="Fahrenheit">
@@ -155,7 +176,6 @@
           </div>
 
         </div>
-
       </div>
 
       <div class="guided-hikes__trips trips">
@@ -269,6 +289,7 @@
     <script src="js/tripsArray.js"></script>
     <script src="js/main.js"></script>
     <script src="js/trips.js"></script>
+    <script src="js/converter.js"></script>
     <script
       type="text/javascript"
       src="https://platform-api.sharethis.com/js/sharethis.js#property=5ddb647373c71100125a2b96&product=inline-share-buttons"
