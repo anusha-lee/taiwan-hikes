@@ -369,10 +369,10 @@ how to apply:
 
 .content__input {
   padding: 0.2rem 0.5rem;
-  width: 100%; }
+  width: 100%;
+  transition: all 0.5s ease-in-out; }
   .content__input:focus {
-    background-color: #ebebeb;
-    border: none; }
+    border: 0.18rem solid #d55534; }
 
 /*
 .converter-container {

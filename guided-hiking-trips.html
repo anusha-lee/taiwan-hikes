@@ -164,14 +164,14 @@
           </div>
           <div class="converter__contents">
             <div class="converter__contents--box length is-selected" id="length">
-              <input type="text" class="content__input length__input" id="meters" name="meters" placeholder="Meters">
+              <input type="number" oninput="calculateLength()" onchange="calculateLength()" class="content__input length__input" id="meters" name="meters" placeholder="Meters">
               <button class="converter__button">⇌</button>
-              <input type="text" class="content__input length__input" id="feet" name="feet" placeholder="Feet">
+              <input type="number" class="content__input length__input" id="feet" name="feet" placeholder="Feet">
             </div>
             <div class="converter__contents--box temperature" id="temperature">
-              <input type="text" class="content__input temperature__input" id="celsius" name="celsius" placeholder="Celsius">
+              <input type="number" class="content__input temperature__input" id="celsius" name="celsius" placeholder="Celsius">
               <button class="converter__button">⇌</button>
-              <input type="text" class="content__input temperature__input" id="fahrenheit" name="fahrenheit" placeholder="Fahrenheit">
+              <input type="number" class="content__input temperature__input" id="fahrenheit" name="fahrenheit" placeholder="Fahrenheit">
             </div>
           </div>
 

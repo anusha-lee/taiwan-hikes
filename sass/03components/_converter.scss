@@ -80,11 +80,12 @@
 .content__input {
   padding: 0.2rem 0.5rem;
   width: 100%;
+  transition: all 0.5s ease-in-out;
 
   &:focus {
-    background-color: lighten($color-deep-blue-grey, 70%);
-    border: none;
-    //border-color: $color-orangered;
+    //background-color: lighten($color-orangered, 30%);
+    //border: none;
+    border: 0.18rem solid $color-orangered;
   }
 }
 
