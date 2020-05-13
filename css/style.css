@@ -312,7 +312,7 @@ body {
 
 .converter__show {
   position: absolute;
-  right: 0; }
+  right: 0.3rem; }
 
 .converter-container {
   margin: 5rem auto 0;
@@ -344,12 +344,17 @@ body {
   font-size: 1.4rem;
   border-radius: 15px 0 0 15px;
   padding: 1rem;
-  background: linear-gradient(#097392, #525252); }
+  background: linear-gradient(#097392, #525252);
+  transition: all 0.3s ease-in-out; }
   .converter__show--button span {
     color: #fcfcfc;
     writing-mode: vertical-lr;
     text-orientation: upright;
     letter-spacing: -0.6rem; }
+  .converter__show--button:hover {
+    cursor: pointer;
+    padding-right: 1.1rem;
+    padding-left: 1.1rem; }
 
 .converter-tabby {
   margin: 1rem auto;
@@ -394,6 +399,8 @@ body {
 .content__input {
   padding: 0.2rem 0.5rem;
   width: 100%;
+  height: 2.2rem;
+  outline: none;
   transition: all 0.5s ease-in-out; }
   .content__input:focus {
     border: 0.18rem solid #d55534; }

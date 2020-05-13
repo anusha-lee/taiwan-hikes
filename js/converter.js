@@ -29,8 +29,8 @@ const showConverter = document.querySelector(".converter__show");
 const converterContainer = document.querySelector(".converter-container");
 showConverter.addEventListener("click", (event) => {
   converterContainer.style.display = "block";
-  converterContainer.style.position = "fixed";
-  converterContainer.style.right = "0";
+  //converterContainer.style.position = "fixed";
+  converterContainer.style.right = ".5rem";
   //converterContainer.style.transform = "scale(1.1)";
   showConverter.style.display = "none";
 });
@@ -41,21 +41,63 @@ closeConverter.addEventListener("click", (event) => {
   showConverter.style.display = "block";
 });
 
-// Calculate the inputs
-// get the input and make sure the inputs are numbers
-let inputMeters = document.querySelector("#meters").value;
-let inputFeet = document.querySelector("#feet").value;
-console.log(inputMeters);
-function calculateLength(inputMeters) {
-  let resultFeet = (document.querySelector("#feet").value =
-    inputMeters * 3.2808);
-  console.log(typeof resultFeet);
+// Calculate length
+let inputMeters = document.querySelector("#meters");
+let inputKM = document.querySelector("#km");
+let inputFeet = document.querySelector("#feet");
+let inputMiles = document.querySelector("#miles");
+
+function roundNum(num) {
+  return Math.round(num * 100) / 100;
 }
 
-// function calculateFeet() {
+function calcMeters() {
+  const meterValue = parseFloat(inputMeters.value);
+  const kmValue = meterValue / 1000;
+  const feetValue = meterValue * 3.2808;
+  const mileValue = meterValue * 0.00062137;
 
-// }
+  inputKM.value = kmValue;
+  inputFeet.value = feetValue;
+  inputMiles.value = mileValue;
+}
 
-// function calculateCelsius() {
+function calcKM() {
+  const kmValue = parseFloat(inputKM.value);
+  const meterValue = kmValue * 1000;
+  const feetValue = kmValue * 3280.8;
+  const mileValue = kmValue * 0.62137;
 
-// }
+  inputMeters.value = meterValue;
+  inputFeet.value = feetValue;
+  inputMiles.value = mileValue;
+}
+
+function calcFeet() {
+  const feetValue = parseFloat(inputFeet.value);
+  const meterValue = feetValue / 3.2808;
+  const kmValue = feetValue / 3280.8;
+  const mileValue = feetValue * 0.00018939;
+
+  inputMeters.value = meterValue;
+  inputKM.value = kmValue;
+  inputMiles.value = mileValue;
+}
+
+function calcMile() {
+  const mileValue = parseFloat(inputMiles.value);
+  const feetValue = mileValue * 5280;
+  const meterValue = mileValue / 0.00062137;
+  const kmValue = mileValue / 0.62137;
+
+  inputMeters.value = meterValue.toFixed;
+  inputKM.value = kmValue;
+  inputMiles.value = mileValue;
+}
+
+inputMeters.addEventListener("input", calcMeters);
+inputKM.addEventListener("input", calcKM);
+inputFeet.addEventListener("input", calcFeet);
+inputMiles.addEventListener("input", calcMile);
+
+// Calculate temperature

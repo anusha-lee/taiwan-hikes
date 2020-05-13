@@ -129,10 +129,8 @@
       <div class="converter__show">
         <button class="converter__show--button"><span>Unit converter</span></button>
       </div>
-      <div class="converter-container">  
-        
+      <div class="converter-container">         
         <div class="converter__close close">X</div>
-
         <div class="converter-tabby">
           <div class="converter__tabs">
             <button class="converter__tabs--singleTab is-selected" data-target="length">Length</button>
@@ -141,17 +139,13 @@
           <div class="converter__contents">
             <div class="converter__contents--box length is-selected" id="length">
               <label for="meters" class="content__label">Meters</label>
-              <input type="number" class="content__input length__input" id="meters" name="meters" placeholder="Meters" oncharge="calcMeters(this.value)" oninput="calcMeters(this.value)">
+              <input type="number" class="content__input length__input" id="meters" name="meters" placeholder="Meters"">
               <label for="km" class="content__label">Km</label>
-              <input type="number" class="content__input length__input" id="km" name="km" placeholder="Km" oncharge="calcMeters()">
+              <input type="number" class="content__input length__input" id="km" name="km" placeholder="Km"">
               <label for="feet" class="content__label">Feet</label>
               <input type="number" class="content__input length__input" id="feet" name="feet" placeholder="Feet">
               <label for="miles" class="content__label">Miles</label>
               <input type="number" class="content__input length__input" id="miles" name="miles" placeholder="Miles">
-              <!--  -->
-              <!-- <input type="number" oninput="calculateLength()" onchange="calculateLength()" class="content__input length__input" id="meters" name="meters" placeholder="Meters">
-              <button class="converter__button">⇌</button>
-              <input type="number" class="content__input length__input" id="feet" name="feet" placeholder="Feet"> -->
             </div>
             <div class="converter__contents--box temperature" id="temperature">
               <label for="celsius" class="content__label">Celsius</label>
@@ -160,7 +154,6 @@
               <input type="number" class="content__input temperature__input" id="fahrenheit" name="fahrenheit" placeholder="Fahrenheit">
             </div>
           </div>
-
         </div>
       </div>
 
