@@ -1,12 +1,37 @@
+body {
+  position: relative;
+}
+
+.converter__show {
+  position: absolute;
+  right: 0;
+}
+
 .converter-container {
-  border: 0.2rem solid pink;
   margin: 5rem auto 0;
   width: 30rem;
+  height: 35rem;
   padding: 1rem 1rem 2rem;
+  display: none;
+  position: relative;
+}
+
+.close {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 2rem;
+  position: absolute;
+  right: 0.5rem;
+  font-size: $font-size-s;
+  color: lighten($color-deep-blue-grey, 30%);
+  transition: color 0.3s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    color: $color-deep-blue-grey;
+  }
 }
 
 .converter__show--button,
-.converter__button,
 .converter__tabs--singleTab {
   &:hover {
     cursor: pointer;
@@ -35,13 +60,14 @@
 .converter-tabby {
   margin: 1rem auto;
   width: 100%;
-  height: 12rem;
+  height: 6rem;
   padding: 1rem;
 }
 
 .converter__tabs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  color: $color-blue-grey;
 
   &--singleTab {
     font-family: $font-title;
@@ -52,10 +78,12 @@
   }
   &--singleTab.is-selected {
     background-color: lighten($color-blue-grey, 5%);
+    color: $color-deep-blue-grey;
   }
 }
 
 .converter__contents {
+  height: 26em;
   background-color: lighten($color-blue-grey, 5%);
   border-top: none;
   padding: 2rem;
@@ -66,7 +94,7 @@
     margin: 1rem auto 1.5rem;
     display: grid;
     width: 100%;
-    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-columns: repeat(auto-fill, 1fr);
     grid-gap: 1rem;
   }
 }

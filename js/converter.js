@@ -24,6 +24,23 @@ tabs.forEach((tab) => {
   });
 });
 
+// Click to show the converter
+const showConverter = document.querySelector(".converter__show");
+const converterContainer = document.querySelector(".converter-container");
+showConverter.addEventListener("click", (event) => {
+  converterContainer.style.display = "block";
+  converterContainer.style.position = "fixed";
+  converterContainer.style.right = "0";
+  //converterContainer.style.transform = "scale(1.1)";
+  showConverter.style.display = "none";
+});
+// Close the converter
+const closeConverter = document.querySelector(".close");
+closeConverter.addEventListener("click", (event) => {
+  converterContainer.style.display = "none";
+  showConverter.style.display = "block";
+});
+
 // Calculate the inputs
 // get the input and make sure the inputs are numbers
 let inputMeters = document.querySelector("#meters").value;
