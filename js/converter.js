@@ -118,12 +118,18 @@ inputCelsius.addEventListener("input", calcCelsius);
 inputFahr.addEventListener("input", calcFahr);
 
 // Set Reset button function
-// const resetButtons = Array.from(document.querySelectorAll(".converter__reset"));
-// const inputValues = Array.from(document.querySelectorAll("content__input"));
+const getInputs = Array.from(
+  converterContainer.querySelectorAll(".content__input")
+);
+const resetButtons = Array.from(document.querySelectorAll('[type="reset"]'));
 
-// resetButtons.forEach((resetButton) =>
-//   resetButton.addEventListener("click", (event) => {
-//     //inputValues.forEach((inputValue) => (inputValue.value = ""));
-//     console.log("click reset");
-//   })
-// );
+// Add click event on Reset buttons
+resetButtons.forEach((resetBtn) => {
+  resetBtn.addEventListener("click", (event) => {
+    // When Reset button is click, all the values on the input
+    // will be replaced by empty string
+    // Need to loop through getInputs buttons to replace the input values
+    getInputs.forEach((getInput) => (getInput.value = ""));
+  });
+  //
+});
