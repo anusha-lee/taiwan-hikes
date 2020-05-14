@@ -47,19 +47,15 @@ let inputKM = document.querySelector("#km");
 let inputFeet = document.querySelector("#feet");
 let inputMiles = document.querySelector("#miles");
 
-function roundNum(num) {
-  return Math.round(num * 100) / 100;
-}
-
 function calcMeters() {
   const meterValue = parseFloat(inputMeters.value);
   const kmValue = meterValue / 1000;
   const feetValue = meterValue * 3.2808;
   const mileValue = meterValue * 0.00062137;
 
-  inputKM.value = kmValue;
-  inputFeet.value = feetValue;
-  inputMiles.value = mileValue;
+  inputKM.value = kmValue.toFixed(2);
+  inputFeet.value = feetValue.toFixed(2);
+  inputMiles.value = mileValue.toFixed(2);
 }
 
 function calcKM() {
@@ -68,9 +64,9 @@ function calcKM() {
   const feetValue = kmValue * 3280.8;
   const mileValue = kmValue * 0.62137;
 
-  inputMeters.value = meterValue;
-  inputFeet.value = feetValue;
-  inputMiles.value = mileValue;
+  inputMeters.value = meterValue.toFixed(2);
+  inputFeet.value = feetValue.toFixed(2);
+  inputMiles.value = mileValue.toFixed(2);
 }
 
 function calcFeet() {
@@ -79,9 +75,9 @@ function calcFeet() {
   const kmValue = feetValue / 3280.8;
   const mileValue = feetValue * 0.00018939;
 
-  inputMeters.value = meterValue;
-  inputKM.value = kmValue;
-  inputMiles.value = mileValue;
+  inputMeters.value = meterValue.toFixed(2);
+  inputKM.value = kmValue.toFixed(2);
+  inputMiles.value = mileValue.toFixed(2);
 }
 
 function calcMile() {
@@ -90,9 +86,9 @@ function calcMile() {
   const meterValue = mileValue / 0.00062137;
   const kmValue = mileValue / 0.62137;
 
-  inputMeters.value = meterValue.toFixed;
-  inputKM.value = kmValue;
-  inputMiles.value = mileValue;
+  inputMeters.value = meterValue.toFixed(2);
+  inputKM.value = kmValue.toFixed(2);
+  inputFeet.value = feetValue.toFixed(2);
 }
 
 inputMeters.addEventListener("input", calcMeters);
@@ -101,3 +97,22 @@ inputFeet.addEventListener("input", calcFeet);
 inputMiles.addEventListener("input", calcMile);
 
 // Calculate temperature
+let inputCelsius = document.querySelector("#celsius");
+let inputFahr = document.querySelector("#fahrenheit");
+
+function calcCelsius() {
+  const celsiusValue = parseFloat(inputCelsius.value);
+  const fahrValue = (celsiusValue * 9) / 5 + 32;
+
+  inputFahr.value = fahrValue.toFixed(2);
+}
+
+function calcFahr() {
+  const fahrValue = parseFloat(inputFahr.value);
+  const celsiusValue = (fahrValue - 32) / 1.8;
+
+  inputCelsius.value = celsiusValue.toFixed(2);
+}
+
+inputCelsius.addEventListener("input", calcCelsius);
+inputFahr.addEventListener("input", calcFahr);
