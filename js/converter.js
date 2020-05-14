@@ -116,3 +116,14 @@ function calcFahr() {
 
 inputCelsius.addEventListener("input", calcCelsius);
 inputFahr.addEventListener("input", calcFahr);
+
+// Set Reset button function
+// const resetButtons = Array.from(document.querySelectorAll(".converter__reset"));
+// const inputValues = Array.from(document.querySelectorAll("content__input"));
+
+// resetButtons.forEach((resetButton) =>
+//   resetButton.addEventListener("click", (event) => {
+//     //inputValues.forEach((inputValue) => (inputValue.value = ""));
+//     console.log("click reset");
+//   })
+// );
