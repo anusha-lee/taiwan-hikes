@@ -419,6 +419,12 @@ input[type="reset"] {
     box-shadow: 0.4rem 0.4rem 0.6rem #525252;
     background-color: #d96749;
     cursor: pointer; }
+    input[type="reset"]:hover::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.5rem;
+      transform: translateY(0.5rem); }
 
 .temperature > input[type="reset"] {
   margin-top: 3rem; }

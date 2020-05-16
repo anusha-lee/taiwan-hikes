@@ -139,6 +139,14 @@ input[type="reset"] {
     @include btn-hover;
     background-color: lighten($color-orangered, 5%);
     cursor: pointer;
+    // try to fix hover jitter, but not working
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.5rem;
+      transform: translateY(0.5rem);
+    }
   }
 }
 
