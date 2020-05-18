@@ -1,7 +1,7 @@
 // the space above the map
 .track {
   //margin-top: 5rem;
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 
 // timeline style
@@ -16,6 +16,7 @@
 .timeline__detail-box {
   box-shadow: 1rem 1rem 3rem lighten($color-deep-blue-grey, 50%);
   padding: 0;
+  // need to fix font size on mobile screens
   font-size: $font-size-xs;
   font-family: $font-text;
 }
