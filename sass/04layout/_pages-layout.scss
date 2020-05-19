@@ -195,6 +195,7 @@ About page layout
   opacity: 0;
   z-index: -1;
   transition: all 0.3s ease-in-out;
+  background-color: lighten($color-deep-blue-grey, 10%);
 
   @include responsive(tab) {
     padding-top: 40rem;

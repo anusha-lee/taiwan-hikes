@@ -167,6 +167,7 @@ how to apply:
     background-color: #c64929; }
 
 .size__btn {
+  border: none;
   width: 16rem;
   height: 4rem;
   color: #fcfcfc;
@@ -2390,7 +2391,8 @@ About page layout
   right: 0;
   opacity: 0;
   z-index: -1;
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out;
+  background-color: #525252; }
   @media only screen and (min-width: 580px) {
     .modal__overlay {
       padding-top: 40rem; } }

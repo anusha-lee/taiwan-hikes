@@ -23,3 +23,11 @@ const modalCloseButton = document.querySelector(".modal-close-btn");
 modalCloseButton.addEventListener("click", (event) => {
   modalOverlay.classList.remove("modal-is-open");
 });
+
+// need to work on clicking out side of the countries to close the box
+// const countriesOverlay = document.querySelector(".modal__overlay");
+// countriesOverlay.addEventListener("click", (event) => {
+//   if (!event.target.closest(".modal")) {
+//     console.log("overlay clicked");
+//   }
+// });
