@@ -5,10 +5,10 @@ const sizeCountries = document.querySelector(".size__countries");
 sizeBtn.addEventListener("click", (event) => {
   if (sizeCountries.classList.contains("size-is-open")) {
     sizeCountries.classList.remove("size-is-open");
-    sizeBtn.textContent = "How samll is Taiwan?";
+    //sizeBtn.textContent = "Close";
   } else {
     sizeCountries.classList.add("size-is-open");
-    sizeBtn.textContent = "Close";
+    sizeBtn.textContent = "How small is Taiwan?";
   }
 });
 
@@ -22,12 +22,13 @@ modalShowButton.addEventListener("click", (event) => {
 const modalCloseButton = document.querySelector(".modal-close-btn");
 modalCloseButton.addEventListener("click", (event) => {
   modalOverlay.classList.remove("modal-is-open");
+  sizeBtn.textContent = "How small is Taiwan?";
 });
 
-// need to work on clicking out side of the countries to close the box
-// const countriesOverlay = document.querySelector(".modal__overlay");
-// countriesOverlay.addEventListener("click", (event) => {
-//   if (!event.target.closest(".modal")) {
-//     console.log("overlay clicked");
-//   }
-// });
+// Click outside of the modal to close the modal
+modalOverlay.addEventListener("click", (event) => {
+  if (!event.target.closest(".modal__overlay--box")) {
+    console.log("overlay box clicked");
+    modalOverlay.classList.remove("modal-is-open");
+  }
+});
