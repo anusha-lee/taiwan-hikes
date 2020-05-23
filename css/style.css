@@ -1804,6 +1804,11 @@ header {
   background-size: cover;
   background-position: 40% 20%; }
 
+.header__background-img-roma {
+  background-image: url("../img/blog/04-roma/00-roma-header-blog-thumbnail.jpg");
+  background-size: cover;
+  background-position: 25% 10%; }
+
 .home-7Reasons {
   margin: 0 auto;
   width: 100%;
