@@ -90,6 +90,7 @@
 
 // Size button on About page
 .size__btn {
+  margin: 2rem auto;
   border: none;
   @include btn-style;
   background: linear-gradient(

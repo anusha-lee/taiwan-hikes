@@ -167,6 +167,7 @@ how to apply:
     background-color: #c64929; }
 
 .size__btn {
+  margin: 2rem auto;
   border: none;
   width: 16rem;
   height: 4rem;

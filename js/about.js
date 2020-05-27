@@ -20,15 +20,20 @@ modalShowButton.addEventListener("click", (event) => {
 });
 
 const modalCloseButton = document.querySelector(".modal-close-btn");
+const goldenRidgelines = document.querySelector("#golden-ridgelines");
 modalCloseButton.addEventListener("click", (event) => {
   modalOverlay.classList.remove("modal-is-open");
-  sizeBtn.textContent = "How small is Taiwan?";
+  // sizeBtn.textContent = "How small is Taiwan?";
+  if (!modalCloseButton.contains(goldenRidgelines)) {
+    sizeBtn.textContent = "How small is Taiwan?";
+  } else {
+    sizeBtn.textContent = "10 Golden Ridgelines";
+  }
 });
 
 // Click outside of the modal to close the modal
 modalOverlay.addEventListener("click", (event) => {
   if (!event.target.closest(".modal__overlay--box")) {
-    console.log("overlay box clicked");
     modalOverlay.classList.remove("modal-is-open");
   }
 });
