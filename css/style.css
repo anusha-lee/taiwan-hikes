@@ -2399,9 +2399,6 @@ About page layout
   z-index: -1;
   transition: all 0.3s ease-in-out;
   background-color: #525252; }
-  @media only screen and (min-width: 580px) {
-    .modal__overlay {
-      padding-top: 40rem; } }
   .modal__overlay--box {
     display: grid;
     place-items: center; }
@@ -2415,10 +2412,25 @@ About page layout
           width: 100%;
           padding: 3rem 2rem;
           overflow-y: visible; } }
+  @media only screen and (min-width: 580px) {
+    .modal__overlay {
+      padding-top: 40rem; } }
 
 .modal-is-open {
   opacity: 1;
   z-index: 9999; }
+
+.golden-ridgelines {
+  margin: 3rem auto;
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+  width: 90%; }
+  @media only screen and (min-width: 580px) {
+    .golden-ridgelines {
+      width: 75%; } }
+  @media only screen and (min-width: 900px) {
+    .golden-ridgelines {
+      width: 65%; } }
 
 .freeHikes__btn-box {
   margin-top: 1rem;
