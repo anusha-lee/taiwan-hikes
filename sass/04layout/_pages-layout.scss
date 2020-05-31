@@ -180,6 +180,7 @@ About page layout
 }
 
 .modal__overlay {
+  height: 100vh;
   &--box {
     display: grid;
     place-items: center;
@@ -215,17 +216,26 @@ About page layout
     padding-top: 40rem;
   }
 }
+
+.ridgelines {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  &__box {
+    @include responsive(tab) {
+      margin: 1rem auto;
+      width: 70%;
+    }
+    @include responsive(sm-desktop) {
+      margin: 1rem auto;
+      width: 50%;
+    }
+  }
+}
+
 .modal-is-open {
   opacity: 1;
   z-index: 9999; // put on the top of the header
 }
-
-// #golden-ridgelines {
-//   width: 90%;
-//   @include responsive(tab) {
-//     width: 70%;
-//   }
-// }
 
 .modal-list {
   display: block;
@@ -233,21 +243,6 @@ About page layout
   padding-left: 1rem;
   &:nth-child(even) {
     background-color: darken($color-blue-grey, 7%);
-  }
-}
-
-// golden-ridgelines modal layout
-#golden-ridgelines {
-  // //background-color: $color-deep-blue-grey;
-  margin-top: 3rem;
-  // padding-top: 10rem;
-  // padding-bottom: 3rem;
-  width: 90%;
-  @include responsive(tab) {
-    width: 70%;
-  }
-  @include responsive(sm-desktop) {
-    width: 60%;
   }
 }
 

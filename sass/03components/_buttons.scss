@@ -88,7 +88,7 @@
   // }
 }
 
-// Size button on About page
+// Size button on About page, Golden Ridgelines close button on Mt. Keelung
 .size__btn {
   margin: 2rem auto;
   border: none;
@@ -110,6 +110,10 @@
   &:active {
     @include btn-active;
   }
+}
+
+.ridgelines-modal-show-btn {
+  margin-top: 4rem;
 }
 
 .article__btn {

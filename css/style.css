@@ -189,6 +189,9 @@ how to apply:
     transform: translateY(-0.2rem);
     box-shadow: 0.2rem 0.2rem 0.3rem #1f1f1f; }
 
+.ridgelines-modal-show-btn {
+  margin-top: 4rem; }
+
 .article__btn {
   margin: 0 auto;
   padding: 2rem 0 12rem;
@@ -2381,6 +2384,7 @@ About page layout
   margin: 0; }
 
 .modal__overlay {
+  height: 100vh;
   -webkit-backdrop-filter: opacity(50%);
   backdrop-filter: opacity(50%);
   font-family: "Alegreya", serif;
@@ -2415,6 +2419,18 @@ About page layout
     .modal__overlay {
       padding-top: 40rem; } }
 
+.ridgelines {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+  @media only screen and (min-width: 580px) {
+    .ridgelines__box {
+      margin: 1rem auto;
+      width: 70%; } }
+  @media only screen and (min-width: 900px) {
+    .ridgelines__box {
+      margin: 1rem auto;
+      width: 50%; } }
+
 .modal-is-open {
   opacity: 1;
   z-index: 9999; }
@@ -2425,16 +2441,6 @@ About page layout
   padding-left: 1rem; }
   .modal-list:nth-child(even) {
     background-color: #6da7a5; }
-
-#golden-ridgelines {
-  margin-top: 3rem;
-  width: 90%; }
-  @media only screen and (min-width: 580px) {
-    #golden-ridgelines {
-      width: 70%; } }
-  @media only screen and (min-width: 900px) {
-    #golden-ridgelines {
-      width: 60%; } }
 
 .freeHikes__btn-box {
   margin-top: 1rem;
