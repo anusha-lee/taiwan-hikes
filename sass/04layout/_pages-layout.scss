@@ -183,15 +183,14 @@ About page layout
   &--box {
     display: grid;
     place-items: center;
+    margin: 2rem auto;
     &--countries {
-      width: 85%;
+      width: 90%;
       padding: 1rem;
-      overflow-y: scroll;
+      overflow-y: hidden;
       background-color: $color-blue-grey;
       @include responsive(tab) {
         width: 100%;
-        padding: 3rem 2rem;
-        overflow-y: visible;
       }
     }
   }
@@ -209,7 +208,7 @@ About page layout
   right: 0;
   opacity: 0;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, z-index 0.3s ease-in-out;
   background-color: lighten($color-deep-blue-grey, 10%);
 
   @include responsive(tab) {
@@ -221,18 +220,34 @@ About page layout
   z-index: 9999; // put on the top of the header
 }
 
+// #golden-ridgelines {
+//   width: 90%;
+//   @include responsive(tab) {
+//     width: 70%;
+//   }
+// }
+
+.modal-list {
+  display: block;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  &:nth-child(even) {
+    background-color: darken($color-blue-grey, 7%);
+  }
+}
+
 // golden-ridgelines modal layout
-.golden-ridgelines {
-  //background-color: $color-deep-blue-grey;
-  margin: 3rem auto;
-  padding-top: 10rem;
-  padding-bottom: 3rem;
+#golden-ridgelines {
+  // //background-color: $color-deep-blue-grey;
+  margin-top: 3rem;
+  // padding-top: 10rem;
+  // padding-bottom: 3rem;
   width: 90%;
   @include responsive(tab) {
-    width: 75%;
+    width: 70%;
   }
   @include responsive(sm-desktop) {
-    width: 65%;
+    width: 60%;
   }
 }
 

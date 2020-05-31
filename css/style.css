@@ -2397,21 +2397,20 @@ About page layout
   right: 0;
   opacity: 0;
   z-index: -1;
-  transition: all 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, z-index 0.3s ease-in-out;
   background-color: #525252; }
   .modal__overlay--box {
     display: grid;
-    place-items: center; }
+    place-items: center;
+    margin: 2rem auto; }
     .modal__overlay--box--countries {
-      width: 85%;
+      width: 90%;
       padding: 1rem;
-      overflow-y: scroll;
+      overflow-y: hidden;
       background-color: #83b4b3; }
       @media only screen and (min-width: 580px) {
         .modal__overlay--box--countries {
-          width: 100%;
-          padding: 3rem 2rem;
-          overflow-y: visible; } }
+          width: 100%; } }
   @media only screen and (min-width: 580px) {
     .modal__overlay {
       padding-top: 40rem; } }
@@ -2420,17 +2419,22 @@ About page layout
   opacity: 1;
   z-index: 9999; }
 
-.golden-ridgelines {
-  margin: 3rem auto;
-  padding-top: 10rem;
-  padding-bottom: 3rem;
+.modal-list {
+  display: block;
+  padding-right: 1rem;
+  padding-left: 1rem; }
+  .modal-list:nth-child(even) {
+    background-color: #6da7a5; }
+
+#golden-ridgelines {
+  margin-top: 3rem;
   width: 90%; }
   @media only screen and (min-width: 580px) {
-    .golden-ridgelines {
-      width: 75%; } }
+    #golden-ridgelines {
+      width: 70%; } }
   @media only screen and (min-width: 900px) {
-    .golden-ridgelines {
-      width: 65%; } }
+    #golden-ridgelines {
+      width: 60%; } }
 
 .freeHikes__btn-box {
   margin-top: 1rem;
