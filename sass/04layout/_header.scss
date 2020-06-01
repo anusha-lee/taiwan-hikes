@@ -141,19 +141,35 @@ header {
     width: 100%;
     height: min-content;
     display: grid;
-    grid-template-columns: 1fr minmax(16rem, 22rem); //minmax(20%, 40%) minmax(40%, 60%);
+    grid-template-columns: 1fr 4fr; //minmax(20%, 40%) minmax(40%, 60%);
     grid-template-rows: 1fr;
+    @include responsive(tab) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include responsive(sm-desktop) {
+      grid-template-columns: 2fr 1fr;
+    }
+    @include responsive(normal-desktop) {
+      grid-template-columns: 3fr 1.5fr;
+    }
   }
 }
 
 .menu {
+  border: 2px solid palegreen;
   display: grid;
-  grid-template-columns: minmax(70%, 80%) 120px;
+  grid-template-columns: 50% 35% 5.5rem;
   grid-template-rows: 1fr;
+
+  &__google-search {
+    border: 2px solid red;
+    grid-column: 1 / 2;
+    grid-row: 1/ 2;
+  }
 
   &__startHere {
     color: $color-white;
-    grid-column: 1 / 2;
+    grid-column: 2 / 3;
     grid-row: 1/ 2;
 
     @include flex-center;
@@ -188,17 +204,9 @@ header {
   /*******************************************************
   ************* Hamburger menu and nested drop-down menus
   ********************************************************/
-  // .line-long {
-  //   width: 3rem;
-  //   left: 1rem;
-  // }
-  // .line-short {
-  //   width: 2rem;
-  //   left: 1.5rem;
-  // }
-
   &__hamburger {
-    grid-column: 2 / 3;
+    border: 2px solid blue;
+    grid-column: 3 / 4;
     grid-row: 1/ 2;
 
     width: 4.5rem;
@@ -323,10 +331,6 @@ header {
     }
   }
 }
-
-// .offcanvas-is-open {
-//   transform: translateX(100vw);
-// }
 
 // fixed navigation after scrolling down
 .fixedNav {

@@ -26,17 +26,20 @@ modalCloseButton.addEventListener("click", (event) => {
   sizeBtn.textContent = "How small is Taiwan?";
 });
 
-const ridgelinesModalCloseButton = document.querySelector(
-  ".ridgelines-modal-close-btn"
-);
-ridgelinesModalCloseButton.addEventListener("click", (event) => {
-  modalOverlay.classList.remove("modal-is-open");
-  sizeBtn.textContent = "10 Golden Ridgelines";
-});
 // Click outside of the modal to close the modal
 modalOverlay.addEventListener("click", (event) => {
   if (!event.target.closest(".modal__overlay--box")) {
     modalOverlay.classList.remove("modal-is-open");
     sizeBtn.textContent = "10 Golden Ridgelines";
   }
+});
+
+// Button on 10 Golden Ridgelines
+
+const ridgelinesModalCloseButton = document.querySelector(
+  ".ridgelines-modal-close-btn"
+);
+ridgelinesModalCloseButton.addEventListener("click", (event) => {
+  modalOverlay.classList.remove("modal-is-open");
+  sizeBtn.textContent = "10 Golden Ridgelines";
 });
