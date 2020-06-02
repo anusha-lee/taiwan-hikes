@@ -945,15 +945,15 @@ Page layout for articles on Start Here
   width: 95%;
   margin: 4rem auto 3rem;
   padding-top: 1rem;
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   color: #097392;
   text-align: center; }
   @media only screen and (min-width: 580px) {
     .article__opening--pageTitle {
-      font-size: 3.4rem; } }
+      font-size: 3.2rem; } }
   @media only screen and (min-width: 900px) {
     .article__opening--pageTitle {
-      font-size: 5.2rem; } }
+      font-size: 4.8rem; } }
 .article__opening--author {
   height: auto;
   margin: 0 auto;
@@ -994,10 +994,10 @@ Page layout for articles on Start Here
       margin: 1rem auto; }
       @media only screen and (min-width: 580px) {
         .article .article__section--title {
-          font-size: 2.8rem; } }
+          font-size: 2.6rem; } }
       @media only screen and (min-width: 900px) {
         .article .article__section--title {
-          font-size: 3.4rem; } }
+          font-size: 3.2rem; } }
     .article .article__section--subtitle {
       margin: 1rem 0;
       font-size: 1.8rem;
@@ -1537,14 +1537,14 @@ header {
     height: auto; }
   .header__background-img-box--title {
     margin-top: 0rem;
-    font-size: 3.4rem;
+    font-size: 3.2rem;
     mix-blend-mode: overlay;
     transform: scale(0.8, 1.8);
     text-shadow: 0.1rem 0.1rem 0.2rem #262626;
     color: rgba(252, 252, 252, 0.9); }
     @media only screen and (min-width: 580px) {
       .header__background-img-box--title {
-        font-size: 5.2rem;
+        font-size: 4.8rem;
         transform: scale(1, 1.6); } }
     @media only screen and (min-width: 1200px) {
       .header__background-img-box--title {
@@ -1573,7 +1573,7 @@ header {
     @media only screen and (min-width: 1200px) {
       .header__background-img-box--title2 {
         margin-top: 4rem;
-        font-size: 2.8rem; } }
+        font-size: 2.6rem; } }
 
 .logo {
   padding: 1rem 1rem 1rem 1.5rem;
@@ -1754,6 +1754,11 @@ header {
   z-index: 9998;
   background: linear-gradient(to bottom, #fcfcfc 20%, rgba(252, 252, 252, 0.8) 50%, rgba(252, 252, 252, 0.6) 70%, rgba(252, 252, 252, 0.4) 85%, rgba(252, 252, 252, 0)); }
 
+.gsc-control-cse {
+  border: 2px solid yellow;
+  border: none;
+  background-color: rgba(0, 0, 0, 0) !important; }
+
 /*******************************
 ********* Start here page
 *******************************/
@@ -1857,14 +1862,14 @@ header {
   .sevenReasons__title {
     display: inline-block;
     padding: 1.5rem;
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     line-height: 1.2; }
     @media only screen and (min-width: 900px) {
       .sevenReasons__title {
-        font-size: 3.4rem; } }
+        font-size: 3.2rem; } }
     @media only screen and (min-width: 1200px) {
       .sevenReasons__title {
-        font-size: 5.2rem; } }
+        font-size: 4.8rem; } }
     .sevenReasons__title a {
       color: #097392;
       line-height: 1.2;
@@ -1925,7 +1930,7 @@ header {
     width: 100%;
     max-height: 70%; }
     .freeHikes__trips--title {
-      font-size: 2.8rem;
+      font-size: 2.6rem;
       color: #097392;
       line-height: 1.2; }
 
@@ -2098,7 +2103,7 @@ header {
     .simple-testimonial {
       width: 45%; } }
   .simple-testimonial__title {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     color: #097392;
     line-height: 1.2; }
 
@@ -2303,7 +2308,7 @@ Start Here and Blog Home page layout
     text-align: center; }
     @media only screen and (min-width: 580px) {
       .here__title {
-        font-size: 2.8rem; } }
+        font-size: 2.6rem; } }
     .here__title a {
       color: #097392;
       line-height: 1.2;

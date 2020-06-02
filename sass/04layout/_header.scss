@@ -352,3 +352,11 @@ header {
     rgba($color-white, 0)
   );
 }
+
+// Google custom search engine
+.gsc-control-cse {
+  border: 2px solid yellow;
+  //width: 70%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
