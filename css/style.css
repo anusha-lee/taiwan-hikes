@@ -1621,15 +1621,13 @@ header {
         grid-template-columns: 3fr 1.5fr; } }
 
 .menu {
-  border: 2px solid palegreen;
   display: grid;
-  grid-template-columns: 50% 35% 5.5rem;
+  grid-template-columns: 50% 30% 5.5rem;
   grid-template-rows: 1fr;
   /*******************************************************
   ************* Hamburger menu and nested drop-down menus
   ********************************************************/ }
   .menu__google-search {
-    border: 2px solid red;
     grid-column: 1 / 2;
     grid-row: 1/ 2; }
   .menu__startHere {
@@ -1639,12 +1637,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-family: "Alegreya", serif;
     background-image: linear-gradient(to bottom, transparent 75%, #097392);
     background-size: 0% 80%;
     background-repeat: no-repeat;
     transition: background-size 0.3s ease-in-out; }
+    @media only screen and (min-width: 580px) {
+      .menu__startHere {
+        font-size: 2.2rem; } }
     .menu__startHere {
       color: #097392;
       line-height: 1.2;
@@ -1655,7 +1656,6 @@ header {
     .menu__startHere:visited {
       color: #d55534; }
   .menu__hamburger {
-    border: 2px solid blue;
     grid-column: 3 / 4;
     grid-row: 1/ 2;
     width: 4.5rem;
@@ -1755,9 +1755,16 @@ header {
   background: linear-gradient(to bottom, #fcfcfc 20%, rgba(252, 252, 252, 0.8) 50%, rgba(252, 252, 252, 0.6) 70%, rgba(252, 252, 252, 0.4) 85%, rgba(252, 252, 252, 0)); }
 
 .gsc-control-cse {
-  border: 2px solid yellow;
-  border: none;
+  width: 70%;
+  border: none !important;
   background-color: rgba(0, 0, 0, 0) !important; }
+
+.gsc-search-button-v2 {
+  display: none !important;
+  opacity: 0 !important; }
+
+.gsc-input-box {
+  border-radius: 0 !important; }
 
 /*******************************
 ********* Start here page

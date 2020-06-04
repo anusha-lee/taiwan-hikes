@@ -156,13 +156,11 @@ header {
 }
 
 .menu {
-  border: 2px solid palegreen;
   display: grid;
-  grid-template-columns: 50% 35% 5.5rem;
+  grid-template-columns: 50% 30% 5.5rem;
   grid-template-rows: 1fr;
 
   &__google-search {
-    border: 2px solid red;
     grid-column: 1 / 2;
     grid-row: 1/ 2;
   }
@@ -174,8 +172,11 @@ header {
 
     @include flex-center;
 
-    font-size: $font-size-sm;
+    font-size: $font-size-s;
     font-family: $font-title;
+    @include responsive(tab) {
+      font-size: $font-size-sm;
+    }
 
     // hover effect
     background-image: linear-gradient(
@@ -205,7 +206,6 @@ header {
   ************* Hamburger menu and nested drop-down menus
   ********************************************************/
   &__hamburger {
-    border: 2px solid blue;
     grid-column: 3 / 4;
     grid-row: 1/ 2;
 
@@ -355,8 +355,16 @@ header {
 
 // Google custom search engine
 .gsc-control-cse {
-  border: 2px solid yellow;
-  //width: 70%;
-  border: none;
+  width: 70%;
+  border: none !important;
   background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.gsc-search-button-v2 {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+.gsc-input-box {
+  border-radius: 0 !important;
 }
