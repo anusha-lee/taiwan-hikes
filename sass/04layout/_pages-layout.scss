@@ -88,6 +88,13 @@ Start Here and Blog Home page layout
 }
 
 /***********************************************
+Social Media sharing buttons
+************************************************/
+.media-share-buttons {
+  margin: 2rem auto;
+}
+
+/***********************************************
 About page layout
 ************************************************/
 .about-container__creator {
@@ -95,7 +102,7 @@ About page layout
   &--img {
     & img {
       border-radius: 50%;
-      width: 15rem;
+      width: 30rem;
     }
   }
   &--intro {
