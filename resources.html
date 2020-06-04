@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152716750-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html lang="en">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152716750-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-152716750-2');
-</script>
+    gtag('config', 'UA-152716750-2');
+  </script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <title>
       Taiwan Hikes: Free guided hikes in Taiwan
     </title>
@@ -25,13 +30,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="shortcut icon" href="#" />
   </head>
   <body>
       <header>
         <div class="header">
-          <div class="header__background-img-box header__background-img-start-here">
+          <div class="header__background-img-box header__background-img-resources">
             <h1 class="header__background-img-box--title">Taiwan Hikes</h1>
             <h2 class="header__background-img-box--title2">
               Enjoy free guided hikes with the locals
@@ -68,11 +72,11 @@
                   <!-- Make a page for Start here with the links of the articles -->
                 </div>
                 <div class="menu__hamburger">
-                  <input type="checkbox" class="menu__hamburger--toggle" />
+                  <input type="checkbox" class="menu__hamburger--toggle off-canvas-btn" />
                   <span class="menu__hamburger--line line-short"></span>
                   <span class="menu__hamburger--line line-long"></span>
                   <span class="menu__hamburger--line line-short"></span>
-                  <ul class="menu__hamburger--list">
+                  <ul class="menu__hamburger--list off-canvas">
                     <li class="menu__hamburger--list-item">
                       <a href="index.html">Home</a>
                     </li>
@@ -97,141 +101,249 @@
         </div>
       </header>
 
-      <main class="start-here">
+      <main class="start-here about">
         <h2 class="article__opening--pageTitle">
-          Start here
-        </h2>
+          Resources
+        </h2>        
 
-        <div class="media-share-buttons">
-          <!-- AddToAny BEGIN -->
-          <div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="https://www.taiwanhikes.com" data-a2a-title="Taiwan Hikes">
-            <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-            <a class="a2a_button_google_gmail"></a>
-            <a class="a2a_button_email"></a>
-            <a class="a2a_button_pinterest"></a>
-            <a class="a2a_button_twitter"></a>
-            <a class="a2a_button_facebook"></a>
-            <a class="a2a_button_facebook_messenger"></a>
-            <a class="a2a_button_whatsapp"></a>
-            <a class="a2a_button_google_bookmarks"></a>
-            <a class="a2a_button_line"></a>
-            <a class="a2a_button_reddit"></a>
+        <div class="here__container about-container">
+
+          <div class="media-share-buttons">
+            <!-- AddToAny BEGIN -->
+            <div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="https://www.taiwanhikes.com" data-a2a-title="Taiwan Hikes">
+              <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+              <a class="a2a_button_google_gmail"></a>
+              <a class="a2a_button_email"></a>
+              <a class="a2a_button_pinterest"></a>
+              <a class="a2a_button_twitter"></a>
+              <a class="a2a_button_facebook"></a>
+              <a class="a2a_button_facebook_messenger"></a>
+              <a class="a2a_button_whatsapp"></a>
+              <a class="a2a_button_google_bookmarks"></a>
+              <a class="a2a_button_line"></a>
+              <a class="a2a_button_reddit"></a>
+              </div>
+              <script>
+              var a2a_config = a2a_config || {};
+              a2a_config.onclick = 1;
+              a2a_config.num_services = 6;
+              </script>
+            <script async src="https://static.addtoany.com/menu/page.js"></script>
+            <!-- AddToAny END -->
+          </div>        
+          
+          <div class="about-container__creator">            
+            <div class="here__text about-container__creator--intro">
+              Before 2020, I mostly hiked with hiking associations, unless those trails that were very popular or obvious, like trails to Mt. Qixin. I went through those hiking schedules from those associations I knew and tried to pick up those I thought might be interesting. I know I always wanted to do solo hike, but I wasn’t sure about that, because we were usually told it’s dangerous to hike alone. It is if you don’t prepare well.
             </div>
-            <script>
-            var a2a_config = a2a_config || {};
-            a2a_config.onclick = 1;
-            a2a_config.num_services = 6;
-            </script>
-          <script async src="https://static.addtoany.com/menu/page.js"></script>
-          <!-- AddToAny END -->
+            <h4>Hiking in Taiwan: A Gem under the Radar</h4>
+            <div class="here__text about-container__creator--intro">
+              <div class="sizes__clickToSee--content here-text">Taiwan is very small, 35,980 km<sup>2</sup> (13,974 m<sup>2</sup>), and most people’s impression toward Taiwan is the manufacturing industry and food. However, Taiwan has more to offer. 
+              </div>
+              <div class="sizes__clickToSee--content here-text">
+                On this tiny island, 70% of Taiwan is covered by mountains, and there are <b>268</b> mountains that are over 3,000 meters (9,842 feet) above the sea level. You can imagine how many wonderful trails we have here in Taiwan.
+              </div>
+              <div class="sizes__modal">
+                <div class="modal"> 
+                  <div class="sizes__clickToSee">
+                    <button class="sizes__clickToSee--btn size__btn modal-show-btn">How small is Taiwan?</button>
+                  </div>
+                  <div class="modal__overlay"> <!-- Sizes of different countries compared to Taiwan-->
+                    <div class="modal__overlay--box">
+                      <div class="modal__overlay--box--countries size__countries">
+                        <span class="modal-list">About the same size of the Netherlands and Switzerland,</span>
+                        <span class="modal-list">Slightly bigger than the state of Maryland in the United States,</span>
+                        <span class="modal-list">1/7 of the United Kingdom,</span>
+                        <span class="modal-list">1/9 of Vietnam,</span>
+                        <span class="modal-list">1/10 of Norway and Germany,</span>
+                        <span class="modal-list">1/11 of the state of California in the United States,</span>
+                        <span class="modal-list">1/13 of Sweden,</span>
+                        <span class="modal-list">1/14 of Thailand (Taiwan and Thailand are different countries),</span>
+                        <span class="modal-list">1/22 of Turkey,</span>
+                        <span class="modal-list">1/25 of Nigeria,</span>
+                        <span class="modal-list">1/34 of South Africa,</span>
+                        <span class="modal-list">1/36 of Peru,</span>
+                        <span class="modal-list">1/53 of Indonesia,</span>
+                        <span class="modal-list">1/55 of Mexico,</span>
+                        <span class="modal-list">1/66 of Algeria,</span>
+                        <span class="modal-list">1/77 of Argentina,</span>
+                        <span class="modal-list">1/91 of India,</span>
+                        <span class="modal-list">1/215 of Australia,</span>
+                        <span class="modal-list">1/237 of the size of Brazil,</span>
+                        <span class="modal-list">1/273 of the United States,</span>
+                        <span class="modal-list">1/278 of Canada,</span>
+                        <span class="modal-list">1/475 of Russia </span>
+    
+                        <span class="modal-list"><a href="https://www.mylifeelsewhere.com/country-size-comparison" target="_blank" class="post-link-style">Reference</a></span>
+                      </div>
+                      <div class="sizes__clickToSee">
+                        <button class="sizes__clickToSee--btn size__btn modal-close-btn">
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>                
+              </div>
+
+              <div class="sizes__clickToSee--content here-text">
+                If you are looking for a brand-new place to hike, to experience very different culture, to see the mountain and ocean views at the same time, and more, Taiwan is the right place for you.
+              </div>
+            </div>
+
+            <h4>Safety and Enjoy Free-guided Hikes</h4>
+            <div class="here__text about-container__creator--intro">
+              Other than sharing the wonderful trails in Taiwan, another main purpose of Taiwan Hikes is to provide information for people who don’t read Chinese to find <a href="guided-hiking-trips.html" class="post-link-style" target="_blank">free and paid guided trips</a> in Taiwan and enjoy the hiking with the local people safely. For most people from other countries, solo hiking or hiking only with close friends or families is more popular than hiking with a bunch of strangers. But due to the unique and complicated trail terrains in Taiwan, I still strongly encourage international visitors to hike with the locals for the safety reasons.
+            </div>
+
+            <h4>Provide Doable Solo Hike Options</h4>
+            <div class="here__text about-container__creator--intro">
+              Other than group hikes, I will also document my hiking trips that I think are suitable for solo hikes. As long as you are well prepared and in a good physical condition, doing solo hike is a lot of fun in Taiwan. 
+            </div>
+
+            <h4>How Did This Get Started?</h4 class="about-container__creator--title-sm">
+            <div class="here__text about-container__creator--intro">
+              <div>
+                Other than being an avid hiker, I’m also teaching myself how to code. I started hiking regularly in early 2017 and started my journey of learning how to code later in the same year. 
+              </div>
+              <div>
+                There are so many hiking associations in Taiwan, and the hiking community here is very strong. Many hiking associations or hikers voluntarily help clean up the trails, put new signs or ribbons for fellow hikers, and even help rescue actions. As a new hiker, it was a no-brainer for me to hike with them. On those hiking trips, I meet many hikers who also share the love to the nature in Taiwan, and I also get to hike many remote places that I would never be able to go on my own.
+              </div>
+              <div>
+                On the trails, I met some hikers from other countries and had conversations with them. I asked them how they found the trails, they told me they Google. I also heard some terrible hiking stories about some international visitors getting lost on the trails. 
+              </div>
+            </div>
+
+            <h4>Combine Things I love Together</h4>
+            <div class="here__text about-container__creator--intro">
+              <div>
+                Since I was looking for personal projects to test my coding skills, I thought why not combining those things I enjoy together? That’s how Taiwan Hikes was born. I won’t deny that there are so many times I wanted to give up this website, when my code got stuck. I’m glad I’m still here.
+              </div>
+              <div>
+                As to the hiking trails, I prefer to take more challenging hikes and some of those may not be easy to access or suitable for most people. One of the reasons is it’s less crowded on those trails, and I can see the amazing views on those trails if I'm lucky enough. So, if you’re not a regular hiker, please take trails rated A only to make sure you can enjoy your trip without feeling exhausted. I’ll also share other English blogs in the <a href="#" class="post-link-style">resource page</a> if you want to look for more options.
+              </div>
+              <div>
+                This is an ongoing project and sometimes I will come up with some crazy ideas about the content I want to present. I will update the content of Taiwan Hikes from time to time. If you’d like to know more about my journey of code learning, please click <a href="https://anushalee.com/"
+                target="_blank" class="post-link-style">here</a>. If you’d like to receive updates about this website, please sign up for our newsletters.
+              </div>
+              <div>                
+                The content, images (unless specified) and code are mainly written or taken by <a href="https://twitter.com/AnushaHiking"
+                target="_blank" class="post-link-style">me</a>. As you can see my native language is not English, I've tried my best to detect typos and grammar errors without hiring an editor. Please let me know if there's any error in a kind way, and thank you.
+              </div>
+            </div>
+
+            <h4>Promote Taiwan Small Business</h4>
+            <div class="here__text about-container__creator--intro">
+              Probably many people have known that Taiwan’s power in manufacturing. Other than electric components and technology, there are many companies making good quality outdoor gear and related products, and I hope to help them grow together. Currently, I am not sponsored by any of them even though they are presented here. If things change, I will update it as soon as possible.
+            </div>
+          </div>
+          <div class="about-container__website">
+                <h3 class="here__title about-container__disclaimer">Disclaimer</h3>
+                <div class="here__text about-container__disclaimer-text">
+                  The author(s) and contributors of Taiwan Hikes and the guides of those hiking trips are not responsible for any damage, personal injuries or death as a result of the use of any information, maps, routes, advice, gear or techniques discussed on this blog and website. All outdoor activities are carried out at your own risk. 
+                  <br />
+                  Please remember <span><b>your safety is your own responsibility</b></span>.
+                </div>            
+          </div>
+
+          <div class="about-container__hikingclub">
+            <h3 class="here__title about-container__hikingclub--title">
+              About 台灣山野樂活協會<br>TAIWAN MOUNTAIN LOHAS ASSOCIATION
+            </h3>
+            <h4>Introduction from LOHAS’s website</h4>
+            <div class="here__img about-container__hikingclub--img">
+                <img
+                  src="img/02-about/LOHAS.jpg"
+                  alt="TAIWAN MOUNTAIN LOHAS ASSOCIATION"
+                />
+            </div>
+            <div class="here__text about-container__hikingclub--intro">
+              “Established in 2010, <a href="http://www.loho.org.tw/about/" target="_blank" class="post-link-style"
+              >LOHAS</a> welcomes everyone who loves the nature and is interested in outdoor activities. Our beliefs are ‘Respect for people’ and ‘People are born good’, and we want to build a hub for people to explore by adopting ‘More Trust, Less Management’ principle. You will find groups of like-minded people and become friends for life. We also welcome hiking guides from different hiking associations to build up your communities here. No matter the activities are easy or challenging ones, hiking, biking, river tracing, domestic or international hikes, you will realize how broad and wide the world is and people can be so compatible together.”
+            </div>
+            <h4>My Hiking Experience with LOHAS</h4>
+            <div class="here__text about-container__hikingclub--intro">
+              I’ve been hiking with LOHAS since 2017. Compared to other hiking associations in Taiwan, LOHAS seems to have less hiking trips. The main reason is LOHAS requires the lead guide has to hike the trails in advance before the trips can be evaluated and open to the public. LOHAS guides are very friendly, and their average age is relatively younger than other associations, which also attract younger hikers. Most LOHAS guides are very patient, and <a href="#" class="post-link-style">they are quite well-trained</a>. LOHAS has a wide range of hiking trips, from very challenging to very easy ones. Many guides speak English, too. LOHAS is one of my favorite hiking associations. LOHAS’ guides wear orange uniforms, which is easy to recognize them. 
+            </div>    
+          </div>
+
+          <div class="about-container__hikingclub">
+            <h3 class="here__title about-container__hikingclub--title">
+              About 新北市嘟嘟健行登山協會<br>NEW TAIPEI CITY DUDU MOUNTAIN ASSOCIATION</h3>
+            <div class="here__img about-container__hikingclub--img">
+                <img
+                  src="img/02-about/dudu.jpg"
+                  alt="NEW TAIPEI CITY DUDU MOUNTAIN ASSOCIATION"
+                />
+            </div>
+            <h4>My Hiking Experience with Dudu</h4>
+            <div class="here__img about-container__hikingclub--img about-container__hikingclub--img-couple">
+              <img
+                src="img/02-about/dudu-couple.jpg"
+                alt="Lu Ge, Brother Lu and Xu Jie, Sister Xu from Dudu"
+              />
+          </div>
+            <div class="here__text about-container__hikingclub--intro">
+              There isn’t much ‘About’ information on Dudu’s private Facebook Group page or <a href="http://dudumountain.blogspot.com/" target="_blank" class="post-link-style">their blog</a>.
+              I’ve been hiking with Dudu since 2017, too. The main contacts of Dudu are Lu Ge, Brother Lu 陸哥, and Xu Jie, Sister Xu 徐姐. They are a couple in their mid-60s, but look like in their early 50s. They are super friendly and hospitable, and they have been in this hiking community for about two decades. When hiking with Dudu, Lu Ge and Xu Jie sometimes will serve free hot foods in winter or iced drinks in summer. Dudu also has many guides, and is officially registered as an association in 2018.
+            </div>            
         </div>
 
-        <div class="here__container">
-
-          <div class="here__container--section here">
-            <h3 class="here__title">
-              <a href="seven-reasons-why-you-should-hike-in-taiwan-new.html"
-              class="post-link-style"
-                >7 Reasons Why You Should Hike in Taiwan</a
-              >
-            </h3>
-            <div class="here__text">
-              If you have a short stay in Taiwan, have you ever wondered what
-              you can do during your stay? If you Google and think the only
-              things you can do here are limited to visiting the National Palace
-              of Museum and eating as many strange foods as you can at Shi-Lin
-              Night Market with the crowd, you have come to the right place
-              because you are about to experience the unique nature Taiwan can
-              offer other than foods...
-            </div>
-            <div class="here__img">
+        <div class="about-container__hikingclub">
+          <h3 class="here__title about-container__hikingclub--title">
+            About 台北市新興登山會<br>TAIPEI XING XING HIKING CLUB
+          </h3>
+          <div class="here__img about-container__hikingclub--img">
               <img
-                src="img/header-background5.jpg"
-                alt="Tefuye Old Trail"
+                src="img/02-about/xingxing.jpg"
+                alt="TAIPEI XING XING HIKING CLUB"
               />
+          </div>
+          <h4>My Hiking Experience with Xing Xing</h4>
+          <div class="here__text about-container__hikingclub--intro">
+            According to Xing Xing’s public <a href="https://www.facebook.com/groups/834049639956060/" target="_blank" class="post-link-style">Facebook Group</a>, Xing Xing’s main goals are to provide hiking activities to increase people’s mental and physical health, establish friendships, and improve the society. Xing Xing has been taking hikers to enjoy the nature for more than 20 years. I started hiking with Xing Xing in 2019, and they are very friendly. Their average age is older, too. Their director told me that they once had a French tourist hiking with them and she was surprised to try <a href="https://eng.coa.gov.tw/ws.php?id=9440" target="_blank" class="post-link-style">guavas</a> for the first time, a very common fruit in Taiwan, offered by him and other hiking mates. Xing Xing’s trips are quite easy, and you sometimes will get to see amazing views from those hikes. If you want to enjoy the easy hikes without being exhausted too much, I will recommend you check out Xing Xing’s trips.
+          </div>
+          <div class="here__img about-container__hikingclub--img">
+            <img
+              src="img/02-about/xingxing-french.jpg"
+              alt="TAIPEI XING XING HIKING CLUB"
+            />
+        </div>      
+        </div>
+
+          <div class="about-container__hikingclub">
+            <h3 class="here__title about-container__hikingclub--title">
+              About 新北市山岳協會(北岳) THMA
+            </h3>
+            <div class="here__img about-container__hikingclub--img">
+                <img
+                  src="img/02-about/THMA.jpg"
+                  alt="TAIPEI XING XING HIKING ASSOCIATION"
+                />
+            </div>
+            <h4>Mostly from THMA website</h4>
+            <div class="here__text about-container__hikingclub--intro">
+              Established in 1973, <a href="http://www.thma.org.tw/index.php" target="_blank" class="post-link-style">THMA</a> is one of the oldest hiking associations in Taiwan, and has trained many experienced and good guides in local hiking community. THMA has been training many hiking guides over those decades. THMA dedicates to serve hikers in Taiwan, and work strivingly to establish a better and safer hiking community and devote their time to the mountain rescue, and dedicate to carry on the spirit of Mt. Jade juniper, which is mostly seen at elevations of 3,400 meters (11,155 feet) above sea level in Taiwan.
+            </div>
+            <h4>My Hiking Experience with THMA</h4>
+            <div class="here__text about-container__hikingclub--intro">
+              THMA provides many trips to hikers and their trips are relatively long and challenging compared to other hiking associations, at least from my experience. The average age of THMA hikers is older than others, which is not a surprise because THMA has been established for almost five decades. Although THMA’s hikers are older, their pace is so fast that I was joking they hike like bullet trains and me like <a href="https://en.wikipedia.org/wiki/Thomas_%26_Friends" target="_blank" class="post-link-style">Thomas and Friends</a>.
+              If you are looking for challenging hikes, you will enjoy a lot with THMA’s trips. However, if you just want to have an easy and short hike, please only check out their shorter trips with A ratings. 
             </div>
           </div>
-
-          <div class="here__container--section here">            
-            <h3 class="here__title">
-              <a href="blog-posts/when-sea-mountains-become-one-Teapot-Banping-Canguanliao.html"
-              class="post-link-style"
-                >If You Can Only Do One Hike in Taiwan, This Is It: Mt. Teapot</a
-              >
-            </h3>
-            <div class="here__text">
-              Being a tiny has its own advantages, which means hiking in Taiwan can allow you to enjoy the mountains and ocean views from the summits. If you can only pick up one trail to hike near Taipei and you want some challenges, Mt. Teapot, Mt. Banping and Mt. Canguanliao are definitely the trails for you, not to mention the nearby tourist attractions like Jinguaqshi and Jiufeng to visit and have exotic local foods after your hike… 
-            </div>
-            <div class="here__img">
-              <img
-                src="img/blog/01-Mt-Teapot/000-Teapot-cover-2.jpg"
-                alt="Mt. Teapot from a distance"
-              />
-            </div>
-          </div>
-
-          <div class="here__container--section here">
-            <h3 class="here__title">
-              <a href="four-ways-to-hike-in-taiwan-with-pros-and-cons.html"
-              class="post-link-style"
-                >4 Ways to Hike in Taiwan with Pros and Cons</a
-              >
-            </h3>
-            <div class="here__text">
-              It seems easy to hike in Taiwan, and I’ve met several international visitors Google their way to the trails, and there are many great blogs in English to tell you where you can hike in Taiwan. But there are other options to enjoy hiking in Taiwan, and here are the pros and cons of each method...
-            </div>
-            <div class="here__img">
-              <img src="img/header-background8.jpg" alt="Sunrise at Mt. Xuebai" />
-            </div>
-          </div>
-
-          <div class="here__container--section here">
-            <h3 class="here__title">
-              <a href="fifteen-things-you-need-to-know-before-you-hit-the-trails-in-taiwan.html"
-              class="post-link-style"
-                >15 Things you need to know before you hit the trails in Taiwan</a
-              >
-            </h3>
-            <div class="here__text">
-              Whether you plan to hike alone or with a local group when you visit Taiwan, there are at least 15 things you need to know in advance so you can have a more enjoyable hiking experience. You might already be an experienced hiker back home, but the jungle-like muddy terrains and the humid weather may still catch you off-guard on the trails…
-            </div>
-            <div class="here__img">
-              <img
-                src="img/header-15things.JPG"
-                alt="Mt. Nengao"
-              />
-            </div>
-          </div>
-
-          <div class="here__container--section here">
-            <h3 class="here__title">
-              <a href="#"
-                >Other Hiking Blogs and Resources about Taiwan</a
-              >
-            </h3>
-            <div class="here__text">
-              There are many wonderful blogs, YouTube channels, and resources for you to dig in if you want to know more about hiking or other outdoor activities in Taiwan.
-              I try to find the English ones as much as I can, but you can always use Google Translate to get some ideas about the content if it's written in Chinese.
-              You can also find hiking trails in other parts of Taiwan if you plan to have a long stay...
-            </div>
-            <div class="here__img">
-              <img src="img/4-ways/02-fall-foliage.jpg" alt="Cliff" />
-            </div>
+             
           </div>
         </div>
 
-        <div class="sevenReasons__btn-box">
+        <div class="freeHikes__btn-box about-freeHikes__btn-box">
           <a
             href="guided-hiking-trips.html"
-            class="freeHikes__btn--explore sevenReasons__btn--explore"
+            class="sevenReasons__btn--explore"
           >
             Guided Trips
           </a>
         </div>
 
-        <div class="scroll-up">
-          <ion-icon name="arrow-round-up" class="scroll-up__arrow"></ion-icon>
-        </div>
       </main>
 
       <div class="scroll-up">
@@ -308,6 +420,7 @@
                 <a href="privacy-policy.html" target="_blank" class="post-link-style">Privacy Policy</a>
               </li>
               <li class="legal__box--item">
+                  href="terms-conditions.html"
                 <a href="#" target="_blank" class="post-link-style">Work with Us</a>
               </li>
             </ul>
@@ -318,16 +431,13 @@
   </body>
 
   <script async src="https://cse.google.com/cse.js?cx=006696084294410224300:ihwvo0rh5oh"></script>
-  <script src="js/main.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-      AOS.init();
-  </script>
-  <!-- <script
+    <script src="js/main.js"></script>
+    <script src="js/about.js"></script>
+    <!-- <script
       type="text/javascript"
       src="https://platform-api.sharethis.com/js/sharethis.js#property=5ddb647373c71100125a2b96&product=inline-share-buttons"
       async="async"
     ></script> -->
-  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>
