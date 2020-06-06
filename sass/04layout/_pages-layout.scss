@@ -94,6 +94,15 @@ Social Media sharing buttons
   margin: 2rem auto;
 }
 
+.a2a_default_style {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  // @include responsive(sm-desktop) {
+  //   justify-content: space-around;
+  // }
+}
+
 /***********************************************
 About page layout
 ************************************************/
@@ -131,7 +140,7 @@ About page layout
   margin: 3rem auto;
   &--img {
     & img {
-      width: 70%;
+      width: 100%;
       border-radius: 0.5rem;
     }
   }

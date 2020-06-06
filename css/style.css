@@ -2352,6 +2352,11 @@ Social Media sharing buttons
 .media-share-buttons {
   margin: 2rem auto; }
 
+.a2a_default_style {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center; }
+
 /***********************************************
 About page layout
 ************************************************/
@@ -2380,7 +2385,7 @@ About page layout
   margin: 3rem auto; }
   .about-container__disclaimer--img img,
   .about-container__hikingclub--img img {
-    width: 70%;
+    width: 100%;
     border-radius: 0.5rem; }
   .about-container__disclaimer--img-couple img,
   .about-container__hikingclub--img-couple img {
