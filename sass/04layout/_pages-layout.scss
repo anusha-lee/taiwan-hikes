@@ -357,3 +357,9 @@ About page layout
     }
   }
 }
+
+.bold-style {
+  //text-shadow: 0 0.1rem $color-blue-grey;
+  font-family: $font-title;
+  background-color: lighten($color-base-blue, 60%);
+}

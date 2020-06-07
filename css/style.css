@@ -2564,6 +2564,10 @@ About page layout
         .blog__container--section--img img:hover {
           transform: scale(1.2); }
 
+.bold-style {
+  font-family: "Alegreya", serif;
+  background-color: #d1f2fc; }
+
 @-webkit-keyframes check {
   50% {
     outline-color: #333;
