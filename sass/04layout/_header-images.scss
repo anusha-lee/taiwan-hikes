@@ -1,7 +1,7 @@
 // Different background images for different pages
 
 /*******************************
-********* Start here page
+********* Start here and basic pages
 *******************************/
 
 .header__background-img-7Reasons {
@@ -46,6 +46,12 @@
   background-position: right 45% bottom;
 }
 
+.header__background-img-page-not-found {
+  background-image: url("/img/header-page-not-found.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 /*******************************
 ********* Legal pages
 *******************************/
@@ -61,6 +67,16 @@
   background-position: right center;
 }
 
+#page-not-found-title {
+  font-size: $font-size-xl;
+  color: $color-orangered;
+  mix-blend-mode: unset;
+}
+
+#page-not-found-subtitle {
+  font-size: $font-size-m;
+  mix-blend-mode: unset;
+}
 /*******************************
 ********* Blog and blog post
 *******************************/
