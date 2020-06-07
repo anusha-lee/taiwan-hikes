@@ -1734,13 +1734,13 @@ header {
     .menu__hamburger--toggle:checked ~ .menu__hamburger--list {
       display: block;
       padding-top: 5rem;
-      width: 104vw;
+      width: 106vw;
       height: 103vh;
-      margin-top: -3rem;
-      margin-right: -1.2rem; }
+      margin-top: -4rem;
+      margin-right: -1rem; }
       @media only screen and (min-width: 580px) {
         .menu__hamburger--toggle:checked ~ .menu__hamburger--list {
-          margin-right: -6rem;
+          margin-right: -8rem;
           width: 107vw; } }
 
 .fixedNav {
