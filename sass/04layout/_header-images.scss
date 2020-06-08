@@ -46,12 +46,6 @@
   background-position: right 45% bottom;
 }
 
-.header__background-img-page-not-found {
-  background-image: url("/img/header-page-not-found.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
 /*******************************
 ********* Legal pages
 *******************************/
@@ -67,15 +61,59 @@
   background-position: right center;
 }
 
+/*******************************
+********* Page not found
+*******************************/
+.header__background-img-page-not-found {
+  background-image: url("/img/header-page-not-found.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#page-not-found {
+  padding: 2rem;
+}
 #page-not-found-title {
+  //margin-top: -5rem;
   font-size: $font-size-xl;
   color: $color-orangered;
-  mix-blend-mode: unset;
+  -webkit-text-stroke: 0.1rem $color-tan;
+
+  @include responsive(tab) {
+    margin-top: 4rem;
+    transform: scale(2, 1.6);
+  }
 }
 
 #page-not-found-subtitle {
+  margin-top: 4rem;
   font-size: $font-size-m;
-  mix-blend-mode: unset;
+  color: $color-orangered;
+  text-align: center;
+  -webkit-text-stroke: 0.1rem $color-tan;
+  transform: scale(1, 1.4);
+  @include responsive(tab) {
+    line-height: 1.4;
+    font-size: $font-size-large;
+    transform: scale(1.2, 1.4);
+  }
+}
+
+#page-not-found-home {
+  margin-top: 20rem;
+  font-size: $font-size-large;
+
+  @include responsive(tab) {
+    margin-top: 20rem;
+    transform: scale(1.4, 1.2);
+  }
+  @include responsive(sm-desktop) {
+    margin-top: 45rem;
+  }
+  & a {
+    color: $color-base-blue;
+    -webkit-text-stroke: 0.1rem $color-tan;
+  }
 }
 /*******************************
 ********* Blog and blog post

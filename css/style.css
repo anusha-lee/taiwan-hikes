@@ -1807,11 +1807,6 @@ header {
   background-size: cover;
   background-position: right 45% bottom; }
 
-.header__background-img-page-not-found {
-  background-image: url("/img/header-page-not-found.jpg");
-  background-size: cover;
-  background-position: center; }
-
 /*******************************
 ********* Legal pages
 *******************************/
@@ -1825,14 +1820,52 @@ header {
   background-size: cover;
   background-position: right center; }
 
+/*******************************
+********* Page not found
+*******************************/
+.header__background-img-page-not-found {
+  background-image: url("/img/header-page-not-found.jpg");
+  background-size: cover;
+  background-position: center; }
+
+#page-not-found {
+  padding: 2rem; }
+
 #page-not-found-title {
   font-size: 4.8rem;
   color: #d55534;
-  mix-blend-mode: unset; }
+  -webkit-text-stroke: 0.1rem #fff0ce; }
+  @media only screen and (min-width: 580px) {
+    #page-not-found-title {
+      margin-top: 4rem;
+      transform: scale(2, 1.6); } }
 
 #page-not-found-subtitle {
+  margin-top: 4rem;
   font-size: 2.6rem;
-  mix-blend-mode: unset; }
+  color: #d55534;
+  text-align: center;
+  -webkit-text-stroke: 0.1rem #fff0ce;
+  transform: scale(1, 1.4); }
+  @media only screen and (min-width: 580px) {
+    #page-not-found-subtitle {
+      line-height: 1.4;
+      font-size: 3.2rem;
+      transform: scale(1.2, 1.4); } }
+
+#page-not-found-home {
+  margin-top: 20rem;
+  font-size: 3.2rem; }
+  @media only screen and (min-width: 580px) {
+    #page-not-found-home {
+      margin-top: 20rem;
+      transform: scale(1.4, 1.2); } }
+  @media only screen and (min-width: 900px) {
+    #page-not-found-home {
+      margin-top: 45rem; } }
+  #page-not-found-home a {
+    color: #097392;
+    -webkit-text-stroke: 0.1rem #fff0ce; }
 
 /*******************************
 ********* Blog and blog post
