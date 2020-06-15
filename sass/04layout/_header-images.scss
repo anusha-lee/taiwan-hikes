@@ -100,7 +100,7 @@
 }
 
 #page-not-found-home {
-  margin-top: 20rem;
+  margin-top: 10rem;
   font-size: $font-size-large;
 
   @include responsive(tab) {
@@ -108,12 +108,17 @@
     transform: scale(1.4, 1.2);
   }
   @include responsive(sm-desktop) {
-    margin-top: 45rem;
+    margin-top: 30rem;
   }
   & a {
     color: $color-base-blue;
     -webkit-text-stroke: 0.1rem $color-tan;
   }
+}
+.return-home {
+  font-size: $font-size-m;
+  color: $color-base-blue;
+  -webkit-text-stroke: 0.1rem $color-tan;
 }
 /*******************************
 ********* Blog and blog post

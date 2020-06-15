@@ -1854,7 +1854,7 @@ header {
       transform: scale(1.2, 1.4); } }
 
 #page-not-found-home {
-  margin-top: 20rem;
+  margin-top: 10rem;
   font-size: 3.2rem; }
   @media only screen and (min-width: 580px) {
     #page-not-found-home {
@@ -1862,10 +1862,15 @@ header {
       transform: scale(1.4, 1.2); } }
   @media only screen and (min-width: 900px) {
     #page-not-found-home {
-      margin-top: 45rem; } }
+      margin-top: 30rem; } }
   #page-not-found-home a {
     color: #097392;
     -webkit-text-stroke: 0.1rem #fff0ce; }
+
+.return-home {
+  font-size: 2.6rem;
+  color: #097392;
+  -webkit-text-stroke: 0.1rem #fff0ce; }
 
 /*******************************
 ********* Blog and blog post
