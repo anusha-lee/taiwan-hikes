@@ -76,8 +76,9 @@
 #page-not-found-title {
   //margin-top: -5rem;
   font-size: $font-size-xl;
-  color: $color-orangered;
-  -webkit-text-stroke: 0.1rem $color-tan;
+  //color: $color-orangered;
+  color: $color-base-blue;
+  -webkit-text-stroke: 0.2rem $color-tan;
 
   @include responsive(tab) {
     margin-top: 4rem;
@@ -88,7 +89,8 @@
 #page-not-found-subtitle {
   margin-top: 4rem;
   font-size: $font-size-m;
-  color: $color-orangered;
+  //color: $color-orangered;
+  color: $color-base-blue;
   text-align: center;
   -webkit-text-stroke: 0.1rem $color-tan;
   transform: scale(1, 1.4);

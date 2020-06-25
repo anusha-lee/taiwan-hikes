@@ -59,6 +59,10 @@ h6 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
+.bold-style {
+  font-family: "Alegreya", serif;
+  background-color: #e2eeed; }
+
 /*******************************************
 ****** Breakpoints ******
 tab: 580px;
@@ -1833,8 +1837,8 @@ header {
 
 #page-not-found-title {
   font-size: 4.8rem;
-  color: #d55534;
-  -webkit-text-stroke: 0.1rem #fff0ce; }
+  color: #097392;
+  -webkit-text-stroke: 0.2rem #fff0ce; }
   @media only screen and (min-width: 580px) {
     #page-not-found-title {
       margin-top: 4rem;
@@ -1843,7 +1847,7 @@ header {
 #page-not-found-subtitle {
   margin-top: 4rem;
   font-size: 2.6rem;
-  color: #d55534;
+  color: #097392;
   text-align: center;
   -webkit-text-stroke: 0.1rem #fff0ce;
   transform: scale(1, 1.4); }
@@ -2621,9 +2625,10 @@ About page layout
         .blog__container--section--img img:hover {
           transform: scale(1.2); }
 
-.bold-style {
-  font-family: "Alegreya", serif;
-  background-color: #e2eeed; }
+.timer img {
+  padding: 0.1rem;
+  width: 2.5%;
+  display: inline-block; }
 
 @-webkit-keyframes check {
   50% {

@@ -59,3 +59,10 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.bold-style {
+  //text-shadow: 0 0.1rem $color-blue-grey;
+  font-family: $font-title;
+  //background-color: lighten($color-base-blue, 60%);
+  background-color: lighten($color-blue-grey, 30%);
+}
