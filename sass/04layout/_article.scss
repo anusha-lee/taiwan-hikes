@@ -251,6 +251,10 @@ Page layout for articles on Start Here
   display: none;
 }
 
+.size-is-open {
+  display: block;
+}
+
 #emergency-app {
   width: 100%;
   @include responsive(tab) {

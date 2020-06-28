@@ -1058,6 +1058,9 @@ Page layout for articles on Start Here
 .background-story {
   display: none; }
 
+.size-is-open {
+  display: block; }
+
 #emergency-app {
   width: 100%; }
   @media only screen and (min-width: 580px) {
@@ -2403,12 +2406,16 @@ Start Here and Blog Home page layout
         font-size: 1.8rem; } }
   .here__img {
     padding: 1rem;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center; }
     .here__img img {
       width: 100%;
-      box-shadow: 0.4rem 0.4rem 1rem #d1d1d1; }
+      box-shadow: 0.4rem 0.4rem 1rem #d1d1d1;
+      transition: transform 0.3s ease-in-out; }
+      .here__img img:hover {
+        transform: scale(1.2); }
 
 /***********************************************
 Social Media sharing buttons

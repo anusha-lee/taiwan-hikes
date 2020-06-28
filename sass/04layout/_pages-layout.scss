@@ -78,11 +78,19 @@ Start Here and Blog Home page layout
 
   &__img {
     padding: 1rem;
+    overflow: hidden;
     @include flex-center;
 
     & img {
       width: 100%;
       box-shadow: 0.4rem 0.4rem 1rem lighten($color-deep-blue-grey, 60%);
+      //object-fit: cover;
+      transition: transform 0.3s ease-in-out;
+      @include responsive(tab) {
+      }
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 }
