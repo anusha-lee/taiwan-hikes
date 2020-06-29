@@ -1880,6 +1880,14 @@ header {
   -webkit-text-stroke: 0.1rem #fff0ce; }
 
 /*******************************
+********* Work with us header
+*******************************/
+.header__background-img-work-with-us {
+  background-image: url("../img/header-work-with-us.jpg");
+  background-size: cover;
+  background-position: center; }
+
+/*******************************
 ********* Blog and blog post
 *******************************/
 .header__background-img-blog {
