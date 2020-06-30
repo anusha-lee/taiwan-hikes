@@ -96,34 +96,6 @@ header {
   }
 }
 
-// Logo
-.logo {
-  padding: 1rem 1rem 1rem 1.5rem;
-  transition: display 0.3s ease-in-out;
-
-  &-sm {
-    width: 4rem;
-    height: auto;
-
-    @include responsive(tab) {
-      display: none;
-    }
-    @include responsive(sm-desktop) {
-    }
-  }
-
-  &-big {
-    display: none;
-
-    @include responsive(tab) {
-      margin-left: -1rem;
-      display: block;
-      height: 4.5rem;
-      padding-left: 0;
-    }
-  }
-}
-
 .header-box {
   margin: 0.5rem auto;
   width: 100%;
@@ -152,6 +124,48 @@ header {
     @include responsive(normal-desktop) {
       grid-template-columns: 3fr 1.5fr;
     }
+  }
+}
+
+// Logo
+.logo {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  transition: display 0.3s ease-in-out;
+
+  @include responsive(tab) {
+    // margin-left: -1rem;
+    display: block;
+    max-height: 85%;
+    padding-left: 0;
+  }
+
+  // &-sm {
+  //   width: 4rem;
+  //   height: auto;
+
+  //   @include responsive(tab) {
+  //     display: none;
+  //   }
+  //   @include responsive(sm-desktop) {
+  //   }
+  // }
+
+  &-big {
+    margin-left: 1rem;
+    display: block;
+    max-height: 90%;
+    padding-left: 0;
+
+    // display: none;
+    // @include responsive(tab) {
+    //   margin-left: -1rem;
+    //   display: block;
+    //   height: 4.5rem;
+    //   padding-left: 0;
+    // }
   }
 }
 
@@ -213,7 +227,7 @@ header {
     height: 4.5rem;
     position: relative;
     right: 0;
-    top: 1.3rem;
+    top: 1.7rem;
     //z-index: 2000; // might need to delete later
 
     @include responsive(tab) {

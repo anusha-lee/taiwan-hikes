@@ -1582,24 +1582,6 @@ header {
         margin-top: 4rem;
         font-size: 2.6rem; } }
 
-.logo {
-  padding: 1rem 1rem 1rem 1.5rem;
-  transition: display 0.3s ease-in-out; }
-  .logo-sm {
-    width: 4rem;
-    height: auto; }
-    @media only screen and (min-width: 580px) {
-      .logo-sm {
-        display: none; } }
-  .logo-big {
-    display: none; }
-    @media only screen and (min-width: 580px) {
-      .logo-big {
-        margin-left: -1rem;
-        display: block;
-        height: 4.5rem;
-        padding-left: 0; } }
-
 .header-box {
   margin: 0.5rem auto;
   width: 100%;
@@ -1626,6 +1608,23 @@ header {
     @media only screen and (min-width: 1200px) {
       .header-box__banner {
         grid-template-columns: 3fr 1.5fr; } }
+
+.logo {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  transition: display 0.3s ease-in-out; }
+  @media only screen and (min-width: 580px) {
+    .logo {
+      display: block;
+      max-height: 85%;
+      padding-left: 0; } }
+  .logo-big {
+    margin-left: 1rem;
+    display: block;
+    max-height: 90%;
+    padding-left: 0; }
 
 .menu {
   display: grid;
@@ -1669,7 +1668,7 @@ header {
     height: 4.5rem;
     position: relative;
     right: 0;
-    top: 1.3rem; }
+    top: 1.7rem; }
     @media only screen and (min-width: 580px) {
       .menu__hamburger {
         right: 2.6%;
