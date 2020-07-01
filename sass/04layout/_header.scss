@@ -159,13 +159,9 @@ header {
     max-height: 90%;
     padding-left: 0;
 
-    // display: none;
-    // @include responsive(tab) {
-    //   margin-left: -1rem;
-    //   display: block;
-    //   height: 4.5rem;
-    //   padding-left: 0;
-    // }
+    @include responsive(tab) {
+      height: 4.5rem;
+    }
   }
 }
 

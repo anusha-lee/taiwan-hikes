@@ -1625,6 +1625,9 @@ header {
     display: block;
     max-height: 90%;
     padding-left: 0; }
+    @media only screen and (min-width: 580px) {
+      .logo-big {
+        height: 4.5rem; } }
 
 .menu {
   display: grid;
