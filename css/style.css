@@ -2647,6 +2647,10 @@ About page layout
   width: 2.5%;
   display: inline-block; }
 
+.video figure iframe {
+  display: block;
+  margin: 0 auto; }
+
 @-webkit-keyframes check {
   50% {
     outline-color: #333;

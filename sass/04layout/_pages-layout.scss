@@ -371,3 +371,12 @@ About page layout
   width: 2.5%;
   display: inline-block;
 }
+
+.video {
+  figure {
+    iframe {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
