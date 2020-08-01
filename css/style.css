@@ -959,12 +959,24 @@ Page layout for articles on Start Here
     .article__opening--pageTitle {
       font-size: 4.8rem; } }
 .article__opening--author {
+  width: 50%;
   height: auto;
   margin: 0 auto;
   padding: 1rem;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  @media only screen and (min-width: 580px) {
+    .article__opening--author {
+      width: 35%; } }
+  @media only screen and (min-width: 900px) {
+    .article__opening--author {
+      width: 25%; } }
+  @media only screen and (min-width: 1200px) {
+    .article__opening--author {
+      width: 15%; } }
   .article__opening--author span {
     font-style: italic;
     font-size: 1.4rem;
@@ -1321,7 +1333,7 @@ footer {
       .subscribeInput__agree a:hover, .subscribeInput__agree a:active {
         font-weight: 600; }
       .subscribeInput__agree a:visited {
-        color: #de785e; }
+        color: #d55534; }
 
 .legal__box {
   display: flex;
@@ -1337,7 +1349,7 @@ footer {
     .legal__box--item a:hover, .legal__box--item a:active {
       font-weight: 600; }
     .legal__box--item a:visited {
-      color: #de785e; }
+      color: #d55534; }
 
 .guided-hikes {
   margin: 2rem auto;
@@ -1972,7 +1984,7 @@ header {
       text-decoration: underline;
       color: #525252; }
     .sevenReasons__title a:visited {
-      color: #de785e; }
+      color: #d55534; }
   .sevenReasons__text {
     display: inline-block;
     text-overflow: ellipsis;
@@ -2410,7 +2422,7 @@ Start Here and Blog Home page layout
       .here__title a:hover, .here__title a:active {
         font-weight: 600; }
       .here__title a:visited {
-        color: #de785e; }
+        color: #d55534; }
   .here__text {
     padding: 1rem;
     font-size: 1.4rem;

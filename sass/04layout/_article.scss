@@ -115,10 +115,22 @@ Page layout for articles on Start Here
     }
   }
   &--author {
+    width: 50%;
     height: auto;
     margin: 0 auto;
     padding: 1rem;
     @include flex-center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    @include responsive(tab) {
+      width: 35%;
+    }
+    @include responsive(sm-desktop) {
+      width: 25%;
+    }
+    @include responsive(normal-desktop) {
+      width: 15%;
+    }
 
     & span {
       font-style: italic;

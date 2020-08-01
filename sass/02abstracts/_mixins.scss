@@ -92,5 +92,6 @@ how to apply:
 }
 // need to remove later
 @mixin link-visited {
-  color: lighten($color-orangered, 10%);
+  // color: lighten($color-orangered, 10%);
+  color: $color-orangered;
 }
