@@ -1041,7 +1041,7 @@ Page layout for articles on Start Here
           font-size: 1.8rem;
           padding: 0.4rem 0; } }
     .article .article__section--imageBox {
-      margin: 1rem auto 2rem;
+      margin: 1rem auto 1rem;
       width: 100%; }
       .article .article__section--imageBox figure a img {
         margin: 0.5rem auto;
@@ -1098,6 +1098,7 @@ Page layout for articles on Start Here
   @media only screen and (min-width: 580px) {
     #infographic-desktop {
       display: block;
+      margin-bottom: 3rem;
       width: 50%;
       overflow: hidden;
       transition: transform 0.3s ease-in-out; }
