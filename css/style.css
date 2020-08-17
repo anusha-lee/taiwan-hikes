@@ -1829,6 +1829,11 @@ header {
   background-size: cover;
   background-position: right 45% bottom; }
 
+.header__background-img-flowers {
+  background-image: url("../img/header-flowers.jpg");
+  background-size: cover;
+  background-position: center; }
+
 /*******************************
 ********* Legal pages
 *******************************/
