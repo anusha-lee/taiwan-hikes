@@ -24,6 +24,8 @@ footer {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
+      // parallax scrolling effect
+      background-attachment: fixed;
       @include responsive(tab) {
         height: 55vh;
         background-position: 40% 30%;

@@ -19,6 +19,8 @@ header {
   background-repeat: no-repeat;
   background-position: 65% 25%;
   position: relative;
+  // parallax scrolling effect
+  background-attachment: fixed;
 
   margin: 0;
   width: 100%;
