@@ -170,7 +170,8 @@ how to apply:
     box-shadow: 0.2rem 0.2rem 0.3rem #1f1f1f;
     background-color: #c64929; }
 
-.size__btn {
+.size__btn,
+.post-search__btn {
   margin: 2rem auto;
   border: none;
   width: 16rem;
@@ -184,12 +185,14 @@ how to apply:
   background: linear-gradient(#097392, #525252);
   width: 23rem;
   padding-top: 0.9rem; }
-  .size__btn:hover {
+  .size__btn:hover,
+  .post-search__btn:hover {
     cursor: pointer;
     transform: translateY(-0.5rem);
     box-shadow: 0.4rem 0.4rem 0.6rem #525252;
     background: linear-gradient(#0a86aa, #525252); }
-  .size__btn:active {
+  .size__btn:active,
+  .post-search__btn:active {
     transform: translateY(-0.2rem);
     box-shadow: 0.2rem 0.2rem 0.3rem #1f1f1f; }
 
@@ -2619,6 +2622,37 @@ About page layout
 /**************************************
 ********** Blog grid layout
 **************************************/
+.blog__search {
+  margin: 2rem auto 1rem;
+  padding: 1rem;
+  width: 80%;
+  text-align: center; }
+  @media only screen and (min-width: 580px) {
+    .blog__search {
+      width: 80%; } }
+  .blog__search--title {
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    color: #097392;
+    font-size: 1.8rem;
+    text-align: center; }
+    @media only screen and (min-width: 580px) {
+      .blog__search--title {
+        font-size: 2.2rem; } }
+  .blog__search--content {
+    padding: 1rem 0; }
+
+.search__box--label {
+  color: #383838;
+  font-size: 1.4rem;
+  font-family: "Alegreya", serif;
+  margin-bottom: 0.3rem; }
+.search__box--options {
+  color: #097392;
+  font-size: 1.4rem; }
+  .search__box--options option-selected {
+    background-color: #d55534; }
+
 .blog__container {
   margin: 4rem auto;
   display: flex;

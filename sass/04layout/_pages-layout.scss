@@ -284,6 +284,56 @@ About page layout
 /**************************************
 ********** Blog grid layout
 **************************************/
+// Blog post searching
+.blog__search {
+  margin: 2rem auto 1rem;
+  padding: 1rem;
+  width: 80%;
+  text-align: center;
+  @include responsive(tab) {
+    width: 80%;
+  }
+  // @include responsive(sm-desktop) {
+  //   width: 50%;
+  // }
+  // @include responsive(xl-desktop) {
+  //   width: 40%;
+  // }
+  &--title {
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    color: $color-base-blue;
+    font-size: $font-size-s;
+    text-align: center;
+    @include responsive(tab) {
+      font-size: $font-size-sm;
+    }
+  }
+  &--content {
+    padding: 1rem 0;
+  }
+}
+
+.search {
+  &__box {
+    &--label {
+      color: $color-deep-blue-grey;
+      font-size: $font-size-xs;
+      font-family: $font-title;
+      margin-bottom: 0.3rem;
+      //display: flex;
+    }
+    &--options {
+      color: $color-base-blue;
+      font-size: $font-size-xs;
+      & option-selected {
+        background-color: $color-orangered;
+      }
+    }
+  }
+}
+
+// blog posts
 .blog__container {
   //width: ;
   margin: 4rem auto;

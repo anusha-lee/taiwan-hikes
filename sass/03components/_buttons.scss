@@ -89,7 +89,8 @@
 }
 
 // Size button on About page, Golden Ridgelines close button on Mt. Keelung
-.size__btn {
+.size__btn,
+.post-search__btn {
   margin: 2rem auto;
   border: none;
   @include btn-style;
@@ -164,6 +165,7 @@
   // }
 }
 
+// Guided trips sorting buttons
 .trips__sorting--by-easy,
 .trips__sorting--by-moderate,
 .trips__sorting--by-challenging,

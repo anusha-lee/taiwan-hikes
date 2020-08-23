@@ -155,8 +155,76 @@
         <!-- AddToAny END -->
       </div>
 
-      <div class="blog__container">
-        <div class="blog__container--section">
+      <!-- Search blog posts by features  
+      <div class="blog__search">
+        <h3 class="blog__search--title">
+          Search Posts
+        </h3>
+         //search locations 
+        <div class="blog__search--content search">
+          <div class="search__box">
+            <label for="locations" class="search__box--label"
+              >Search by Locations:
+            </label>
+            <select id="locations" class="search__box--options">
+              <option value="north-taiwan">North Taiwan</option>
+              <option value="east-taiwan" selected>East Taiwan</option>
+              <option value="central-taiwan">Central Taiwan</option>
+              <option value="south-taiwan">South Taiwan</option>
+            </select>
+          </div>
+        </div>
+         //search levels 
+        <div class="blog__search--content search">
+          <div class="search__box">
+            <label for="levels" class="search__box--label"
+              >Search by Levels:
+            </label>
+            <select id="levels" class="search__box--options">
+              <option value="easy-hikes">Easy Hikes</option>
+              <option value="moderate-hikes">Moderate Hikes</option>
+              <option value="challenging-hikes" selected
+                >Challenging Hikes</option
+              >
+              <option value="100-peaks">100 Peaks</option>
+            </select>
+          </div>
+        </div>
+         //search features 
+        <div class="blog__search--content search">
+          <div class="search__box">
+            <label for="features" class="search__box--label"
+              >Search by Features:
+            </label>
+            <select id="features" class="search__box--options">
+              <option value="sunrise">Sunrise</option>
+              <option value="sea-of-clouds">Sea of Clouds</option>
+              <option value="mountains-and-oceans">Mountains and Oceans</option>
+              <option value="big-trees">Big Trees</option>
+              <option value="between-ridgelines" selected
+                >Between Ridgelines</option
+              >
+              <option value="unique-flowers">Unique Flowers</option>
+              <option value="massive-ascending-descending"
+                >Massive Ascending/Descending</option
+              >
+              <option value="never-again" selected>Never Again Hikes</option>
+            </select>
+          </div>
+        </div>
+        <button class="search__box--options-button post-search__btn">
+          Show All Posts
+        </button>
+      </div>-->
+
+      <!-- Blog posts -->
+      <div class="blog__container search-results">
+        <div
+          class="blog__container--section"
+          data-location="north-taiwan"
+          data-level="moderate"
+          data-feature="mountains-and-oceans"
+        >
           <h3 class="blog__container--section--title">
             <a
               href="blog-posts/when-sea-mountains-become-one-Teapot-Banping-Canguanliao.html"
@@ -178,7 +246,12 @@
           </div>
         </div>
 
-        <div class="blog__container--section">
+        <div
+          class="blog__container--section"
+          data-location="north-taiwan"
+          data-level="moderate"
+          data-feature="mountains-and-oceans"
+        >
           <h3 class="blog__container--section--title">
             <a
               href="blog-posts/a-short-trail-mountain-ocean-view-and-you-can-choose-easy-or-hard-way.html"
@@ -200,7 +273,12 @@
           </div>
         </div>
 
-        <div class="blog__container--section">
+        <div
+          class="blog__container--section"
+          data-location="east-taiwan"
+          data-level="moderate"
+          data-feature="between-ridgelines"
+        >
           <h3 class="blog__container--section--title">
             <a
               href="blog-posts/roma-ridge-hike-to-see-3000m-summits-sea-of-clouds-old-trees.html"
@@ -222,7 +300,14 @@
           </div>
         </div>
 
-        <div class="blog__container--section">
+        <div
+          class="blog__container--section"
+          data-location="south-taiwan"
+          data-level="moderate"
+          data-feature="sunrise"
+          data-feature="sea-of-clouds"
+          data-feature="between-ridgelines"
+        >
           <h3 class="blog__container--section--title">
             <a
               href="blog-posts/tefuye-mt-zhizhong-lets-you-get-a-glimpse-of-highest-peak-in-northeast-asia.html"
@@ -244,7 +329,13 @@
           </div>
         </div>
 
-        <div class="blog__container--section">
+        <div
+          class="blog__container--section"
+          data-location="south-taiwan"
+          data-level="moderate"
+          data-feature="sunrise"
+          data-feature="sea-of-clouds"
+        >
           <h3 class="blog__container--section--title">
             <a
               href="blog-posts/hiking-mt-data-in-alishan-range.html"
@@ -264,7 +355,12 @@
           </div>
         </div>
 
-        <div class="here__container--section here blog__container--section">
+        <div
+          class="here__container--section here blog__container--section"
+          data-location="north-taiwan"
+          data-level="easy"
+          data-feature="mountains-and-oceans"
+        >
           <h3 class="here__title blog__container--section--title">
             <a
               href="blog-posts/bitou-cape-where-sun-mountains-lighthouse-meet.html"
@@ -286,7 +382,15 @@
           </div>
         </div>
 
-        <div class="here__container--section here blog__container--section">
+        <div
+          class="here__container--section here blog__container--section"
+          data-location="north-taiwan"
+          data-level="moderate"
+          data-feature="sunrise"
+          data-feature="between-ridgelines"
+          data-feature="sea-of-clouds"
+          data-feature="big-trees"
+        >
           <h3 class="here__title blog__container--section--title">
             <a
               href="blog-posts/smangus-tough-trail-to-see-sunrise-old-trees-sea-of-clouds.html"
@@ -1110,6 +1214,7 @@
       src="https://cse.google.com/cse.js?cx=006696084294410224300:ihwvo0rh5oh"
     ></script>
     <script src="js/main.js"></script>
+    <script src="js/searchPosts.js"></script>
     <script src="js/background-story-btn.js"></script>
     <!-- <script
       type="text/javascript"
