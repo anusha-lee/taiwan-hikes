@@ -155,12 +155,12 @@
         <!-- AddToAny END -->
       </div>
 
-      <!-- Search blog posts by features  
+      <!-- Search blog posts by features   -->
       <div class="blog__search">
         <h3 class="blog__search--title">
           Search Posts
         </h3>
-         //search locations 
+        <!-- //search locations  -->
         <div class="blog__search--content search">
           <div class="search__box">
             <label for="locations" class="search__box--label"
@@ -174,24 +174,22 @@
             </select>
           </div>
         </div>
-         //search levels 
+        <!-- //search levels  -->
         <div class="blog__search--content search">
           <div class="search__box">
             <label for="levels" class="search__box--label"
               >Search by Levels:
             </label>
             <select id="levels" class="search__box--options">
-              <option value="easy-hikes">Easy Hikes</option>
-              <option value="moderate-hikes">Moderate Hikes</option>
-              <option value="challenging-hikes" selected
-                >Challenging Hikes</option
-              >
-              <option value="100-peaks">100 Peaks</option>
+              <option value="easy">Easy Hikes</option>
+              <option value="moderate">Moderate Hikes</option>
+              <option value="challenging">Challenging Hikes</option>
+              <option value="one-hundred-peaks">100 Peaks</option>
             </select>
           </div>
         </div>
-         //search features 
-        <div class="blog__search--content search">
+        <!-- //search features  -->
+        <!-- <div class="blog__search--content search">
           <div class="search__box">
             <label for="features" class="search__box--label"
               >Search by Features:
@@ -201,29 +199,31 @@
               <option value="sea-of-clouds">Sea of Clouds</option>
               <option value="mountains-and-oceans">Mountains and Oceans</option>
               <option value="big-trees">Big Trees</option>
-              <option value="between-ridgelines" selected
-                >Between Ridgelines</option
-              >
+              <option value="between-ridgelines">Between Ridgelines</option>
               <option value="unique-flowers">Unique Flowers</option>
               <option value="massive-ascending-descending"
                 >Massive Ascending/Descending</option
               >
-              <option value="never-again" selected>Never Again Hikes</option>
+              <option value="never-again">Never Again Hikes</option>
             </select>
           </div>
-        </div>
-        <button class="search__box--options-button post-search__btn">
+        </div> -->
+        <button
+          class="search__box--options-button post-search__btn show-all-post-btn"
+        >
           Show All Posts
         </button>
-      </div>-->
+      </div>
+
+      <div class="blog__container search-results"></div>
 
       <!-- Blog posts -->
-      <div class="blog__container search-results">
+      <div class="blog__container original-blog">
         <div
           class="blog__container--section"
           data-location="north-taiwan"
           data-level="moderate"
-          data-feature="mountains-and-oceans"
+          data-feature='["mountains-and-oceans"]'
         >
           <h3 class="blog__container--section--title">
             <a
@@ -250,7 +250,7 @@
           class="blog__container--section"
           data-location="north-taiwan"
           data-level="moderate"
-          data-feature="mountains-and-oceans"
+          data-feature='["mountains-and-oceans"]'
         >
           <h3 class="blog__container--section--title">
             <a
@@ -277,7 +277,7 @@
           class="blog__container--section"
           data-location="east-taiwan"
           data-level="moderate"
-          data-feature="between-ridgelines"
+          data-feature='["between-ridgelines"]'
         >
           <h3 class="blog__container--section--title">
             <a
@@ -304,9 +304,7 @@
           class="blog__container--section"
           data-location="south-taiwan"
           data-level="moderate"
-          data-feature="sunrise"
-          data-feature="sea-of-clouds"
-          data-feature="between-ridgelines"
+          data-feature='["sunrise", "sea-of-clouds", "between-ridgelines"]'
         >
           <h3 class="blog__container--section--title">
             <a
@@ -333,8 +331,7 @@
           class="blog__container--section"
           data-location="south-taiwan"
           data-level="moderate"
-          data-feature="sunrise"
-          data-feature="sea-of-clouds"
+          data-feature='["sunrise", "sea-of-clouds"]'
         >
           <h3 class="blog__container--section--title">
             <a
@@ -359,7 +356,7 @@
           class="here__container--section here blog__container--section"
           data-location="north-taiwan"
           data-level="easy"
-          data-feature="mountains-and-oceans"
+          data-feature='["mountains-and-oceans"]'
         >
           <h3 class="here__title blog__container--section--title">
             <a
@@ -376,7 +373,7 @@
             >
               <img
                 src="img/blog/06-Bitoujiao/00-bitoujiao-header-blog-thumbnail.jpg"
-                alt="seashore"
+                alt="coastline"
               />
             </a>
           </div>
@@ -386,10 +383,7 @@
           class="here__container--section here blog__container--section"
           data-location="north-taiwan"
           data-level="moderate"
-          data-feature="sunrise"
-          data-feature="between-ridgelines"
-          data-feature="sea-of-clouds"
-          data-feature="big-trees"
+          data-feature='["sunrise", "sea-of-clouds", "between-ridgelines"]'
         >
           <h3 class="here__title blog__container--section--title">
             <a
@@ -406,7 +400,7 @@
             >
               <img
                 src="img/blog/07-smangus/00-smangus-header-blog-thumbnail.jpg"
-                alt="Mountains and vallies"
+                alt="Mountains and valleys"
               />
             </a>
           </div>
