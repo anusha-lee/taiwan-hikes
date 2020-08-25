@@ -53,6 +53,7 @@ levels.addEventListener("click", () => {
 });
 
 // // Search features
+/*
 locations.addEventListener("click", () => {
   // Clear up the posts
   searchResults.innerHTML = "";
@@ -63,9 +64,10 @@ locations.addEventListener("click", () => {
     const featureValue = event.target.value;
     console.log(postFeatures);
     /* if the value of data-location is the same as option/event target value,
-     the post will show up in search-results     */
+     the post will show up in search-results     
     if (featureValue) {
       searchResults.appendChild(originalBlogChild);
     }
   });
 });
+*/
