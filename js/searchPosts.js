@@ -18,7 +18,7 @@ function showAllPostsButtons() {
 }
 
 //Search locations
-locations.addEventListener("click", () => {
+locations.addEventListener("change", () => {
   showAllPostsButtons();
   // Clear up the posts
   searchResults.innerHTML = "";
@@ -36,7 +36,7 @@ locations.addEventListener("click", () => {
 });
 
 // Search levels
-levels.addEventListener("click", () => {
+levels.addEventListener("change", () => {
   // Clear up the posts
   searchResults.innerHTML = "";
   showAllPostsButtons();
