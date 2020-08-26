@@ -22,9 +22,7 @@
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     /> -->
-    <title>
-      Taiwan Hikes: Flowers on the trails
-    </title>
+    <title>Taiwan Hikes: Flowers on the trails</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -211,45 +209,102 @@
       ></a> -->
 
       <!-- Flowers info -->
-      <div class="start-here flowers">
-        <div class="flowers__container">
-          <!--Search flowers by colors-->
-          <div class="flowers__search">
-            <h3 class="flowers__search--title">Search Flowers by Colors</h3>
-            <div class="flowers__search--colors">
-              <button class="color--white">White</button>
-              <button class="color--red">Pink or Red</button>
-              <button class="color--yellow">Yellow</button>
-              <button class="color--purple">Purple or Blue</button>
-            </div>
+      <div class="blog__search">
+        <!-- flower colors -->
+        <div class="blog__search--content search">
+          <div class="search__box">
+            <label for="locations" class="search__box--label"
+              >Search Flowers by Colors:
+            </label>
+            <select id="locations" class="search__box--options">
+              <option value="white">White</option>
+              <br />
+              <option value="pink-or-red" selected>Pink or Red</option>
+              <br />
+              <option value="yellow">Yellow</option>
+              <br />
+              <option value="purple-or-blue">Purple or Blue</option>
+              <br />
+            </select>
           </div>
-          <!--Search flowers by seasons-->
-          <div class="flowers__search">
-            <h3 class="flowers__search--title">Search Flowers by Seasons</h3>
-            <div class="flowers__search--seasons">
-              <button class="season__spring">Spring</button>
-              <button class="season__summer">Summer</button>
-              <button class="season__autumn">Autumn</button>
-              <button class="season__winter">winter</button>
-            </div>
+        </div>
+        <!-- seasons -->
+        <div class="blog__search--content search">
+          <div class="search__box">
+            <label for="locations" class="search__box--label"
+              >Search Flowers by Species:
+            </label>
+            <select id="locations" class="search__box--options">
+              <option value="epidemic">Epidemic</option>
+              <br />
+              <option value="native">native</option>
+              <br />
+              <option value="introduced-species">Introduced Species</option>
+              <br />
+            </select>
           </div>
-          <!--Search flowers by species-->
-          <div class="flowers__search">
-            <h3 class="flowers__search--title">Search Flowers by Species</h3>
-            <div class="flowers__search--seasons">
-              <button class="species__endemic">Endemic Species</button>
-              <button class="species__native">Native Species</button>
-              <button class="species__introduced">Introduced Species</button>
-            </div>
-          </div>
+        </div>
+      </div>
 
+      <div class="start-here flowers">
+        <!-- flower colors -->
+        <div class="blog__search--content search">
+          <div class="search__box">
+            <label for="locations" class="search__box--label"
+              >Search Flowers by Colors:
+            </label>
+            <select id="locations" class="search__box--options">
+              <option value="white">White</option>
+              <br />
+              <option value="pink-or-red" selected>Pink or Red</option>
+              <br />
+              <option value="yellow">Yellow</option>
+              <br />
+              <option value="purple-or-blue">Purple or Blue</option>
+              <br />
+            </select>
+          </div>
+        </div>
+        <!-- seasons -->
+        <div class="blog__search--content search">
+          <div class="search__box">
+            <label for="locations" class="search__box--label"
+              >Search Flowers by Species:
+            </label>
+            <select id="locations" class="search__box--options">
+              <option value="epidemic">Epidemic Species</option>
+              <br />
+              <option value="native">Native Species</option>
+              <br />
+              <option value="introduced-species">Introduced Species</option>
+              <br />
+            </select>
+          </div>
+        </div>
+        <div class="flowers">
           <div class="flowers__info">
-            <div class="flower__container white">
+            <div class="flower__container">
+              <div class="flower__image">
+                <img src="#" alt="Striate Acanthephippium" />
+              </div>
               <div class="flower__Chinese-name">Chinese: 一葉鍾馗蘭</div>
               <div class="flower__English-name">
-                English: Striate Acanthephippium
+                Common Name or Scientific Name: Striate Acanthephippium
               </div>
-              <div class="flower__origin">Species: Native</div>
+              <div class="flower__species" data-species="native">
+                Species: Native
+              </div>
+              <div class="flower__color" data-color="white">Color: White</div>
+              <div class="flower__trail">
+                Photo taken on
+                <a href="#" class="post-link-style" target="_blank">Wulai</a>
+              </div>
+              <div class="flower__date">Photo taken date:</div>
+              <div class="flower__reference">
+                <a href="#" class="post-link-style" target="_blank"
+                  >Reference</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -297,12 +352,12 @@
                 <div
                   class="formkit-container"
                   data-style="full"
-                  style="background-color: rgb(255, 255, 255);"
+                  style="background-color: rgb(255, 255, 255)"
                 >
                   <div class="formkit-hero">
                     <div
                       class="formkit-hero-bg-color"
-                      style="background-color: rgb(16, 16, 16);"
+                      style="background-color: rgb(16, 16, 16)"
                     ></div>
                     <div
                       class="formkit-hero-bg-img"
