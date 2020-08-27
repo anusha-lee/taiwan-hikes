@@ -1,22 +1,43 @@
 .flowers {
+  margin: 2rem auto;
+  padding: 1rem;
   height: auto;
   border: 2px solid pink;
-  &__info {
-    margin: 2rem auto;
-    padding: 1rem;
-    border: 3px solid blue;
-    width: 92%;
-    @include responsive(tab) {
-      width: 80%;
-    }
-    @include responsive(sm-desktop) {
-      width: 70%;
-    }
+}
+
+.search {
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 3px solid blue;
+  width: 92%;
+  @include responsive(tab) {
+    width: 80%;
+  }
+  @include responsive(sm-desktop) {
+    width: 70%;
   }
 }
 
-.flower__container {
+.flower {
   border: 2px solid olivedrab;
-  width: 45%;
+  margin: 0.5rem auto;
+  width: 95%;
   padding: 1rem;
+  @include responsive(tab) {
+    width: 85%;
+  }
+  @include responsive(sm-desktop) {
+    width: 70%;
+  }
+  &__info {
+    margin: 0.5rem auto;
+    width: 95%;
+    border: 2px solid orchid;
+    @include responsive(tab) {
+      width: 45%;
+    }
+    @include responsive(sm-desktop) {
+      width: 32%;
+    }
+  }
 }

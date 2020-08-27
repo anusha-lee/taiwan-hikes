@@ -209,8 +209,7 @@
       ></a> -->
 
       <!-- Flowers info -->
-      <div class="blog__search">
-        <!-- flower colors -->
+      <!-- <div class="blog__search">
         <div class="blog__search--content search">
           <div class="search__box">
             <label for="locations" class="search__box--label"
@@ -225,26 +224,27 @@
               <br />
               <option value="purple-or-blue">Purple or Blue</option>
               <br />
+              <option value="other-colors">Other Colors</option>
             </select>
           </div>
         </div>
-        <!-- seasons -->
+
         <div class="blog__search--content search">
           <div class="search__box">
             <label for="locations" class="search__box--label"
               >Search Flowers by Species:
             </label>
             <select id="locations" class="search__box--options">
-              <option value="epidemic">Epidemic</option>
+              <option value="endemic">Endemic Species</option>
               <br />
-              <option value="native">native</option>
+              <option value="native">Native Species</option>
               <br />
               <option value="introduced-species">Introduced Species</option>
               <br />
             </select>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="start-here flowers">
         <!-- flower colors -->
@@ -254,38 +254,56 @@
               >Search Flowers by Colors:
             </label>
             <select id="locations" class="search__box--options">
-              <option value="white">White</option>
+              <option value="white" data-color="white">White</option>
               <br />
-              <option value="pink-or-red" selected>Pink or Red</option>
+              <option value="pink-or-red" data-color="pink" selected>
+                Pink or Red
+              </option>
               <br />
-              <option value="yellow">Yellow</option>
+              <option value="yellow" data-color="yellow">
+                Yellow or Orange
+              </option>
               <br />
-              <option value="purple-or-blue">Purple or Blue</option>
+              <option value="purple-or-blue" data-color="purple">
+                Purple or Blue
+              </option>
               <br />
+              <option value="other-colors" data-color="otherColors">
+                Other Colors
+              </option>
             </select>
           </div>
         </div>
-        <!-- seasons -->
+        <!-- species -->
         <div class="blog__search--content search">
           <div class="search__box">
             <label for="locations" class="search__box--label"
               >Search Flowers by Species:
             </label>
             <select id="locations" class="search__box--options">
-              <option value="epidemic">Epidemic Species</option>
+              <option value="endemic" data-species="endemic">
+                Endemic Species
+              </option>
               <br />
-              <option value="native">Native Species</option>
+              <option value="native" data-species="native">
+                Native Species
+              </option>
               <br />
-              <option value="introduced-species">Introduced Species</option>
+              <option value="introduced-species" data-species="introduced">
+                Introduced Species
+              </option>
               <br />
             </select>
           </div>
         </div>
-        <div class="flowers">
-          <div class="flowers__info">
-            <div class="flower__container">
+        <div class="flower">
+          <div class="flower__info">
+            <div class="flower__box">
               <div class="flower__image">
-                <img src="#" alt="Striate Acanthephippium" />
+                <img
+                  src="/img/flowers/Striate-Acanthephippium-20200418-s.jpg"
+                  alt="Striate Acanthephippium"
+                />
               </div>
               <div class="flower__Chinese-name">Chinese: 一葉鍾馗蘭</div>
               <div class="flower__English-name">
@@ -1029,7 +1047,7 @@
         </div>
 
         <div class="footer__copyright">
-          &#9400;2019 Taiwan Hikes. All Rights Reserved.
+          &#9400;2020 Taiwan Hikes. All Rights Reserved.
           <div>
             Icons from
             <a
