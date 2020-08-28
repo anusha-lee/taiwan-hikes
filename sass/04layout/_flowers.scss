@@ -5,16 +5,31 @@
   border: 2px solid pink;
 }
 
-.search {
+.flower-search {
   margin: 2rem auto;
   padding: 1rem;
   border: 3px solid blue;
   width: 92%;
+  text-align: center;
+  & label,
+  & select {
+    font-size: $font-size-xs;
+    @include responsive(tab) {
+      font-size: $font-size-s;
+    }
+    // @include responsive(sm-desktop) {
+    //   font-size: $font-size-sm;
+    // }
+  }
+
   @include responsive(tab) {
     width: 80%;
   }
   @include responsive(sm-desktop) {
-    width: 70%;
+    width: 50%;
+  }
+  @include responsive(normal-desktop) {
+    width: 35%;
   }
 }
 

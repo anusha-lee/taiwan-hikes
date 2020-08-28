@@ -321,14 +321,19 @@ About page layout
       font-size: $font-size-xs;
       font-family: $font-title;
       margin-bottom: 0.3rem;
-      //display: flex;
+      @include responsive(tab) {
+        font-size: $font-size-s;
+      }
     }
     &--options {
       color: $color-base-blue;
       font-size: $font-size-xs;
-      & option-selected {
-        background-color: $color-orangered;
+      @include responsive(tab) {
+        font-size: $font-size-s;
       }
+      // & option-selected {
+      //   background-color: $color-orangered;
+      // }
     }
   }
 }

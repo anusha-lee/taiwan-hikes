@@ -1120,17 +1120,26 @@ Page layout for articles on Start Here
   height: auto;
   border: 2px solid pink; }
 
-.search {
+.flower-search {
   margin: 2rem auto;
   padding: 1rem;
   border: 3px solid blue;
-  width: 92%; }
+  width: 92%;
+  text-align: center; }
+  .flower-search label, .flower-search select {
+    font-size: 1.4rem; }
+    @media only screen and (min-width: 580px) {
+      .flower-search label, .flower-search select {
+        font-size: 1.8rem; } }
   @media only screen and (min-width: 580px) {
-    .search {
+    .flower-search {
       width: 80%; } }
   @media only screen and (min-width: 900px) {
-    .search {
-      width: 70%; } }
+    .flower-search {
+      width: 50%; } }
+  @media only screen and (min-width: 1200px) {
+    .flower-search {
+      width: 35%; } }
 
 .flower {
   border: 2px solid olivedrab;
@@ -2679,11 +2688,15 @@ About page layout
   font-size: 1.4rem;
   font-family: "Alegreya", serif;
   margin-bottom: 0.3rem; }
+  @media only screen and (min-width: 580px) {
+    .search__box--label {
+      font-size: 1.8rem; } }
 .search__box--options {
   color: #097392;
   font-size: 1.4rem; }
-  .search__box--options option-selected {
-    background-color: #d55534; }
+  @media only screen and (min-width: 580px) {
+    .search__box--options {
+      font-size: 1.8rem; } }
 
 .blog__container {
   margin: 2rem auto 4rem;
