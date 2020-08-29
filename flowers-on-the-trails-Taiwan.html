@@ -247,87 +247,466 @@
       </div> -->
 
       <div class="start-here flowers">
-        <!-- flower colors -->
-        <div class="blog__search--content search flower-search">
-          <div class="search__box">
-            <label for="locations" class="search__box--label"
-              >Search Flowers by Colors:
-            </label>
-            <select id="locations" class="search__box--options">
-              <option value="white" data-color="white">White</option>
-              <br />
-              <option value="pink-or-red" data-color="pink" selected>
-                Pink or Red
-              </option>
-              <br />
-              <option value="yellow" data-color="yellow">
-                Yellow or Orange
-              </option>
-              <br />
-              <option value="purple-or-blue" data-color="purple">
-                Purple or Blue
-              </option>
-              <br />
-              <option value="other-colors" data-color="otherColors">
-                Other Colors
-              </option>
-            </select>
+        <div class="flower-search-container">
+          <!-- flower colors -->
+          <div class="blog__search--content search flower-search">
+            <div class="search__box">
+              <label for="locations" class="search__box--label"
+                >Search Flowers by Colors:
+              </label>
+              <select id="locations" class="search__box--options">
+                <option value="white" data-color="white">White</option>
+                <br />
+                <option value="pink-or-red" data-color="pink" selected>
+                  Pink or Red
+                </option>
+                <br />
+                <option value="yellow" data-color="yellow">
+                  Yellow or Orange
+                </option>
+                <br />
+                <option value="purple-or-blue" data-color="purple">
+                  Purple or Blue
+                </option>
+                <br />
+                <option value="other-colors" data-color="otherColors">
+                  Other Colors
+                </option>
+              </select>
+            </div>
+          </div>
+          <!-- species -->
+          <div class="blog__search--content search flower-search">
+            <div class="search__box">
+              <label for="locations" class="search__box--label"
+                >Search Flowers by Species:
+              </label>
+              <select id="locations" class="search__box--options">
+                <option value="endemic" data-species="endemic">
+                  Endemic Species
+                </option>
+                <br />
+                <option value="native" data-species="native">
+                  Native Species
+                </option>
+                <br />
+                <option value="introduced-species" data-species="introduced">
+                  Introduced Species
+                </option>
+                <br />
+              </select>
+            </div>
+          </div>
+          <!-- orchid -->
+          <div class="blog__search--content search flower-search">
+            <div class="search__box">
+              <label for="special-interests" class="search__box--label"
+                >Special Interests:
+              </label>
+              <select id="special-interests" class="search__box--options">
+                <option value="orchids" data-interests="orchids">
+                  Orchids
+                </option>
+                <br />
+                <option
+                  value="high-altitude-flowers"
+                  data-interests="high-altitude"
+                >
+                  High Altitude Flowers
+                </option>
+                <br />
+              </select>
+            </div>
           </div>
         </div>
-        <!-- species -->
-        <div class="blog__search--content search flower-search">
-          <div class="search__box">
-            <label for="locations" class="search__box--label"
-              >Search Flowers by Species:
-            </label>
-            <select id="locations" class="search__box--options">
-              <option value="endemic" data-species="endemic">
-                Endemic Species
-              </option>
-              <br />
-              <option value="native" data-species="native">
-                Native Species
-              </option>
-              <br />
-              <option value="introduced-species" data-species="introduced">
-                Introduced Species
-              </option>
-              <br />
-            </select>
-          </div>
-        </div>
+
+        <!-- flowers -->
         <div class="flower">
-          <div class="flower__info">
+          <div
+            class="flower__info"
+            data-interests="orchid"
+            data-species="native"
+            data-color="white"
+          >
             <div class="flower__box">
               <div class="flower__image">
-                <img
-                  src="/img/flowers/Striate-Acanthephippium-20200418-s.jpg"
-                  alt="Striate Acanthephippium"
-                />
+                <a
+                  data-flickr-embed="true"
+                  href="https://www.flickr.com/photos/187825778@N06/50279882273/in/album-72157715734288611/"
+                  title="Striate-Acanthephippium-20200418"
+                  ><img
+                    src="https://live.staticflickr.com/65535/50279882273_2cf3f08075_c.jpg"
+                    width="800"
+                    height="800"
+                    alt="Striate-Acanthephippium-20200418"
+                /></a>
+                <script
+                  async
+                  src="//embedr.flickr.com/assets/client-code.js"
+                  charset="utf-8"
+                ></script>
               </div>
-              <div class="flower__Chinese-name">Chinese: 一葉鍾馗蘭</div>
+              <div class="flower__Chinese-name">
+                Chinese Name:
+                <strong>一葉鍾馗蘭, 一葉罈花蘭</strong>
+              </div>
               <div class="flower__English-name">
-                Common Name or Scientific Name: Striate Acanthephippium
+                Common Name or Scientific Name:
+                <strong>Striate Acanthephippium</strong>
+              </div>
+              <div class="flower__species">
+                Species: <strong>Native</strong>
+              </div>
+              <div class="flower__color">Color: <strong>White</strong></div>
+              <div class="flower__trail">
+                Photo taken:
+                <!-- <a href="#" class="post-link-style" target="_blank"
+                  ><strong>烏桶縱走 Mt. Wulai to Mt. Datong</strong></a
+                > -->
+                <strong>烏桶縱走 Mt. Wulai to Mt. Datong</strong
+                ><span> (Post coming soon)</span>
+              </div>
+              <div class="flower__date">Photo taken date: April 18, 2020</div>
+              <div class="flower__reference">
+                <a
+                  href="http://www.orchidspecies.com/acanstriatum.htm"
+                  class="post-link-style"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >More about this flower</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flower__info"
+            data-interests="high-altitude"
+            data-species="endemic"
+            data-color="purple"
+          >
+            <div class="flower__box">
+              <div class="flower__image">
+                <a
+                  data-flickr-embed="true"
+                  href="https://www.flickr.com/photos/187825778@N06/50281352016/in/album-72157715734288611/"
+                  title="Alisan-gentian-20200725"
+                  ><img
+                    src="https://live.staticflickr.com/65535/50281352016_af404f2238_c.jpg"
+                    width="800"
+                    height="800"
+                    alt="Alisan-gentian-20200725"
+                /></a>
+                <script
+                  async
+                  src="//embedr.flickr.com/assets/client-code.js"
+                  charset="utf-8"
+                ></script>
+              </div>
+              <div class="flower__Chinese-name">
+                Chinese Name:
+                <strong>阿里山龍膽, 台灣龍膽</strong>
+              </div>
+              <div class="flower__English-name">
+                Common Name or Scientific Name:
+                <strong>Alisan gentian, Gentiana arisanensis</strong>
               </div>
               <div class="flower__species" data-species="native">
-                Species: Native
+                Species: <strong>Endemic</strong>
               </div>
-              <div class="flower__color" data-color="white">Color: White</div>
+              <div class="flower__color" data-color="white">
+                Color: <strong>Purple</strong>
+              </div>
               <div class="flower__trail">
-                Photo taken on
-                <a href="#" class="post-link-style" target="_blank">Wulai</a>
+                Photo taken:
+                <!-- <a href="#" class="post-link-style" target="_blank"
+                  ><strong>烏桶縱走 Mt. Wulai to Mt. Datong</strong></a
+                > -->
+                <strong>白姑大山 Mt. Baigu</strong
+                ><span> (Post coming soon)</span>
               </div>
-              <div class="flower__date">Photo taken date:</div>
+              <div class="flower__date">Photo taken date: April 18, 2020</div>
               <div class="flower__reference">
+                <a
+                  href="http://www.efloras.org/florataxon.aspx?flora_id=100&taxon_id=200017895"
+                  class="post-link-style"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >More about this flower</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flower__info"
+            data-interests="orchid"
+            data-species="native"
+            data-color="pink"
+          >
+            <div class="flower__box">
+              <div class="flower__image">
+                <a
+                  data-flickr-embed="true"
+                  href="https://www.flickr.com/photos/187825778@N06/50280827163/in/album-72157715734288611/"
+                  title="Calanthe-sylvatica-Thouars-Lindl-20200816"
+                  ><img
+                    src="https://live.staticflickr.com/65535/50280827163_880d1d1ed1_c.jpg"
+                    width="799"
+                    height="800"
+                    alt="Calanthe-sylvatica-Thouars-Lindl-20200816"
+                /></a>
+                <script
+                  async
+                  src="//embedr.flickr.com/assets/client-code.js"
+                  charset="utf-8"
+                ></script>
+              </div>
+              <div class="flower__Chinese-name">
+                Chinese Name:
+                <strong>長距根節蘭, </strong>
+              </div>
+              <div class="flower__English-name">
+                Common Name or Scientific Name:
+                <strong>Calanthe sylvatica (Thouars) Lindl.</strong>
+              </div>
+              <div class="flower__species" data-species="native">
+                Species: <strong>Native</strong>
+              </div>
+              <div class="flower__color">
+                Color: <strong>Pink or dark pink</strong>
+              </div>
+              <div class="flower__trail">
+                Photo taken:
+                <!-- <a href="#" class="post-link-style" target="_blank"
+                  ><strong>烏桶縱走 Mt. Wulai to Mt. Datong</strong></a
+                > -->
+                <strong>立霧山 Mt. Liwu, 拔刀爾山 Mt. Badaoer </strong
+                ><span> (Post coming soon)</span>
+              </div>
+              <div class="flower__date">Photo taken date: August 16, 2020</div>
+              <div class="flower__reference">
+                <a
+                  href="https://taibnet.sinica.edu.tw/chi/taibnet_species_detail.php?name_code=201955"
+                  class="post-link-style"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >More about this flower</a
+                >
+              </div>
+            </div>
+          </div>
+<!--
+          <div
+            class="flower__info"
+            data-interests="orchid"
+            data-species="native"
+            data-color="white"
+          >
+            <div class="flower__box">
+              <div class="flower__image"></div>
+              <div class="flower__Chinese-name">
+                Chinese Name:
+                <strong></strong>
+              </div>
+              <div class="flower__English-name">
+                Common Name or Scientific Name:
+                <strong></strong>
+              </div>
+              <div class="flower__species" data-species="native">
+                Species: <strong>Native</strong>
+              </div>
+              <div class="flower__color" data-color="white">
+                Color: <strong>White</strong>
+              </div>
+              <div class="flower__trail">
+                Photo taken:
                 <a href="#" class="post-link-style" target="_blank"
-                  >Reference</a
+                  ><strong></strong></a
+                >
+                <strong></strong><span> (Post coming soon)</span>
+              </div>
+              <div class="flower__date">Photo taken date: April 18, 2020</div>
+              <div class="flower__reference">
+                <a
+                  href="http://www.orchidspecies.com/acanstriatum.htm"
+                  class="post-link-style"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >More about this flower</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flower__info"
+            data-orchid="orchid"
+            data-species="native"
+            data-color="white"
+          >
+            <div class="flower__box">
+              <div class="flower__image"></div>
+              <div class="flower__Chinese-name">
+                Chinese Name:
+                <strong></strong>
+              </div>
+              <div class="flower__English-name">
+                Common Name or Scientific Name:
+                <strong></strong>
+              </div>
+              <div class="flower__species">
+                Species: <strong>Native</strong>
+              </div>
+              <div class="flower__color">Color: <strong>White</strong></div>
+              <div class="flower__trail">
+                Photo taken:
+                <a href="#" class="post-link-style" target="_blank"
+                  ><strong>烏桶縱走 Mt. Wulai to Mt. Datong</strong></a
+                >
+                <strong></strong><span> (Post coming soon)</span>
+              </div>
+              <div class="flower__date">Photo taken date: April 18, 2020</div>
+              <div class="flower__reference">
+                <a
+                  href="http://www.orchidspecies.com/acanstriatum.htm"
+                  class="post-link-style"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >More about this flower</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flower__info"
+            data-orchid="orchid"
+            data-species="native"
+            data-color="white"
+          >
+            <div class="flower__box">
+              <div class="flower__image"></div>
+              <div class="flower__Chinese-name">
+                Chinese Name:
+                <strong></strong>
+              </div>
+              <div class="flower__English-name">
+                Common Name or Scientific Name:
+                <strong></strong>
+              </div>
+              <div class="flower__species" data-species="native">
+                Species: <strong>Native</strong>
+              </div>
+              <div class="flower__color" data-color="white">
+                Color: <strong>White</strong>
+              </div>
+              <div class="flower__trail">
+                Photo taken:
+                <a href="#" class="post-link-style" target="_blank"
+                  ><strong>烏桶縱走 Mt. Wulai to Mt. Datong</strong></a
+                >
+                <strong></strong><span> (Post coming soon)</span>
+              </div>
+              <div class="flower__date">Photo taken date: April 18, 2020</div>
+              <div class="flower__reference">
+                <a
+                  href="http://www.orchidspecies.com/acanstriatum.htm"
+                  class="post-link-style"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >More about this flower</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flower__info"
+            data-orchid="orchid"
+            data-species="native"
+            data-color="white"
+          >
+            <div class="flower__box">
+              <div class="flower__image"></div>
+              <div class="flower__Chinese-name">
+                Chinese Name:
+                <strong></strong>
+              </div>
+              <div class="flower__English-name">
+                Common Name or Scientific Name:
+                <strong></strong>
+              </div>
+              <div class="flower__species" data-species="native">
+                Species: <strong>Native</strong>
+              </div>
+              <div class="flower__color" data-color="white">
+                Color: <strong>White</strong>
+              </div>
+              <div class="flower__trail">
+                Photo taken:
+                <a href="#" class="post-link-style" target="_blank"
+                  ><strong>烏桶縱走 Mt. Wulai to Mt. Datong</strong></a
+                >
+                <strong></strong><span> (Post coming soon)</span>
+              </div>
+              <div class="flower__date">Photo taken date: April 18, 2020</div>
+              <div class="flower__reference">
+                <a
+                  href="http://www.orchidspecies.com/acanstriatum.htm"
+                  class="post-link-style"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >More about this flower</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flower__info"
+            data-orchid="orchid"
+            data-species="native"
+            data-color="white"
+          >
+            <div class="flower__box">
+              <div class="flower__image"></div>
+              <div class="flower__Chinese-name">
+                Chinese Name:
+                <strong></strong>
+              </div>
+              <div class="flower__English-name">
+                Common Name or Scientific Name:
+                <strong></strong>
+              </div>
+              <div class="flower__species" data-species="native">
+                Species: <strong>Native</strong>
+              </div>
+              <div class="flower__color" data-color="white">
+                Color: <strong>White</strong>
+              </div>
+              <div class="flower__trail">
+                Photo taken:
+                <a href="#" class="post-link-style" target="_blank"
+                  ><strong>烏桶縱走 Mt. Wulai to Mt. Datong</strong></a
+                >
+                <strong></strong><span> (Post coming soon)</span>
+              </div>
+              <div class="flower__date">Photo taken date: April 18, 2020</div>
+              <div class="flower__reference">
+                <a
+                  href="http://www.orchidspecies.com/acanstriatum.htm"
+                  class="post-link-style"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >More about this flower</a
                 >
               </div>
             </div>
           </div>
         </div>
       </div>
-
+    -->
       <div class="scroll-up">
         <ion-icon name="arrow-round-up" class="scroll-up__arrow"></ion-icon>
       </div>

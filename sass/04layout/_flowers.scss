@@ -2,13 +2,15 @@
   margin: 2rem auto;
   padding: 1rem;
   height: auto;
-  border: 2px solid pink;
+}
+
+.flower-search-container {
+  margin-bottom: 1.5rem;
 }
 
 .flower-search {
-  margin: 2rem auto;
-  padding: 1rem;
-  border: 3px solid blue;
+  margin: 0.5rem auto;
+  padding: 0.3rem;
   width: 92%;
   text-align: center;
   & label,
@@ -34,25 +36,55 @@
 }
 
 .flower {
-  border: 2px solid olivedrab;
+  // border: 2px solid olivedrab;
   margin: 0.5rem auto;
   width: 95%;
   padding: 1rem;
+  line-height: 1.6;
+  font-size: $font-size-xs;
+  display: flex;
+  flex-wrap: wrap;
   @include responsive(tab) {
-    width: 85%;
+    width: 87%;
   }
   @include responsive(sm-desktop) {
-    width: 70%;
+    width: 80%;
+  }
+  @include responsive(normal-desktop) {
+    width: 65%;
+  }
+  @include responsive(xl-desktop) {
+    width: 75%;
   }
   &__info {
+    box-shadow: 0.4rem 0.4rem 1rem lighten($color-deep-blue-grey, 60%);
     margin: 0.5rem auto;
-    width: 95%;
-    border: 2px solid orchid;
+    padding: 1rem;
+    max-width: 96%;
+    height: 42rem;
+    overflow-y: scroll;
+
     @include responsive(tab) {
-      width: 45%;
+      max-width: 45%;
     }
     @include responsive(sm-desktop) {
-      width: 32%;
+      max-width: 31%;
+      height: 40rem;
+      // max-width: 40%;
+    }
+    @include responsive(normal-desktop) {
+      max-width: 28%;
+    }
+    @include responsive(xl-desktop) {
+      width: 30rem;
+    }
+  }
+  &__image {
+    margin: 0rem auto 1rem;
+    & a img {
+      height: auto;
+      width: auto;
+      object-fit: cover;
     }
   }
 }
