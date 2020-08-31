@@ -40,6 +40,7 @@ levels.addEventListener("change", () => {
   // Clear up the posts
   searchResults.innerHTML = "";
   showAllPostsButtons();
+  originalBlog.innerHTML = "";
   // Loop through the data-level of each post
   originalBlogChildren.forEach((originalBlogChild) => {
     const postLevel = originalBlogChild.getAttribute("data-level");
@@ -53,21 +54,21 @@ levels.addEventListener("change", () => {
 });
 
 // // Search features
-/*
-locations.addEventListener("click", () => {
+features.addEventListener("change", () => {
   // Clear up the posts
   searchResults.innerHTML = "";
+  originalBlog.innerHTML = "";
   showAllPostsButtons();
+
   // Loop through the data-feature of each post
   originalBlogChildren.forEach((originalBlogChild) => {
-    const postFeatures = originalBlogChild.getAttribute("data-feature");
+    const postFeature = originalBlogChild.getAttribute("data-feature");
     const featureValue = event.target.value;
-    console.log(postFeatures);
-    /* if the value of data-location is the same as option/event target value,
-     the post will show up in search-results     
-    if (featureValue) {
+    /* if the value of data-feature is the same as option/event target value,
+    the post results will show up*/
+    if (postFeature === featureValue) {
       searchResults.appendChild(originalBlogChild);
     }
+    // console.log(featureValue);
   });
 });
-*/
