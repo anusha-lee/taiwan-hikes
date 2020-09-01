@@ -3,9 +3,7 @@ const levels = document.querySelector("#levels");
 const features = document.querySelector("#features");
 const originalBlog = document.querySelector(".original-blog");
 const originalBlogContent = originalBlog.innerHTML;
-const originalBlogChildren = [
-  ...document.querySelector(".original-blog").children,
-];
+const originalBlogChildren = [...originalBlog.children];
 const searchResults = document.querySelector(".search-results");
 
 // For Show All Posts button

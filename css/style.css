@@ -1142,6 +1142,14 @@ Page layout for articles on Start Here
     .flower-search {
       width: 35%; } }
 
+.show-all-flower-btn {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
+
+.flower-search-results {
+  margin: 1rem auto;
+  border: 2px solid palevioletred; }
+
 .flower {
   margin: 0.5rem auto;
   width: 95%;
@@ -1149,7 +1157,8 @@ Page layout for articles on Start Here
   line-height: 1.6;
   font-size: 1.4rem;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  align-content: space-around; }
   @media only screen and (min-width: 580px) {
     .flower {
       width: 87%; } }
@@ -1158,33 +1167,35 @@ Page layout for articles on Start Here
       width: 80%; } }
   @media only screen and (min-width: 1200px) {
     .flower {
-      width: 65%; } }
+      width: 75%; } }
   @media only screen and (min-width: 1500px) {
     .flower {
-      width: 75%; } }
+      width: 65%; } }
   .flower__info {
     box-shadow: 0.4rem 0.4rem 1rem #d1d1d1;
-    margin: 0.5rem auto;
-    padding: 1rem;
-    max-width: 96%;
-    height: 42rem;
+    margin: 1.8rem auto;
+    padding: 1.5rem;
+    max-width: 94%;
+    height: 39rem;
+    border-radius: 5px;
     overflow-y: scroll; }
     @media only screen and (min-width: 580px) {
       .flower__info {
-        max-width: 45%; } }
+        max-width: 47%; } }
     @media only screen and (min-width: 900px) {
       .flower__info {
-        max-width: 31%;
-        height: 40rem; } }
+        max-width: 33%;
+        height: 35rem; } }
     @media only screen and (min-width: 1200px) {
       .flower__info {
-        max-width: 28%; } }
+        max-width: 30%; } }
     @media only screen and (min-width: 1500px) {
       .flower__info {
         width: 30rem; } }
   .flower__image {
     margin: 0rem auto 1rem; }
     .flower__image a img {
+      margin: 0.5rem auto;
       height: auto;
       width: auto;
       object-fit: cover; }
@@ -1825,7 +1836,7 @@ header {
           display: inline-block;
           margin: 0 auto;
           width: 100%;
-          padding: 2rem 1rem;
+          padding: 1.4rem 1rem;
           color: #fcfcfc;
           text-align: center;
           transition: all 0.3s ease-in-out;

@@ -110,6 +110,11 @@
                     <a href="blog.html">Blog</a>
                   </li>
                   <li class="menu__hamburger--list-item">
+                    <a href="flowers-on-the-trails-Taiwan.html"
+                      >Flowers on the Trails</a
+                    >
+                  </li>
+                  <li class="menu__hamburger--list-item">
                     <a href="resources.html">Resources</a>
                   </li>
                 </ul>
@@ -191,6 +196,30 @@
             in Taiwan for years.
           </div>
           <div class="article__section--content">
+            There are also other references I use for this page:
+            <a
+              href="http://bruce0342.blogspot.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="post-link-style"
+              >福星花園 (Chinese)</a
+            >,
+            <a
+              href="http://kplant.biodiv.tw/index.htm"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="post-link-style"
+              >認識植物 (Chinese)</a
+            >, and last but not least
+            <a
+              href="https://taibnet.sinica.edu.tw/home.php?"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="post-link-style"
+              >台灣物種名錄 Catalogue of Life in Taiwan. TaiCol</a
+            >.
+          </div>
+          <div class="article__section--content">
             If there is any mistake in the information about those flowers,
             please don't hesitate to let me know. Thank you for checking out
             this page.
@@ -202,62 +231,19 @@
         </div> -->
       </div>
 
-      <!-- <a
-        href=""
-        class="post-link-style" target="_blank"
-              rel="noreferrer noopener"
-      ></a> -->
-
-      <!-- Flowers info -->
-      <!-- <div class="blog__search">
-        <div class="blog__search--content search">
-          <div class="search__box">
-            <label for="locations" class="search__box--label"
-              >Search Flowers by Colors:
-            </label>
-            <select id="locations" class="search__box--options">
-              <option value="white">White</option>
-              <br />
-              <option value="pink-or-red" selected>Pink or Red</option>
-              <br />
-              <option value="yellow">Yellow</option>
-              <br />
-              <option value="purple-or-blue">Purple or Blue</option>
-              <br />
-              <option value="other-colors">Other Colors</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="blog__search--content search">
-          <div class="search__box">
-            <label for="locations" class="search__box--label"
-              >Search Flowers by Species:
-            </label>
-            <select id="locations" class="search__box--options">
-              <option value="endemic">Endemic Species</option>
-              <br />
-              <option value="native">Native Species</option>
-              <br />
-              <option value="introduced-species">Introduced Species</option>
-              <br />
-            </select>
-          </div>
-        </div>
-      </div> -->
-
+      <!-- Flower search -->
       <div class="start-here flowers">
         <div class="flower-search-container">
           <!-- flower colors -->
           <div class="blog__search--content search flower-search">
-            <div class="search__box">
-              <label for="locations" class="search__box--label"
+            <div class="search__box flower-colors">
+              <label for="flower-colors" class="search__box--label"
                 >Search Flowers by Colors:
               </label>
-              <select id="locations" class="search__box--options">
+              <select id="flower-colors" class="search__box--options">
                 <option value="white" data-color="white">White</option>
                 <br />
-                <option value="pink-or-red" data-color="pink" selected>
+                <option value="pink" data-color="pink" selected>
                   Pink or Red
                 </option>
                 <br />
@@ -265,7 +251,7 @@
                   Yellow or Orange
                 </option>
                 <br />
-                <option value="purple-or-blue" data-color="purple">
+                <option value="purple" data-color="purple">
                   Purple or Blue
                 </option>
                 <br />
@@ -277,11 +263,11 @@
           </div>
           <!-- species -->
           <div class="blog__search--content search flower-search">
-            <div class="search__box">
-              <label for="locations" class="search__box--label"
+            <div class="search__box flower-species">
+              <label for="flower-species" class="search__box--label"
                 >Search Flowers by Species:
               </label>
-              <select id="locations" class="search__box--options">
+              <select id="flower-species" class="search__box--options">
                 <option value="endemic" data-species="endemic">
                   Endemic Species
                 </option>
@@ -299,11 +285,14 @@
           </div>
           <!-- orchid -->
           <div class="blog__search--content search flower-search">
-            <div class="search__box">
-              <label for="special-interests" class="search__box--label"
+            <div class="search__box flower-special-interests">
+              <label for="flower-special-interests" class="search__box--label"
                 >Special Interests:
               </label>
-              <select id="special-interests" class="search__box--options">
+              <select
+                id="flower-special-interests"
+                class="search__box--options"
+              >
                 <option value="orchids" data-interests="orchids">
                   Orchids
                 </option>
@@ -320,7 +309,18 @@
           </div>
         </div>
 
-        <!-- flowers -->
+        <div class="blog__container search-results flower-search-results">
+          <button
+            class="search__box--options-button post-search__btn show-all-flowers-btn"
+          >
+            Show All Flowers
+          </button>
+        </div>
+
+        <!-- Flower search results -->
+        <div class="blog__container search-results flower-search-results"></div>
+
+        <!-- each flower -->
         <div class="flower">
           <div
             class="flower__info"
@@ -661,6 +661,7 @@
             </div>
           </div>
 
+          <!--
           <div
             class="flower__info"
             data-orchid="orchid"
@@ -743,8 +744,14 @@
                 >
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
+      </div>
+
+      <div class="freeHikes__btn-box">
+        <a href="guided-hiking-trips.html" class="sevenReasons__btn--explore">
+          Find Trips
+        </a>
       </div>
 
       <div class="scroll-up">
@@ -1517,11 +1524,7 @@
     ></script>
     <script src="js/main.js"></script>
     <script src="js/background-story-btn.js"></script>
-    <!-- <script
-      type="text/javascript"
-      src="https://platform-api.sharethis.com/js/sharethis.js#property=5ddb647373c71100125a2b96&product=inline-share-buttons"
-      async="async"
-    ></script> -->
+    <script src="js/searchFlowers.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
