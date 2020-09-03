@@ -1,7 +1,7 @@
-const flowerColors = document.querySelector(".flower-colors");
-const flowerSpecies = document.querySelector(".flower-species");
+const flowerColors = document.querySelector("#flower-colors");
+const flowerSpecies = document.querySelector("#flower-species");
 const flowerSpecialInterests = document.querySelector(
-  ".flower-special-interests"
+  "#flower-special-interests"
 );
 
 const flower = document.querySelector(".flower");
@@ -14,9 +14,8 @@ const flowerInfo = flower.querySelector(".flower__info");
 const showAllFlowersBtn = document.querySelector(".show-all-flowers-btn");
 function showAllFlowersButton() {
   showAllFlowersBtn.addEventListener("click", () => {
-    console.log(showAllFlowersBtn);
-    //flowerSearchResults.innerHTML = "";
-    // flower.innerHTML = originalFlowerContent;
+    flowerSearchResults.innerHTML = "";
+    flower.innerHTML = originalFlowerContent;
   });
 }
 
@@ -26,11 +25,11 @@ flowerColors.addEventListener("change", (event) => {
   // clear up the flowers
   flowerSearchResults.innerHTML = "";
   flower.innerHTML = "";
-  flowerColors.forEach((flowerChild) => {
-    const flowerColor = flowerColors.getAttribute("data-color");
+  flowerColors.forEach((flowerColor) => {
+    const flowerBoxColor = flowerColor.getAttribute("data-color");
     const colorValue = event.target.value;
 
-    if (flowerColor === colorValue) {
+    if (flowerBoxColor === colorValue) {
       flowerSearchResults.appendChild(flowerChild);
     }
   });
