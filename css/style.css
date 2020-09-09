@@ -2566,6 +2566,8 @@ About page layout
   .about-container__creator--img img {
     border-radius: 50%;
     width: 30rem; }
+    .about-container__creator--img img:hover {
+      pointer-events: none; }
   .about-container__creator--intro {
     text-align: left; }
     .about-container__creator--intro div {

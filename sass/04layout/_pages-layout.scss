@@ -120,6 +120,9 @@ About page layout
     & img {
       border-radius: 50%;
       width: 30rem;
+      &:hover {
+        pointer-events: none;
+      }
     }
   }
   &--intro {
