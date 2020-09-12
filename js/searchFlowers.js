@@ -25,12 +25,12 @@ flowerColors.addEventListener("change", (event) => {
   // clear up the flowers
   flowerSearchResults.innerHTML = "";
   flower.innerHTML = "";
-  flowerColors.forEach((flowerColor) => {
-    const flowerBoxColor = flowerColor.getAttribute("data-color");
-    const colorValue = event.target.value;
 
+  flowerColors.map((flowerColor) => {
+    const flowerBoxColor = flowerColor.getAttribute("data-color");
+    console.log(flowerBoxColor);
     if (flowerBoxColor === colorValue) {
-      flowerSearchResults.appendChild(flowerChild);
+      return flowerSearchResults.appendChild(flowerChild);
     }
   });
 });

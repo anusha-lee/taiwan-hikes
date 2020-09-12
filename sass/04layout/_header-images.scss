@@ -187,3 +187,12 @@
   background-size: cover;
   background-position: 25% 10%;
 }
+
+.header__background-img-songluo {
+  background-image: url("../img/blog/08-lake-songluo/00-songluo-header-blog-thumbnail.jpg");
+  background-size: cover;
+  background-position: 50% 0%;
+  @include responsive(tab) {
+    background-position: center;
+  }
+}
