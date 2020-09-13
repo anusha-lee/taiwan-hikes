@@ -25,6 +25,7 @@ locations.addEventListener("change", () => {
   originalBlogChildren.forEach((originalBlogChild) => {
     const postLocation = originalBlogChild.getAttribute("data-location");
     const locationValue = event.target.value;
+
     /* if the value of data-location is the same as option/event target value,
      the post will show up in search-results     */
     if (postLocation === locationValue) {

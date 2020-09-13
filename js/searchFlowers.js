@@ -3,19 +3,23 @@ const flowerSpecies = document.querySelector("#flower-species");
 const flowerSpecialInterests = document.querySelector(
   "#flower-special-interests"
 );
+const flowerColorChildren = [...flowerColors.children];
 
 const flower = document.querySelector(".flower");
 const originalFlowerContent = flower.innerHTML;
 const flowerChildren = [...flower.children];
 const flowerSearchResults = document.querySelector(".flower-search-results");
 const flowerInfo = flower.querySelector(".flower__info");
+console.log(flowerSearchResults);
 
 // For Show All Flowers button
 const showAllFlowersBtn = document.querySelector(".show-all-flowers-btn");
+console.log(showAllFlowersBtn);
 function showAllFlowersButton() {
-  showAllFlowersBtn.addEventListener("click", () => {
-    flowerSearchResults.innerHTML = "";
-    flower.innerHTML = originalFlowerContent;
+  showAllFlowersBtn.addEventListener("click", (event) => {
+    // flowerSearchResults.innerHTML = "";
+    // flower.innerHTML = originalFlowerContent;
+    console.log("click button");
   });
 }
 
@@ -25,12 +29,14 @@ flowerColors.addEventListener("change", (event) => {
   // clear up the flowers
   flowerSearchResults.innerHTML = "";
   flower.innerHTML = "";
+  const searchColorValue = event.target.value;
 
-  flowerColors.map((flowerColor) => {
-    const flowerBoxColor = flowerColor.getAttribute("data-color");
-    console.log(flowerBoxColor);
-    if (flowerBoxColor === colorValue) {
-      return flowerSearchResults.appendChild(flowerChild);
+  flowerColorChildren.forEach((flowerColorChild) => {
+    const flowerBoxColor = flowerColorChild.getAttribute("data-color");
+
+    // need to append the parent of flowerBoxColor
+    if (flowerBoxColor === searchColorValue) {
+      flowerSearchResults.appendChild(flowerBoxColor);
     }
   });
 });
