@@ -255,11 +255,11 @@
                 >Search Flowers by Colors:
               </label>
               <select id="flower-colors" class="search__box--options">
+                <option value="select" data-color="none">Select</option>
+                <br />
                 <option value="white" data-color="white">White</option>
                 <br />
-                <option value="pink" data-color="pink" selected>
-                  Pink or Red
-                </option>
+                <option value="pink" data-color="pink">Pink or Red</option>
                 <br />
                 <option value="yellow" data-color="yellow">
                   Yellow or Orange
@@ -282,6 +282,8 @@
                 >Search Flowers by Species:
               </label>
               <select id="flower-species" class="search__box--options">
+                <option value="select" data-species="none">Select</option>
+                <br />
                 <option value="endemic" data-species="endemic">
                   Endemic Species
                 </option>
@@ -303,18 +305,14 @@
               <label for="flower-special-interests" class="search__box--label"
                 >Special Interests:
               </label>
-              <select
-                id="flower-special-interests"
-                class="search__box--options"
-              >
+              <select id="flower-interests" class="search__box--options">
+                <option value="select" data-interests="none">Select</option>
+                <br />
                 <option value="orchids" data-interests="orchids">
                   Orchids
                 </option>
                 <br />
-                <option
-                  value="high-altitude-flowers"
-                  data-interests="high-altitude"
-                >
+                <option value="high-altitude" data-interests="high-altitude">
                   High Altitude Flowers
                 </option>
                 <br />
@@ -338,58 +336,54 @@
         <div class="flower">
           <div
             class="flower__info"
-            data-interests="orchid"
+            data-interests="orchids"
             data-species="native"
             data-color="white"
           >
-            <div class="flower__box">
-              <div class="flower__image">
-                <a
-                  data-flickr-embed="true"
-                  href="https://www.flickr.com/photos/187825778@N06/50279882273/in/album-72157715734288611/"
-                  title="Striate-Acanthephippium-20200418"
-                  ><img
-                    src="https://live.staticflickr.com/65535/50279882273_2cf3f08075_c.jpg"
-                    width="800"
-                    height="800"
-                    alt="Striate-Acanthephippium-20200418"
-                /></a>
-                <script
-                  async
-                  src="//embedr.flickr.com/assets/client-code.js"
-                  charset="utf-8"
-                ></script>
-              </div>
-              <div class="flower__Chinese-name">
-                Chinese Name:
-                <strong>一葉鍾馗蘭, 一葉罈花蘭</strong>
-              </div>
-              <div class="flower__English-name">
-                Common Name or Scientific Name:
-                <strong>Striate Acanthephippium</strong>
-              </div>
-              <div class="flower__species">
-                Species: <strong>Native</strong>
-              </div>
-              <div class="flower__color">Color: <strong>White</strong></div>
-              <div class="flower__trail">
-                Photo taken:
-                <!-- <a href="#" class="post-link-style" target="_blank"
+            <div class="flower__image">
+              <a
+                data-flickr-embed="true"
+                href="https://www.flickr.com/photos/187825778@N06/50279882273/in/album-72157715734288611/"
+                title="Striate-Acanthephippium-20200418"
+                ><img
+                  src="https://live.staticflickr.com/65535/50279882273_2cf3f08075_c.jpg"
+                  width="800"
+                  height="800"
+                  alt="Striate-Acanthephippium-20200418"
+              /></a>
+              <script
+                async
+                src="//embedr.flickr.com/assets/client-code.js"
+                charset="utf-8"
+              ></script>
+            </div>
+            <div class="flower__Chinese-name">
+              Chinese Name:
+              <strong>一葉鍾馗蘭, 一葉罈花蘭</strong>
+            </div>
+            <div class="flower__English-name">
+              Common Name or Scientific Name:
+              <strong>Striate Acanthephippium</strong>
+            </div>
+            <div class="flower__species">Species: <strong>Native</strong></div>
+            <div class="flower__color">Color: <strong>White</strong></div>
+            <div class="flower__trail">
+              Photo taken:
+              <!-- <a href="#" class="post-link-style" target="_blank"
                   ><strong>烏桶縱走 Mt. Wulai to Mt. Datong</strong></a
                 > -->
-                <strong>烏桶縱走 Mt. Wulai to Mt. Datong</strong
-                ><span> (Post coming soon)</span>
-              </div>
-              <div class="flower__date">Photo taken date: April 18, 2020</div>
-              <div class="flower__reference">
-                <a
-                  href="http://www.orchidspecies.com/acanstriatum.htm"
-                  class="post-link-style"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  >More about this flower</a
-                >
-              </div>
+              <strong>烏桶縱走 Mt. Wulai to Mt. Datong</strong
+              ><span> (Post coming soon)</span>
+            </div>
+            <div class="flower__date">Photo taken date: April 18, 2020</div>
+            <div class="flower__reference">
+              <a
+                href="http://www.orchidspecies.com/acanstriatum.htm"
+                class="post-link-style"
+                target="_blank"
+                rel="noreferrer noopener"
+                >More about this flower</a
+              >
             </div>
           </div>
 
@@ -399,290 +393,287 @@
             data-species="endemic"
             data-color="purple"
           >
-            <div class="flower__box">
-              <div class="flower__image">
-                <a
-                  data-flickr-embed="true"
-                  href="https://www.flickr.com/photos/187825778@N06/50281352016/in/album-72157715734288611/"
-                  title="Alisan-gentian-20200725"
-                  ><img
-                    src="https://live.staticflickr.com/65535/50281352016_af404f2238_c.jpg"
-                    width="800"
-                    height="800"
-                    alt="Alisan-gentian-20200725"
-                /></a>
-                <script
-                  async
-                  src="//embedr.flickr.com/assets/client-code.js"
-                  charset="utf-8"
-                ></script>
-              </div>
-              <div class="flower__Chinese-name">
-                Chinese Name:
-                <strong>阿里山龍膽, 台灣龍膽</strong>
-              </div>
-              <div class="flower__English-name">
-                Common Name or Scientific Name:
-                <strong>Alisan gentian, Gentiana arisanensis</strong>
-              </div>
-              <div class="flower__species" data-species="native">
-                Species: <strong>Endemic</strong>
-              </div>
-              <div class="flower__color" data-color="white">
-                Color: <strong>Purple</strong>
-              </div>
-              <div class="flower__trail">
-                Photo taken:
-                <!-- <a href="#" class="post-link-style" target="_blank"
+            <div class="flower__image">
+              <a
+                data-flickr-embed="true"
+                href="https://www.flickr.com/photos/187825778@N06/50281352016/in/album-72157715734288611/"
+                title="Alisan-gentian-20200725"
+                ><img
+                  src="https://live.staticflickr.com/65535/50281352016_af404f2238_c.jpg"
+                  width="800"
+                  height="800"
+                  alt="Alisan-gentian-20200725"
+              /></a>
+              <script
+                async
+                src="//embedr.flickr.com/assets/client-code.js"
+                charset="utf-8"
+              ></script>
+            </div>
+            <div class="flower__Chinese-name">
+              Chinese Name:
+              <strong>阿里山龍膽, 台灣龍膽</strong>
+            </div>
+            <div class="flower__English-name">
+              Common Name or Scientific Name:
+              <strong>Alisan gentian, Gentiana arisanensis</strong>
+            </div>
+            <div class="flower__species" data-species="native">
+              Species: <strong>Endemic</strong>
+            </div>
+            <div class="flower__color" data-color="white">
+              Color: <strong>Purple</strong>
+            </div>
+            <div class="flower__trail">
+              Photo taken:
+              <!-- <a href="#" class="post-link-style" target="_blank"
                   ><strong>烏桶縱走 Mt. Wulai to Mt. Datong</strong></a
                 > -->
-                <strong>白姑大山 Mt. Baigu</strong
-                ><span> (Post coming soon)</span>
-              </div>
-              <div class="flower__date">Photo taken date: April 18, 2020</div>
-              <div class="flower__reference">
-                <a
-                  href="http://www.efloras.org/florataxon.aspx?flora_id=100&taxon_id=200017895"
-                  class="post-link-style"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  >More about this flower</a
-                >
-              </div>
+              <strong>白姑大山 Mt. Baigu</strong
+              ><span> (Post coming soon)</span>
+            </div>
+            <div class="flower__date">Photo taken date: April 18, 2020</div>
+            <div class="flower__reference">
+              <a
+                href="http://www.efloras.org/florataxon.aspx?flora_id=100&taxon_id=200017895"
+                class="post-link-style"
+                target="_blank"
+                rel="noreferrer noopener"
+                >More about this flower</a
+              >
             </div>
           </div>
 
           <div
             class="flower__info"
-            data-interests="orchid"
+            data-interests="orchids"
+            data-species="native"
+            data-color="pink"
+          >
+            <div class="flower__image">
+              <a
+                data-flickr-embed="true"
+                href="https://www.flickr.com/photos/187825778@N06/50280827163/in/album-72157715734288611/"
+                title="Calanthe-sylvatica-Thouars-Lindl-20200816"
+                ><img
+                  src="https://live.staticflickr.com/65535/50280827163_880d1d1ed1_c.jpg"
+                  width="799"
+                  height="800"
+                  alt="Calanthe-sylvatica-Thouars-Lindl-20200816"
+              /></a>
+              <script
+                async
+                src="//embedr.flickr.com/assets/client-code.js"
+                charset="utf-8"
+              ></script>
+            </div>
+            <div class="flower__Chinese-name">
+              Chinese Name:
+              <strong>長距根節蘭, </strong>
+            </div>
+            <div class="flower__English-name">
+              Common Name or Scientific Name:
+              <strong>Calanthe sylvatica (Thouars) Lindl.</strong>
+            </div>
+            <div class="flower__species" data-species="native">
+              Species: <strong>Native</strong>
+            </div>
+            <div class="flower__color">
+              Color: <strong>Pink or dark pink</strong>
+            </div>
+            <div class="flower__trail">
+              Photo taken:
+              <!-- <a href="#" class="post-link-style" target="_blank"
+                  ><strong>烏桶縱走 Mt. Wulai to Mt. Datong</strong></a
+                > -->
+              <strong>立霧山 Mt. Liwu, 拔刀爾山 Mt. Badaoer </strong
+              ><span> (Post coming soon)</span>
+            </div>
+            <div class="flower__date">Photo taken date: August 16, 2020</div>
+            <div class="flower__reference">
+              <a
+                href="https://taibnet.sinica.edu.tw/chi/taibnet_species_detail.php?name_code=201955"
+                class="post-link-style"
+                target="_blank"
+                rel="noreferrer noopener"
+                >More about this flower</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="flower__info"
+            data-interests="orchids"
+            data-species="native"
+            data-color="white"
+          >
+            <div class="flower__image">
+              <a
+                data-flickr-embed="true"
+                href="https://www.flickr.com/photos/187825778@N06/50290257143/in/album-72157715734288611/"
+                title="Triplicate-Calanthe-20200809"
+                ><img
+                  src="https://live.staticflickr.com/65535/50290257143_ec2383ae66_c.jpg"
+                  width="799"
+                  height="800"
+                  alt="Triplicate-Calanthe-20200809"
+              /></a>
+              <script
+                async
+                src="//embedr.flickr.com/assets/client-code.js"
+                charset="utf-8"
+              ></script>
+            </div>
+            <div class="flower__Chinese-name">
+              Chinese Name:
+              <strong>白鶴蘭</strong>
+            </div>
+            <div class="flower__English-name">
+              Common Name or Scientific Name:
+              <strong>Triplicate Calanthe，White Crane Orchid</strong>
+            </div>
+            <div class="flower__species" data-species="native">
+              Species: <strong>Native</strong>
+            </div>
+            <div class="flower__color" data-color="white">
+              Color: <strong>White</strong>
+            </div>
+            <div class="flower__trail">
+              Photo taken:
+              <a href="#" class="post-link-style" target="_blank"
+                ><strong>埔里 有勝山 Mt. Yousheng, Puli</strong></a
+              >
+              <strong></strong><span> (Post coming soon)</span>
+            </div>
+            <div class="flower__date">Photo taken date: August 9, 2020</div>
+            <div class="flower__reference">
+              <a
+                href="https://en.wikipedia.org/wiki/Calanthe_triplicata"
+                class="post-link-style"
+                target="_blank"
+                rel="noreferrer noopener"
+                >More about this flower</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="flower__info"
+            data-interests="none"
             data-species="native"
             data-color="pink"
           >
             <div class="flower__box">
-              <div class="flower__image">
-                <a
-                  data-flickr-embed="true"
-                  href="https://www.flickr.com/photos/187825778@N06/50280827163/in/album-72157715734288611/"
-                  title="Calanthe-sylvatica-Thouars-Lindl-20200816"
-                  ><img
-                    src="https://live.staticflickr.com/65535/50280827163_880d1d1ed1_c.jpg"
-                    width="799"
-                    height="800"
-                    alt="Calanthe-sylvatica-Thouars-Lindl-20200816"
-                /></a>
-                <script
-                  async
-                  src="//embedr.flickr.com/assets/client-code.js"
-                  charset="utf-8"
-                ></script>
-              </div>
-              <div class="flower__Chinese-name">
-                Chinese Name:
-                <strong>長距根節蘭, </strong>
-              </div>
-              <div class="flower__English-name">
-                Common Name or Scientific Name:
-                <strong>Calanthe sylvatica (Thouars) Lindl.</strong>
-              </div>
-              <div class="flower__species" data-species="native">
-                Species: <strong>Native</strong>
-              </div>
-              <div class="flower__color">
-                Color: <strong>Pink or dark pink</strong>
-              </div>
-              <div class="flower__trail">
-                Photo taken:
-                <!-- <a href="#" class="post-link-style" target="_blank"
-                  ><strong>烏桶縱走 Mt. Wulai to Mt. Datong</strong></a
-                > -->
-                <strong>立霧山 Mt. Liwu, 拔刀爾山 Mt. Badaoer </strong
-                ><span> (Post coming soon)</span>
-              </div>
-              <div class="flower__date">Photo taken date: August 16, 2020</div>
-              <div class="flower__reference">
-                <a
-                  href="https://taibnet.sinica.edu.tw/chi/taibnet_species_detail.php?name_code=201955"
-                  class="post-link-style"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  >More about this flower</a
-                >
-              </div>
+              <a
+                data-flickr-embed="true"
+                href="https://www.flickr.com/photos/187825778@N06/50291150192/in/album-72157715734288611/"
+                title="Common-Melastoma-20200530"
+                ><img
+                  src="https://live.staticflickr.com/65535/50291150192_facd98ae07_c.jpg"
+                  width="800"
+                  height="800"
+                  alt="Common-Melastoma-20200530"
+              /></a>
+              <script
+                async
+                src="//embedr.flickr.com/assets/client-code.js"
+                charset="utf-8"
+              ></script>
+            </div>
+            <div class="flower__Chinese-name">
+              Chinese Name:
+              <strong>野牡丹</strong>
+            </div>
+            <div class="flower__English-name">
+              Common Name or Scientific Name:
+              <strong>Common Melastoma</strong>
+            </div>
+            <div class="flower__species" data-species="native">
+              Species: <strong>Native</strong>
+            </div>
+            <div class="flower__color" data-color="white">
+              Color: <strong>Pink</strong>
+            </div>
+            <div class="flower__trail">
+              Photo taken:
+              <a href="#" class="post-link-style" target="_blank"
+                ><strong
+                  >Tamsui-Kavalan Historical Trail, mid-section</strong
+                ></a
+              ><span> (Post coming soon)</span>
+            </div>
+            <div class="flower__date">Photo taken date: May 30, 2020</div>
+            <div class="flower__reference">
+              <a
+                href="https://en.wikipedia.org/wiki/Melastoma_malabathricum"
+                class="post-link-style"
+                target="_blank"
+                rel="noreferrer noopener"
+                >More about this flower</a
+              >
             </div>
           </div>
 
           <div
             class="flower__info"
-            data-orchid="orchid"
+            data-interests="high-altitude"
             data-species="native"
             data-color="white"
           >
             <div class="flower__box">
-              <div class="flower__image">
-                <a
-                  data-flickr-embed="true"
-                  href="https://www.flickr.com/photos/187825778@N06/50290257143/in/album-72157715734288611/"
-                  title="Triplicate-Calanthe-20200809"
-                  ><img
-                    src="https://live.staticflickr.com/65535/50290257143_ec2383ae66_c.jpg"
-                    width="799"
-                    height="800"
-                    alt="Triplicate-Calanthe-20200809"
-                /></a>
-                <script
-                  async
-                  src="//embedr.flickr.com/assets/client-code.js"
-                  charset="utf-8"
-                ></script>
-              </div>
-              <div class="flower__Chinese-name">
-                Chinese Name:
-                <strong>白鶴蘭</strong>
-              </div>
-              <div class="flower__English-name">
-                Common Name or Scientific Name:
-                <strong>Triplicate Calanthe，White Crane Orchid</strong>
-              </div>
-              <div class="flower__species" data-species="native">
-                Species: <strong>Native</strong>
-              </div>
-              <div class="flower__color" data-color="white">
-                Color: <strong>White</strong>
-              </div>
-              <div class="flower__trail">
-                Photo taken:
-                <a href="#" class="post-link-style" target="_blank"
-                  ><strong>埔里 有勝山 Mt. Yousheng, Puli</strong></a
-                >
-                <strong></strong><span> (Post coming soon)</span>
-              </div>
-              <div class="flower__date">Photo taken date: August 9, 2020</div>
-              <div class="flower__reference">
-                <a
-                  href="https://en.wikipedia.org/wiki/Calanthe_triplicata"
-                  class="post-link-style"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  >More about this flower</a
-                >
-              </div>
+              <a
+                data-flickr-embed="true"
+                href="https://www.flickr.com/photos/187825778@N06/50291070971/in/album-72157715734288611/"
+                title="Indian-Pipe-20200725"
+                ><img
+                  src="https://live.staticflickr.com/65535/50291070971_499cdfb700_c.jpg"
+                  width="800"
+                  height="800"
+                  alt="Indian-Pipe-20200725"
+              /></a>
+              <script
+                async
+                src="//embedr.flickr.com/assets/client-code.js"
+                charset="utf-8"
+              ></script>
             </div>
-          </div>
-
-          <div class="flower__info" data-species="native" data-color="pink">
-            <div class="flower__box">
-              <div class="flower__image">
-                <a
-                  data-flickr-embed="true"
-                  href="https://www.flickr.com/photos/187825778@N06/50291150192/in/album-72157715734288611/"
-                  title="Common-Melastoma-20200530"
-                  ><img
-                    src="https://live.staticflickr.com/65535/50291150192_facd98ae07_c.jpg"
-                    width="800"
-                    height="800"
-                    alt="Common-Melastoma-20200530"
-                /></a>
-                <script
-                  async
-                  src="//embedr.flickr.com/assets/client-code.js"
-                  charset="utf-8"
-                ></script>
-              </div>
-              <div class="flower__Chinese-name">
-                Chinese Name:
-                <strong>野牡丹</strong>
-              </div>
-              <div class="flower__English-name">
-                Common Name or Scientific Name:
-                <strong>Common Melastoma</strong>
-              </div>
-              <div class="flower__species" data-species="native">
-                Species: <strong>Native</strong>
-              </div>
-              <div class="flower__color" data-color="white">
-                Color: <strong>Pink</strong>
-              </div>
-              <div class="flower__trail">
-                Photo taken:
-                <a href="#" class="post-link-style" target="_blank"
-                  ><strong
-                    >Tamsui-Kavalan Historical Trail, mid-section</strong
-                  ></a
-                ><span> (Post coming soon)</span>
-              </div>
-              <div class="flower__date">Photo taken date: May 30, 2020</div>
-              <div class="flower__reference">
-                <a
-                  href="https://en.wikipedia.org/wiki/Melastoma_malabathricum"
-                  class="post-link-style"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  >More about this flower</a
-                >
-              </div>
+            <div class="flower__Chinese-name">
+              Chinese Name:
+              <strong>水晶蘭</strong>
             </div>
-          </div>
-
-          <div class="flower__info" data-species="native" data-color="white">
-            <div class="flower__box">
-              <div class="flower__image">
-                <a
-                  data-flickr-embed="true"
-                  href="https://www.flickr.com/photos/187825778@N06/50291070971/in/album-72157715734288611/"
-                  title="Indian-Pipe-20200725"
-                  ><img
-                    src="https://live.staticflickr.com/65535/50291070971_499cdfb700_c.jpg"
-                    width="800"
-                    height="800"
-                    alt="Indian-Pipe-20200725"
-                /></a>
-                <script
-                  async
-                  src="//embedr.flickr.com/assets/client-code.js"
-                  charset="utf-8"
-                ></script>
-              </div>
-              <div class="flower__Chinese-name">
-                Chinese Name:
-                <strong>水晶蘭</strong>
-              </div>
-              <div class="flower__English-name">
-                Common Name or Scientific Name:
-                <strong
-                  >Indian Pipe， Corpse Plant， Convulsion Root，Pinesap</strong
-                >
-              </div>
-              <div class="flower__species">
-                Species: <strong>Native</strong>
-              </div>
-              <div class="flower__color">Color: <strong>White</strong></div>
-              <div class="flower__trail">
-                Photo taken:
-                <a href="#" class="post-link-style" target="_blank"
-                  ><strong>白姑大山 Mt. Beigu</strong></a
-                ><span> (Post coming soon)</span>
-              </div>
-              <div class="flower__date">Photo taken date: July 25, 2020</div>
-              <div class="flower__reference">
-                <a
-                  href="https://www.geochembio.com/guides/flowers/Monotropa-uniflora.html"
-                  class="post-link-style"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  >More about this flower</a
-                >
-              </div>
+            <div class="flower__English-name">
+              Common Name or Scientific Name:
+              <strong
+                >Indian Pipe， Corpse Plant， Convulsion Root，Pinesap</strong
+              >
+            </div>
+            <div class="flower__species">Species: <strong>Native</strong></div>
+            <div class="flower__color">Color: <strong>White</strong></div>
+            <div class="flower__trail">
+              Photo taken:
+              <a href="#" class="post-link-style" target="_blank"
+                ><strong>白姑大山 Mt. Beigu</strong></a
+              ><span> (Post coming soon)</span>
+            </div>
+            <div class="flower__date">Photo taken date: July 25, 2020</div>
+            <div class="flower__reference">
+              <a
+                href="https://www.geochembio.com/guides/flowers/Monotropa-uniflora.html"
+                class="post-link-style"
+                target="_blank"
+                rel="noreferrer noopener"
+                >More about this flower</a
+              >
             </div>
           </div>
 
           <!--
           <div
             class="flower__info"
-            data-orchid="orchid"
+             data-interests="none"
             data-species="native"
             data-color="white"
           >
-            <div class="flower__box">
               <div class="flower__image"></div>
               <div class="flower__Chinese-name">
                 Chinese Name:
@@ -715,16 +706,14 @@
                   >More about this flower</a
                 >
               </div>
-            </div>
           </div>
 
           <div
             class="flower__info"
-            data-orchid="orchid"
+            data-interests="orchid"
             data-species="native"
             data-color="white"
           >
-            <div class="flower__box">
               <div class="flower__image"></div>
               <div class="flower__Chinese-name">
                 Chinese Name:
@@ -757,7 +746,6 @@
                   >More about this flower</a
                 >
               </div>
-            </div>
           </div> -->
         </div>
       </div>
