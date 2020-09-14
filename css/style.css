@@ -1114,8 +1114,9 @@ Page layout for articles on Start Here
     #panview:hover {
       transform: scale(1.1); } }
 
-.flowers {
-  margin: 2rem auto;
+.flowers,
+.flower-search-results {
+  margin: 2rem auto 1rem !important;
   padding: 1rem;
   height: auto; }
 
@@ -1147,8 +1148,7 @@ Page layout for articles on Start Here
   margin-bottom: 0.5rem; }
 
 .flower-search-results {
-  margin: 1rem auto;
-  border: 2px solid palevioletred; }
+  margin: 1rem auto; }
 
 .flower {
   margin: 0.5rem auto;

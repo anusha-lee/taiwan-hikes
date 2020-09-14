@@ -1,5 +1,6 @@
-.flowers {
-  margin: 2rem auto;
+.flowers,
+.flower-search-results {
+  margin: 2rem auto 1rem !important;
   padding: 1rem;
   height: auto;
 }
@@ -42,11 +43,10 @@
 
 .flower-search-results {
   margin: 1rem auto;
-  border: 2px solid palevioletred;
 }
 
 .flower {
-  // border: 2px solid olivedrab;
+  //border: 2px solid olivedrab;
   margin: 0.5rem auto;
   width: 95%;
   padding: 1rem;
