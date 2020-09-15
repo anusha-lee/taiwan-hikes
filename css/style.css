@@ -1193,12 +1193,20 @@ Page layout for articles on Start Here
       .flower__info {
         width: 30rem; } }
   .flower__image {
-    margin: 0rem auto 1rem; }
-    .flower__image a img {
+    margin: 0rem auto 1rem;
+    overflow: hidden; }
+    .flower__image img {
       margin: 0.5rem auto;
       height: auto;
       width: auto;
-      object-fit: cover; }
+      object-fit: cover;
+      transition: transform 0.4s ease-in-out; }
+      @media only screen and (min-width: 580px) {
+        .flower__image img:hover {
+          transform: scale(1.3); } }
+
+#flower-find-trip-btn {
+  margin-bottom: 7rem; }
 
 footer {
   margin: 0 auto;
