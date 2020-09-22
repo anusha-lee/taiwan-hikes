@@ -231,9 +231,12 @@ Page layout for articles on Start Here
         }
         & figcaption {
           margin: 1rem auto 2rem;
-          font-size: $font-size-xs;
+          font-size: $font-size-xxs;
           color: $color-base-blue;
           text-align: center;
+          @include responsive(tab) {
+            font-size: $font-size-xs;
+          }
         }
       }
     }

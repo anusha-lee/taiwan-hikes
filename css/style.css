@@ -1054,9 +1054,12 @@ Page layout for articles on Start Here
         border-radius: 0.5rem; }
       .article .article__section--imageBox figure figcaption {
         margin: 1rem auto 2rem;
-        font-size: 1.4rem;
+        font-size: 1rem;
         color: #097392;
         text-align: center; }
+        @media only screen and (min-width: 580px) {
+          .article .article__section--imageBox figure figcaption {
+            font-size: 1.4rem; } }
   .article #article__social-sharing {
     margin: 2rem auto 4rem;
     padding: 1rem 0;
