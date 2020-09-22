@@ -962,7 +962,7 @@ Page layout for articles on Start Here
     .article__opening--pageTitle {
       font-size: 4.8rem; } }
 .article__opening--author {
-  width: 50%;
+  width: 70%;
   height: auto;
   margin: 0 auto;
   padding: 1rem;
@@ -973,13 +973,13 @@ Page layout for articles on Start Here
   flex-wrap: wrap; }
   @media only screen and (min-width: 580px) {
     .article__opening--author {
-      width: 35%; } }
+      width: 40%; } }
   @media only screen and (min-width: 900px) {
     .article__opening--author {
-      width: 25%; } }
+      width: 30%; } }
   @media only screen and (min-width: 1200px) {
     .article__opening--author {
-      width: 15%; } }
+      width: 20%; } }
   .article__opening--author span {
     font-style: italic;
     font-size: 1.4rem;
