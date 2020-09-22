@@ -134,8 +134,11 @@ Page layout for articles on Start Here
 
     & span {
       font-style: italic;
-      font-size: $font-size-xs;
+      font-size: $font-size-xxs;
       text-align: center;
+      @include responsive(tab) {
+        font-size: $font-size-xs;
+      }
     }
   }
 }

@@ -982,8 +982,11 @@ Page layout for articles on Start Here
       width: 20%; } }
   .article__opening--author span {
     font-style: italic;
-    font-size: 1.4rem;
+    font-size: 1rem;
     text-align: center; }
+    @media only screen and (min-width: 580px) {
+      .article__opening--author span {
+        font-size: 1.4rem; } }
 
 .article {
   margin: 0 auto;
