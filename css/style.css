@@ -1946,6 +1946,11 @@ header {
   background-size: cover;
   background-position: right center; }
 
+.header__background-img-cookie {
+  background-image: url("/img/header-cookie-policy.jpg");
+  background-size: cover;
+  background-position: right center; }
+
 /*******************************
 ********* Page not found
 *******************************/
