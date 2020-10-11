@@ -42,12 +42,15 @@
   }
   &--list {
     &--item {
-      font-size: $font-size-xs;
+      font-size: $font-size-xxs;
       font-family: $font-text;
       &::first-letter {
         color: $color-orangered;
         font-size: 110%;
         font-weight: 600;
+      }
+      @include responsive(sm-desktop) {
+        font-size: $font-size-xs;
       }
     }
   }

@@ -1488,12 +1488,15 @@ footer {
     font-weight: 600;
     text-decoration: underline; }
   .guided-hikes__note--list--item {
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-family: "Open Sans", sans-serif; }
     .guided-hikes__note--list--item::first-letter {
       color: #d55534;
       font-size: 110%;
       font-weight: 600; }
+    @media only screen and (min-width: 900px) {
+      .guided-hikes__note--list--item {
+        font-size: 1.4rem; } }
 
 .disclaimer {
   display: flex;
