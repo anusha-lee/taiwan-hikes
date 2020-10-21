@@ -2832,6 +2832,19 @@ About page layout
   display: block;
   margin: 0 auto; }
 
+.pintrest {
+  width: 70%;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0.4rem 0.4rem 1rem #d1d1d1; }
+
+.pin-image iframe {
+  margin: 2rem auto;
+  max-width: 85%; }
+  @media only screen and (min-width: 580px) {
+    .pin-image iframe {
+      max-width: 70%; } }
+
 @-webkit-keyframes check {
   50% {
     outline-color: #333;

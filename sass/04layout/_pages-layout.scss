@@ -185,10 +185,6 @@ About page layout
   color: $color-orangered;
 }
 
-// .about-container__acknowledgement {
-//   margin: 1rem auto 6rem;
-// }
-
 // Size Modal of Taiwan compared to other countries
 .sizes {
   &__clickToSee {
@@ -352,9 +348,7 @@ About page layout
   @include responsive(tab) {
     width: 95%;
   }
-  // @include responsive(sm-desktop) {
-  //   width: 90%;
-  // }
+
   @include responsive(normal-desktop) {
     width: 75%;
   }
@@ -384,9 +378,7 @@ About page layout
     @include responsive(xl-desktop) {
       max-width: 25%;
     }
-    // @include responsive(xl-desktop) {
-    //   max-width: 30%;
-    // }
+
     &--title {
       font-size: $font-size-xs;
       text-align: center;
@@ -435,6 +427,24 @@ About page layout
     iframe {
       display: block;
       margin: 0 auto;
+    }
+  }
+}
+
+// Pinterests pin style
+.pintrest {
+  width: 70%;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0.4rem 0.4rem 1rem lighten($color-deep-blue-grey, 60%);
+}
+
+.pin-image {
+  iframe {
+    margin: 2rem auto;
+    max-width: 85%;
+    @include responsive(tab) {
+      max-width: 70%;
     }
   }
 }
