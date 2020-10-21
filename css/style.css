@@ -2838,11 +2838,11 @@ About page layout
   border-radius: 5px;
   box-shadow: 0.4rem 0.4rem 1rem #d1d1d1; }
 
-.pin-image iframe {
+.pin-image figure {
   margin: 2rem auto;
   max-width: 85%; }
   @media only screen and (min-width: 580px) {
-    .pin-image iframe {
+    .pin-image figure {
       max-width: 70%; } }
 
 @-webkit-keyframes check {
