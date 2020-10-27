@@ -443,6 +443,9 @@ About page layout
   figure {
     margin: 2rem auto;
     max-width: 85%;
+    iframe {
+      margin: 0 auto;
+    }
     @include responsive(tab) {
       max-width: 70%;
     }

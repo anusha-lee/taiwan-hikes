@@ -2841,6 +2841,8 @@ About page layout
 .pin-image figure {
   margin: 2rem auto;
   max-width: 85%; }
+  .pin-image figure iframe {
+    margin: 0 auto; }
   @media only screen and (min-width: 580px) {
     .pin-image figure {
       max-width: 70%; } }
