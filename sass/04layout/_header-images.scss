@@ -202,3 +202,12 @@
     background-position: center;
   }
 }
+
+.header__background-img-wutong {
+  background-image: url("../img/blog/09-wutong/00-WuTong-header-blog-thumbnail.jpg");
+  background-size: cover;
+  background-position: 50% 0%;
+  @include responsive(tab) {
+    background-position: center;
+  }
+}
