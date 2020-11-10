@@ -2073,6 +2073,14 @@ header {
     .header__background-img-wutong {
       background-position: center; } }
 
+.header__background-img-yuan {
+  background-image: url("../img/blog/10-mt-yuan/00-mt-yuan-header-blog-thumbnail.jpg");
+  background-size: cover;
+  background-position: 50% 0%; }
+  @media only screen and (min-width: 580px) {
+    .header__background-img-yuan {
+      background-position: center; } }
+
 .home-7Reasons {
   margin: 0 auto;
   width: 100%;
