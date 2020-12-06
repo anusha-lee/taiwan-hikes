@@ -14,7 +14,7 @@ header {
 }
 
 .header__background-img-box {
-  background-image: url("../img/header-background3.jpg");
+  background-image: url("../img/header-background9.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 65% 25%;
@@ -38,7 +38,7 @@ header {
   }
   @include responsive(sm-desktop) {
     height: 100vh;
-    background-position: bottom;
+    background-position: top;
   }
 
   &--img {
