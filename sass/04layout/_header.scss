@@ -38,7 +38,7 @@ header {
   }
   @include responsive(sm-desktop) {
     height: 100vh;
-    background-position: top;
+    background-position: 50% 35%;
   }
 
   &--img {
