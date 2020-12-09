@@ -221,6 +221,15 @@
   }
 }
 
+.header__background-img-baigu {
+  background-image: url("../img/blog/11-baigu/00-mt-baigu-header-blog-thumbnail.jpg");
+  background-size: cover;
+  background-position: 50% 0%;
+  @include responsive(tab) {
+    background-position: center;
+  }
+}
+
 #yuan {
   color: pink;
 }
