@@ -42,32 +42,39 @@ levels.addEventListener("change", () => {
   originalBlog.innerHTML = "";
   // Loop through the data-level of each post
   originalBlogChildren.forEach((originalBlogChild) => {
-    const postLevel = originalBlogChild.getAttribute("data-level");
+    const postLevel = originalBlogChild.getAttribute("data-level").split(" ");
     const levelValue = event.target.value;
+    console.log(postLevel)
     /* if the value of data-level is the same as option/event target value,
      the post will show up in search-results     */
-    if (postLevel === levelValue) {
-      searchResults.appendChild(originalBlogChild);
-    }
+    
+    postLevel.forEach( (singleLevel) => {
+      if (levelValue === singleLevel ) {
+        searchResults.appendChild(originalBlogChild);
+      }
+    })    
   });
 });
 
-// // Search features
+
 features.addEventListener("change", () => {
   // Clear up the posts
   searchResults.innerHTML = "";
   originalBlog.innerHTML = "";
   showAllPostsButtons();
 
-  // Loop through the data-feature of each post
+  // Loop through the data-feature of each post to get every features, and make they as an array to loop through again
   originalBlogChildren.forEach((originalBlogChild) => {
-    const postFeature = originalBlogChild.getAttribute("data-feature");
+    const postFeatures = originalBlogChild.getAttribute("data-feature").split(" ");
     const featureValue = event.target.value;
     /* if the value of data-feature is the same as option/event target value,
     the post results will show up*/
-    if (postFeature === featureValue) {
-      searchResults.appendChild(originalBlogChild);
-    }
-    // console.log(featureValue);
+    
+    postFeatures.forEach( (singleFeature) => {
+      if (singleFeature === featureValue) {
+        searchResults.appendChild(originalBlogChild);
+      }
+    })
   });
 });
+
