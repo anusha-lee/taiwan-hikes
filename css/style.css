@@ -2089,8 +2089,13 @@ header {
     .header__background-img-baigu {
       background-position: center; } }
 
-#yuan {
-  color: pink; }
+.header__background-img-dali-datong {
+  background-image: url("../img/blog/12-dali-datong/00-dali-datong-header-blog-thumbnail.jpg");
+  background-size: cover;
+  background-position: 50% 0%; }
+  @media only screen and (min-width: 580px) {
+    .header__background-img-dali-datong {
+      background-position: 50% 20%; } }
 
 .home-7Reasons {
   margin: 0 auto;

@@ -230,6 +230,11 @@
   }
 }
 
-#yuan {
-  color: pink;
+.header__background-img-dali-datong {
+  background-image: url("../img/blog/12-dali-datong/00-dali-datong-header-blog-thumbnail.jpg");
+  background-size: cover;
+  background-position: 50% 0%;
+  @include responsive(tab) {
+    background-position: 50% 20%;
+  }
 }
