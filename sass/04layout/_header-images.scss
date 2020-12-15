@@ -235,6 +235,6 @@
   background-size: cover;
   background-position: 50% 0%;
   @include responsive(tab) {
-    background-position: 50% 20%;
+    background-position: 40% 20%;
   }
 }
