@@ -2097,6 +2097,14 @@ header {
     .header__background-img-dali-datong {
       background-position: 40% 20%; } }
 
+.header__background-img-tonghou-river-source {
+  background-image: url("../img/blog/13-tonghou-river-source/00-tonghou-river-source-header-blog-thumbnail-s.jpg");
+  background-size: cover;
+  background-position: bottom; }
+  @media only screen and (min-width: 580px) {
+    .header__background-img-tonghou-river-source {
+      background-position: 20% 20%; } }
+
 .home-7Reasons {
   margin: 0 auto;
   width: 100%;

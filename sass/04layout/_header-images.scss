@@ -238,3 +238,12 @@
     background-position: 40% 20%;
   }
 }
+
+.header__background-img-tonghou-river-source {
+  background-image: url("../img/blog/13-tonghou-river-source/00-tonghou-river-source-header-blog-thumbnail-s.jpg");
+  background-size: cover;
+  background-position: bottom;
+  @include responsive(tab) {
+    background-position: 20% 20%;
+  }
+}
