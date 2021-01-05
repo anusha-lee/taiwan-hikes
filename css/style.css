@@ -869,6 +869,15 @@ input[type="reset"] {
 .back {
   grid-column: 1 / 3; }
 
+.training .timeline__detail--even,
+.training .timeline__detail--odd {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between; }
+
+.timeline__detail--training-topics {
+  font-weight: bold; }
+
 .post-link-style {
   text-decoration: none;
   color: #097392;
@@ -1939,7 +1948,10 @@ header {
 .header__background-img-guide-training {
   background-image: url("../img/header-guide-training.jpg");
   background-size: cover;
-  background-position: center; }
+  background-position: left 5%; }
+  @media only screen and (min-width: 580px) {
+    .header__background-img-guide-training {
+      background-position: center; } }
 
 /*******************************
 ********* Legal pages

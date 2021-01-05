@@ -55,7 +55,10 @@
 .header__background-img-guide-training {
   background-image: url("../img/header-guide-training.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: left 5%;
+  @include responsive(tab) {
+    background-position: center;
+  }
 }
 /*******************************
 ********* Legal pages
