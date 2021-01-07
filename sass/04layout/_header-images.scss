@@ -256,3 +256,12 @@
     background-position: 20% 20%;
   }
 }
+
+.header__background-img-dabajian {
+  background-image: url("../img/blog/14-dabajian/00-dabajian-header-blog-thumbnail.jpg");
+  background-size: cover;
+  background-position: 20% 20%;
+  @include responsive(tab) {
+    background-position: center;
+  }
+}

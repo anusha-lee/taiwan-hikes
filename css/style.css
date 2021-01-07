@@ -2122,6 +2122,14 @@ header {
     .header__background-img-tonghou-river-source {
       background-position: 20% 20%; } }
 
+.header__background-img-dabajian {
+  background-image: url("../img/blog/14-dabajian/00-dabajian-header-blog-thumbnail.jpg");
+  background-size: cover;
+  background-position: 20% 20%; }
+  @media only screen and (min-width: 580px) {
+    .header__background-img-dabajian {
+      background-position: center; } }
+
 .home-7Reasons {
   margin: 0 auto;
   width: 100%;
