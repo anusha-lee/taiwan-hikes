@@ -873,7 +873,13 @@ input[type="reset"] {
 .training .timeline__detail--odd {
   display: flex;
   flex-direction: column;
-  align-content: space-between; }
+  align-content: space-between;
+  padding: 1rem;
+  line-height: 1.8; }
+  @media only screen and (min-width: 580px) {
+    .training .timeline__detail--even,
+    .training .timeline__detail--odd {
+      padding: 2rem; } }
 
 .timeline__detail--training-topics {
   font-weight: bold; }
@@ -1124,6 +1130,13 @@ Page layout for articles on Start Here
     transition: transform 0.3s ease-in-out; }
     #panview:hover {
       transform: scale(1.1); } }
+
+.how-to-apply {
+  background-color: #d2e4e4;
+  padding: .8rem !important; }
+  @media only screen and (min-width: 580px) {
+    .how-to-apply {
+      padding: 2rem !important; } }
 
 .flowers,
 .flower-search-results {

@@ -316,3 +316,11 @@ Page layout for articles on Start Here
     }
   }
 }
+
+.how-to-apply {
+  background-color: lighten($color-blue-grey, 25%);
+  padding: .8rem !important;
+  @include responsive(tab) {
+    padding: 2rem !important;
+  }
+}

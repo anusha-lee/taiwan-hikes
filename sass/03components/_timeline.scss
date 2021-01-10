@@ -66,6 +66,11 @@
   display: flex;
   flex-direction: column;
   align-content: space-between;
+  padding: 1rem;
+  line-height: 1.8;
+  @include responsive(tab) {
+    padding: 2rem;    
+  }
 }
 
 .timeline__detail--training-topics {
