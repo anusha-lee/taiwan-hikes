@@ -277,3 +277,15 @@
     background-position: center;
   }
 }
+
+.header__background-img-puli-6-part2 {
+  background-image: url("../img/blog/16-Puli-6-beauties-2/00-puli-6-beauties-2-header-blog-thumbnail.jpg");
+  background-size: cover;
+  background-position: 30% 20%;
+  @include responsive(tab) {
+    background-position: bottom;
+  }
+  @include responsive(sm-desktop) {
+    background-position: center;
+  }
+}
