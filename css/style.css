@@ -2165,6 +2165,17 @@ header {
     .header__background-img-puli-6-part2 {
       background-position: center; } }
 
+.header__background-img-tonghou-taversing {
+  background-image: url("../img/blog/17-tonghou-taversing/00-tonghou-taversing-header-blog-thumbnail.jpg");
+  background-size: cover;
+  background-position: 76% 20%; }
+  @media only screen and (min-width: 580px) {
+    .header__background-img-tonghou-taversing {
+      background-position: bottom; } }
+  @media only screen and (min-width: 900px) {
+    .header__background-img-tonghou-taversing {
+      background-position: center; } }
+
 .home-7Reasons {
   margin: 0 auto;
   width: 100%;

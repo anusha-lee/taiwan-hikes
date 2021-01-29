@@ -289,3 +289,15 @@
     background-position: center;
   }
 }
+
+.header__background-img-tonghou-taversing {
+  background-image: url("../img/blog/17-tonghou-taversing/00-tonghou-taversing-header-blog-thumbnail.jpg");
+  background-size: cover;
+  background-position: 76% 20%;
+  @include responsive(tab) {
+    background-position: bottom;
+  }
+  @include responsive(sm-desktop) {
+    background-position: center;
+  }
+}
