@@ -2958,6 +2958,14 @@ About page layout
     .pin-image figure {
       max-width: 70%; } }
 
+.facebook__embeded {
+  margin: 2rem auto 1rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
 @-webkit-keyframes check {
   50% {
     outline-color: #333;
