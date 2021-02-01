@@ -2168,7 +2168,7 @@ header {
 .header__background-img-tonghou-taversing {
   background-image: url("../img/blog/17-tonghou-taversing/00-tonghou-taversing-header-blog-thumbnail.jpg");
   background-size: cover;
-  background-position: right 24% bottom 5%; }
+  background-position: right 24% bottom 1%; }
   @media only screen and (min-width: 580px) {
     .header__background-img-tonghou-taversing {
       background-position: bottom; } }

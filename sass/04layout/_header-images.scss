@@ -293,7 +293,7 @@
 .header__background-img-tonghou-taversing {
   background-image: url("../img/blog/17-tonghou-taversing/00-tonghou-taversing-header-blog-thumbnail.jpg");
   background-size: cover;
-  background-position: right 24% bottom 5%;
+  background-position: right 24% bottom 1%;
   @include responsive(tab) {
     background-position: bottom;
   }
