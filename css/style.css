@@ -2176,6 +2176,14 @@ header {
     .header__background-img-tonghou-taversing {
       background-position: center; } }
 
+.header__background-img-zhuilu {
+  background-image: url("../img/blog/18-zhuilu-old-trail/zhuilu-header-blog-thumbnail-1.jpg");
+  background-size: cover;
+  background-position: right 1% bottom 0%; }
+  @media only screen and (min-width: 900px) {
+    .header__background-img-zhuilu {
+      background-position: right 1% bottom 20%; } }
+
 .home-7Reasons {
   margin: 0 auto;
   width: 100%;
@@ -2965,6 +2973,9 @@ About page layout
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+
+.note {
+  font-size: .5rem !important; }
 
 @-webkit-keyframes check {
   50% {

@@ -301,3 +301,16 @@
     background-position: center;
   }
 }
+
+.header__background-img-zhuilu {
+  //background-image: url("../img/blog/18-zhuilu-old-trail/zhuilu-header-blog-thumbnail-vertical02.jpg");
+  background-image: url("../img/blog/18-zhuilu-old-trail/zhuilu-header-blog-thumbnail-1.jpg");
+  background-size: cover;
+  background-position: right 1% bottom 0%;
+ // @include responsive(tab) {
+ //   background-position: right;
+ // }
+  @include responsive(sm-desktop) {
+    background-position: right 1% bottom 20%;
+  }
+}
