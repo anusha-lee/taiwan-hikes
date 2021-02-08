@@ -2177,7 +2177,7 @@ header {
       background-position: center; } }
 
 .header__background-img-zhuilu {
-  background-image: url("../img/blog/18-zhuilu-old-trail/zhuilu-header-blog-thumbnail-1.jpg");
+  background-image: url("../img/blog/18-zhuilu-old-trail/zhuilu-header-blog-thumbnail.jpg");
   background-size: cover;
   background-position: right 1% bottom 0%; }
   @media only screen and (min-width: 900px) {
@@ -2966,7 +2966,8 @@ About page layout
     .pin-image figure {
       max-width: 70%; } }
 
-.facebook {
+.facebook,
+.embeded-tweet {
   margin: 2rem auto 1rem;
   width: 90% auto;
   display: flex;
