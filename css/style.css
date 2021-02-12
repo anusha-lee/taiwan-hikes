@@ -1760,11 +1760,11 @@ header {
   .logo-big {
     margin-left: 1rem;
     display: block;
-    max-height: 90%;
+    max-height: 4.5rem;
     padding-left: 0; }
     @media only screen and (min-width: 580px) {
       .logo-big {
-        height: 4.5rem; } }
+        max-height: 6rem; } }
 
 .menu {
   display: grid;
