@@ -149,11 +149,7 @@
       <div class="home-7Reasons">
         <div class="sevenReasons">          
           <h2 class="sevenReasons__title">
-            <a
-              href="seven-reasons-why-you-should-hike-in-taiwan-new.html"
-              class="post-link-style"
-              >7 Reasons Why You Should Hike in Taiwan</a
-            >
+            Why Go Hiking in Taiwan?
           </h2>
           <p class="sevenReasons__text">
             What things can you do if you have a short stay or layover in
@@ -163,14 +159,16 @@
             so many hiking trails and you can experience the unique nature that
             only Taiwan can offer...
           </p>
-          <div class="sevenReasons__btn">
-            <a
-              href="seven-reasons-why-you-should-hike-in-taiwan-new.html"
-              class="sevenReasons__btn--explore"
-            >
-              Explore
-            </a>
-          </div>
+        </div>
+      </div>
+
+      <!-- Blog post carousel-->
+
+      <div class="embla" id="embla">
+        <div class="embla__container">
+          <div class="embla__slide">Slide 1</div>
+          <div class="embla__slide">Slide 2</div>
+          <div class="embla__slide">Slide 3</div>
         </div>
       </div>
 
@@ -1105,5 +1103,11 @@
       charset="UTF-8"
       async
     ></script>
+    <script src="https://unpkg.com/embla-carousel@latest/embla-carousel.umd.js">
+    </script>
+    <script>
+      var emblaNode = document.getElementById("embla");
+      var embla = EmblaCarousel(emblaNode);
+    </script>
   </body>
 </html>

@@ -352,6 +352,20 @@
   }
 }
 
+// Carousel for blog posts
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  position: relative;
+  min-width: 100%;
+}
+
+
 // Sponsors section
 // .home__sponsors {
 //   margin: 0 auto;

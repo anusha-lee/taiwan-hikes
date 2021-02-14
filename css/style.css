@@ -2179,10 +2179,21 @@ header {
 .header__background-img-zhuilu {
   background-image: url("../img/blog/18-zhuilu-old-trail/zhuilu-header-blog-thumbnail.jpg");
   background-size: cover;
-  background-position: right 1% bottom 0%; }
+  background-position: left; }
   @media only screen and (min-width: 900px) {
     .header__background-img-zhuilu {
       background-position: right 1% bottom 20%; } }
+
+.header__background-img-shakadang-xiaozhuilu {
+  background-image: url("../img/blog/19-shakadang-xiaozhuilu/shakadang-header-blog-thumbnail.jpg");
+  background-size: cover;
+  background-position: cebter; }
+  @media only screen and (min-width: 580px) {
+    .header__background-img-shakadang-xiaozhuilu {
+      background-position: bottom; } }
+  @media only screen and (min-width: 900px) {
+    .header__background-img-shakadang-xiaozhuilu {
+      background-position: center; } }
 
 .home-7Reasons {
   margin: 0 auto;
@@ -2493,6 +2504,16 @@ header {
     font-family: "Alegreya", serif;
     color: #097392;
     padding: 1rem 0 2rem; }
+
+.embla {
+  overflow: hidden; }
+
+.embla__container {
+  display: flex; }
+
+.embla__slide {
+  position: relative;
+  min-width: 100%; }
 
 /*
 .homeCarousel {
