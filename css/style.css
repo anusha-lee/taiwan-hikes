@@ -1138,6 +1138,13 @@ Page layout for articles on Start Here
     .how-to-apply {
       padding: 2rem !important; } }
 
+#table-contents {
+  padding: 1.5rem;
+  background-color: #d2e4e4; }
+  @media only screen and (min-width: 580px) {
+    #table-contents {
+      padding: 2rem 5rem; } }
+
 .flowers,
 .flower-search-results {
   margin: 2rem auto 1rem !important;
@@ -1760,11 +1767,11 @@ header {
   .logo-big {
     margin-left: 1rem;
     display: block;
-    max-height: 4.5rem;
+    max-height: 90%;
     padding-left: 0; }
     @media only screen and (min-width: 580px) {
       .logo-big {
-        max-height: 6rem; } }
+        height: 4.5rem; } }
 
 .menu {
   display: grid;
@@ -2195,6 +2202,17 @@ header {
     .header__background-img-shakadang-xiaozhuilu {
       background-position: center; } }
 
+.header__background-img-qilai-nanhua {
+  background-image: url("../img/blog/20-qilai-nanhua/00-qilai-nanhua-header-blog-thumbnail.jpg");
+  background-size: cover;
+  background-position: cebter; }
+  @media only screen and (min-width: 580px) {
+    .header__background-img-qilai-nanhua {
+      background-position: bottom; } }
+  @media only screen and (min-width: 900px) {
+    .header__background-img-qilai-nanhua {
+      background-position: center; } }
+
 .home-7Reasons {
   margin: 0 auto;
   width: 100%;
@@ -2505,15 +2523,13 @@ header {
     color: #097392;
     padding: 1rem 0 2rem; }
 
-.embla {
-  overflow: hidden; }
+#carousel {
+  margin-top: 2rem;
+  margin-bottom: 5rem; }
 
-.embla__container {
-  display: flex; }
-
-.embla__slide {
-  position: relative;
-  min-width: 100%; }
+.landing-page-carousel {
+  border: 10px solid teal;
+  height: 30vh; }
 
 /*
 .homeCarousel {

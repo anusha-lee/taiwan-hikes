@@ -353,18 +353,14 @@
 }
 
 // Carousel for blog posts
-
-.embla {
-  overflow: hidden;
+#carousel {  
+  margin-top: 2rem;
+  margin-bottom: 5rem;
 }
-.embla__container {
-  display: flex;
+.landing-page-carousel {
+  border: 10px solid teal;
+  height: 30vh;
 }
-.embla__slide {
-  position: relative;
-  min-width: 100%;
-}
-
 
 // Sponsors section
 // .home__sponsors {

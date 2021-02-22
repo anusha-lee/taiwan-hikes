@@ -147,13 +147,13 @@ header {
   &-big {
     margin-left: 1rem;
     display: block;
-    //max-height: 90%; // remove this after using new logo    
-    max-height: 4.5rem; // change to this after using new logo    
+    max-height: 90%; // remove this after using new logo    
+    //max-height: 4.5rem; // change to this after using new logo    
     padding-left: 0;
 
     @include responsive(tab) {
-      // height: 4.5rem; // remove this after using new logo  
-      max-height: 6rem; // change to this after using new logo    
+      height: 4.5rem; // remove this after using new logo  
+      //max-height: 6rem; // change to this after using new logo    
     }
   }
 }

@@ -66,8 +66,9 @@
       type="image/png"
       sizes="16x16"
       href="img/favicon_io3/favicon-16x16.png"
-    />
+    />    
     <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="css/flickity.css" />
     <script
       data-ad-client="ca-pub-2517042833704996"
       async
@@ -162,16 +163,56 @@
         </div>
       </div>
 
-      <!-- Blog post carousel-->
-
-      <div class="embla" id="embla">
-        <div class="embla__container">
-          <div class="embla__slide">Slide 1</div>
-          <div class="embla__slide">Slide 2</div>
-          <div class="embla__slide">Slide 3</div>
+      <!-- carousel-cell -->
+      <div class="main-carousel" id="carousel"
+      data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="carousel-cell">
+          <div class="landing-page-carousel">
+            <a href="blog-posts/shakadang-xiaozhuilu-trails-beauty-in-taroko.html">
+              <img
+                src="img/blog/18-zhuilu-old-trail/zhuilu-header-blog-thumbnail.jpg"
+                alt="Zhulu Old Trail in Taroko Gorge"
+              />
+            </a>
+          </div>
+        </div>     
+        <div class="carousel-cell">
+          <div class="carousel-cell">
+            <div class="landing-page-carousel">
+              <a href="blog-posts/shakadang-xiaozhuilu-trails-beauty-in-taroko.html">
+                <img
+                  src="img/blog/18-zhuilu-old-trail/zhuilu-header-blog-thumbnail.jpg"
+                  alt="Zhulu Old Trail in Taroko Gorge"
+                />
+              </a>
+            </div>
+          </div>    
+        </div>
+        <div class="carousel-cell">
+          <div class="landing-page-carousel">            
+            <div>
+              <a href="blog-posts/shakadang-xiaozhuilu-trails-beauty-in-taroko.html">
+                <img
+                  src="img/blog/19-shakadang-xiaozhuilu/shakadang-header-blog-thumbnail.jpg"
+                  alt="Shakadang and Xiaozhuilu Trails in Taroko Gorge"/>
+              </a>
+            </div>
+          </div>
+        </div>        
+        <div class="carousel-cell">
+          <div class="landing-page-carousel">            
+            <div>
+              <a href="blog-posts/shakadang-xiaozhuilu-trails-beauty-in-taroko.html">
+                <img
+                  src="img/blog/19-shakadang-xiaozhuilu/shakadang-header-blog-thumbnail.jpg"
+                  alt="Shakadang and Xiaozhuilu Trails in Taroko Gorge"/>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!-- Guided hikes preview -->
       <div class="home-freeHikes">
         <div class="freeHikes">
           <div class="freeHikes__trips">
@@ -1103,11 +1144,6 @@
       charset="UTF-8"
       async
     ></script>
-    <script src="https://unpkg.com/embla-carousel@latest/embla-carousel.umd.js">
-    </script>
-    <script>
-      var emblaNode = document.getElementById("embla");
-      var embla = EmblaCarousel(emblaNode);
-    </script>
+    <script src="js/flickity.pkgd.js"></script>
   </body>
 </html>

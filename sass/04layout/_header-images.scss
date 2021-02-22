@@ -327,3 +327,16 @@
     background-position: center;
   }
 }
+
+.header__background-img-qilai-nanhua {
+  //background-image: url("../img/blog/18-zhuilu-old-trail/zhuilu-header-blog-thumbnail-vertical02.jpg");
+  background-image: url("../img/blog/20-qilai-nanhua/00-qilai-nanhua-header-blog-thumbnail.jpg");
+  background-size: cover;
+  background-position: cebter;
+  @include responsive(tab) {
+    background-position: bottom;
+  }
+  @include responsive(sm-desktop) {
+    background-position: center;
+  }
+}
