@@ -153,143 +153,6 @@
   }
 }
 
-// testimonials section
-/*
-.home__testimonials {
-  margin: 8rem auto;
-  width: 100%;
-  height: 70vh;
-}
-
-.testimonials {
-  margin: 1rem auto;
-  padding: 1rem;
-  width: 90%;
-  height: 100%;
-
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: flex-end;
-  justify-content: center;
-
-  @include responsive(tab) {
-    width: 80%;
-    height: 110%;
-  }
-  @include responsive(sm-desktop) {
-    width: 65%;
-    height: 110%;
-  }
-  @include responsive(normal-desktop) {
-    width: 55%;
-  }
-  @include responsive(xl-desktop) {
-    width: 45%;
-  }
-
-  &__box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 300%;
-    //min-height: 40vh;
-    background-color: lighten($color-tan, 5%);
-    transition: left 0.4s ease-in-out;
-
-    display: flex;
-    flex-flow: row nowrap;
-  }
-}
-
-.cell {
-  width: 100vh;
-  height: 70%;
-  padding: 1rem;
-
-  display: flex;
-  flex: 1;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-
-  &__avatar {
-    width: 25%;
-    max-width: 15rem;
-    padding: 1rem 0;
-    text-align: center;
-    border-radius: 50%;
-    @include responsive(tab) {
-      margin-top: 1rem;
-      width: 20%;
-    }
-    @include responsive(sm-desktop) {
-      width: 25%;
-    }
-  }
-
-  &__quote {
-    display: inline-block;
-    width: 95%;
-    height: auto;
-    text-align: center;
-    padding: 0.5rem;
-    font-size: $font-size-xs;
-    line-height: 1.6;
-    @include responsive(tab) {
-      width: 90%;
-      font-size: $font-size-s;
-    }
-  }
-
-  &__author {
-    display: block;
-    font-size: $font-size-sm;
-    font-family: $font-title;
-    color: $color-base-blue;
-    padding: 1rem 0 2rem;
-  }
-}
-
-.slider__nav {
-  margin: 2.5rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  z-index: 10;
-  outline: 0.6rem solid $color-base-blue;
-  outline-offset: -0.5rem;
-  border-radius: 50%;
-  box-shadow: 0 0 0 0 $color-base-blue, 0 0 0 0 $color-tan;
-  cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  @include responsive(tab) {
-    margin: 3rem 2.5rem;
-  }
-  @include responsive(sm-desktop) {
-    margin: 6.5rem 2.5rem;
-  }
-}
-
-.slider__nav:checked {
-  -webkit-animation: check 0.3s linear forwards;
-  animation: check 0.3s linear forwards;
-}
-.slider__nav:checked:nth-of-type(1) ~ .testimonials__box {
-  left: 0%;
-}
-.slider__nav:checked:nth-of-type(2) ~ .testimonials__box {
-  left: -100%;
-}
-.slider__nav:checked:nth-of-type(3) ~ .testimonials__box {
-  left: -200%;
-}
-*/
-
 // Simple testimonial
 .simple-testimonial {
   margin: 8rem auto;
@@ -358,10 +221,15 @@
 
   &__main {    
     background-color: peachpuff;
+    
+    
   }
 
   &__ads {
     background-color: peru;
+    margin: 2rem auto;
+    padding: 3rem 1rem;
+    width: 90%;
   }
 
   @include responsive(sm-desktop) {
@@ -386,12 +254,13 @@
   margin: 2rem auto;
   padding: 3rem 1rem;
   width: 90%;
-
-  @include flex-center;
-  flex-direction: column;
-
   @include responsive(tab) {
-    width: 80%;
+    width: 70%;
+  }
+  @include responsive(sm-desktop) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
   }
 
   &__title {
@@ -436,7 +305,6 @@
   }
 }
 
-.latestPosts,
 .ads--section {
   margin: 2rem auto;
   padding: 3rem 1rem;
