@@ -28,14 +28,14 @@ $font-title: "Alegreya", serif;
 $font-text: "Open Sans", sans-serif;
 
 // Font sizes
-$font-size-xxl: 7.2rem;
-$font-size-xl: 4.8rem; // for page title
-$font-size-large: 3.2rem; // for h2 titles
-$font-size-m: 2.6rem; // for h3 titles
-$font-size-sm: 2.2rem; // for h4 titles
-$font-size-s: 1.8rem;
-$font-size-xs: 1.4rem; // for text
-$font-size-xxs: 1rem; // for image captions
+$font-size-xxl: 7.2rem; //7.2rem
+$font-size-xl: 4rem; //4.8rem for page title
+$font-size-large: 3rem; // 3.2rem for h2 titles
+$font-size-m: 2.6rem; // 2.6 rem for h3 titles
+$font-size-sm: 2.2rem; // 2.2rem for h4 titles
+$font-size-s: 1.8rem; // 1.8rem
+$font-size-xs: 1.4rem; // 1.4rem for text
+$font-size-xxs: 1rem; // 1rem for image captions
 
 body {
   font-family: $font-text;

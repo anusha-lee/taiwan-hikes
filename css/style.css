@@ -901,6 +901,9 @@ input[type="reset"] {
 .post-link-style:visited {
   color: #d55534; }
 
+#start-here {
+  text-decoration: none; }
+
 /*******************************
   7 Reasons collage layout
   *******************************/
@@ -966,6 +969,13 @@ Page layout for articles on Start Here
   margin: 0 auto;
   width: 100%;
   height: auto; }
+  @media only screen and (min-width: 580px) {
+    .article--container {
+      width: 95%; } }
+  @media only screen and (min-width: 900px) {
+    .article--container {
+      width: 75%;
+      font-size: 4rem; } }
 
 .article__opening--pageTitle {
   width: 95%;
@@ -976,28 +986,31 @@ Page layout for articles on Start Here
   text-align: center; }
   @media only screen and (min-width: 580px) {
     .article__opening--pageTitle {
-      font-size: 3.2rem; } }
+      width: 85%;
+      font-size: 3rem; } }
   @media only screen and (min-width: 900px) {
     .article__opening--pageTitle {
-      font-size: 4.8rem; } }
+      width: 75%;
+      font-size: 4rem; } }
 .article__opening--author {
   width: 20rem;
   height: auto;
   margin: 0 auto;
   padding: 1rem;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.4rem;
+  /*@include responsive(normal-desktop) {
+    width: 20%;
+  }*/ }
   @media only screen and (min-width: 580px) {
     .article__opening--author {
       width: 40%; } }
   @media only screen and (min-width: 900px) {
     .article__opening--author {
-      width: 30%; } }
-  @media only screen and (min-width: 1200px) {
-    .article__opening--author {
-      width: 20%; } }
+      width: 30%;
+      font-size: 1rem; } }
   .article__opening--author span {
     font-style: italic;
-    font-size: 1rem;
     text-align: center; }
     @media only screen and (min-width: 580px) {
       .article__opening--author span {
@@ -1007,21 +1020,21 @@ Page layout for articles on Start Here
   margin: 0 auto;
   width: 90%;
   padding: 1rem;
+  /*@include responsive(xl-desktop) {
+    width: 45%;
+  }*/
   /**********************
   Background story style
   ***********************/ }
   @media only screen and (min-width: 580px) {
     .article {
-      width: 80%; } }
+      width: 75%; } }
   @media only screen and (min-width: 900px) {
     .article {
-      width: 70%; } }
+      width: 65%; } }
   @media only screen and (min-width: 1200px) {
     .article {
       width: 60%; } }
-  @media only screen and (min-width: 1500px) {
-    .article {
-      width: 50%; } }
   .article .article__section {
     margin: 2rem auto 1rem; }
     .article .article__section--title {
@@ -1034,15 +1047,12 @@ Page layout for articles on Start Here
           font-size: 2.6rem; } }
       @media only screen and (min-width: 900px) {
         .article .article__section--title {
-          font-size: 3.2rem; } }
+          font-size: 3rem; } }
     .article .article__section--subtitle {
       margin: 1rem 0;
-      font-size: 1.8rem;
+      font-size: 2.2rem;
       line-height: 1.4;
       display: inline-block; }
-      @media only screen and (min-width: 580px) {
-        .article .article__section--subtitle {
-          font-size: 2.2rem; } }
     .article .article__section--reasonTitle {
       margin: 1rem 0;
       font-size: 1.4rem; }
@@ -1245,7 +1255,7 @@ footer {
   width: 100%; }
 
 .footer {
-  margin-top: 7rem;
+  margin-top: 3rem;
   width: 100%;
   height: auto;
   display: grid;
@@ -1679,10 +1689,9 @@ header {
   @media only screen and (min-width: 580px) {
     .header__background-img-box {
       background-position: center;
-      height: 90vh; } }
+      height: 100vh; } }
   @media only screen and (min-width: 900px) {
     .header__background-img-box {
-      height: 100vh;
       background-position: 50% 35%; } }
   .header__background-img-box--img {
     position: absolute;
@@ -1692,14 +1701,14 @@ header {
     height: auto; }
   .header__background-img-box--title {
     margin-top: 0rem;
-    font-size: 3.2rem;
+    font-size: 3rem;
     mix-blend-mode: overlay;
     transform: scale(0.8, 1.8);
     text-shadow: 0.1rem 0.1rem 0.2rem #262626;
     color: rgba(252, 252, 252, 0.9); }
     @media only screen and (min-width: 580px) {
       .header__background-img-box--title {
-        font-size: 4.8rem;
+        font-size: 4rem;
         transform: scale(1, 1.6); } }
     @media only screen and (min-width: 1200px) {
       .header__background-img-box--title {
@@ -1766,20 +1775,19 @@ header {
   @media only screen and (min-width: 580px) {
     .logo {
       display: block;
-      max-height: 85%;
       padding-left: 0; } }
   .logo-big {
     margin-left: 1rem;
     display: block;
-    max-height: 90%;
+    max-height: 4.5rem;
     padding-left: 0; }
     @media only screen and (min-width: 580px) {
       .logo-big {
-        height: 4.5rem; } }
+        max-height: 6rem; } }
 
 .menu {
   display: grid;
-  grid-template-columns: 50% 30% 5.5rem;
+  grid-template-columns: 45% 35% 5.5rem;
   grid-template-rows: 1fr;
   /*******************************************************
   ************* Hamburger menu and nested drop-down menus
@@ -1823,14 +1831,14 @@ header {
     @media only screen and (min-width: 580px) {
       .menu__hamburger {
         right: 2.6%;
-        top: 1.5rem; } }
+        top: 2rem; } }
     .menu__hamburger--toggle {
       display: block;
       margin: 0;
       width: 4rem;
       height: 4rem;
       position: absolute;
-      top: 2;
+      top: 3;
       right: 0;
       opacity: 0;
       cursor: pointer;
@@ -1913,6 +1921,7 @@ header {
 
 .gsc-control-cse {
   width: 70%;
+  margin-top: 0.2rem;
   border: none !important;
   background-color: rgba(0, 0, 0, 0) !important; }
 
@@ -2007,7 +2016,7 @@ header {
   padding: 2rem; }
 
 #page-not-found-title {
-  font-size: 4.8rem;
+  font-size: 4rem;
   color: #097392;
   -webkit-text-stroke: 0.2rem #fff0ce; }
   @media only screen and (min-width: 580px) {
@@ -2025,12 +2034,12 @@ header {
   @media only screen and (min-width: 580px) {
     #page-not-found-subtitle {
       line-height: 1.4;
-      font-size: 3.2rem;
+      font-size: 3rem;
       transform: scale(1.2, 1.4); } }
 
 #page-not-found-home {
   margin-top: 10rem;
-  font-size: 3.2rem; }
+  font-size: 3rem; }
   @media only screen and (min-width: 580px) {
     #page-not-found-home {
       margin-top: 20rem;
@@ -2247,13 +2256,13 @@ header {
     display: inline-block;
     padding: 1.5rem;
     font-size: 2.6rem;
-    line-height: 1.2; }
+    line-height: 1; }
     @media only screen and (min-width: 900px) {
       .sevenReasons__title {
-        font-size: 3.2rem; } }
+        font-size: 3rem; } }
     @media only screen and (min-width: 1200px) {
       .sevenReasons__title {
-        font-size: 4.8rem; } }
+        font-size: 4rem; } }
     .sevenReasons__title a {
       color: #097392;
       line-height: 1.2;
@@ -2268,7 +2277,7 @@ header {
     text-overflow: ellipsis;
     padding: 1.5rem;
     font-size: 1.4rem;
-    line-height: 2; }
+    line-height: 1.6; }
     @media only screen and (min-width: 900px) {
       .sevenReasons__text {
         font-size: 1.8rem; } }
@@ -2278,10 +2287,10 @@ header {
   width: 100%;
   height: auto;
   padding: 1.5rem 0;
-  background-image: url(/img/header-background-sm.JPG);
+  background-image: url("/img/blog/17-tonghou-taversing/00-tonghou-taversing-header-blog-thumbnail.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   background-attachment: fixed;
   display: flex;
   align-items: center;
@@ -2290,9 +2299,9 @@ header {
 .freeHikes {
   margin: 1rem auto;
   padding: 0.5rem 1rem;
-  width: 90%;
+  width: 85%;
   max-height: 90%;
-  background-color: rgba(252, 252, 252, 0.8);
+  background-color: rgba(252, 252, 252, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2300,14 +2309,14 @@ header {
   @media only screen and (min-width: 580px) {
     .freeHikes {
       max-height: 60rem;
-      max-width: 45rem;
+      max-width: 40rem;
       min-height: 70%;
       max-height: 80%; } }
   @media only screen and (min-width: 900px) {
     .freeHikes {
       margin-left: 12%;
       max-height: 70rem;
-      min-width: 35rem; } }
+      min-width: 40rem; } }
   @media only screen and (min-width: 1200px) {
     .freeHikes {
       max-height: 80rem; } }
@@ -2323,17 +2332,18 @@ header {
   margin: 1rem;
   padding: 1rem;
   color: #064d62;
-  line-height: 1.2;
-  box-shadow: 0.2rem 0.4rem 0.5rem #d1d1d1;
+  line-height: 1.4;
+  background-color: rgba(252, 252, 252, 0.8);
+  filter: drop-shadow(1rem 1rem 1.2rem #6b6b6b);
   overflow-y: auto; }
   .homepageTrip__title {
     font-size: 1.4rem; }
     @media only screen and (min-width: 580px) {
       .homepageTrip__title {
-        font-size: 1.8rem; } }
+        font-size: 1.4rem; } }
   @media only screen and (min-width: 580px) {
     .homepageTrip__box {
-      font-size: 1.4rem; } }
+      font-size: 1rem; } }
 
 .simple-testimonial {
   margin: 8rem auto;
@@ -2344,8 +2354,7 @@ header {
       width: 80%; } }
   @media only screen and (min-width: 900px) {
     .simple-testimonial {
-      width: 65%;
-      height: 110%; } }
+      width: 65%; } }
   @media only screen and (min-width: 1200px) {
     .simple-testimonial {
       width: 55%; } }
@@ -2358,11 +2367,12 @@ header {
     line-height: 1.2; }
 
 .simple__box {
-  background-color: #fff8e8;
+  background-color: #fcfcfc;
   margin: 2rem auto;
   padding: 2rem;
   width: 90%;
   height: auto;
+  filter: drop-shadow(1rem 1rem 1.2rem #6b6b6b);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2380,7 +2390,7 @@ header {
     text-align: center;
     padding: 0.5rem;
     font-size: 1.4rem;
-    line-height: 1.6; }
+    line-height: 1.4; }
     @media only screen and (min-width: 580px) {
       .simple__box--quote {
         width: 90%;
@@ -2392,25 +2402,79 @@ header {
     color: #097392;
     padding: 1rem 0 2rem; }
 
-.landingPage__main {
-  background-color: peachpuff; }
+.landingPage__main--testimonial {
+  margin: 5rem auto 1rem;
+  width: 90%;
+  height: auto; }
+  @media only screen and (min-width: 580px) {
+    .landingPage__main--testimonial {
+      width: 65%; } }
+  @media only screen and (min-width: 900px) {
+    .landingPage__main--testimonial {
+      margin-right: 2rem; } }
+  @media only screen and (min-width: 1200px) {
+    .landingPage__main--testimonial {
+      width: 55%; } }
+  @media only screen and (min-width: 1500px) {
+    .landingPage__main--testimonial {
+      width: 45%; } }
+  .landingPage__main--testimonial__title {
+    font-size: 2.6rem;
+    color: #097392;
+    line-height: 1.2; }
 .landingPage__ads {
-  background-color: peru;
   margin: 2rem auto;
   padding: 3rem 1rem;
   width: 90%; }
+  @media only screen and (min-width: 580px) {
+    .landingPage__ads {
+      width: 65%; } }
+  @media only screen and (min-width: 900px) {
+    .landingPage__ads {
+      width: 90%;
+      margin-left: 0.5rem;
+      padding-top: 0;
+      padding-left: 0; } }
+  .landingPage__ads--section {
+    margin: 2rem auto;
+    padding: 3rem 1rem;
+    width: 90%; }
+    .landingPage__ads--section-title {
+      font-family: "Alegreya", serif;
+      font-size: 2.2rem;
+      color: #097392; }
+    .landingPage__ads--section-img {
+      padding: 1rem;
+      margin: 1rem auto;
+      width: 12rem;
+      text-align: center; }
+      .landingPage__ads--section-img img {
+        border-radius: 50%; }
+      .landingPage__ads--section-img:hover {
+        pointer-events: none; }
+    .landingPage__ads--section-content {
+      padding: 1rem;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.4rem;
+      line-height: 1.4; }
 @media only screen and (min-width: 900px) {
   .landingPage {
     display: grid;
     grid-template-columns: 2fr 1fr; }
-    .landingPage__main {
-      background-color: mediumaquamarine; }
-    .landingPage__ads {
-      background-color: olive; } }
+    .landingPage__main--findHikes .freeHikes {
+      margin-right: 1rem; } }
 
+/*
+.landingPage__about {
+  background-color: $color-white;
+  filter: drop-shadow(1rem 1rem 1.2rem lighten($color-deep-blue-grey, 20%));
+  @include responsive(tab) {
+    filter: none;
+  }
+}*/
 .whyTaiwan {
-  margin: 2rem auto;
-  padding: 3rem 1rem;
+  margin: 2rem auto 1rem;
+  padding: 1.5rem 1rem;
   width: 90%; }
   @media only screen and (min-width: 580px) {
     .whyTaiwan {
@@ -2423,14 +2487,15 @@ header {
   .whyTaiwan__title {
     display: inline-block;
     padding: 1.5rem;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
+    color: #097392;
     line-height: 1.2; }
     @media only screen and (min-width: 900px) {
       .whyTaiwan__title {
-        font-size: 3.2rem; } }
+        font-size: 3rem; } }
     @media only screen and (min-width: 1200px) {
       .whyTaiwan__title {
-        font-size: 4.8rem; } }
+        font-size: 4rem; } }
     .whyTaiwan__title a {
       color: #097392;
       line-height: 1.2;
@@ -2445,18 +2510,27 @@ header {
     text-overflow: ellipsis;
     padding: 1.5rem;
     font-size: 1.4rem;
-    line-height: 2; }
+    line-height: 1.4; }
     @media only screen and (min-width: 900px) {
       .whyTaiwan__text {
         font-size: 1.8rem; } }
 
+/*
 .ads--section {
   margin: 2rem auto;
   padding: 3rem 1rem;
-  width: 90%; }
-  @media only screen and (min-width: 580px) {
-    .ads--section {
-      width: 80%; } }
+  width: 90%;
+
+  @include responsive(tab) {
+    width: 80%;
+  }
+}*/
+.latestPosts__box--post {
+  margin: 1rem;
+  padding: 1rem; }
+  .latestPosts__box--post-title {
+    text-align: left;
+    font-size: 1.8rem; }
 
 *:focus {
   outline: none; }
@@ -2732,7 +2806,7 @@ About page layout
   align-items: center; }
   @media only screen and (min-width: 580px) {
     .blog__container {
-      width: 95%; } }
+      width: 85%; } }
   @media only screen and (min-width: 1200px) {
     .blog__container {
       width: 75%; } }
@@ -2750,15 +2824,12 @@ About page layout
     grid-template-rows: 1fr minmax(2fr, 4fr); }
     @media only screen and (min-width: 580px) {
       .blog__container--section {
-        max-width: 38%;
+        max-width: 33%;
         height: 35rem; } }
     @media only screen and (min-width: 900px) {
       .blog__container--section {
         max-width: 27%;
         height: 40rem; } }
-    @media only screen and (min-width: 1500px) {
-      .blog__container--section {
-        max-width: 25%; } }
     .blog__container--section--title {
       font-size: 1.4rem;
       text-align: center;

@@ -34,10 +34,10 @@ header {
 
   @include responsive(tab) {
     background-position: center;
-    height: 90vh;
+    height: 100vh;
   }
   @include responsive(sm-desktop) {
-    height: 100vh;
+    //height: 100vh;
     background-position: 50% 35%;
   }
 
@@ -140,20 +140,20 @@ header {
   @include responsive(tab) {
     // margin-left: -1rem;
     display: block;
-    max-height: 85%; // remove this after using new logo    
+    //max-height: 85%; remove this after using new logo    
     padding-left: 0;
   }
 
   &-big {
     margin-left: 1rem;
     display: block;
-    max-height: 90%; // remove this after using new logo    
-    //max-height: 4.5rem; // change to this after using new logo    
+   //max-height: 90%; // remove this after using new logo    
+    max-height: 4.5rem; // change to this after using new logo    
     padding-left: 0;
 
     @include responsive(tab) {
-      height: 4.5rem; // remove this after using new logo  
-      //max-height: 6rem; // change to this after using new logo    
+      //max-height: 4.5rem; // remove this after using new logo  
+     max-height: 6rem; // change to this after using new logo    
     }
   }
 }
@@ -161,7 +161,7 @@ header {
 
 .menu {
   display: grid;
-  grid-template-columns: 50% 30% 5.5rem;
+  grid-template-columns: 45% 35% 5.5rem;
   grid-template-rows: 1fr;
 
   &__google-search {
@@ -222,7 +222,7 @@ header {
 
     @include responsive(tab) {
       right: 2.6%;
-      top: 1.5rem;
+      top: 2rem;
     }
 
     &--toggle {
@@ -231,11 +231,11 @@ header {
       width: 4rem;
       height: 4rem;
       position: absolute;
-      top: 2;
+      top: 3;
       right: 0;
       opacity: 0;
       cursor: pointer;
-      z-index: 33;
+      z-index: 33;      
     }
 
     &--line {
@@ -360,6 +360,7 @@ header {
 // Google custom search engine
 .gsc-control-cse {
   width: 70%;
+  margin-top: 0.2rem;
   border: none !important;
   background-color: rgba(0, 0, 0, 0) !important;
 }

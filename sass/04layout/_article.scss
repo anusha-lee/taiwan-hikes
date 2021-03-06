@@ -12,7 +12,9 @@
 .post-link-style:visited {
   color: $color-orangered;
 }
-
+#start-here {
+  text-decoration: none;
+}
 /*******************************
   7 Reasons collage layout
   *******************************/
@@ -95,6 +97,13 @@ Page layout for articles on Start Here
   margin: 0 auto;
   width: 100%;
   height: auto;
+  @include responsive(tab) {
+    width: 95%;
+  }
+  @include responsive(sm-desktop) {
+    width: 75%;
+    font-size: $font-size-xl;
+  }
 }
 
 // Layout for author, social media share and comments
@@ -108,9 +117,11 @@ Page layout for articles on Start Here
     text-align: center;
 
     @include responsive(tab) {
+      width: 85%;
       font-size: $font-size-large;
     }
     @include responsive(sm-desktop) {
+      width: 75%;
       font-size: $font-size-xl;
     }
   }
@@ -120,19 +131,20 @@ Page layout for articles on Start Here
     margin: 0 auto;
     padding: 1rem;
     text-align: center;
+    font-size: $font-size-xs;
     @include responsive(tab) {
       width: 40%;
     }
     @include responsive(sm-desktop) {
       width: 30%;
+      font-size: $font-size-xxs;
     }
-    @include responsive(normal-desktop) {
+    /*@include responsive(normal-desktop) {
       width: 20%;
-    }
+    }*/
 
     & span {
-      font-style: italic;
-      font-size: $font-size-xxs;
+      font-style: italic;     
       text-align: center;
       @include responsive(tab) {
         font-size: $font-size-xs;
@@ -148,17 +160,17 @@ Page layout for articles on Start Here
   padding: 1rem;
 
   @include responsive(tab) {
-    width: 80%;
+    width: 75%;
   }
   @include responsive(sm-desktop) {
-    width: 70%;
+    width: 65%;
   }
   @include responsive(normal-desktop) {
     width: 60%;
   }
-  @include responsive(xl-desktop) {
-    width: 50%;
-  }
+  /*@include responsive(xl-desktop) {
+    width: 45%;
+  }*/
 
   .article__section {
     margin: 2rem auto 1rem;
@@ -178,13 +190,9 @@ Page layout for articles on Start Here
     }
     &--subtitle {
       margin: 1rem 0;
-      font-size: $font-size-s;
+      font-size: $font-size-sm;
       line-height: 1.4;
       display: inline-block;
-
-      @include responsive(tab) {
-        font-size: $font-size-sm;
-      }
     }
     &--reasonTitle {
       margin: 1rem 0;

@@ -7,7 +7,7 @@ function displayPreview() {
     let today = Date.parse(new Date());
     let upToDateTrips = guidedTrips.filter( trip => { return Date.parse(trip.date) > today});
     
-    let previewTripsArray = upToDateTrips.splice(0,3);
+    let previewTripsArray = upToDateTrips.splice(0,5);
     const previewTrips = document.querySelector("#previewTrips")
     previewTripsArray.forEach( trip => {
         previewTrips.innerHTML += `

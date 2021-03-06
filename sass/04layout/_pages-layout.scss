@@ -346,7 +346,7 @@ About page layout
   justify-content: space-around;
   align-items: center;
   @include responsive(tab) {
-    width: 95%;
+    width: 85%;
   }
 
   @include responsive(normal-desktop) {
@@ -368,7 +368,7 @@ About page layout
     grid-template-rows: 1fr minmax(2fr, 4fr);
 
     @include responsive(tab) {
-      max-width: 38%;
+      max-width: 33%;
       height: 35rem;
     }
     @include responsive(sm-desktop) {
@@ -376,7 +376,7 @@ About page layout
       height: 40rem;
     }
     @include responsive(xl-desktop) {
-      max-width: 25%;
+      //max-width: 25%;
     }
 
     &--title {

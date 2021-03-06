@@ -18,24 +18,25 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<meta name="robots" content="noindex, nofollow"> delete this line after the post is ready to publish-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="p:domain_verify" content="fbec706652cbf919ca878e04316a74be" />
     <meta property="og:type" content="blog" />
     <meta
       property="og:title"
-      content="Taiwan Hikes: Free guided hikes and find hiking trails in Taiwan"
+      content="Taiwan Hikes: Find amazing trails and guided hikes in Taiwan"
     />
     <meta
       property="og:description"
-      content="Find trails and free guided hikes in Taiwan"
+      content="Find amazing trails and guided hikes in Taiwan. There are many wonderful hiking trails in Taiwan. This website is to help you find the one you like."
     />
     <meta property="og:url" content="https://www.taiwanhikes.com" />
     <meta property="og:site_name" content="taiwanhikes.com" />
     <meta property="article:author" content="Anusha Lee" />
     <title>
-      Taiwan Hikes: Free guided hikes and find hiking trails in Taiwan
+      Taiwan Hikes: Find Good & Free Hikes in Taiwan
     </title>
-    <meta name="description" content="Want to hike in Taiwan? Here you can find English information about amazing hiking trails, free guided hikes, high altitude mountains and more amazing outdoor adventures.">
+    <meta name="description" content="Here you can find English information about amazing hiking trails, free guided hikes, high altitude mountains and more amazing outdoor adventures.">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <!--<link rel="stylesheet" href="css/main.css" />-->
@@ -49,24 +50,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
     <link rel="shortcut icon" href="#" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon_io/favicon-16x16.png"
-    />
-    <!--<link rel="manifest" href="/site.webmanifest" />  -->  
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io3/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io3/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io3/favicon-16x16.png"/>    
+    <!--<link rel="manifest" href="/site.webmanifest" />  -->      
   </head>
   <body>
     <header>
@@ -74,7 +61,7 @@
         <div class="header__background-img-box">
           <h1 class="header__background-img-box--title">Taiwan Hikes</h1>
           <h2 class="header__background-img-box--title2">
-            Enjoy free guided hikes with the locals
+            Find Good & Free Hikes in Taiwan
           </h2>
         </div>
 
@@ -83,7 +70,7 @@
             <div class="header-box__banner--logo logo">
               <a href="index.html">
                 <img
-                  src="/img/TH-logo.png"
+                  src="/img/TH-logo3.png"
                   alt="Taiwan Hikes logo"
                   class="logo-big slideInLeft"
                 />
@@ -96,7 +83,7 @@
               </div>
 
               <div class="menu__startHere">
-                <a href="start-here.html">Start here</a>
+                <a href="start-here.html" class="post-link-style" id="start-here">Start here</a>
                 <!-- Make a page for Start here with the links of the articles -->
               </div>
               <div class="menu__hamburger">
@@ -134,72 +121,170 @@
       </div>
     </header>
 
-    <main class="home-container">
-      <div class="home-7Reasons">
-        <div class="sevenReasons">          
-          <h2 class="sevenReasons__title">
-            <a
-              href="seven-reasons-why-you-should-hike-in-taiwan-new.html"
-              class="post-link-style"
-              >7 Reasons Why You Should Hike in Taiwan</a
-            >
+    <main class="landingPage">
+
+      <div class="landingPage__main">
+
+        <section class="landingPage__main--whyTaiwan whyTaiwan">          
+          <h2 class="whyTaiwan__title">
+            Why Go Hiking in Taiwan?
           </h2>
-          <p class="sevenReasons__text">
-            What things can you do if you have a short stay or layover in
-            Taiwan? Visit the National Palace of Museum? Or eat as many strange
-            foods as you can at Shilin Night Market with the crowd? Now you have
-            a better option if you want to enjoy the nature, because there are
-            so many hiking trails and you can experience the unique nature that
-            only Taiwan can offer...
+          <p class="whyTaiwan__text">
+            Other than street food, exporting surgical masks, and silicon chip manufacturing, Taiwan has more to offer.
           </p>
-          <div class="sevenReasons__btn">
-            <a
-              href="seven-reasons-why-you-should-hike-in-taiwan-new.html"
-              class="sevenReasons__btn--explore"
+          <div class="article__section--imageBox video">
+            <figure>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/4q0nglOEBo8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </figure>
+          </div>
+          <!--<div>
+            <a target="_blank"
+              href="start-here.html"
+              class="landingPage__startHere--btn"
             >
-              Explore
+              Start Here
             </a>
-          </div>
-        </div>
-      </div>
+          </div>-->
+        </section>
 
-      <div class="home-freeHikes">
-        <div class="freeHikes">
-          <div class="freeHikes__trips">
-            <h2 class="freeHikes__trips--title">Latest Free Hikes</h2>            
-            <div id="previewTrips"></div>
+        <section class="landingPage__main--latestPosts latestPosts whyTaiwan">          
+          <h2 class="whyTaiwan__title latestPosts__title">
+            Latest Posts
+          </h2>
+          <div class="latestPosts__box">
+            <div class="latestPosts__box--post">
+              <h3 class="latestPosts__box--post-title">
+                <a
+                  href="blog-posts/100-peaks-Qilai-Nanhua-trail-complete-hiking-guide.html"
+                  class="post-link-style"
+                >
+                100 Peaks: Qilai Nanhua Trail Complete Hiking Guide
+                </a>
+              </h3>
+            </div>
+            <div class="latestPosts__box--post">
+              <h3 class="latestPosts__box--post-title">
+                <a
+                  href="blog-posts/shakadang-xiaozhuilu-trails-beauty-in-taroko.html"
+                  class="post-link-style"
+                >
+                Shakadang Trail and Xiaozhuilu Trail: Short and Easy Hike in Taroko, Hualien
+                </a>
+              </h3>
+            </div>
+            <div class="latestPosts__box--post">
+              <h3 class="latestPosts__box--post-title">
+                <a
+                  href="blog-posts/Zhuilu-old-trail-an-epic-cliff-hike-in-Taroko-Gorge.html"
+                  class="post-link-style"
+                >
+                Zhuilu Old Trail: An Epic Cliff Hike in Taroko Gorge
+                </a>
+              </h3>
+            </div>
+            <div class="latestPosts__box--post">
+              <h3 class="latestPosts__box--post-title">
+                <a
+                  href="blog-posts/tonghou-traversing-trail-true-beauty-of-rivers-in-taipei.html"
+                  class="post-link-style"
+                >
+                Tonghou Traversing Trail: Discover the True Beauty of Rivers in Taipei and You’ll Want to Come Back Again
+                </a>
+              </h3>
+            </div>
+            <div class="latestPosts__box--post">
+              <h3 class="latestPosts__box--post-title">
+                <a
+                  href="blog-posts/puli-6-beauties-part2.html"
+                  class="post-link-style"
+                >
+                Puli Six Beauties Part 2: Mt. Yousheng and Mt. South Dongyan
+                </a>
+              </h3>
+            </div>
           </div>
-
           <div class="freeHikes__btn-box">
             <a
-              href="guided-hiking-trips.html"
-              class="sevenReasons__btn--explore"
+              href="blog.html"
+              class="landingPage__startHere--btn--explore"
               target="_blank"
-            >
-              Explore
+            >More Posts
             </a>
           </div>
-        </div>
+        </section>
+
+        <!-- Guided hikes preview -->
+        <section class="home-freeHikes landingPage__main--findHikes">
+          <div class="freeHikes">
+            <h2 class="freeHikes__trips--title whyTaiwan__title">Find Guided Hikes</h2>            
+              <div id="previewTrips"></div>
+            <!--<div class="freeHikes__trips">
+              <h2 class="freeHikes__trips--title whyTaiwan__title">Find Guided Hikes</h2>            
+              <div id="previewTrips"></div>
+            </div>-->
+
+            <div class="freeHikes__btn-box landingPage__startHere--btn">
+              <a
+                href="guided-hiking-trips.html"
+                class="landingPage__startHere--btn--explore"
+                target="_blank"
+              >
+                Click for More
+              </a>
+            </div>
+          </div>
+        </section>
+      
+        <section class="simple-testimonial landingPage__main--testimonial">
+          <h2 class="freeHikes__trips--title whyTaiwan__title">Testimonial</h2>
+          <div class="simple-testimonial__box simple__box">
+            <img
+              src="/img/testimonial-lucy-dale.jpg"
+              alt="Lucy and Dale"
+              class="simple__box--avatar"
+            />
+            <q class="simple__box--quote">
+              Hiking is a great way to see the natural landscape of Taiwan. There
+              are many hiking groups that a person can participate with to get
+              started. Become a member or not, they welcome all. Find a group that
+              matches your ability and desires to see the beauty of Taiwan from
+              the trail.
+            </q>
+            <span class="simple__box--author">Lucy and Dale</span>
+          </div>
+        </section>
       </div>
-     
-      <section class="simple-testimonial">
-        <h2 class="simple-testimonial__title">Testimonial</h2>
-        <div class="simple-testimonial__box simple__box">
-          <img
-            src="/img/testimonial-lucy-dale.jpg"
-            alt="Lucy and Dale"
-            class="simple__box--avatar"
-          />
-          <q class="simple__box--quote"
-            >Hiking is a great way to see the natural landscape of Taiwan. There
-            are many hiking groups that a person can participate with to get
-            started. Become a member or not, they welcome all. Find a group that
-            matches your ability and desires to see the beauty of Taiwan from
-            the trail.</q
-          >
-          <span class="simple__box--author">Lucy and Dale</span>
+
+      <div class="landingPage__ads">
+        <div class="landingPage__ads--section ads--section landingPage__about">
+          <div class="landingPage__ads--section-title">About</div>
+          <div class="landingPage__ads--section-img">
+            <img src="img/02-about/Anusha-4.jpg" alt="Anusha Lee"/>
+          </div>
+          <div class="landingPage__ads--section-content">
+            Hi, I’m Anusha. I build this website from scratch to help people who don’t read Chinese find great hiking trails and guided trips to enjoy the unique nature in Taiwan. Here, you will find high attitude hikes, trails near Taipei and more.<br /> 
+            <a href="about.html"
+            class="post-link-style">[Read more &#187;]</a>
+          </div>
         </div>
-      </section>
+        <!--<div class="landingPage__ads--section" id="landingPage-pins">
+          <div class="landingPage__ads--section-title">Pinterest</div>
+          <div class="landingPage__ads--section-content">
+            <div class="">Pin 1</div>
+            <div class="">Pin 2</div>
+            <div class="">Pin 3</div>
+            <div class="">Pin 4</div>
+          </div>
+        </div>
+        <div class="landingPage__ads--section ads--section">
+          <div class="landingPage__ads--section-title">NYZ Association</div>
+          <div class="landingPage__ads--section-content">Sed bibendum aliquet purus, in porttitor lacus porta imperdiet. Donec at elit interdum, porttitor nulla a, aliquam massa. Quisque porta, tellus id consectetur gravida, lectus sapien eleifend dui, id iaculis nisl mi id felis. Cras in arcu porta, condimentum dui eu, ultrices nisl. Sed id aliquam orci.</div>
+        </div>
+        <div class="landingPage__ads--section ads--section">
+          <div class="landingPage__ads--section-title">PQR Association</div>
+          <div class="landingPage__ads--section-content">Nunc sagittis, lorem bibendum dapibus tincidunt, tortor elit sagittis ipsum, sed cursus nisl erat at nunc. Sed bibendum aliquet purus, in porttitor lacus porta imperdiet. Donec at elit interdum, porttitor nulla a, aliquam massa. Quisque porta, tellus id consectetur gravida, lectus sapien eleifend dui.</div>
+        </div>-->
+      </div>           
 
       <div class="scroll-up">
         <ion-icon name="arrow-round-up" class="scroll-up__arrow"></ion-icon>
@@ -1005,7 +1090,7 @@
             <a
               href="https://www.flaticon.com/"
               target="_blank"
-              rel="noreferrer noopener"
+              rel="noreferrer noopener" class="post-link-style"
               >Flaticon</a
             >
           </div>
@@ -1095,6 +1180,6 @@
       src="//cdn.iubenda.com/cs/iubenda_cs.js"
       charset="UTF-8"
       async
-    ></script>
+    ></script>    
   </body>
 </html>

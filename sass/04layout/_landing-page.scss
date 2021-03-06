@@ -38,7 +38,7 @@
     display: inline-block;
     padding: 1.5rem;
     font-size: $font-size-m;
-    line-height: 1.2;
+    line-height: 1;
 
     @include responsive(sm-desktop) {
       font-size: $font-size-large;
@@ -68,7 +68,7 @@
     text-overflow: ellipsis;
     padding: 1.5rem;
     font-size: $font-size-xs;
-    line-height: 2;
+    line-height: 1.6;
 
     @include responsive(sm-desktop) {
       font-size: $font-size-s;
@@ -82,10 +82,10 @@
   width: 100%;
   height: auto; // change to auto later;
   padding: 1.5rem 0;
-  background-image: url(/img/header-background-sm.JPG);
+  background-image: url("/img/blog/17-tonghou-taversing/00-tonghou-taversing-header-blog-thumbnail.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   // parallax scrolling effect
   background-attachment: fixed;
 
@@ -95,9 +95,9 @@
 .freeHikes {
   margin: 1rem auto;
   padding: 0.5rem 1rem;
-  width: 90%;
+  width: 85%;
   max-height: 90%;
-  background-color: rgba($color-white, 0.8);
+  background-color: rgba($color-white, 0.6);
 
   @include flex-center;
   flex-direction: column;
@@ -105,14 +105,14 @@
   @include responsive(tab) {
     //margin-top: -25%;
     max-height: 60rem;
-    max-width: 45rem;
+    max-width: 40rem;
     min-height: 70%;
     max-height: 80%;
   }
   @include responsive(sm-desktop) {
     margin-left: 12%;
     max-height: 70rem;
-    min-width: 35rem;
+    min-width: 40rem;
   }
   @include responsive(normal-desktop) {
     //margin-left: 25%;
@@ -137,18 +137,20 @@
   margin: 1rem;
   padding: 1rem;
   color: darken($color-base-blue, 10%);
-  line-height: 1.2;
-  box-shadow: 0.2rem 0.4rem 0.5rem lighten($color-deep-blue-grey, 60%);
+  line-height: 1.4;
+  //box-shadow: 0.2rem 0.4rem 0.5rem lighten($color-deep-blue-grey, 60%);
+  background-color: rgba($color-white, 0.8);
+  filter: drop-shadow(1rem 1rem 1.2rem lighten($color-deep-blue-grey, 20%));
   overflow-y: auto;
   &__title {
     font-size: $font-size-xs;
     @include responsive(tab) {
-      font-size: $font-size-s;
+      font-size: $font-size-xs;
     }
   }
   &__box {
     @include responsive(tab) {
-      font-size: $font-size-xs;
+      font-size: $font-size-xxs;
     }
   }
 }
@@ -163,7 +165,7 @@
   }
   @include responsive(sm-desktop) {
     width: 65%;
-    height: 110%;
+    //height: 110%;
   }
   @include responsive(normal-desktop) {
     width: 55%;
@@ -179,11 +181,12 @@
   }
 }
 .simple__box {
-  background-color: lighten($color-tan, 5%);
+  background-color: $color-white;
   margin: 2rem auto;
   padding: 2rem;
   width: 90%;
   height: auto;
+  filter: drop-shadow(1rem 1rem 1.2rem lighten($color-deep-blue-grey, 20%));
   @include flex-center;
   flex-direction: column;
   &--avatar {
@@ -200,7 +203,7 @@
     text-align: center;
     padding: 0.5rem;
     font-size: $font-size-xs;
-    line-height: 1.6;
+    line-height: 1.4;
     @include responsive(tab) {
       width: 90%;
       font-size: $font-size-s;
@@ -220,16 +223,84 @@
 .landingPage {  
 
   &__main {    
-    background-color: peachpuff;
+    //background-color: peachpuff;
     
+    &--testimonial {
+      margin: 5rem auto 1rem;
+      width: 90%;
+      height: auto;
+      @include responsive(tab) {
+        width: 65%;
+      }
+      @include responsive(sm-desktop) {
+        margin-right: 2rem;
+      }
+      @include responsive(normal-desktop) {
+        width: 55%;
+      }
+      @include responsive(xl-desktop) {
+        width: 45%;
+      }
+
+      &__title {
+        font-size: $font-size-m;
+        color: $color-base-blue;
+        line-height: 1.2;
+      }
+    }
     
   }
 
   &__ads {
-    background-color: peru;
     margin: 2rem auto;
     padding: 3rem 1rem;
     width: 90%;
+    //border: 2px solid powderblue;
+    
+    @include responsive(tab) {
+      width: 65%;
+    }
+    @include responsive(sm-desktop) {
+      width: 90%;
+      margin-left: 0.5rem;
+      padding-top: 0;
+      padding-left: 0;
+      //border-left: 3px solid lighten($color-blue-grey, 5%);
+    }
+    
+    
+    &--section {
+      //border: 2px solid pink;
+      margin: 2rem auto;
+      padding: 3rem 1rem;
+      width: 90%;
+
+      &-title {
+        font-family: $font-title;
+        font-size: $font-size-sm;
+        color: $color-base-blue;
+      }
+      &-img {
+        padding: 1rem;
+        margin: 1rem auto;
+        width: 12rem;
+        text-align: center;
+        
+        & img {          
+          border-radius: 50%;
+          //box-shadow: .3rem .3rem lighten($color-deep-blue-grey, 50%);
+        }
+        &:hover {
+          pointer-events: none;
+        }
+      }
+      &-content {
+        padding: 1rem;
+        font-family: $font-text;
+        font-size: $font-size-xs;
+        line-height: 1.4;
+      }  
+    }
   }
 
   @include responsive(sm-desktop) {
@@ -237,23 +308,30 @@
     grid-template-columns: 2fr 1fr;
 
     &__main {
-      background-color: mediumaquamarine;
+     // background-color: mediumaquamarine;
       
-    }
-  
-    &__ads {
-      background-color: olive;
-      
-    }
-        
+      &--findHikes .freeHikes {
+        margin-right: 1rem;
+      }
+    }        
   }
   
 }
 
+/*
+.landingPage__about {
+  background-color: $color-white;
+  filter: drop-shadow(1rem 1rem 1.2rem lighten($color-deep-blue-grey, 20%));
+  @include responsive(tab) {
+    filter: none;
+  }
+}*/
+
 .whyTaiwan {
-  margin: 2rem auto;
-  padding: 3rem 1rem;
+  margin: 2rem auto 1rem;
+  padding: 1.5rem 1rem;
   width: 90%;
+  //border: 2px solid paleturquoise;
   @include responsive(tab) {
     width: 70%;
   }
@@ -266,7 +344,8 @@
   &__title {
     display: inline-block;
     padding: 1.5rem;
-    font-size: $font-size-m;
+    font-size: $font-size-sm;
+    color: $color-base-blue;
     line-height: 1.2;
 
     @include responsive(sm-desktop) {
@@ -297,14 +376,14 @@
     text-overflow: ellipsis;
     padding: 1.5rem;
     font-size: $font-size-xs;
-    line-height: 2;
+    line-height: 1.4;
 
     @include responsive(sm-desktop) {
       font-size: $font-size-s;
     }
   }
 }
-
+/*
 .ads--section {
   margin: 2rem auto;
   padding: 3rem 1rem;
@@ -313,4 +392,15 @@
   @include responsive(tab) {
     width: 80%;
   }
+}*/
+
+.latestPosts__box--post {
+  margin: 1rem;
+  padding: 1rem;
+  
+  &-title {
+    text-align: left;
+    font-size: $font-size-s;
+  }
 }
+
