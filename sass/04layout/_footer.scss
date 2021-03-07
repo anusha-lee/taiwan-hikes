@@ -116,7 +116,7 @@ footer {
     padding: 2rem 1rem;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
-    font-size: $font-size-xs;
+    font-size: $font-size-xxs;
     text-align: center;
 
     // & div a {
@@ -299,7 +299,7 @@ footer {
       padding: 1rem 1rem 3rem 1rem;
 
       & a {
-        font-size: 12px;
+        font-size: $font-size-xxs;
         color: lighten($color-black, 80%);
         transition: all 0.3s ease-in-out;
       }

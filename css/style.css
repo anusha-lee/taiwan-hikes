@@ -1338,7 +1338,7 @@ footer {
     padding: 2rem 1rem;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
-    font-size: 1.4rem;
+    font-size: 1rem;
     text-align: center; }
   .footer__legal {
     margin: 0 auto;
@@ -1485,7 +1485,7 @@ footer {
     display: inline-block;
     padding: 1rem 1rem 3rem 1rem; }
     .legal__box--item a {
-      font-size: 12px;
+      font-size: 1rem;
       color: #cccccc;
       transition: all 0.3s ease-in-out; }
     .legal__box--item a:hover, .legal__box--item a:active {
