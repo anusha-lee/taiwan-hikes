@@ -335,7 +335,8 @@ Page layout for articles on Start Here
 
 #table-contents {
   padding: 1.5rem;
-  background-color: lighten($color-blue-grey, 25%);
+  background-color: $color-white;
+  filter: drop-shadow(1rem 1rem 1.2rem lighten($color-deep-blue-grey, 20%));
   @include responsive(tab) {
     padding: 2rem 5rem;
   }

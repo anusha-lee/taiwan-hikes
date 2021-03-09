@@ -1154,7 +1154,8 @@ Page layout for articles on Start Here
 
 #table-contents {
   padding: 1.5rem;
-  background-color: #d2e4e4; }
+  background-color: #fcfcfc;
+  filter: drop-shadow(1rem 1rem 1.2rem #6b6b6b); }
   @media only screen and (min-width: 580px) {
     #table-contents {
       padding: 2rem 5rem; } }
