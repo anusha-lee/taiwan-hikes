@@ -195,7 +195,7 @@ Page layout for articles on Start Here
       display: inline-block;
     }
     &--reasonTitle {
-      margin: 1rem 0;
+      margin: 2rem 0;
       font-size: $font-size-xs;
 
       @include responsive(tab) {
@@ -206,12 +206,12 @@ Page layout for articles on Start Here
     &--content {
       margin-top: 1rem;
       margin-bottom: 1rem;
-      padding: 1.2rem 0;
+      padding: 1rem 0;
       line-height: 1.4;
       font-size: $font-size-xs;
 
       @include responsive(sm-desktop) {
-        margin-top: 2rem;
+        margin-top: 1.5rem;
         margin-bottom: 2rem;
         font-size: $font-size-s;
         padding: 0.4rem 0;

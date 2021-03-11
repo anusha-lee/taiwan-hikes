@@ -7,7 +7,10 @@
 // timeline style
 .timeline__box {
   width: 100%;
-  padding: 2rem;
+  padding: .5rem;
+  @include responsive(tab) {
+    padding: 2rem;
+  }  
 }
 
 .timeline__subtitle {
@@ -17,8 +20,11 @@
   box-shadow: 1rem 1rem 3rem lighten($color-deep-blue-grey, 50%);
   padding: 0;
   // need to fix font size on mobile screens
-  font-size: $font-size-xs;
+  font-size: $font-size-xxs;
   font-family: $font-text;
+  @include responsive(tab) {
+    font-size: $font-size-xs;
+  }  
 }
 .timeline__detail--odd,
 .timeline__detail--even {

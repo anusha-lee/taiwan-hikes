@@ -833,7 +833,10 @@ input[type="reset"] {
 
 .timeline__box {
   width: 100%;
-  padding: 2rem; }
+  padding: .5rem; }
+  @media only screen and (min-width: 580px) {
+    .timeline__box {
+      padding: 2rem; } }
 
 .timeline__subtitle {
   font-size: 2.2rem; }
@@ -841,8 +844,11 @@ input[type="reset"] {
 .timeline__detail-box {
   box-shadow: 1rem 1rem 3rem #b8b8b8;
   padding: 0;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-family: "Open Sans", sans-serif; }
+  @media only screen and (min-width: 580px) {
+    .timeline__detail-box {
+      font-size: 1.4rem; } }
 
 .timeline__detail--odd,
 .timeline__detail--even {
@@ -1054,7 +1060,7 @@ Page layout for articles on Start Here
       line-height: 1.4;
       display: inline-block; }
     .article .article__section--reasonTitle {
-      margin: 1rem 0;
+      margin: 2rem 0;
       font-size: 1.4rem; }
       @media only screen and (min-width: 580px) {
         .article .article__section--reasonTitle {
@@ -1062,12 +1068,12 @@ Page layout for articles on Start Here
     .article .article__section--content {
       margin-top: 1rem;
       margin-bottom: 1rem;
-      padding: 1.2rem 0;
+      padding: 1rem 0;
       line-height: 1.4;
       font-size: 1.4rem; }
       @media only screen and (min-width: 900px) {
         .article .article__section--content {
-          margin-top: 2rem;
+          margin-top: 1.5rem;
           margin-bottom: 2rem;
           font-size: 1.8rem;
           padding: 0.4rem 0; } }
