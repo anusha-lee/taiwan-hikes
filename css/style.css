@@ -1098,6 +1098,8 @@ Page layout for articles on Start Here
     margin: 2rem auto 4rem;
     padding: 1rem 0;
     width: 100%; }
+  .article #disclaimer {
+    font-size: 1rem; }
   .article .background-story {
     margin: 1rem auto;
     padding: 1.5rem;
@@ -1601,6 +1603,12 @@ footer {
   @media only screen and (min-width: 580px) {
     #allTrips {
       width: 100%; } }
+  @media only screen and (min-width: 900px) {
+    #allTrips {
+      width: 85%; } }
+  @media only screen and (min-width: 1200px) {
+    #allTrips {
+      width: 80%; } }
 
 #allTrips.open {
   max-height: max-content;
@@ -1614,23 +1622,30 @@ footer {
   padding: 2rem;
   color: #383838;
   overflow-y: scroll;
-  line-height: 1.4;
-  box-shadow: 0.2rem 0.2rem 0.5rem #d1d1d1; }
+  line-height: 1.5;
+  box-shadow: 0.2rem 0.2rem 0.5rem #d1d1d1;
+  /*@include responsive(sm-desktop) {
+    max-width: 22rem;
+  }*/ }
+  @media only screen and (min-width: 580px) {
+    .eachTrip {
+      max-width: 24rem; } }
   .eachTrip__title {
     width: 100%;
     padding: 1rem;
     display: inline-block;
-    font-size: 1.4rem;
-    background-color: #fff8e8;
+    font-size: 1rem;
+    background-color: #fcfcfc;
+    filter: drop-shadow(0.1rem 0.2rem 0.2rem #9e9e9e);
+    border-radius: 2%;
     display: flex;
-    align-items: center;
-    box-shadow: 0.2rem 0.2rem 1rem #ffe09b; }
+    align-items: center; }
     @media only screen and (min-width: 580px) {
       .eachTrip__title {
         min-height: 33%; } }
     @media only screen and (min-width: 900px) {
       .eachTrip__title {
-        font-size: 1.8rem; } }
+        font-size: 1.4rem; } }
   .eachTrip__box {
     padding: 1rem;
     font-size: 1.4rem; }
@@ -1686,7 +1701,7 @@ header {
   background-attachment: fixed;
   margin: 0;
   width: 100%;
-  min-height: 80vh;
+  min-height: 100vh;
   grid-column: 1 / 3;
   grid-row: 1/ 3;
   display: flex;
@@ -1695,8 +1710,7 @@ header {
   flex-direction: column; }
   @media only screen and (min-width: 580px) {
     .header__background-img-box {
-      background-position: center;
-      height: 100vh; } }
+      background-position: center; } }
   @media only screen and (min-width: 900px) {
     .header__background-img-box {
       background-position: 50% 35%; } }
