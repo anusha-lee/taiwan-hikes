@@ -1076,7 +1076,8 @@ Page layout for articles on Start Here
           margin-top: 1.5rem;
           margin-bottom: 2rem;
           font-size: 1.8rem;
-          padding: 0.4rem 0; } }
+          padding: 0.4rem 0;
+          line-height: 1.6; } }
     .article .article__section--imageBox {
       margin: 1rem auto 1rem;
       width: 100%; }
