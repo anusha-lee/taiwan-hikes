@@ -346,3 +346,9 @@ Page layout for articles on Start Here
     padding: 2rem 5rem;
   }
 }
+
+#ten-gold-ridges .timeline__box .timeline__detail-box .timeline__detail--odd .timeline__detail--position, 
+#ten-gold-ridges .timeline__box .timeline__detail-box .timeline__detail--even .timeline__detail--position {
+    line-height: 1.6;
+}
+

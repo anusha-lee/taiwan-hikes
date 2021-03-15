@@ -35,11 +35,11 @@ modalOverlay.addEventListener("click", (event) => {
 });
 
 // Button on 10 Golden Ridgelines
-
+/*
 const ridgelinesModalCloseButton = document.querySelector(
   ".ridgelines-modal-close-btn"
 );
 ridgelinesModalCloseButton.addEventListener("click", (event) => {
   modalOverlay.classList.remove("modal-is-open");
   sizeBtn.textContent = "10 Golden Ridgelines";
-});
+});*/

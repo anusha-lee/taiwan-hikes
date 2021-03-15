@@ -1169,6 +1169,10 @@ Page layout for articles on Start Here
     #table-contents {
       padding: 2rem 5rem; } }
 
+#ten-gold-ridges .timeline__box .timeline__detail-box .timeline__detail--odd .timeline__detail--position,
+#ten-gold-ridges .timeline__box .timeline__detail-box .timeline__detail--even .timeline__detail--position {
+  line-height: 1.6; }
+
 .flowers,
 .flower-search-results {
   margin: 2rem auto 1rem !important;
