@@ -44,7 +44,7 @@ Titles: font-family: 'Alegreya', serif;
 Texts: font-family: 'Open Sans', sans-serif;
 ***********************************/
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Alegreya", serif; }
 
 h1,
 h2,
@@ -52,7 +52,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Alegreya", serif; }
+  font-family: "Open Sans", sans-serif; }
 
 .gradient-text {
   background: linear-gradient(#fff0ce, #08607a);
@@ -60,7 +60,7 @@ h6 {
   -webkit-text-fill-color: transparent; }
 
 .bold-style {
-  font-family: "Alegreya", serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #e2eeed; }
 
 /*******************************************
@@ -356,7 +356,7 @@ body {
   cursor: pointer; }
 
 .converter__show--button {
-  font-family: "Alegreya", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.4rem;
   border-radius: 15px 0 0 15px;
   padding: 1rem;
@@ -382,7 +382,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   color: #83b4b3; }
   .converter__tabs--singleTab {
-    font-family: "Alegreya", serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.4rem;
     background-color: #08607a;
     border: none;
@@ -427,7 +427,7 @@ input[type="reset"] {
   border-radius: 2rem;
   color: #fcfcfc;
   font-size: 1.4rem;
-  font-family: "Alegreya", serif;
+  font-family: "Open Sans", sans-serif;
   background: linear-gradient(#d55534, #525252);
   border: none; }
   input[type="reset"]:hover {
@@ -845,7 +845,7 @@ input[type="reset"] {
   box-shadow: 1rem 1rem 3rem #b8b8b8;
   padding: 0;
   font-size: 1rem;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Alegreya", serif; }
   @media only screen and (min-width: 580px) {
     .timeline__detail-box {
       font-size: 1.4rem; } }
@@ -1318,7 +1318,7 @@ footer {
     .footer__socialMedia h4 {
       margin: 0 auto;
       padding: 3rem 1rem 1rem;
-      font-family: "Alegreya", serif;
+      font-family: "Open Sans", sans-serif;
       font-size: 2.2rem;
       text-align: center;
       color: #fcfcfc;
@@ -1546,7 +1546,7 @@ footer {
     text-decoration: underline; }
   .guided-hikes__note--list--item {
     font-size: 1rem;
-    font-family: "Open Sans", sans-serif; }
+    font-family: "Alegreya", serif; }
     .guided-hikes__note--list--item::first-letter {
       color: #d55534;
       font-size: 110%;
@@ -1829,7 +1829,7 @@ header {
     align-items: center;
     justify-content: center;
     font-size: 1.8rem;
-    font-family: "Alegreya", serif;
+    font-family: "Open Sans", sans-serif;
     background-image: linear-gradient(to bottom, transparent 75%, #097392);
     background-size: 0% 80%;
     background-repeat: no-repeat;
@@ -1900,7 +1900,7 @@ header {
       z-index: 31; }
     .menu__hamburger--list {
       font-size: 2.2rem;
-      font-family: "Alegreya", serif;
+      font-family: "Open Sans", sans-serif;
       margin-right: 0;
       background-image: radial-gradient(#097392, #4c4c4c);
       position: absolute;
@@ -2432,7 +2432,7 @@ header {
   .simple__box--author {
     display: block;
     font-size: 2.2rem;
-    font-family: "Alegreya", serif;
+    font-family: "Open Sans", sans-serif;
     color: #097392;
     padding: 1rem 0 2rem; }
 
@@ -2474,7 +2474,7 @@ header {
     padding: 3rem 1rem;
     width: 90%; }
     .landingPage__ads--section-title {
-      font-family: "Alegreya", serif;
+      font-family: "Open Sans", sans-serif;
       font-size: 2.2rem;
       color: #097392; }
     .landingPage__ads--section-img {
@@ -2488,7 +2488,7 @@ header {
         pointer-events: none; }
     .landingPage__ads--section-content {
       padding: 1rem;
-      font-family: "Open Sans", sans-serif;
+      font-family: "Alegreya", serif;
       font-size: 1.4rem;
       line-height: 1.4; }
 @media only screen and (min-width: 900px) {
@@ -2728,7 +2728,7 @@ About page layout
   height: 100vh;
   -webkit-backdrop-filter: opacity(50%);
   backdrop-filter: opacity(50%);
-  font-family: "Alegreya", serif;
+  font-family: "Open Sans", sans-serif;
   overflow-y: scroll;
   padding-top: 30rem;
   display: flex;
@@ -2820,7 +2820,7 @@ About page layout
 .search__box--label {
   color: #383838;
   font-size: 1.4rem;
-  font-family: "Alegreya", serif;
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 0.3rem; }
   @media only screen and (min-width: 580px) {
     .search__box--label {
