@@ -52,6 +52,7 @@ header {
   &--title {
     margin-top: 0rem;
     font-size: $font-size-large;
+    font-family: $font-text;
     mix-blend-mode: overlay;
     transform: scale(0.8, 1.8);
     text-shadow: 0.1rem 0.1rem 0.2rem lighten($color-black, 15%);

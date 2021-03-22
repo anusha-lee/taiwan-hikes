@@ -1728,6 +1728,7 @@ header {
   .header__background-img-box--title {
     margin-top: 0rem;
     font-size: 3rem;
+    font-family: "Alegreya", serif;
     mix-blend-mode: overlay;
     transform: scale(0.8, 1.8);
     text-shadow: 0.1rem 0.1rem 0.2rem #262626;
