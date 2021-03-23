@@ -59,12 +59,12 @@ header {
     color: rgba($color-white, 0.9);
 
     @include responsive(tab) {
-      font-size: $font-size-xl;
+      font-size: $font-size-xxl;
       transform: scale(1, 1.6);
     }
     @include responsive(normal-desktop) {
       transform: scale(1.2, 2.2);
-      font-size: $font-size-xxl;
+     // font-size: $font-size-xxl;
     }
     @include responsive(xl-desktop) {
       transform: scale(1.3, 2.5);

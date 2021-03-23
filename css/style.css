@@ -1735,12 +1735,11 @@ header {
     color: rgba(252, 252, 252, 0.9); }
     @media only screen and (min-width: 580px) {
       .header__background-img-box--title {
-        font-size: 4rem;
+        font-size: 7.2rem;
         transform: scale(1, 1.6); } }
     @media only screen and (min-width: 1200px) {
       .header__background-img-box--title {
-        transform: scale(1.2, 2.2);
-        font-size: 7.2rem; } }
+        transform: scale(1.2, 2.2); } }
     @media only screen and (min-width: 1500px) {
       .header__background-img-box--title {
         transform: scale(1.3, 2.5); } }
