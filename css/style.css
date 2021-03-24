@@ -2728,7 +2728,7 @@ About page layout
   height: 100vh;
   -webkit-backdrop-filter: opacity(50%);
   backdrop-filter: opacity(50%);
-  font-family: "Open Sans", sans-serif;
+  font-family: "Alegreya", serif;
   overflow-y: scroll;
   padding-top: 30rem;
   display: flex;
@@ -2743,7 +2743,7 @@ About page layout
   opacity: 0;
   z-index: -1;
   transition: opacity 0.3s ease-in-out, z-index 0.3s ease-in-out;
-  background-color: #525252; }
+  background-color: #858585; }
   .modal__overlay--box {
     display: grid;
     place-items: center;
@@ -2752,7 +2752,7 @@ About page layout
       width: 90%;
       padding: 1rem;
       overflow-y: hidden;
-      background-color: #83b4b3; }
+      background-color: #c3dada; }
       @media only screen and (min-width: 580px) {
         .modal__overlay--box--countries {
           width: 100%; } }
@@ -2781,7 +2781,7 @@ About page layout
   padding-right: 1rem;
   padding-left: 1rem; }
   .modal-list:nth-child(even) {
-    background-color: #6da7a5; }
+    background-color: #fcfcfc; }
 
 .freeHikes__btn-box {
   margin-top: 1rem;

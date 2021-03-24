@@ -30,7 +30,7 @@ modalCloseButton.addEventListener("click", (event) => {
 modalOverlay.addEventListener("click", (event) => {
   if (!event.target.closest(".modal__overlay--box")) {
     modalOverlay.classList.remove("modal-is-open");
-    sizeBtn.textContent = "10 Golden Ridgelines";
+    sizeBtn.textContent = "How small is Taiwan?";
   }
 });
 

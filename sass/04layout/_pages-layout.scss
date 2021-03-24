@@ -212,7 +212,7 @@ About page layout
       width: 90%;
       padding: 1rem;
       overflow-y: hidden;
-      background-color: $color-blue-grey;
+      background-color: lighten($color-blue-grey, 20%);
       @include responsive(tab) {
         width: 100%;
       }
@@ -220,7 +220,7 @@ About page layout
   }
   -webkit-backdrop-filter: opacity(50%);
   backdrop-filter: opacity(50%);
-  font-family: $font-title;
+  font-family: $font-text;
   overflow-y: scroll;
   padding-top: 30rem;
   @include flex-center;
@@ -233,7 +233,7 @@ About page layout
   opacity: 0;
   z-index: -1;
   transition: opacity 0.3s ease-in-out, z-index 0.3s ease-in-out;
-  background-color: lighten($color-deep-blue-grey, 10%);
+  background-color: lighten($color-deep-blue-grey, 30%);
 
   @include responsive(tab) {
     padding-top: 40rem;
@@ -265,7 +265,7 @@ About page layout
   padding-right: 1rem;
   padding-left: 1rem;
   &:nth-child(even) {
-    background-color: darken($color-blue-grey, 7%);
+    background-color: $color-white;// darken($color-blue-grey, 7%);
   }
 }
 
