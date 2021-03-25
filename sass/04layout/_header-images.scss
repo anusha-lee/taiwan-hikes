@@ -303,7 +303,6 @@
 }
 
 .header__background-img-zhuilu {
-  //background-image: url("../img/blog/18-zhuilu-old-trail/zhuilu-header-blog-thumbnail-vertical02.jpg");
   background-image: url("../img/blog/18-zhuilu-old-trail/zhuilu-header-blog-thumbnail.jpg");
   background-size: cover;
   background-position: left;
@@ -316,7 +315,6 @@
 }
 
 .header__background-img-shakadang-xiaozhuilu {
-  //background-image: url("../img/blog/18-zhuilu-old-trail/zhuilu-header-blog-thumbnail-vertical02.jpg");
   background-image: url("../img/blog/19-shakadang-xiaozhuilu/shakadang-header-blog-thumbnail.jpg");
   background-size: cover;
   background-position: center;
@@ -329,7 +327,6 @@
 }
 
 .header__background-img-qilai-nanhua {
-  //background-image: url("../img/blog/18-zhuilu-old-trail/zhuilu-header-blog-thumbnail-vertical02.jpg");
   background-image: url("../img/blog/20-qilai-nanhua/00-qilai-nanhua-header-blog-thumbnail.jpg");
   background-size: cover;
   background-position: center;
@@ -341,11 +338,19 @@
   }
 }
 
-.header__background-teapot-rewrite {
-  //background-image: url("../img/blog/18-zhuilu-old-trail/zhuilu-header-blog-thumbnail-vertical02.jpg");
+.header__background-teapot-rewrite { 
   background-image: url("../img/blog/21-teapot/00-teapot-header-blog-thumbnail.jpg");
   background-size: cover;
   background-position: left bottom;  
+  @include responsive(sm-desktop) {
+    background-position: center;
+  }
+}
+
+.header__background-syakaro {
+  background-image: url("../img/blog/22-syakaro/00-Syakaro-header-blog-thumbnail2.jpg");
+  background-size: cover;
+  background-position: top center;  
   @include responsive(sm-desktop) {
     background-position: center;
   }

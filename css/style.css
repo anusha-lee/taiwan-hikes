@@ -2260,6 +2260,14 @@ header {
     .header__background-teapot-rewrite {
       background-position: center; } }
 
+.header__background-syakaro {
+  background-image: url("../img/blog/22-syakaro/00-Syakaro-header-blog-thumbnail2.jpg");
+  background-size: cover;
+  background-position: top center; }
+  @media only screen and (min-width: 900px) {
+    .header__background-syakaro {
+      background-position: center; } }
+
 .home-7Reasons {
   margin: 0 auto;
   width: 100%;
