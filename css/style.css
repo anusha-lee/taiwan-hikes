@@ -1515,7 +1515,7 @@ footer {
       width: 90%; } }
   @media only screen and (min-width: 900px) {
     .guided-hikes {
-      width: 70%; } }
+      width: 75%; } }
   @media only screen and (min-width: 1200px) {
     .guided-hikes {
       width: 55%; } }
@@ -1610,7 +1610,7 @@ footer {
       width: 100%; } }
   @media only screen and (min-width: 900px) {
     #allTrips {
-      width: 85%; } }
+      width: 92%; } }
   @media only screen and (min-width: 1200px) {
     #allTrips {
       width: 80%; } }
@@ -1634,7 +1634,7 @@ footer {
   }*/ }
   @media only screen and (min-width: 580px) {
     .eachTrip {
-      max-width: 24rem; } }
+      max-width: 23rem; } }
   .eachTrip__title {
     width: 100%;
     padding: 1rem;

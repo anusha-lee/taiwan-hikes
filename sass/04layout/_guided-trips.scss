@@ -6,7 +6,7 @@
     width: 90%;
   }
   @include responsive(sm-desktop) {
-    width: 70%;
+    width: 75%;
   }
   @include responsive(normal-desktop) {
     width: 55%;
@@ -125,7 +125,7 @@
     //max-height: 70rem;
   }
   @include responsive(sm-desktop) {
-    width: 85%;
+    width: 92%;
     //max-height: 70rem;
   }
   @include responsive(normal-desktop) {
@@ -151,7 +151,7 @@
   box-shadow: 0.2rem 0.2rem 0.5rem lighten($color-deep-blue-grey, 60%);
 
   @include responsive(tab) {
-    max-width: 24rem;
+    max-width: 23rem;
      //max-width: 38rem;
   //   max-height: 30rem;
   }
