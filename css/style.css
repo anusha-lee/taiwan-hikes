@@ -1175,16 +1175,20 @@ Page layout for articles on Start Here
 
 .flowers,
 .flower-search-results {
-  margin: 2rem auto 1rem !important;
+  margin: 0 auto 1rem !important;
   padding: 1rem;
   height: auto; }
+
+@media only screen and (min-width: 580px) {
+  .flower-search-results {
+    width: 80%; } }
 
 .flower-search-container {
   margin-bottom: 1.5rem; }
 
 .flower-search {
-  margin: 0.5rem auto;
-  padding: 0.3rem;
+  margin: 0.4rem auto;
+  padding: 0.2rem;
   width: 92%;
   text-align: center; }
   .flower-search label, .flower-search select {
@@ -1197,7 +1201,7 @@ Page layout for articles on Start Here
       width: 80%; } }
   @media only screen and (min-width: 900px) {
     .flower-search {
-      width: 50%; } }
+      max-width: 90%; } }
   @media only screen and (min-width: 1200px) {
     .flower-search {
       width: 35%; } }
@@ -1205,9 +1209,6 @@ Page layout for articles on Start Here
 .show-all-flower-btn {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem; }
-
-.flower-search-results {
-  margin: 1rem auto; }
 
 .flower {
   margin: 0.5rem auto;
@@ -1218,18 +1219,9 @@ Page layout for articles on Start Here
   display: flex;
   flex-wrap: wrap;
   align-content: space-around; }
-  @media only screen and (min-width: 580px) {
-    .flower {
-      width: 87%; } }
   @media only screen and (min-width: 900px) {
     .flower {
-      width: 80%; } }
-  @media only screen and (min-width: 1200px) {
-    .flower {
-      width: 75%; } }
-  @media only screen and (min-width: 1500px) {
-    .flower {
-      width: 65%; } }
+      max-width: 87%; } }
   .flower__info {
     box-shadow: 0.4rem 0.4rem 1rem #d1d1d1;
     margin: 1.8rem auto;
@@ -1240,14 +1232,11 @@ Page layout for articles on Start Here
     overflow-y: scroll; }
     @media only screen and (min-width: 580px) {
       .flower__info {
-        max-width: 47%; } }
+        max-width: 40%; } }
     @media only screen and (min-width: 900px) {
       .flower__info {
         max-width: 33%;
         height: 35rem; } }
-    @media only screen and (min-width: 1200px) {
-      .flower__info {
-        max-width: 30%; } }
     @media only screen and (min-width: 1500px) {
       .flower__info {
         width: 30rem; } }

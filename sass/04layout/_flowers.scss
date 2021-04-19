@@ -1,8 +1,18 @@
 .flowers,
 .flower-search-results {
-  margin: 2rem auto 1rem !important;
+  margin: 0 auto 1rem !important;
   padding: 1rem;
   height: auto;
+}
+
+.flower-search-results {
+  @include responsive(tab) {
+    width: 80%;
+    //border: 2px solid green;
+  }
+  @include responsive(sm-desktop) {
+    //border: 2px solid red;
+  }
 }
 
 .flower-search-container {
@@ -10,8 +20,8 @@
 }
 
 .flower-search {
-  margin: 0.5rem auto;
-  padding: 0.3rem;
+  margin: 0.4rem auto;
+  padding: 0.2rem;
   width: 92%;
   text-align: center;
   & label,
@@ -20,16 +30,13 @@
     @include responsive(tab) {
       font-size: $font-size-s;
     }
-    // @include responsive(sm-desktop) {
-    //   font-size: $font-size-sm;
-    // }
   }
 
   @include responsive(tab) {
     width: 80%;
   }
   @include responsive(sm-desktop) {
-    width: 50%;
+    max-width: 90%;
   }
   @include responsive(normal-desktop) {
     width: 35%;
@@ -39,10 +46,6 @@
 .show-all-flower-btn {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.flower-search-results {
-  margin: 1rem auto;
 }
 
 .flower {
@@ -55,17 +58,11 @@
   display: flex;
   flex-wrap: wrap;
   align-content: space-around;
-  @include responsive(tab) {
-    width: 87%;
+ @include responsive(tab) {
+   // max-width: 80%;
   }
   @include responsive(sm-desktop) {
-    width: 80%;
-  }
-  @include responsive(normal-desktop) {
-    width: 75%;
-  }
-  @include responsive(xl-desktop) {
-    width: 65%;
+    max-width: 87%;
   }
   &__info {
     box-shadow: 0.4rem 0.4rem 1rem lighten($color-deep-blue-grey, 60%);
@@ -77,15 +74,11 @@
     overflow-y: scroll;
 
     @include responsive(tab) {
-      max-width: 47%;
+      max-width: 40%;
     }
     @include responsive(sm-desktop) {
       max-width: 33%;
       height: 35rem;
-      // max-width: 40%;
-    }
-    @include responsive(normal-desktop) {
-      max-width: 30%;
     }
     @include responsive(xl-desktop) {
       width: 30rem;
