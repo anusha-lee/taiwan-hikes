@@ -355,3 +355,12 @@
     background-position: center;
   }
 }
+
+.header__background-img-liushun-qitsai {
+  background-image: url("../img/blog/23-liushun-qitsai-lake/00-liushun-qitsai-header-blog-thumbnail.jpg");
+  background-size: cover;
+  background-position: top;  
+  @include responsive(sm-desktop) {
+    background-position: center;
+  }
+}
