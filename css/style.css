@@ -828,9 +828,6 @@ input[type="reset"] {
 .pace.pace-inactive {
   display: none; }
 
-.track {
-  padding-top: 4rem; }
-
 .timeline__box {
   width: 100%;
   padding: .5rem; }
@@ -1055,15 +1052,19 @@ Page layout for articles on Start Here
         .article .article__section--title {
           font-size: 3rem; } }
     .article .article__section--subtitle {
-      margin: 1rem 0;
+      margin: 2rem 0 .5rem;
       font-size: 2.2rem;
       line-height: 1.4;
       display: inline-block; }
+      @media only screen and (min-width: 580px) {
+        .article .article__section--subtitle {
+          margin: 3.5rem 0 1rem; } }
     .article .article__section--reasonTitle {
-      margin: 2rem 0;
+      margin: 3rem 0 .5rem;
       font-size: 1.4rem; }
       @media only screen and (min-width: 580px) {
         .article .article__section--reasonTitle {
+          margin: 3rem 0 1.5rem;
           font-size: 1.8rem; } }
     .article .article__section--content {
       margin-top: 1rem;

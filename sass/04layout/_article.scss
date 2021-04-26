@@ -189,16 +189,21 @@ Page layout for articles on Start Here
       }
     }
     &--subtitle {
-      margin: 1rem 0;
+      margin: 2rem 0 .5rem;
       font-size: $font-size-sm;
       line-height: 1.4;
       display: inline-block;
+
+      @include responsive(tab) {
+        margin: 3.5rem 0 1rem;        
+      }
     }
     &--reasonTitle {
-      margin: 2rem 0;
+      margin: 3rem 0 .5rem;
       font-size: $font-size-xs;
 
       @include responsive(tab) {
+        margin: 3rem 0 1.5rem;
         font-size: $font-size-s;
       }
     }
