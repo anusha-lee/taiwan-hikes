@@ -359,8 +359,11 @@
 .header__background-img-liushun-qicai {
   background-image: url("../img/blog/23-liushun-qicai-lake/00-liushun-qicai-header-blog-thumbnail.jpg");
   background-size: cover;
-  background-position: top;  
+  background-position: top;
+  @include responsive(tab) {
+    background-position-y: 45%;
+  }
   @include responsive(sm-desktop) {
-    background-position: center;
+    background-position-y: 40%;
   }
 }
