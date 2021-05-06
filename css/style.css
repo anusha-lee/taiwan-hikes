@@ -2936,6 +2936,18 @@ About page layout
 .note {
   font-size: .5rem !important; }
 
+.coffee {
+  background-color: white;
+  border-radius: 5%;
+  filter: drop-shadow(1rem 1rem 1.2rem #6b6b6b);
+  width: 80%;
+  padding: 2rem 5rem; }
+  @media only screen and (min-width: 580px) {
+    .coffee {
+      width: 70%; } }
+  .coffee__text {
+    font-size: 1rem !important; }
+
 @-webkit-keyframes check {
   50% {
     outline-color: #333;

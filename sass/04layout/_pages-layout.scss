@@ -477,3 +477,22 @@ About page layout
 .note {
   font-size: .5rem !important;
 }
+
+// Buy me a coffee layout
+.coffee {
+  background-color: white;
+  border-radius: 5%;;
+  filter: drop-shadow(1rem 1rem 1.2rem lighten($color-deep-blue-grey, 20%));
+  width: 80%;
+  padding: 2rem 5rem;
+  @include responsive(tab) {
+    width: 70%;
+  }
+  @include responsive(small-desktop) {
+    width: 60%;
+  }
+
+  &__text {
+    font-size: $font-size-xxs !important;
+  }
+}
