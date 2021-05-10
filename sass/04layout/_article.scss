@@ -199,12 +199,18 @@ Page layout for articles on Start Here
       }
     }
     &--reasonTitle {
-      margin: 3rem 0 .5rem;
+      margin: 1.2rem 0 .5rem;
+      line-height: 1.2;
       font-size: $font-size-xs;
 
       @include responsive(tab) {
-        margin: 3rem 0 1.5rem;
+        margin: 1.5rem 0 1.2rem;
+        line-height: 1.4;
         font-size: $font-size-s;
+      }
+
+      @include responsive(sm-desktop) {
+        margin: 1.8rem 0 1.4rem;
       }
     }
 

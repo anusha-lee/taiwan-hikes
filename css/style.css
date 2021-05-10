@@ -1060,12 +1060,17 @@ Page layout for articles on Start Here
         .article .article__section--subtitle {
           margin: 3.5rem 0 1rem; } }
     .article .article__section--reasonTitle {
-      margin: 3rem 0 .5rem;
+      margin: 1.2rem 0 .5rem;
+      line-height: 1.2;
       font-size: 1.4rem; }
       @media only screen and (min-width: 580px) {
         .article .article__section--reasonTitle {
-          margin: 3rem 0 1.5rem;
+          margin: 1.5rem 0 1.2rem;
+          line-height: 1.4;
           font-size: 1.8rem; } }
+      @media only screen and (min-width: 900px) {
+        .article .article__section--reasonTitle {
+          margin: 1.8rem 0 1.4rem; } }
     .article .article__section--content {
       margin-top: 1rem;
       margin-bottom: 1rem;
@@ -2655,7 +2660,7 @@ Start Here and Blog Home page layout
 Social Media sharing buttons
 ************************************************/
 .media-share-buttons {
-  margin: 2rem auto; }
+  margin: 6rem auto 2rem; }
 
 .a2a_default_style {
   display: flex;
