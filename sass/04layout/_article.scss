@@ -214,6 +214,23 @@ Page layout for articles on Start Here
       }
     }
 
+    &--reasonSubTitle {
+      font-size: $font-size-xms;
+      text-decoration: underline;
+      text-decoration-color: $color-base-blue;
+      line-height: 1.6;
+
+      @include responsive(tab) {
+        margin: 1.5rem 0 1.2rem;        
+        font-size: $font-size-xs;        
+      }
+
+      @include responsive(sm-desktop) {
+        margin: 1.5rem 0 1.2rem;        
+        font-size: $font-size-s;        
+      }
+    }
+
     &--content {
       margin-top: 1rem;
       margin-bottom: 1rem;

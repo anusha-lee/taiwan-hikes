@@ -1071,6 +1071,19 @@ Page layout for articles on Start Here
       @media only screen and (min-width: 900px) {
         .article .article__section--reasonTitle {
           margin: 1.8rem 0 1.4rem; } }
+    .article .article__section--reasonSubTitle {
+      font-size: 1.2rem;
+      text-decoration: underline;
+      text-decoration-color: #097392;
+      line-height: 1.6; }
+      @media only screen and (min-width: 580px) {
+        .article .article__section--reasonSubTitle {
+          margin: 1.5rem 0 1.2rem;
+          font-size: 1.4rem; } }
+      @media only screen and (min-width: 900px) {
+        .article .article__section--reasonSubTitle {
+          margin: 1.5rem 0 1.2rem;
+          font-size: 1.8rem; } }
     .article .article__section--content {
       margin-top: 1rem;
       margin-bottom: 1rem;
@@ -2946,7 +2959,7 @@ About page layout
   background-color: white;
   border-radius: 5%;
   filter: drop-shadow(1rem 1rem 1.2rem #6b6b6b);
-  width: 80%;
+  width: 92%;
   padding: 2rem 5rem; }
   @media only screen and (min-width: 580px) {
     .coffee {
