@@ -1192,6 +1192,10 @@ Page layout for articles on Start Here
 #ten-gold-ridges .timeline__box .timeline__detail-box .timeline__detail--even .timeline__detail--position {
   line-height: 1.6; }
 
+.announcement {
+  font-size: 2.2rem;
+  color: red; }
+
 .flowers,
 .flower-search-results {
   margin: 0 auto 1rem !important;
