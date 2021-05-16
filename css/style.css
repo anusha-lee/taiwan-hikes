@@ -1168,10 +1168,12 @@ Page layout for articles on Start Here
         transform: scale(1.04); } }
 
 @media only screen and (min-width: 900px) {
-  #panview {
+  #panview,
+  .panview {
     transition: transform 0.3s ease-in-out; }
-    #panview:hover {
-      transform: scale(1.1); } }
+    #panview:hover,
+    .panview:hover {
+      transform: scale(1.5); } }
 
 .how-to-apply {
   background-color: #d2e4e4;
@@ -1194,7 +1196,12 @@ Page layout for articles on Start Here
 
 .announcement {
   font-size: 2.2rem;
-  color: red; }
+  color: red;
+  margin: 0 auto;
+  padding: 1rem; }
+  @media only screen and (min-width: 580px) {
+    .announcement {
+      padding: 0.3rem 2rem 0; } }
 
 .flowers,
 .flower-search-results {
