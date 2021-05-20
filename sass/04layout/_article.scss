@@ -355,6 +355,8 @@ Page layout for articles on Start Here
     transition: transform 0.3s ease-in-out;
     &:hover {
       transform: scale(1.5);
+      background-color: $color-white;
+      padding: 1rem .2rem;
     }
   }
 }

@@ -1173,7 +1173,9 @@ Page layout for articles on Start Here
     transition: transform 0.3s ease-in-out; }
     #panview:hover,
     .panview:hover {
-      transform: scale(1.5); } }
+      transform: scale(1.5);
+      background-color: #fcfcfc;
+      padding: 1rem .2rem; } }
 
 .how-to-apply {
   background-color: #d2e4e4;
