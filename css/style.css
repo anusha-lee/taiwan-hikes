@@ -1070,7 +1070,7 @@ Page layout for articles on Start Here
           font-size: 1.8rem; } }
       @media only screen and (min-width: 900px) {
         .article .article__section--reasonTitle {
-          margin: 1.8rem 0 1.4rem; } }
+          margin: 2.2rem 0 1.2rem; } }
     .article .article__section--reasonSubTitle {
       font-size: 1.2rem;
       text-decoration: underline;
