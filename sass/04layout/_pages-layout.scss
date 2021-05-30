@@ -291,6 +291,8 @@ About page layout
   text-align: center;
   @include responsive(tab) {
     width: 80%;
+    margin: 0 auto;
+    padding: .2rem 1rem;
   }
   // @include responsive(sm-desktop) {
   //   width: 50%;
@@ -310,6 +312,9 @@ About page layout
   }
   &--content {
     padding: 1rem 0;
+    @include responsive(tab) {
+      padding: .5rem;
+    }
   }
 }
 

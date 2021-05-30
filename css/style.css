@@ -1236,7 +1236,7 @@ Page layout for articles on Start Here
       max-width: 90%; } }
   @media only screen and (min-width: 1200px) {
     .flower-search {
-      width: 35%; } }
+      width: 60%; } }
 
 .show-all-flower-btn {
   margin-top: 0.5rem;
@@ -2589,6 +2589,13 @@ header {
       .whyTaiwan__text {
         font-size: 1.8rem; } }
 
+.whyTaiwan-about-page {
+  margin: 1rem auto;
+  height: 90%; }
+
+.formkit-background {
+  height: 98%; }
+
 /*
 .ads--section {
   margin: 2rem auto;
@@ -2844,7 +2851,9 @@ About page layout
   text-align: center; }
   @media only screen and (min-width: 580px) {
     .blog__search {
-      width: 80%; } }
+      width: 80%;
+      margin: 0 auto;
+      padding: .2rem 1rem; } }
   .blog__search--title {
     margin-bottom: 0.5rem;
     padding: 1rem;
@@ -2856,6 +2865,9 @@ About page layout
         font-size: 2.2rem; } }
   .blog__search--content {
     padding: 1rem 0; }
+    @media only screen and (min-width: 580px) {
+      .blog__search--content {
+        padding: .5rem; } }
 
 .search__box--label {
   color: #383838;
