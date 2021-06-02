@@ -2943,6 +2943,13 @@ About page layout
         .blog__container--section--img img:hover {
           transform: scale(1.2); }
 
+.google-maps-search__content {
+  width: 80%;
+  margin: -2rem auto 3rem; }
+  @media only screen and (min-width: 580px) {
+    .google-maps-search__content {
+      width: 90%; } }
+
 .timer img {
   padding: 0.1rem;
   width: 2.5%;

@@ -411,12 +411,22 @@ About page layout
         height: auto;
         object-fit: cover;
         transition: transform 0.3s ease-in-out;
-        @include responsive(tab) {
-        }
+        
         &:hover {
           transform: scale(1.2);
         }
       }
+    }
+  }
+}
+
+// search posts on Google Maps 
+.google-maps-search {
+  &__content {
+    width: 80%;
+    margin: -2rem auto 3rem;
+    @include responsive(tab) {
+      width: 90%;
     }
   }
 }
