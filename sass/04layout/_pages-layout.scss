@@ -422,11 +422,20 @@ About page layout
 
 // search posts on Google Maps 
 .google-maps-search {
+  margin: 1rem auto -1rem;
   &__content {
     width: 80%;
-    margin: -2rem auto 3rem;
+    margin: 2rem auto .5rem;
+    &--imageBox figure iframe {
+      margin: 0 auto;
+      //padding: 1rem;
+    }
+    
     @include responsive(tab) {
-      width: 90%;
+      width: 60%;      
+    }
+    @include responsive(sm-desktop) {
+      width: 50%;
     }
   }
 }

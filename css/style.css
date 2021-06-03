@@ -2943,12 +2943,19 @@ About page layout
         .blog__container--section--img img:hover {
           transform: scale(1.2); }
 
-.google-maps-search__content {
-  width: 80%;
-  margin: -2rem auto 3rem; }
-  @media only screen and (min-width: 580px) {
-    .google-maps-search__content {
-      width: 90%; } }
+.google-maps-search {
+  margin: 1rem auto -1rem; }
+  .google-maps-search__content {
+    width: 80%;
+    margin: 2rem auto .5rem; }
+    .google-maps-search__content--imageBox figure iframe {
+      margin: 0 auto; }
+    @media only screen and (min-width: 580px) {
+      .google-maps-search__content {
+        width: 60%; } }
+    @media only screen and (min-width: 900px) {
+      .google-maps-search__content {
+        width: 50%; } }
 
 .timer img {
   padding: 0.1rem;
