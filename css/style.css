@@ -1771,7 +1771,7 @@ header {
     font-size: 1.8rem;
     text-align: center;
     transform: scale(0.8, 1.4);
-    background: linear-gradient(#097392, #999999);
+    background: linear-gradient(#e69c89, #fcfcfc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
     @media only screen and (min-width: 580px) {
@@ -1983,7 +1983,7 @@ header {
   margin-top: 0.6rem; }
 
 /*******************************
-********* Start here and basic pages
+***Start here and basic pages
 *******************************/
 .header__background-img-7Reasons {
   background-image: url("../img/header-background5.jpg");
@@ -2298,6 +2298,17 @@ header {
       background-position-y: 45%; } }
   @media only screen and (min-width: 900px) {
     .header__background-img-liushun-qicai {
+      background-position-y: 40%; } }
+
+.header__background-img-badaoer {
+  background-image: url("../img/blog/24-badaoer-meilu-gaoyao-mountains/badaoer-header-blog-thumbnail.jpg");
+  background-size: cover;
+  background-position: top 20%; }
+  @media only screen and (min-width: 580px) {
+    .header__background-img-badaoer {
+      background-position-y: 45%; } }
+  @media only screen and (min-width: 900px) {
+    .header__background-img-badaoer {
       background-position-y: 40%; } }
 
 .home-7Reasons {

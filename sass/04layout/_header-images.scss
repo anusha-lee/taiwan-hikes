@@ -1,7 +1,7 @@
 // Different background images for different pages
 
 /*******************************
-********* Start here and basic pages
+***Start here and basic pages
 *******************************/
 
 .header__background-img-7Reasons {
@@ -360,6 +360,18 @@
   background-image: url("../img/blog/23-liushun-qicai-lake/00-liushun-qicai-header-blog-thumbnail.jpg");
   background-size: cover;
   background-position: top;
+  @include responsive(tab) {
+    background-position-y: 45%;
+  }
+  @include responsive(sm-desktop) {
+    background-position-y: 40%;
+  }
+}
+
+.header__background-img-badaoer {
+  background-image: url("../img/blog/24-badaoer-meilu-gaoyao-mountains/badaoer-header-blog-thumbnail.jpg");
+  background-size: cover;
+  background-position: top 20%;
   @include responsive(tab) {
     background-position-y: 45%;
   }

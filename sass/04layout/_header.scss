@@ -78,7 +78,7 @@ header {
     font-size: $font-size-s;
     text-align: center;
     transform: scale(0.8, 1.4);
-    background: linear-gradient($color-base-blue, lighten($color-black, 60%));
+    background: linear-gradient(lighten($color-orangered, 20%), $color-white); //lighten($color-black, 30%)
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
