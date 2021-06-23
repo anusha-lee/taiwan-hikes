@@ -379,3 +379,16 @@
     background-position-y: 40%;
   }
 }
+
+.header__background-img-shih-shuang {
+  background-image: url("../img/blog/25-shihfen-shuangxi/shihfen-shuangxi-header-blog-thumbnail.jpg");
+  background-size: cover;
+  //background-position: top 20%;
+  background-position: bottom 20%;
+  @include responsive(tab) {
+    background-position-y: 50%;
+  }
+  @include responsive(sm-desktop) {
+    background-position-y: 65%;
+  }
+}

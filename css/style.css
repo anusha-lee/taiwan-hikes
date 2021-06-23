@@ -2311,6 +2311,17 @@ header {
     .header__background-img-badaoer {
       background-position-y: 40%; } }
 
+.header__background-img-shih-shuang {
+  background-image: url("../img/blog/25-shihfen-shuangxi/shihfen-shuangxi-header-blog-thumbnail.jpg");
+  background-size: cover;
+  background-position: bottom 20%; }
+  @media only screen and (min-width: 580px) {
+    .header__background-img-shih-shuang {
+      background-position-y: 50%; } }
+  @media only screen and (min-width: 900px) {
+    .header__background-img-shih-shuang {
+      background-position-y: 65%; } }
+
 .home-7Reasons {
   margin: 0 auto;
   width: 100%;
