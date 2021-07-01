@@ -2322,6 +2322,17 @@ header {
     .header__background-img-shih-shuang {
       background-position-y: 65%; } }
 
+.header__background-img-sanyi-tongluo {
+  background-image: url("../img/blog/26-sanyi-tongluo/sanyi-tongluo-header-blog-thumbnail.jpg");
+  background-size: cover;
+  background-position: bottom 20%;
+  /*@include responsive(sm-desktop) {
+    background-position-y: 65%;
+  }*/ }
+  @media only screen and (min-width: 580px) {
+    .header__background-img-sanyi-tongluo {
+      background-position-y: center; } }
+
 .home-7Reasons {
   margin: 0 auto;
   width: 100%;

@@ -392,3 +392,16 @@
     background-position-y: 65%;
   }
 }
+
+.header__background-img-sanyi-tongluo {
+  background-image: url("../img/blog/26-sanyi-tongluo/sanyi-tongluo-header-blog-thumbnail.jpg");
+  background-size: cover;
+  //background-position: top 20%;
+  background-position: bottom 20%;
+  @include responsive(tab) {
+    background-position-y: center;
+  }
+  /*@include responsive(sm-desktop) {
+    background-position-y: 65%;
+  }*/
+}
