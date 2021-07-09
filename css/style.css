@@ -1191,6 +1191,9 @@ Page layout for articles on Start Here
   @media only screen and (min-width: 580px) {
     #table-contents {
       padding: 2rem 5rem; } }
+  #table-contents ul li {
+    list-style-type: square;
+    margin-left: 1rem; }
 
 #ten-gold-ridges .timeline__box .timeline__detail-box .timeline__detail--odd .timeline__detail--position,
 #ten-gold-ridges .timeline__box .timeline__detail-box .timeline__detail--even .timeline__detail--position {

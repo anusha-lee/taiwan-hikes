@@ -376,6 +376,10 @@ Page layout for articles on Start Here
   @include responsive(tab) {
     padding: 2rem 5rem;
   }
+  & ul li {
+    list-style-type: square;
+    margin-left: 1rem;
+  }
 }
 
 #ten-gold-ridges .timeline__box .timeline__detail-box .timeline__detail--odd .timeline__detail--position, 
